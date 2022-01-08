@@ -20,7 +20,7 @@ export default function AboutMe() {
               className="bg-red-500 rounded-md px-2 py-1 text-white"
               href={userData.about.currentProjectUrl}
             >
-              {userData.about.currentProject} ✈️
+              {userData.about.currentProject}
             </a>
           </p>
         </div>
@@ -121,7 +121,17 @@ export default function AboutMe() {
               Tech Stack & Tools
             </h1>
             <div className="flex flex-row flex-wrap mt-8">
-              Click this logo :)
+              <div>
+                <p className="text-xl font-mono text-gray-700 dark:text-gray-200">
+                Click the 
+                <a 
+                  href="https://stackshare.io/" 
+                  target="_blank" rel="noopener noreferrer" 
+                  style={{color:"#0645AD"}}> stackshare.io 
+                </a> 
+                logo below to see the full list of technologies I use and/or know about.
+                </p>
+              </div>
               <a id="link-stackshare" href={userData.techStack} target="_blank" rel="noopener noreferrer">
                 <img src="./stackshare.png" className="h-20 w-20 mx-4 my-4"/>
               </a>
