@@ -127,9 +127,7 @@ export default function AboutMe() {
                 <a 
                   href="https://stackshare.io/" 
                   target="_blank" rel="noopener noreferrer" 
-                  style={{color:"#0645AD"}}> stackshare.io 
-                </a> 
-                logo below to see the full list of technologies I use and/or know about.
+                  style={{color:"#0645AD"}}> stackshare.io </a> logo below to see the full list of technologies I use and/or know about.
                 </p>
               </div>
               <a id="link-stackshare" href={userData.techStack} target="_blank" rel="noopener noreferrer">
