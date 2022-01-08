@@ -6,7 +6,6 @@ import userData from "@constants/data";
 
 export default function Navbar() {
   const router = useRouter();
-  console.log(router.asPath);
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -22,7 +21,7 @@ export default function Navbar() {
         <div className="flex flex-col">
           <Link href="/">
             <a>
-              <h1 className="font-semibold text-xl dark:text-gray-100">
+              <h1 className="font-semibold text-x1 dark:text-gray-100" style={{fontSize : '50px'}}>
                 {userData.name}
               </h1>
               <p className="text-base font-light text-gray-500 dark:text-gray-300">
@@ -40,6 +39,7 @@ export default function Navbar() {
                   ? "text-gray-800 font-bold dark:text-gray-400"
                   : "text-gray-600 dark:text-gray-300 font-normal "
               }`}
+              style={{fontSize : '20px'}}
             >
               Who am I?{" "}
               {router.asPath === "/about" && (
@@ -66,6 +66,7 @@ export default function Navbar() {
                   ? "text-gray-800 font-bold dark:text-gray-400"
                   : "text-gray-600 dark:text-gray-300 font-normal "
               }`}
+              style={{fontSize : '20px'}}
             >
               Projects
               {router.asPath === "/projects" && (
@@ -92,6 +93,7 @@ export default function Navbar() {
                   ? "text-gray-800 font-bold dark:text-gray-400"
                   : "text-gray-600 dark:text-gray-300 font-normal "
               }`}
+              style={{fontSize : '20px'}}
             >
               Experience{" "}
               {router.asPath === "/experience" && (
@@ -118,6 +120,7 @@ export default function Navbar() {
                   ? "text-gray-800 font-bold dark:text-gray-400"
                   : "text-gray-600 dark:text-gray-300 font-normal "
               }`}
+              style={{fontSize : '20px'}}
             >
               Contact me
               {router.asPath === "/contacts" && (
@@ -142,6 +145,7 @@ export default function Navbar() {
         <div className="space-x-4 flex flex-row items-center">
           <a
             href={userData.socialLinks.twitter}
+            target="_blank" rel="noopener noreferrer"
             className="text-base font-normal text-gray-600 dark:text-gray-300"
           >
             <svg
@@ -157,6 +161,7 @@ export default function Navbar() {
           </a>
           <a
             href={userData.socialLinks.linkedin}
+            target="_blank" rel="noopener noreferrer"
             className="text-base font-normal text-gray-600 dark:text-gray-300"
           >
             <svg

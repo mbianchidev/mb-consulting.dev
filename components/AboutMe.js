@@ -6,7 +6,7 @@ export default function AboutMe() {
     <section className="bg-white dark:bg-gray-800">
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
         <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
-          About Me.
+          About Me
         </h1>
       </div>
       <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
@@ -118,9 +118,10 @@ export default function AboutMe() {
             ))}
 
             <h1 className="bg-red-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
-              Tech Stack
+              Tech Stack & Tools
             </h1>
             <div className="flex flex-row flex-wrap mt-8">
+              Click this logo :)
               <a id="link-stackshare" href={userData.techStack} target="_blank" rel="noopener noreferrer">
                 <img src="./stackshare.png" className="h-20 w-20 mx-4 my-4"/>
               </a>

@@ -7,6 +7,19 @@ My portfolio is a minimalistic website to showcase my skills and projects as a D
 - Responsive layout, works well on both Mobile and Desktop
 - Dark mode support. Click buttons to toggle dark mode and light mode.
 
+# Upcoming
+
+- TODO Api
+    - /cv recuperare il CV aggiornato e scaricarlo da file
+    - /techs recuperare il tech stack e le immagini relative in base al nome
+
+- TODO Interface
+    - Projects -> Services (showcase servizi offerti)
+
+- TODO Security
+    - Cookie policy
+    - Privacy policy
+
 # Tech Stack
 
 The website is built and will be deployed on [Vercel](https://vercel.com)
