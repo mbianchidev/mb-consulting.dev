@@ -5,18 +5,20 @@ const userData = {
   avatarUrl: "/propic.jpg",
   email: "info@mb-consulting.dev",
   phone: "+39 3883718913",
-  address: "Full remote, World",
+  address: "Full remote",
   techStack: "https://stackshare.io/mbianchidev/known-techs",
+  vat: "IT11846470968",
+  sdi: "M5UXCR1",
   projects: [
     {
-      title: "Portfolio",
+      title: "Portfolio website",
       link: "https://mb-consulting.dev",
-      imgUrl: "/yyy.png",
+      imgUrl: "/this-site.png",
     },
     {
-      title: "DevOps Basics (Coming soon)",
+      title: "DevOps Basics Course for companies",
       link: "https://mb-consulting.dev/workinprogress",
-      imgUrl: "/xxx.png",
+      imgUrl: "/devops-course-table-of-contents.png",
     }
   ],
   clients: [
