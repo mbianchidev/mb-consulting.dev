@@ -93,7 +93,7 @@ const userData = {
     {
       title: "Senior Software Developer | DevOps Engineer | Site Reliability Engineer | Coach",
       company: "Self-employed",
-      year: "2021",
+      year: "2021-now",
       companyLink: "https://mb-consulting.dev",
       desc: "I work with companies that believe in the value of the people they work with by rewarding them with trust; companies believing in work-life balance and having a tech first vision. My goal is to bring value to your business by crafting quality software, choosing the best techs for your use-case, enhancing \& optimizing your processes, implementing good practices and boosting your team(s) knowledge base. Offering software development craftsmanship, DevOps, SRE and cloud management services; I also teach DevOps/SRE courses tailored to your business and IT needs."
     },
@@ -113,7 +113,7 @@ const userData = {
     },
   ],
   resumeUrl:
-    "https://drive.google.com/file/d/xxx/view?usp=sharing",
+    "https://drive.google.com/u/0/uc?id=1IKSaesUuRQmtkOA0SP--3oe7gR4P0X4Y&export=download",
   socialLinks: {
     twitter: "https://twitter.com/mbianchidev",
     linkedin: "https://www.linkedin.com/in/matteo-bianchi-dev/",
