@@ -1,11 +1,15 @@
 import React from "react";
 import { RoughNotationGroup } from "react-rough-notation";
 import { RainbowHighlight } from "./RainbowHighlight";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import userData from "@constants/data";
 
 export default function Hero() {
+  const router = useRouter();
   const colors = ["#FF7F3F", "#10B981", "#3B82F6","#851DE0"];
   return (
+
     <div className="flex flex-row justify-center items-start overflow-hidden">
       {/* Text container */}
 
@@ -33,6 +37,7 @@ export default function Hero() {
           </RainbowHighlight>
         </RoughNotationGroup>
       </div>
+
       {/* Image container */}
       <div className="hidden lg:block relative w-full md:w-1/2 -mr-40 mt-20">
         <div className="w-3/4 ">
@@ -57,6 +62,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
+      {/* TODO call to action "Become a client today"->Contact "Learn more"->Servizi offerti */}
     </div>
   );
 }

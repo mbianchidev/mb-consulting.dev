@@ -108,9 +108,9 @@ export default function AboutMe() {
           </div>
           {/* Text area */}
           <div className="col-span-1 md:col-span-2">
-            {userData.about.description?.map((desc, idx) => (
+            {userData.about.description?.map((desc, aboutMeId) => (
               <p
-                key={idx}
+                key={aboutMeId}
                 className="text-xl text-gray-700 mb-4 dark:text-gray-300 "
               >
                 {desc}
