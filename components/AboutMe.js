@@ -122,7 +122,7 @@ export default function AboutMe() {
             </h1>
             <div className="flex flex-row flex-wrap mt-8">
               <div>
-                <p className="text-xl font-mono text-gray-700 dark:text-gray-200">
+                <p className="text-xl text-gray-700 mb-4 dark:text-gray-300">
                 Click the 
                 <a 
                   href="https://stackshare.io/" 
