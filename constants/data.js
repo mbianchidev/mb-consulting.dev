@@ -4,11 +4,13 @@ const userData = {
   designation: "Developer | DevOps | SRE | Coach",
   avatarUrl: "/propic.jpg",
   email: "info@mb-consulting.dev",
+  privacyMail: "privacy@mb-consulting.dev",
   phone: "+39 3883718913",
   address: "Full remote",
   techStack: "https://stackshare.io/mbianchidev/known-techs",
   vat: "IT11846470968",
   sdi: "M5UXCR1",
+  domain: "mb-consulting.dev",
   projects: [
     {
       title: "Portfolio website",
