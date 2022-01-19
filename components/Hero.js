@@ -11,8 +11,7 @@ export default function Hero() {
   return (
 
     <div className="flex flex-row justify-center items-start overflow-hidden">
-      {/* Text container */}
-
+      {/* Fancy writings */}
       <div className="w-full md:w-1/2 mx-auto text-center md:text-left lg:p-20">
         <RoughNotationGroup show={true}>
           <RainbowHighlight color={colors[0]}>
@@ -36,6 +35,12 @@ export default function Hero() {
             </h1>
           </RainbowHighlight>
         </RoughNotationGroup>
+        {/*contact me button*/}
+        <br></br>
+        <p className="font-mono">Wanna know more about what can I do for your business? Wanna collaborate? Looking for coaching?</p>
+        <a href="/contacts">
+          <button className="bg-[#02044A] rounded-md w-1/2 mx-4 mt-8 py-2 text-gray-200 dark:text-gray-200 text-xl font-bold">Contact me!</button>
+        </a>
       </div>
 
       {/* Image container */}

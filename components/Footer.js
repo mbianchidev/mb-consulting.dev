@@ -12,7 +12,7 @@ export default function Footer() {
             <p>VAT number: {userData.vat} | SDI: {userData.sdi}</p>
           </div>
           <div className="flex flex-col md:flex-row">
-          <a target="_blank" rel="noopener noreferrer" href="/policy">Privacy & Cookie Policy</a>
+          <a href="/policy">Privacy & Cookie Policy</a>
           </div>
           <div className="space-x-4 flex flex-row items-center">
             <a

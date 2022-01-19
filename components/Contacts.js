@@ -2,11 +2,28 @@ import React from "react";
 import userData from "@constants/data";
 
 export default function Contacts() {
+
+  async function sendEmail(e) {
+    e.preventDefault();
+  
+    const formData = {};
+  
+    Array.from(e.currentTarget.elements).forEach(field => {
+      if ( !field.name ) return;
+      formData[field.name] = field.value;
+    });
+  
+    await fetch('/api/mail', {
+      method: 'POST',
+      body: JSON.stringify(formData)
+    });
+  }
+  
   return (
     <section>
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800 antialiased">
         <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
-          Let's get in touch
+          Let's get in touch!
         </h1>
       </div>
       <div className="relative z-10 rounded-md shadow-md bg-[#02044A] p-4 md:p-10 lg:p-20 max-w-6xl mx-auto mb-20 -mt-4">
@@ -17,7 +34,7 @@ export default function Contacts() {
                 Wanna talk about technology, business or anything else?
               </h1>
               <p className="font-light text-base text-gray-200 mt-2">
-                Fill in the details and I'll get back to you as soon as possible!
+                Fill in the details and I'll get back to you as soon as possible.
               </p>
             </header>
             <div className="icons-container inline-flex flex-col my-20">
@@ -76,7 +93,7 @@ export default function Contacts() {
                 target="_blank" rel="noopener noreferrer"
                 className="h-10 w-10 rounded-full hover:bg-blue-500 flex items-center justify-center cursor-pointer"
               >
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="bi bi-twitter h-5 w-5" viewBox="0 0 24 24"
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="bi bi-twitter h-5 w-5 text-gray-50" viewBox="0 0 24 24"
               >
                 <g transform="translate(4,4)">
                 <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
@@ -99,7 +116,7 @@ export default function Contacts() {
               </a>
             </div>
           </div>
-          <form className="form rounded-lg bg-white p-4 flex flex-col">
+          <form className="form rounded-lg bg-white p-4 flex flex-col" method="post" onSubmit={sendEmail}>
             <label htmlFor="name" className="text-sm text-gray-600 mx-4">
               {" "}
               Your Name
