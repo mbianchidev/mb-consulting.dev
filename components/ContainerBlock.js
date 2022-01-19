@@ -9,8 +9,8 @@ export default function ContainerBlock({ children, ...customMeta }) {
 
   const meta = {
     title: "Matteo Bianchi - Developer | DevOps | SRE | Coach",
-    description: `I've been workin in the enterprise app field for more than 5 years. Get in touch with me to know more.`,
-    image: "/propic.jpg",
+    description: `I've been workin in the enterprise IT field for more than 5 years. Get in touch with me to know more.`,
+    image: "/images/propic.jpg",
     type: "website",
     ...customMeta,
   };
