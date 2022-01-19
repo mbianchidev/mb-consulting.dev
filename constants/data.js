@@ -12,6 +12,8 @@ const userData = {
   vat: "IT11846470968",
   sdi: "M5UXCR1",
   domain: "mb-consulting.dev",
+  policyUrl: "https://mb-consulting.dev/policy",
+  cookieUrl: "https://www.allaboutcookies.org/",
   projects: [
     {
       title: "Portfolio website",
@@ -32,7 +34,7 @@ const userData = {
       companyLogo: "/images/clients/greenchic.png",
       companyUrl: "https://greenchic.it/",
       role: "Freelance DevOps Engineer | Site Reliability Engineer",
-      story: "Currently collaborating with GreenChic to build a new cloud infrastructure for their fashion brand. The infrastructure is built on AWS and it's made of microservices, containers, EC2 instances and much more.",
+      story: "Currently collaborating with GreenChic to build a new cloud infrastructure for their fashion brand. The infrastructure is built on AWS and it's made of microservices, containers, EC2 instances and so much more.",
       year: "2021-2022",
       show: true
     },
@@ -43,7 +45,7 @@ const userData = {
       companyLogo: "/images/clients/gdf.png",
       companyUrl: "https://www.gdf.gov.it/",
       role: "Freelance Coach (DevOps)",
-      story: "Helped their IT sector to improve their DevOps practices by providing them with a DevOps course and some in-depth technical knowledge on Azure.",
+      story: "Helped their IT sector to improve their DevOps practices by providing them with a DevOps course and in-depth technical knowledge on Azure.",
       year: "2021",
       show: true
     },
@@ -54,7 +56,7 @@ const userData = {
       companyLogo: "/images/clients/dshare.png",
       companyUrl: "https://www.dshare.com/",
       role: "Freelance DevOps Engineer | Site Reliability Engineer",
-      story: "Managing Azure and AWS infrastructure for their news and media platform. I am responsible for the infrastructure, deployments, security and  so on.",
+      story: "Managing Azure and AWS infrastructures for their news and media platform and digital products. I am responsible for the infrastructure, deployments, security and everything about the cloud.",
       year: "2021-2022",
       show: true
     },
@@ -68,7 +70,18 @@ const userData = {
       story: "I brought DevOps in a digital signature product used by thousands of people and companies all over Europe: GoSign. I managed to improve the reliability and security of the product by developing document management processes in Java and by automating infrastructure provisioning, deployment, delivery and incident management processes.",
       year: "2019-2021",
       show: true
-    },    
+    },
+    {
+      companyName: "Eco-Mind Software @ Olivetti",
+      companyType: "Medium size company",
+      companySector: "IT Consulting",
+      companyLogo: "/images/clients/ecomind.png",
+      companyUrl: "https://eco-mind.eu/",
+      role: "Senior Software Engineer",
+      story: "Improved my Spring and Java skills by working side by side with valuable professionals both internal and external to the company. Here I learnt the true meaning of the word 'teamwork' and how to work in a team with a diverse set of skills.",
+      year: "2018-2021",
+      show: true
+    },  
     {
       companyName: "Reply @ A2A",
       companyType: "Corporate",
@@ -87,7 +100,7 @@ const userData = {
       companyLogo: "/images/clients/vodafone.png",
       companyUrl: "https://www.vodafone.com/",
       role: "Fullstack Software Developer",
-      story: "I worked on a product that was used by the financial group of Vodafone. Here I learnt the importance of refactoring, optimization and keeping up to date with techs.",
+      story: "I worked on a product that was used by the financial group of Vodafone. Here I learnt the importance of refactoring, optimization and keeping up to date with techs. I also learnt how to work in a team and how to work in a fast-paced environment and how to manage a complex IT infrastructure.",
       year: "2017-2018",
       show: true
     },

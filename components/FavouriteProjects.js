@@ -35,7 +35,7 @@ export default function FavouriteProjects() {
         <div className="grid md:grid-cols-3 gap-8 lg:-mt-8 pb-40">
           {/* Single card */}
           <a
-            href="https://mb-consulting.dev"
+            href="https://github.com/mbianchidev/site"
             target="_blank" rel="noopener noreferrer"
             className="w-full block col-span-3 sm:col-span-1  object-cover"
           >
@@ -48,9 +48,6 @@ export default function FavouriteProjects() {
               />
               <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
                 Portfolio
-              </h1>
-              <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
-                03
               </h1>
             </div>
           </a>

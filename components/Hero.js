@@ -1,7 +1,6 @@
 import React from "react";
 import { RoughNotationGroup } from "react-rough-notation";
 import { RainbowHighlight } from "./RainbowHighlight";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import userData from "@constants/data";
 
@@ -37,7 +36,7 @@ export default function Hero() {
         </RoughNotationGroup>
         {/*contact me button*/}
         <br></br>
-        <p className="font-mono">Wanna know more about what can I do for your business? Wanna collaborate? Looking for coaching?</p>
+        <p className="font-mono">Want to learn more about what I can do for your business? Wanna collaborate? Looking for a coach?</p>
         <a href="/contacts">
           <button className="bg-[#02044A] rounded-md w-1/2 mx-4 mt-8 py-2 text-gray-200 dark:text-gray-200 text-xl font-bold">Contact me!</button>
         </a>

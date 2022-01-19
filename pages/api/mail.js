@@ -5,9 +5,8 @@ mail.setApiKey(process.env.SENDGRID_API_KEY);
 
 export default async function(req, res) {
   return new Promise((resolve, reject) => {
-    const researchString = "site_form_message_request";
+    const researchString = "site_form_message_request"; // this is an util string to identify the email in gmail search
     const body = JSON.parse(req.body);
-    console.log('body', body);
     const message = `
     ResearchString: ${researchString}\r\n
     Name: ${body.name}\r\n

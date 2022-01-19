@@ -1,4 +1,5 @@
 import CookieConsent from "react-cookie-consent";
+import userData from "@constants/data";
 
 export default function Cookies() {
 
@@ -24,8 +25,8 @@ export default function Cookies() {
           expires={365}
         >
         This (awesome?) website uses the smallest amount of cookies possible to enhance the user experience.
-        For more info about my cookies policy: <u><a target="_blank" rel="noopener noreferrer" href="/policy">https://mb-consulting.dev/policy</a></u>.
-        What's a cookie? <u><a target="_blank" rel="noopener noreferrer" href="https://www.allaboutcookies.org/">allaboutcookies.org</a></u> 
+        For more info about my cookies policy: <u><a target="_blank" rel="noopener noreferrer" href="/policy">{userData.policyUrl}</a></u>.
+        What's a cookie? <u><a target="_blank" rel="noopener noreferrer" href={userData.cookieUrl}>Click here to learn more</a></u> 
         <span style={{ fontSize: "10px" }}> Please accept? c:</span>
         </CookieConsent>
     );
