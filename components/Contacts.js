@@ -1,5 +1,5 @@
 import React from "react";
-import { userData } from "@constants/data";
+import userData from "@constants/data";
 import { useState } from 'react';
 import * as gtag from '../lib/ga'
 
