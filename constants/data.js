@@ -1,7 +1,7 @@
 const userData = {
   githubUsername: "mbianchidev",
   name: "Matteo Bianchi",
-  designation: "Developer | DevOps | SRE | Coach",
+  role: "Developer | DevOps | SRE | Coach",
   avatarUrl: "/images/propic.jpg",
   email: "info@mb-consulting.dev",
   privacyMail: "privacy@mb-consulting.dev",

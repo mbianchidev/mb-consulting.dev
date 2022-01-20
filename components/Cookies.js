@@ -1,5 +1,6 @@
-import CookieConsent from "react-cookie-consent";
+import React from "react";
 import userData from "@constants/data";
+import CookieConsent from "react-cookie-consent";
 
 export default function Cookies() {
 

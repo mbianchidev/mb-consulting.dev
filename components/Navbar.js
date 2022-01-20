@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
+import userData from "@constants/data";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
-import userData from "@constants/data";
 
 export default function Navbar() {
   const router = useRouter();
@@ -17,7 +17,9 @@ export default function Navbar() {
     <div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">
       <div className="flex  md:flex-row justify-between items-center">
         {/* Logo / Home / Text */}
-
+        <a href="/">
+          <img src="/images/logo.png"></img>
+        </a>
         <div className="flex flex-col">
           <Link href="/">
             <a>
@@ -25,7 +27,7 @@ export default function Navbar() {
                 {userData.name}
               </h1>
               <p className="text-base font-light text-gray-500 dark:text-gray-300">
-                {userData.designation}
+                {userData.role}
               </p>
             </a>
           </Link>
@@ -41,7 +43,7 @@ export default function Navbar() {
               }`}
               style={{fontSize : '20px'}}
             >
-              About me{" "}
+              My story{" "}
               {router.asPath === "/about" && (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -113,19 +115,17 @@ export default function Navbar() {
               )}
             </a>
           </Link>
-
-          {/* 
-          <Link href="/experience">
+          <Link href="/contacts">
             <a
               className={`text-base  ${
-                router.asPath === "/experience"
+                router.asPath === "/contacts"
                   ? "text-gray-800 font-bold dark:text-gray-400"
                   : "text-gray-600 dark:text-gray-300 font-normal "
               }`}
               style={{fontSize : '20px'}}
             >
-              Experience{" "}
-              {router.asPath === "/experience" && (
+              {" "}
+              {router.asPath === "/contacts" && (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -142,20 +142,18 @@ export default function Navbar() {
               )}
             </a>
           </Link>
-          */}
-
-          {/*
-          <Link href="/contacts">
+          {/* 
+          <Link href="/experience">
             <a
               className={`text-base  ${
-                router.asPath === "/contacts"
+                router.asPath === "/experience"
                   ? "text-gray-800 font-bold dark:text-gray-400"
                   : "text-gray-600 dark:text-gray-300 font-normal "
               }`}
               style={{fontSize : '20px'}}
             >
-              Contact me
-              {router.asPath === "/contacts" && (
+              Experience{" "}
+              {router.asPath === "/experience" && (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
