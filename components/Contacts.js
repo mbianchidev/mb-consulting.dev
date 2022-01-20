@@ -1,9 +1,15 @@
 import React from "react";
 import userData from "@constants/data";
 import { useState } from 'react';
+import { alertService } from "../services/alert.service";
 import * as gtag from '../lib/ga'
 
 export default function Contacts() {
+  
+  const [options] = useState({
+    autoClose: true,
+    keepAfterRouteChange: false
+  });
 
   const [userInput, setUserInput] = useState('');
 
@@ -25,12 +31,18 @@ export default function Contacts() {
     Array.from(e.currentTarget.elements).forEach(field => {
       if ( !field.name ) return;
       formData[field.name] = field.value;
+      // resetting fields
+      e.currentTarget.reset();
+      setUserInput('');
     });
   
     await fetch('/api/mail', {
       method: 'POST',
       body: JSON.stringify(formData)
     });
+
+    alertService.success('Your message has been sent!', options);
+
   }
   
   return (
@@ -136,6 +148,7 @@ export default function Contacts() {
               Your Name
             </label>
             <input
+              id="formName"
               type="text"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
               name="name"
@@ -146,6 +159,7 @@ export default function Contacts() {
               Your email
             </label>
             <input
+              id="formEmail"
               type="text"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
               name="email"
@@ -159,6 +173,7 @@ export default function Contacts() {
               Your need
             </label>
             <textarea
+              id="formMessage"
               rows="4"
               type="text"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
