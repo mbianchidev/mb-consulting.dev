@@ -160,4 +160,4 @@ const userData = {
   },
 };
 
-export default userData;
+export const userData;
