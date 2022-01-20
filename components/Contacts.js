@@ -61,7 +61,9 @@ export default function Contacts() {
                 Fill in the details and I'll get back to you as soon as possible.
               </p>
             </header>
+            {/* Social Buttons */}
             <div className="icons-container inline-flex flex-col my-20">
+              {/* Social Buttons
               <div className="flex flex-row items-center space-x-6 rounded-md border border-[#02044A] hover:border hover:border-blue-500 p-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -80,6 +82,7 @@ export default function Contacts() {
                   {userData.phone}
                 </p>
               </div>
+              */}
               <div className="flex flex-row items-center space-x-6 rounded-md border border-[#02044A] hover:border hover:border-blue-500 p-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

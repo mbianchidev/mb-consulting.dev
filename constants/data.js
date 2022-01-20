@@ -6,7 +6,6 @@ const userData = {
   email: "info@mb-consulting.dev",
   privacyMail: "privacy@mb-consulting.dev",
   siteMail: "site@mb-consulting.dev",
-  phone: "+39 3883718913",
   address: "Full remote",
   techStack: "https://stackshare.io/mbianchidev/known-techs",
   vat: "IT11846470968",
