@@ -13,6 +13,8 @@ export default async function(req, res) {
     Email: ${body.email}\r\n
     Message: ${body.message}
     `;
+    res.setHeader('Content-Type', 'application/json');
+    res.setHeader('Cache-Control', 'max-age=180000');
     mail.send({
       to: userData.email,
       from: userData.siteMail,
@@ -20,16 +22,13 @@ export default async function(req, res) {
       text: message,
       html: message.replace(/\r\n/g, '<br>'),
     }).then(response => {
-      res.statusCode = 200
-      res.setHeader('Content-Type', 'application/json');
-      res.setHeader('Cache-Control', 'max-age=180000');
+      res.status(200).json({ success: true, message: 'Your message has been sent!' });
+      resolve(response);
       res.end(JSON.stringify(response));
-      resolve();
     }).catch(error => {
-      console.log('error', error);
-      console.log('res', res);
-      res.statusCode(error.statusCode);
+      res.status(error.statusCode).json({ success: false, message: 'Error, something went wrong' });
       reject(error);
+      res.end(JSON.stringify(error));
     });
   });
 }

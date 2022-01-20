@@ -11,37 +11,35 @@ export default function Contacts() {
     keepAfterRouteChange: false
   });
 
-  const [userInput, setUserInput] = useState('');
-
-  const handleInput = (e) => {
-    setUserInput(e.target.value)
-  }
-
   async function sendEmail(e) {
-    e.preventDefault();
 
-    gtag.event({
-      action: 'submit_form',
-      category: 'Contact',
-      label: userInput,
-    });
-  
+    e.preventDefault();
     const formData = {};
   
     Array.from(e.currentTarget.elements).forEach(field => {
       if ( !field.name ) return;
       formData[field.name] = field.value;
-      // resetting fields
-      e.currentTarget.reset();
-      setUserInput('');
-    });
-  
-    await fetch('/api/mail', {
-      method: 'POST',
-      body: JSON.stringify(formData)
     });
 
-    alertService.success('Your message has been sent!', options);
+    gtag.event({
+      action: 'submit_form',
+      category: 'Contact',
+      label: formData,
+    });
+
+    // resetting fields
+    e.currentTarget.reset();
+  
+    const response = await fetch('/api/mail', {
+      method: 'POST',
+      body: JSON.stringify(formData)
+    }).then(result => result.json()).then(result => {
+      if (result.success===true) {
+        alertService.success(result.message, options);
+      } else {
+        alertService.error(result.message, options);
+      }
+    });
 
   }
   
@@ -148,7 +146,6 @@ export default function Contacts() {
               Your Name
             </label>
             <input
-              id="formName"
               type="text"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
               name="name"
@@ -159,7 +156,6 @@ export default function Contacts() {
               Your email
             </label>
             <input
-              id="formEmail"
               type="text"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
               name="email"
@@ -173,14 +169,12 @@ export default function Contacts() {
               Your need
             </label>
             <textarea
-              id="formMessage"
               rows="4"
               type="text"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
               name="message"
               placeholder="I need a ..."
               required
-              onChange={handleInput} value={userInput}
             ></textarea>
             <button
               type="submit"
