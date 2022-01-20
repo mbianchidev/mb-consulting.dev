@@ -66,7 +66,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      {/* TODO call to action "Become a client today"->Contact "Learn more"->Servizi offerti */}
     </div>
   );
 }

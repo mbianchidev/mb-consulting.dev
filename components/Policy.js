@@ -2,8 +2,8 @@ import React from "react";
 import userData from "@constants/data";
 
 export default function Policy() {
-  return ( //style={{marginLeft : "10px", marginRight: "10px" }}
-  <section id="policy-container" className="bg-white dark:bg-gray-800">
+  return (
+  <section id="policy-container" className="bg-white dark:bg-gray-800" style={{marginLeft : "10px", marginRight: "10px" }}>
       <h1 className="font-bold text-xl" style={{textAlign : "center"}}>Introduction</h1>
       Welcome to my website. 
       <br></br>
