@@ -1,8 +1,8 @@
 import React from "react";
+import userData from "@constants/data";
 import { RoughNotationGroup } from "react-rough-notation";
 import { RainbowHighlight } from "./RainbowHighlight";
 import { useRouter } from "next/router";
-import userData from "@constants/data";
 
 export default function Hero() {
   const router = useRouter();

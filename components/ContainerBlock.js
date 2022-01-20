@@ -1,8 +1,9 @@
 import React from "react";
-import Head from "next/head";
+import userData from "@constants/data";
+import { Head }  from "next/head";
 import { useRouter } from "next/router";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import { Navbar } from "./Navbar";
+import { Footer } from "./Footer";
 
 export default function ContainerBlock({ children, ...customMeta }) {
   const router = useRouter();
@@ -22,11 +23,11 @@ export default function ContainerBlock({ children, ...customMeta }) {
         <meta content={meta.description} name="description" />
         <meta
           property="og:url"
-          content={`https://mb-consulting.dev${router.asPath}`}
+          content={`https://${userData.domain}${router.asPath}`}
         />
         <link
           rel="canonical"
-          href={`https://mb-consulting.dev${router.asPath}`}
+          href={`https://${userData.domain}${router.asPath}`}
         />
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content="Matteo Bianchi" />

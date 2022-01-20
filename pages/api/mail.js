@@ -27,6 +27,8 @@ export default async function(req, res) {
       resolve();
     }).catch(error => {
       console.log('error', error);
+      console.log('res', res);
+      res.statusCode(error.statusCode);
       reject(error);
     });
   });
