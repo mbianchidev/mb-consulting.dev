@@ -115,6 +115,7 @@ export default function Navbar() {
               )}
             </a>
           </Link>
+          {/* 
           <Link href="/contacts">
             <a
               className={`text-base  ${
@@ -142,6 +143,7 @@ export default function Navbar() {
               )}
             </a>
           </Link>
+          */}
           {/* 
           <Link href="/experience">
             <a
