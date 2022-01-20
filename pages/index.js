@@ -10,7 +10,7 @@ export default function Home({ repositories }) {
   return (
     <ContainerBlock
       title="Matteo Bianchi - Developer, DevOps, Coach"
-      description="This is my personal website. I am a developer, devops, SRE and coach."
+      description="This is my professional website. I am a developer, devops, SRE and coach."
     >
       <Hero />
       <FavouriteProjects />
