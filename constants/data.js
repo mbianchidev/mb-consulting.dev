@@ -117,7 +117,7 @@ const userData = {
   ],
   about: {
     title:
-      "I have been working in the IT industry since 2017. Software developer and passionate DevOps always eager to learn new something new",
+      "I have been working in the IT industry since 2017. Software developer and passionate DevOps always eager to learn something new",
     description: [
       `I like to introduce myself as an agnostic and versatile engineer with a deep passion for well-written code, automation and cloud technologies.`,
       `I also love coaching and mentoring people because I strongly believe in knowledge as the only way to get rid of technical debt and develop new and game-changing products.`,
