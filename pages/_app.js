@@ -2,7 +2,6 @@ import "../styles/globals.css";
 import { ThemeProvider } from "next-themes";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
-import { Alert } from "../components/Alert"; 
 import * as ga from "../lib/ga";
 
 function MyApp({ Component, pageProps }) {
@@ -25,7 +24,6 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <ThemeProvider defaultTheme="dark" attribute="class">
-      <Alert />
       <Component {...pageProps} />
     </ThemeProvider>
   );

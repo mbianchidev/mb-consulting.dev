@@ -1,15 +1,10 @@
 import React from "react";
-import userData from "@constants/data";
+import { userData } from "@constants/data";
 import { useState } from 'react';
-import { alertService } from "../services/alert.service";
 import * as gtag from '../lib/ga'
 
 export default function Contacts() {
 
-  const [options] = useState({
-    autoClose: true,
-    keepAfterRouteChange: false
-  });
   const [userInput, setUserInput] = useState('');
 
   const handleInput = (e) => {
@@ -36,8 +31,6 @@ export default function Contacts() {
       method: 'POST',
       body: JSON.stringify(formData)
     });
-
-    alertService.success('Your message has been sent!', options)
   }
   
   return (
