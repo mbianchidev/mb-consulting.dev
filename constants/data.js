@@ -118,12 +118,12 @@ const userData = {
   ],
   about: {
     title:
-      "Software development craftsmanship, DevOps, SRE, cloud management services and courses. All tailored to your business and IT needs",
+      "I have been working in the IT industry since 2017. Software developer and passionate DevOps always eager to learn new something new.",
     description: [
-      `I like to introduce myself as an agnostic and versatile engineer with a deep passion for well-written code and automation.`,
+      `I like to introduce myself as an agnostic and versatile engineer with a deep passion for well-written code, automation and cloud technologies.`,
       `I also love coaching and mentoring people because I strongly believe in knowledge as the only way to get rid of technical debt and develop new and game-changing products.`,
       `My goal is to bring value to your business by crafting quality software, choosing the best techs for your use-case, enhancing \& optimizing your processes, implementing good practices and boosting your team(s) knowledge base.`,
-      `You can find out more about me in the links at your left or by asking me, enjoy your stay! :)`
+      `You can find out more about me in this site or by asking me, either way enjoy your stay! :)`
     ],
     currentProject: "this portfolio website",
     currentProjectUrl: "https://mb-consulting.dev",
