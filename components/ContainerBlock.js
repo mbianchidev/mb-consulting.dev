@@ -1,6 +1,6 @@
 import React from "react";
 import userData from "@constants/data";
-import { Head }  from "next/head";
+import Head  from "next/head";
 import { useRouter } from "next/router";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
