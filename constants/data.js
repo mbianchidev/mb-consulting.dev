@@ -117,16 +117,17 @@ const userData = {
   ],
   about: {
     title:
-      "I have been working in the IT industry since 2017. Software developer and passionate DevOps always eager to build something new",
+      "I have been working in the IT industry since 2017. I'm a software developer and passionate DevOps always eager to build something new",
     description: [
       `I like to introduce myself as an agnostic and versatile engineer with a deep passion for well-written code, automation and cloud technologies.`,
-      `I also love coaching and mentoring people because I strongly believe in knowledge as the only way to get rid of technical debt and develop new and game-changing products.`,
+      `I also love coaching and mentoring people because I strongly believe in knowledge as the only way to get rid of technical debt and develop new and game-changing digital products.`,
       `My goal is to bring value to your business by crafting quality software, choosing the best techs for your use-case, enhancing \& optimizing your processes, implementing good practices and boosting your team(s) knowledge base.`,
       `You can find out more about me in this site or by asking me, either way enjoy your stay! :)`
     ],
     currentProject: "this portfolio website",
     currentProjectUrl: "https://mb-consulting.dev",
   },
+  // deprecated experience
   experience: [
     {
       title: "Senior Software Developer | DevOps Engineer | Site Reliability Engineer | Coach",
@@ -150,6 +151,7 @@ const userData = {
       desc: "Programming languages, hw maintenance, sw development, project management, economics fundamentals, networking and security, english language, and a lot more."
     },
   ],
+  //fixed URL
   resumeUrl:
     "https://drive.google.com/u/0/uc?id=1IKSaesUuRQmtkOA0SP--3oe7gR4P0X4Y&export=download",
   socialLinks: {
