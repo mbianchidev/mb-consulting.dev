@@ -20,6 +20,7 @@ a {
   box-sizing: border-box;
 }
 
+/* Alert */
 .alert {
 	position: relative;
 	padding: .75rem 1.25rem;
@@ -194,3 +195,20 @@ a.close.disabled {
 	padding: 1rem 1rem;
 	margin: -1rem -1rem -1rem auto
 }
+
+/* Navbar */
+.navbar-mb {
+	width: 100%;
+	overflow: auto;
+  }
+  
+  .navbar-mb a {
+	float: left;
+  }
+  
+  @media screen and (max-width: 500px) {
+	.navbar-mb a {
+	  float: none;
+	  display: block;
+	}
+  }
