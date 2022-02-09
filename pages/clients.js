@@ -1,6 +1,6 @@
 import React from "react";
-import ContainerBlock from "../components/ContainerBlock";
-import Clients from "../components/Clients";
+import ContainerBlock from "@components/ContainerBlock";
+import Clients from "@components/Clients";
 
 export default function clients() {
   return (

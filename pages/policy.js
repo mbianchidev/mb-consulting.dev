@@ -1,6 +1,6 @@
 import React from "react";
-import ContainerBlock from "../components/ContainerBlock";
-import Policy from "../components/Policy";
+import ContainerBlock from "@components/ContainerBlock";
+import Policy from "@components/Policy";
 
 export default function policy() {
   return (

@@ -1,8 +1,8 @@
-import "../styles/globals.css";
+import "@styles/globals.css";
 import { ThemeProvider } from "next-themes";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
-import * as ga from "../lib/ga";
+import * as ga from "@lib/ga";
 
 function MyApp({ Component, pageProps }) {
 
