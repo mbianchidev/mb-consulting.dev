@@ -1,7 +1,7 @@
 import React from "react";
 import userData from "@constants/data";
 import { useRouter } from "next/router";
-import { Alert } from "../components/Alert"; 
+import { Alert } from "@components/Alert"; 
 import Head  from "next/head";
 import Navbar from "./Navbar";
 import Footer from "./Footer";

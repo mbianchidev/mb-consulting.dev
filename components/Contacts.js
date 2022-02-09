@@ -2,7 +2,7 @@ import React from "react";
 import userData from "@constants/data";
 import { useState } from 'react';
 import { alertService } from "../services/alert.service";
-import * as gtag from '../lib/ga'
+import * as gtag from '@lib/ga'
 
 export default function Contacts() {
   
