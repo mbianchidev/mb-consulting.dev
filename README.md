@@ -1,6 +1,6 @@
 ## Portfolio Website for MB-Consulting
 
-My portfolio is a website to showcase my skills and projects as a Developer | DevOps | SRE and Coach. 
+My portfolio is a website to showcase my skills and projects as a Developer | DevOps | SRE and Coach.
 Inspired by [Kevin Clark](https://kevinclark.ca).
 
 # Features
@@ -16,6 +16,7 @@ The website is built in Next.js and deployed on [Vercel](https://vercel.com) I a
 - [tailwindcss](https://tailwindcss.com) for styling.
 - [React Rough Notation](https://roughnotation.com) for Hero section highlighting.
 - [React Cookie Consent](https://github.com/Mastermindzh/react-cookie-consent) for Cookies.
+- [Sendgrid](https://sendgrid.com/solutions/email-api/) as a mail service
 - [Vercel](https://vercel.com) for deployments and CI/CD.
 
 # Deployment

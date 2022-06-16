@@ -26,7 +26,7 @@ export default function Navbar() {
               <h1 className="font-semibold text-x1 dark:text-gray-100" style={{fontSize : '50px'}}>
                 {userData.name}
               </h1>
-              <p className="text-base font-light text-gray-500 dark:text-gray-300">
+              <p className="text-base font-light text-gray-500 dark:text-gray-300" style={{fontSize : '20px'}}>
                 {userData.role}
               </p>
             </a>

@@ -8,7 +8,7 @@ export default function CookiePolicy() {
       Welcome to my website. 
       <br></br>
       <br></br>
-      I, {userData.name} (I still use 2nd person since it's more instituitional), operate {userData.domain} (hereinafter referred to as <b>"Service"</b>).<br></br>
+      I, {userData.name} as MB-Consulting-dev, operate {userData.domain} (hereinafter referred to as <b>"Service"</b>).<br></br>
       Our Privacy Policy governs your visit to <u><a target="_blank" rel="noopener noreferrer" href="/policy">https://{userData.domain}/policy</a></u> it explains how we collect, safeguard and disclose information that results from your use of our Service.<br></br>
       We use your data to provide and improve Service. By using Service, you agree to the collection and use of information in accordance with this policy.<br></br>
       Our Terms and Conditions (<b>"Terms"</b>) govern all use of our Service and together with the Privacy Policy constitutes your agreement with us (<b>"Agreement"</b>).<br></br>
@@ -23,7 +23,7 @@ export default function CookiePolicy() {
       <h1 className="font-bold text-xl" style={{textAlign : "center"}}>Information Collection and Use</h1>
       <br></br>
 
-      We collect several few information for analytics purposes to provide and improve our Service to you.
+      We collect several few information for analytics purposes to provide and improve our Service to you. <br></br>
 
       <br></br>
       <h3 className="font-light text-xl">Tracking Cookies Data</h3>
