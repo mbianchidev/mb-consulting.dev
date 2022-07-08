@@ -12,28 +12,29 @@ export default function Clients() {
       <div className="bg-[#F1F1F1] dark:bg-gray-900 -mt-4">
         <div className="grid grid-cols-1 dark:bg-gray-900 max-w-xl mx-auto pt-20">
           {/* Experience card */}
-          {userData.clients.map((client, clientId) => (
+          {userData.clients.filter(client => client.show === true).map((client, clientId) => (
             <>
               <ClientCard
-                key={clientId}
-                companyName={client.companyName}
-                companyType={client.companyType}
-                companySector={client.companySector}
-                companyLogo={client.companyLogo}
-                companyUrl={client.companyUrl}
-                role={client.role}
-                story={client.story}
-                year={client.year}
-                show={client.show}
-              />
-              {clientId === userData.clients.length - 1 ? null : (
-                <div className="divider-container flex flex-col items-center -mt-2">
-                  <div className="w-4 h-4 bg-green-500 rounded-full relative z-10">
-                    <div className="w-4 h-4 bg-green-500 rounded-full relative z-10 animate-ping"></div>
-                  </div>
-                  <div className="w-1 h-24 bg-gray-200 dark:bg-gray-500 rounded-full -mt-2"></div>
+              clientId={clientId}
+              code={client.code}
+              companyName={client.companyName}
+              companyType={client.companyType}
+              companySector={client.companySector}
+              companyLogo={client.companyLogo}
+              companyUrl={client.companyUrl}
+              role={client.role}
+              story={client.story}
+              year={client.year}
+              show={client.show}
+            />
+            {clientId === userData.clients.length - 1 ? null : (
+              <div className="divider-container flex flex-col items-center -mt-2">
+                <div className="w-4 h-4 bg-green-500 rounded-full relative z-10">
+                  <div className="w-4 h-4 bg-green-500 rounded-full relative z-10 animate-ping"></div>
                 </div>
-              )}
+                <div className="w-1 h-24 bg-gray-200 dark:bg-gray-500 rounded-full -mt-2"></div>
+              </div>
+            )}
             </>
           ))}
         </div>
@@ -42,10 +43,10 @@ export default function Clients() {
   );
 }
 
-const ClientCard = ({ companyName, companyType, companySector, companyLogo, companyUrl, role, story, year, show }) => {
-  if (show){
+const ClientCard = ({ clientId, code, companyName, companyType, companySector, companyLogo, companyUrl, role, story, year }) => {
     return (
-      <div className="relative experience-card border p-4 rounded-md shadow-xl bg-white dark:bg-gray-800 z-10 mx-4">
+      //TODO Fix warning: Each child in a list should have a unique "key" prop. ???
+      <div key={clientId} id={code} className="relative experience-card border p-4 rounded-md shadow-xl bg-white dark:bg-gray-800 z-10 mx-4">
         <img src={companyLogo}></img>
         <h1 className="absolute -top-10 md:-left-10 md:-top-10 text-4xl text-gray-200 font-bold dark:text-gray-800">
         {year}
@@ -57,6 +58,4 @@ const ClientCard = ({ companyName, companyType, companySector, companyLogo, comp
         <p className="text-gray-600 dark:text-gray-400 my-2">{story}</p>
       </div>
     );
-  }
-  return null;
 };

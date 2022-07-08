@@ -23,7 +23,7 @@ export default function Navbar() {
         <div className="flex flex-col">
           <Link href="/">
             <a>
-              <h1 className="font-semibold text-x1 dark:text-gray-100" style={{fontSize : '50px'}}>
+              <h1 className="font-semibold text-x1 dark:text-gray-100" style={{fontSize : '60px'}}>
                 {userData.name}
               </h1>
               <p className="text-base font-light text-gray-500 dark:text-gray-300" style={{fontSize : '20px'}}>
