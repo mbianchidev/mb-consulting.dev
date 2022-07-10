@@ -1,7 +1,7 @@
 import React from "react";
 import userData from "@constants/data";
 
-export default function Policy() {
+export default function PrivacyPolicy() {
   return (
   <section id="policy-container" className="bg-white dark:bg-gray-800" style={{marginLeft : "10px", marginRight: "10px" }}>
       <h1 className="font-bold text-xl" style={{textAlign : "center"}}>Introduction</h1>
@@ -9,9 +9,8 @@ export default function Policy() {
       <br></br>
       <br></br>
       I, {userData.name}, operate {userData.domain} (hereinafter referred to as <b>"Service"</b>).<br></br>
-      This Privacy Policy governs your visit to <u><a target="_blank" rel="noopener noreferrer" href="/policy">https://{userData.domain}</a></u> it explains how I collect, safeguard and disclose information that results from your use of this Service.<br></br>
+      This Privacy Policy governs your visit to my site, It explains how I collect, safeguard and disclose information that results from your use of this Service.<br></br>
       Your data are used anonymously to analyze traffic over this site. By using the Service, you agree to the collection and use of information in accordance with this policy.<br></br>
-      These Terms and Conditions (<b>"Terms"</b>) govern all use of this Service and together with the Privacy Policy constitutes your agreement with me (<b>"Agreement"</b>).<br></br>
       <br></br>
 
       <b>Definitions</b>
@@ -63,7 +62,7 @@ export default function Policy() {
       <h3 className="font-light text-xl">Tracking Cookies Data</h3>
       <br></br>
 
-      This siste use cookies and similar tracking technologies (e.g. Google Tag Manager) to track the activity on the site.<br></br>
+      This site use cookies and similar tracking technologies (e.g. Google Tag Manager) to track the activity on the site.<br></br>
       Cookies are files with a small amount of data which may include an anonymous unique identifier.<br></br>
       Cookies are sent to your browser from a website and stored on your device.<br></br>
       Other tracking technologies are also used such as beacons, tags and scripts to collect and track information and to improve and analyze this Service.<br></br>
@@ -152,7 +151,7 @@ export default function Policy() {
       If you are a resident of the European Union (EU) and European Economic Area (EEA), you have certain data protection rights, covered by GDPR.<br></br> 
       – See more at <u><a target="_blank" rel="noopener noreferrer" href="https://eur-lex.europa.eu/eli/reg/2016/679/oj">https://eur-lex.europa.eu/eli/reg/2016/679/oj</a></u><br></br>
       I aim to take reasonable steps to allow you to correct, amend, delete, or limit the use of your Personal Data.<br></br>
-      If you wish to be informed what Personal Data I hold about you and if you want it to be removed from my system, please email me at <u>{userData.privacyMail}</u>.<br></br>
+      If you wish to be informed what Personal Data I hold about you and if you want it to be removed from my system, please contact me at: <u>{userData.privacyMail}</u>.<br></br>
       You have the following data protection rights (even when living outside EU):<br></br>
       <li>the right to access, update or to delete the information I have on you;</li>
       <li>the right of rectification. You have the right to have your information rectified if that information is inaccurate or incomplete;</li>
@@ -322,7 +321,7 @@ export default function Policy() {
       <b>Contact Me</b>
       <br></br>
 
-      If you have any questions about this Privacy Policy, please contact me by email: <u>{userData.privacyMail}</u>.<br></br>
+      If you have any questions about this Privacy Policy, please contact me at: <u>{userData.privacyMail}</u>.<br></br>
     </section>
   );
 }
