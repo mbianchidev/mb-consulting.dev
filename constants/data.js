@@ -11,7 +11,8 @@ const userData = {
   vat: "IT11846470968",
   sdi: "M5UXCR1",
   domain: "mb-consulting.dev",
-  policyUrl: "https://mb-consulting.dev/policy",
+  privacyPolicyUrl: "https://mb-consulting.dev/privacy-policy",
+  cookiePolicyUrl: "https://mb-consulting.dev/cookie-policy",
   cookieUrl: "https://www.allaboutcookies.org/",
   projects: [
     {
@@ -159,30 +160,14 @@ const userData = {
     currentProject: "this portfolio website",
     currentProjectUrl: "https://mb-consulting.dev",
   },
-  // deprecated experience
-  experience: [
-    {
-      title: "Senior Software Developer | DevOps Engineer | Site Reliability Engineer | Coach",
-      company: "Self-employed",
-      year: "2021-now",
-      companyLink: "https://mb-consulting.dev",
-      desc: "Offering software development craftsmanship, DevOps, SRE and cloud management services; I also teach DevOps/SRE courses tailored to your business and IT needs."
-    },
-    {
-      title: "IT Consultant",
-      company: "Various clients (InfoCert, Olivetti, Vodafone, Reply, etc.)",
-      year: "2017-2021",
-      companyLink: "",
-      desc: "Worked in both short and long term projects for a wide pool of customers in many kind of dev teams. Learnt about the Java world and Spring in particular, always keeping an eye on the cloud. Dealt with various aspects of dev: technical doc writing, code reviewing, collaborating to ensure scalability, reliability and security of the developed solutions. As DevOps my daily focuses were: IaC, monitoring, test automation, CI/CD and cloud orchestration/management. Always had sysadmin level privileges and responsibilities while ensuring SLA compliance by designing solutions to remediate, mitigate and prevent incidents to improve services."
-    },
-    {
-      title: "High School",
-      company: "ITIS N. Baldini, Ravenna",
-      year: "2017",
-      companyLink: "https://itisravenna.edu.it/",
-      desc: "Programming languages, hw maintenance, sw development, project management, economics fundamentals, networking and security, english language, and a lot more."
-    },
-  ],
+  hero: {
+    catchyPhrase: "Want to know more about me and what can I do for you? Click here 👇",
+    funnySentence: "This is definitely my fancy version, I usually wear shorts and a band t-shirt 😎",
+    firstPrinciple: "Craft.",
+    secondPrinciple: "Automate.",
+    thirdPrinciple: "Secure.",
+    fourthPrinciple: "Innovate.",
+  },
   //fixed URL, do not change file name or anything else on google drive
   resumeUrl:
     "https://drive.google.com/u/0/uc?id=1IKSaesUuRQmtkOA0SP--3oe7gR4P0X4Y&export=download",

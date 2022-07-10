@@ -6,11 +6,12 @@ import Cookies from "@components/Cookies";
 //import getLatestRepos from "@lib/getLatestRepos";
 //import userData from "@constants/data";
 
-export default function Home({ repositories }) {
+export default function Home() {
+  // pass the argument { repositories } to Home() function to use it below: Home({ repositories })
   return (
     <ContainerBlock
-      title="Matteo Bianchi - Developer, DevOps, Coach"
-      description="This is my professional website. I am a developer, devops, SRE and coach."
+      title="Matteo Bianchi - DevOps, SRE, Coach, Developer"
+      description="This is my professional website. I am a DevOps, SRE, coach and software engineer."
     >
       <Hero />
       {/* 
