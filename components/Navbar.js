@@ -3,6 +3,7 @@ import userData from "@constants/data";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
+import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 
 export default function Navbar() {
   const router = useRouter();
@@ -36,10 +37,10 @@ export default function Navbar() {
         <div className="space-x-8 hidden md:block">
           <Link href="/about">
             <a
-              className={`text-base  ${
+              className={`text-base ${
                 router.asPath === "/about"
                   ? "text-gray-800 font-bold dark:text-gray-400"
-                  : "text-gray-600 dark:text-gray-300 font-normal "
+                  : "text-gray-600 dark:text-gray-300 font-normal"
               }`}
               style={{fontSize : '20px'}}
             >
@@ -61,6 +62,84 @@ export default function Navbar() {
               )}
             </a>
           </Link>
+          {/*Services*/}
+          <DropdownMenu.Root>
+            <DropdownMenu.Trigger>            
+              <a className={`text-base ${
+                router.asPath === "/services"
+                  ? "text-gray-800 font-bold dark:text-gray-400"
+                  : "text-gray-600 dark:text-gray-300 font-normal"
+                  }`}
+                style={{fontSize : '20px'}} href="/services"
+              > 
+                Services{" "} 
+                {router.asPath === "/services" && (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    className="bi bi-arrow-down inline-block h-3 w-3"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
+                    />
+                  </svg>
+                )} 
+              </a>
+            </DropdownMenu.Trigger>
+            <DropdownMenu.Content align="start">
+              <br></br>
+              <DropdownMenu.Item>
+                <a className={`text-base ${
+                router.asPath === "/services"
+                  ? "text-gray-800 font-bold dark:text-gray-400"
+                  : "text-gray-600 dark:text-gray-300 font-normal"
+              }`}
+              style={{fontSize : '18px'}} href="/services">All services </a>
+              </DropdownMenu.Item>
+              <DropdownMenu.Separator />
+              <DropdownMenu.Item>               
+                <a className={`text-base ${
+                router.asPath === "/services/devops-engineering"
+                  ? "text-gray-800 font-bold dark:text-gray-400"
+                  : "text-gray-600 dark:text-gray-300 font-normal"
+              }`}
+              style={{fontSize : '18px'}} href="/services/devops-engineering">DevOps Engineering </a>
+              </DropdownMenu.Item>
+              <DropdownMenu.Separator />
+              <DropdownMenu.Item>
+                <a className={`text-base ${
+                router.asPath === "/services/site-reliability"
+                  ? "text-gray-800 font-bold dark:text-gray-400"
+                  : "text-gray-600 dark:text-gray-300 font-normal"
+              }`}
+              style={{fontSize : '18px'}} href="/services/site-reliability">Site Reliability </a>
+              </DropdownMenu.Item>
+              <DropdownMenu.Separator />
+              <DropdownMenu.Item>
+                <a className={`text-base ${
+                router.asPath === "/services/courses"
+                  ? "text-gray-800 font-bold dark:text-gray-400"
+                  : "text-gray-600 dark:text-gray-300 font-normal"
+              }`}
+              style={{fontSize : '18px'}} href="/services/courses">Coaching and Courses </a>
+              </DropdownMenu.Item>
+              <DropdownMenu.Separator />
+              <DropdownMenu.Item>
+                <a className={`text-base ${
+                router.asPath === "/services/backend-software"
+                  ? "text-gray-800 font-bold dark:text-gray-400"
+                  : "text-gray-600 dark:text-gray-300 font-normal"
+              }`}
+              style={{fontSize : '18px'}} href="/services/backend-software">Backend Software </a>
+              </DropdownMenu.Item>
+            </DropdownMenu.Content>
+            <DropdownMenu.ItemIndicator/>
+          </DropdownMenu.Root>
+          {/*
           <Link href="/projects">
             <a
               className={`text-base  ${
@@ -88,12 +167,13 @@ export default function Navbar() {
               )}
             </a>
           </Link>
+          */}
           <Link href="/clients">
             <a
-              className={`text-base  ${
+              className={`text-base ${
                 router.asPath === "/clients"
                   ? "text-gray-800 font-bold dark:text-gray-400"
-                  : "text-gray-600 dark:text-gray-300 font-normal "
+                  : "text-gray-600 dark:text-gray-300 font-normal"
               }`}
               style={{fontSize : '20px'}}
             >
@@ -115,64 +195,6 @@ export default function Navbar() {
               )}
             </a>
           </Link>
-          {/* 
-          <Link href="/contacts">
-            <a
-              className={`text-base  ${
-                router.asPath === "/contacts"
-                  ? "text-gray-800 font-bold dark:text-gray-400"
-                  : "text-gray-600 dark:text-gray-300 font-normal "
-              }`}
-              style={{fontSize : '20px'}}
-            >
-              {" "}
-              {router.asPath === "/contacts" && (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  className="bi bi-arrow-down inline-block h-3 w-3"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
-                  />
-                </svg>
-              )}
-            </a>
-          </Link>
-          */}
-          {/* 
-          <Link href="/experience">
-            <a
-              className={`text-base  ${
-                router.asPath === "/experience"
-                  ? "text-gray-800 font-bold dark:text-gray-400"
-                  : "text-gray-600 dark:text-gray-300 font-normal "
-              }`}
-              style={{fontSize : '20px'}}
-            >
-              Experience{" "}
-              {router.asPath === "/experience" && (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  className="bi bi-arrow-down inline-block h-3 w-3"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
-                  />
-                </svg>
-              )}
-            </a>
-          </Link>
-          */}
         </div>
 
         
@@ -243,6 +265,7 @@ export default function Navbar() {
           </button>
         </div>
       </div>
+
       {/*Mobile section */}
       <div className="space-x-8 block md:hidden mt-4">
         <Link href="/about">
@@ -250,11 +273,29 @@ export default function Navbar() {
             My story
           </a>
         </Link>
-        <Link href="/projects">
-          <a className="text-base font-normal text-gray-600 dark:text-gray-300">
-            Projects
-          </a>
-        </Link>
+        <DropdownMenu.Root>
+          <DropdownMenu.Trigger>
+            <a className="text-base font-normal text-gray-600 dark:text-gray-300" href="/services"> Services </a>
+          </DropdownMenu.Trigger>
+          <DropdownMenu.Content align="start">
+            <DropdownMenu.Item>                
+              <a href="/services/devops-engineering"> DevOps Engineering </a>
+            </DropdownMenu.Item>
+            <DropdownMenu.Separator />
+            <DropdownMenu.Item>
+              <a href="/services/site-reliability"> Site Reliability </a>
+            </DropdownMenu.Item>
+            <DropdownMenu.Separator />
+            <DropdownMenu.Item>
+              <a href="/services/courses"> Coaching and Courses </a>
+            </DropdownMenu.Item>
+            <DropdownMenu.Separator />
+            <DropdownMenu.Item>
+              <a href="/services/backend-software"> Backend Software </a>
+            </DropdownMenu.Item>
+          </DropdownMenu.Content>
+          <DropdownMenu.ItemIndicator/>
+        </DropdownMenu.Root>
         <Link href="/clients">
           <a className="text-base font-normal text-gray-600 dark:text-gray-300">
             Clients

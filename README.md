@@ -16,6 +16,7 @@ The website is built in Next.js and deployed on [Vercel](https://vercel.com) I a
 - [tailwindcss](https://tailwindcss.com) for styling.
 - [React Rough Notation](https://roughnotation.com) for Hero section highlighting.
 - [React Cookie Consent](https://github.com/Mastermindzh/react-cookie-consent) for Cookies.
+- [Radix-UI components](https://www.radix-ui.com/docs/primitives/components/dropdown-menu) for the dropdown menu.
 - [Sendgrid](https://sendgrid.com/solutions/email-api/) as a mail service
 - [Vercel](https://vercel.com) for deployments and CI/CD.
 
