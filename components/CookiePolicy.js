@@ -11,9 +11,21 @@ export default function CookiePolicy() {
       Cookies are files with a small amount of data which may include an anonymous unique identifier.<br></br>
       Cookies are sent to your browser from a website and stored on your device.<br></br>
       You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.<br></br>
-      However, if you do not accept cookies, you may not be able to use some portions of this Service.<br></br>
+      Here are some pages you might find useful for disabling cookies:<br></br>
+      <li> <u><a href="https://support.microsoft.com/en-us/search?query=disable%20cookies%20in%20microsoft%20edge"> Edge </a></u> </li>
+      <li> <u><a href="https://support.google.com/accounts/answer/61416?hl=en&co=GENIE.Platform%3DDesktop"> Chrome </a></u> </li> 
+      <li> <u><a href="https://support.mozilla.org/en-US/kb/block-websites-storing-cookies-site-data-firefox"> Firefox </a></u> </li>
+      <li> <u><a href="http://docs.info.apple.com/article.html?path=Safari/5.0/en/9277.html"> Safari </a></u> </li>
+      
       <br></br>
-      Cookies used:
+      If you use other browsers like Brave or search engines like DuckDuckGo, please consult their respective websites for more information.
+      <br></br>
+      You can disable Google Analytics too, here are the instructions to do so: https://tools.google.com/dlpage/gaoptout/
+      <br></br>
+      However, if you do not accept cookies, you may not be able to use this Service.<br></br>
+
+      <br></br>
+      <b>Cookies used</b>
       <br></br>
       <li>Session Cookies: Session Cookies are used to operate this Service.</li>
       <li>Preference Cookies: Preference Cookies are used to remember your preferences and various settings.</li>
@@ -24,11 +36,11 @@ export default function CookiePolicy() {
       <br></br>
 
       <br></br>
-      Cookies details:
+      <b>Cookies details</b>
       <br></br>
       <li>mb-consulting-dev: functional first party cookie, used to operate the service and to store your preferences (1 year)</li>
       <li>_ga: analytics third party cookie (Google.com), used to analyze this site traffic and performance (2 years)</li>
-      <li>_ga_*: technical third party cookie, see _ga (2 years)</li>
+      <li>_ga_*: technical third party cookie, identifies my Google Analytics account (2 years)</li>
       <br></br>
       
       This Cookie Policy may be updated from time to time. Any change will be posted on this page.<br></br>

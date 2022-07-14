@@ -25,9 +25,9 @@ export default function Cookies() {
           buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
           expires={365}
         >
-        This (awesome?) website uses the smallest amount of cookies possible to enhance the user experience.
-        For more info about my cookies policy: <u><a target="_blank" rel="noopener noreferrer" href="/cookie-policy">{userData.cookiePolicyUrl}</a></u>.
-        What's a cookie? <u><a target="_blank" rel="noopener noreferrer" href={userData.cookieUrl}>Click here to learn more</a></u> 
+        This (awesome?) website uses the smallest amount of cookies possible to enhance the user experience and allow me to perform some traffic/performance analysis.
+        For more info checkout <u><a target="_blank" rel="noopener noreferrer" href="/cookie-policy">my cookies policy</a></u>.
+        What's a cookie? Click <u><a target="_blank" rel="noopener noreferrer" href={userData.cookieUrl}>here</a></u> to learn more!
         <span style={{ fontSize: "10px" }}> Please accept? c:</span>
         </CookieConsent>
     );
