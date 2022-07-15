@@ -1,4 +1,4 @@
-import "../styles/globals.css";
+import "@styles/globals.css";
 import { ThemeProvider } from "next-themes";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
