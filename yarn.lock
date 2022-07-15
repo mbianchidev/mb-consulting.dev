@@ -533,9 +533,9 @@ graphql-request@^4.3.0:
     extract-files "^9.0.0"
     form-data "^3.0.0"
 
-graphql@^16.2.0:
-  version "16.2.0"
-  resolved "https://registry.npmjs.org/graphql/-/graphql-16.2.0.tgz"
+graphql@^16.5.0:
+  version "16.5.0"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-16.5.0.tgz#41b5c1182eaac7f3d47164fb247f61e4dfb69c85"
 
 has-flag@^3.0.0:
   version "3.0.0"
