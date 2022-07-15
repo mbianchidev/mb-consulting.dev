@@ -11,12 +11,12 @@ export default function AboutMe() {
       </div>
       <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
         <div className="text-container max-w-6xl mx-auto pt-20">
-          <p
+          <span
             className="leading-loose text-2xl md:text-4xl font-semibold  mx-4"
             style={{ lineHeight: "3rem" }}
           >
             {userData.about.title}. 
-          </p>
+          </span>
         </div>
       </div>
       <div className="bg-[#F1F1F1] dark:bg-gray-900 px-4">
@@ -27,7 +27,7 @@ export default function AboutMe() {
               <h1 className="text-xl font-semibold text-gray-700 dark:text-gray-200">
                 Contacts
               </h1>
-              <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
+              <span className="text-lg text-gray-500 mt-4 dark:text-gray-300">
                 For any sort of question fill {" "}
                 <a
                   href="/contacts"
@@ -36,13 +36,13 @@ export default function AboutMe() {
                   this form
                 </a>{" "}
                 and I'll get back as soon as I can.
-              </p>
+              </span>
             </div>
             <div className="mt-8">
               <h1 className="text-xl font-semibold text-gray-700 dark:text-gray-200">
                 My work experience
               </h1>
-              <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
+              <span className="text-lg text-gray-500 mt-4 dark:text-gray-300">
                 Check my {" "}
                 <a
                   href={userData.resumeUrl}
@@ -56,7 +56,7 @@ export default function AboutMe() {
                   className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
                 > my clients </a>{" "}
                 for more details.
-              </p>
+              </span>
             </div>
             {/* Social Links */}
             <h1 className="text-xl font-semibold text-gray-700 mt-8 dark:text-gray-200">
@@ -70,10 +70,10 @@ export default function AboutMe() {
                   className="flex flex-row items-center space-x-4 group"
                 >
                   <div className="my-4">&rarr;</div>
-                  <p className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
+                  <span className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
                     <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300" suppressHydrationWarning={true}></div>
                     GitHub
-                  </p>
+                  </span>
                 </a>
               </div>
               <div className="flex flex-row justify-start items-center">
@@ -83,10 +83,10 @@ export default function AboutMe() {
                   className="flex flex-row items-center space-x-4 group"
                 >
                   <div className="my-4">&rarr;</div>
-                  <p className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
+                  <span className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
                     <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300" suppressHydrationWarning={true}></div>
                     Twitter
-                  </p>
+                  </span>
                 </a>
               </div>
               <div className="flex flex-row justify-start items-center">
@@ -96,10 +96,10 @@ export default function AboutMe() {
                   className="flex flex-row items-center space-x-4 group"
                 >
                   <div className="my-4">&rarr;</div>
-                  <p className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
+                  <span className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
                     <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300" suppressHydrationWarning={true}></div>
                     LinkedIn
-                  </p>
+                  </span>
                 </a>
               </div>
             </div>
@@ -107,12 +107,12 @@ export default function AboutMe() {
           {/* Text area */}
           <div className="col-span-1 md:col-span-2">
             {userData.about.description?.map((desc, aboutMeId) => (
-              <p
+              <span
                 key={aboutMeId}
                 className="text-xl text-gray-700 mb-4 dark:text-gray-300 "
               >
                 {desc}
-              </p>
+              </span>
             ))}
 
             <h1 className="bg-red-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
@@ -120,13 +120,13 @@ export default function AboutMe() {
             </h1>
             <div className="flex flex-row flex-wrap mt-8">
               <div>
-                <p className="text-xl text-gray-700 mb-4 dark:text-gray-300">
+                <span className="text-xl text-gray-700 mb-4 dark:text-gray-300">
                 Click the 
                 <a 
                   href="https://stackshare.io/" 
                   target="_blank" rel="noopener noreferrer" 
                   style={{color:"#0645AD"}}> stackshare.io </a> logo below to see the full list of technologies I use and/or know about.
-                </p>
+                </span>
               </div>
               <a id="link-stackshare" href={userData.techStack} target="_blank" rel="noopener noreferrer">
                 <img src="./images/stackshare.png" className="h-20 w-20 mx-4 my-4"/>
