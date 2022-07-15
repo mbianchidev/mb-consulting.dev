@@ -11,14 +11,17 @@ Inspired by [Kevin Clark](https://kevinclark.ca).
 # Tech Stack (WIP)
 
 The website is built in Next.js and deployed on [Vercel](https://vercel.com) I also used tailwindcss for styling (but don't ask me about that, I don't know much) and some awesome libs like react-cookie-consent :)
+Here's a list of the tech stack:
 
 - [Next.js](https://nextjs.org) for building React Components.
 - [tailwindcss](https://tailwindcss.com) for styling.
 - [React Rough Notation](https://roughnotation.com) for Hero section highlighting.
 - [React Cookie Consent](https://github.com/Mastermindzh/react-cookie-consent) for Cookies.
 - [Radix-UI components](https://www.radix-ui.com/docs/primitives/components/dropdown-menu) for the dropdown menu.
-- [Sendgrid](https://sendgrid.com/solutions/email-api/) as a mail service
+- [Sendgrid](https://sendgrid.com/solutions/email-api/) as a mail service.
 - [Vercel](https://vercel.com) for deployments and CI/CD.
+- [GitHub's Dependabot](https://docs.github.com/en/code-security/dependabot) for code security.
+- [StackOverflow](https://stackoverflow.com/questions/tagged/nextjs) because I'm not a frontend developer (as you can clearly see from my code).
 
 # Deployment
 

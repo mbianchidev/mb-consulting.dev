@@ -5,7 +5,10 @@ import { alertService } from "../services/alert.service";
 import * as gtag from '@lib/ga'
 
 export default function Contacts() {
-  
+
+  const formPlaceHolderTextStyle = "text-sm text-gray-600 mx-4 mt-4";
+  const borderedTextStyle = "font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
+
   const [options] = useState({
     autoClose: true,
     keepAfterRouteChange: false
@@ -55,7 +58,11 @@ export default function Contacts() {
           <div className="md:ml-4">
             <header className="">
               <h1 className="text-gray-50 font-semibold text-2xl">
-                Wanna talk about technology, business or anything else?
+                Interested in one of my{" "}
+                <a
+                  href="/services" rel="noopener noreferrer"
+                  className="text-gray-50 font-bold text-2xl border-b-2 border-gray-50"
+                > services </a>?
               </h1>
               <p className="font-light text-base text-gray-200 mt-2">
                 Fill in the details and I'll get back to you as soon as possible.
@@ -124,41 +131,48 @@ export default function Contacts() {
             </div>
           </div>
           <form className="form rounded-lg bg-white p-4 flex flex-col" method="post" onSubmit={sendEmail}>
-            <label htmlFor="name" className="text-sm text-gray-600 mx-4">
+            <label htmlFor="name" className={formPlaceHolderTextStyle}>
               {" "}
               Your Name
             </label>
             <input
               type="text"
-              className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
+              className={borderedTextStyle}
               name="name"
               placeholder="John Doe"
               required
             />
-            <label htmlFor="email" className="text-sm text-gray-600 mx-4 mt-4">
+            <label htmlFor="email" className={formPlaceHolderTextStyle}>
               Your email
             </label>
             <input
               type="text"
-              className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
+              className={borderedTextStyle}
               name="email"
               placeholder="John.Doe@gmail.com"
               required
             />
-            <label
-              htmlFor="message"
-              className="text-sm text-gray-600 mx-4 mt-4"
-            >
+            <label htmlFor="message" className={formPlaceHolderTextStyle}>
               Your request
             </label>
             <textarea
               rows="4"
               type="text"
-              className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
+              className={borderedTextStyle}
               name="message"
               placeholder="I need a ... dollar, dollar a dollar is what I need (hey hey)"
               required
             ></textarea>
+            <div className="mx-4 mt-4">
+              <input type="checkbox" name="consent" required/>
+              <label htmlFor="consent" className={formPlaceHolderTextStyle}>
+                I have read and agree to the{" "}
+                <a
+                  href="/privacy-policy" rel="noopener noreferrer"
+                  className="text-gray-800 border-b-2 border-gray-800 font-bold"
+                > privacy policy </a>{" "} of this site.
+              </label>
+            </div>
             <button
               type="submit"
               className="bg-blue-500 rounded-md w-1/2 mx-4 mt-8 py-2 text-gray-50 text-xs font-bold"
