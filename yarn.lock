@@ -107,25 +107,25 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@sendgrid/client@^7.6.0":
-  version "7.6.0"
-  resolved "https://registry.npmjs.org/@sendgrid/client/-/client-7.6.0.tgz"
+"@sendgrid/client@^7.7.0":
+  version "7.7.0"
+  resolved "https://registry.yarnpkg.com/@sendgrid/client/-/client-7.7.0.tgz#f8f67abd604205a0d0b1af091b61517ef465fdbf"
   dependencies:
-    "@sendgrid/helpers" "^7.6.0"
-    axios "^0.21.4"
+    "@sendgrid/helpers" "^7.7.0"
+    axios "^0.26.0"
 
-"@sendgrid/helpers@^7.6.0":
-  version "7.6.0"
-  resolved "https://registry.npmjs.org/@sendgrid/helpers/-/helpers-7.6.0.tgz"
+"@sendgrid/helpers@^7.7.0":
+  version "7.7.0"
+  resolved "https://registry.yarnpkg.com/@sendgrid/helpers/-/helpers-7.7.0.tgz#93fb4b6e2f0dc65080440d6a784cc93e8e148757"
   dependencies:
     deepmerge "^4.2.2"
 
-"@sendgrid/mail@^7.6.0":
-  version "7.6.0"
-  resolved "https://registry.npmjs.org/@sendgrid/mail/-/mail-7.6.0.tgz"
+"@sendgrid/mail@^7.7.0":
+  version "7.7.0"
+  resolved "https://registry.yarnpkg.com/@sendgrid/mail/-/mail-7.7.0.tgz#aba09f5ce2e9d8ceee92284c3ea8b4a90b0e38fe"
   dependencies:
-    "@sendgrid/client" "^7.6.0"
-    "@sendgrid/helpers" "^7.6.0"
+    "@sendgrid/client" "^7.7.0"
+    "@sendgrid/helpers" "^7.7.0"
 
 "@types/node@*":
   version "17.0.12"
@@ -205,11 +205,17 @@ autoprefixer@^10.3.1:
     normalize-range "^0.1.2"
     postcss-value-parser "^4.1.0"
 
-axios@^0.21.1, axios@^0.21.4:
+axios@^0.21.1:
   version "0.21.4"
   resolved "https://registry.npmjs.org/axios/-/axios-0.21.4.tgz"
   dependencies:
     follow-redirects "^1.14.0"
+
+axios@^0.26.0:
+  version "0.26.1"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.26.1.tgz#1ede41c51fcf51bbbd6fd43669caaa4f0495aaa9"
+  dependencies:
+    follow-redirects "^1.14.8"
 
 balanced-match@^1.0.0:
   version "1.0.2"
@@ -456,6 +462,10 @@ fill-range@^7.0.1:
 follow-redirects@^1.14.0:
   version "1.14.7"
   resolved "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.14.7.tgz"
+
+follow-redirects@^1.14.8:
+  version "1.15.1"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.1.tgz#0ca6a452306c9b276e4d3127483e29575e207ad5"
 
 form-data@^3.0.0:
   version "3.0.1"
