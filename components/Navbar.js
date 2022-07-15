@@ -21,6 +21,7 @@ export default function Navbar() {
 
   // Style constants
   const navbarFontSize = '20px';
+  const servicesFontSize = '18px';
   const selectedTextStyle = "text-gray-800 font-bold dark:text-gray-400";
   const unselectedTextStyle = "text-gray-600 dark:text-gray-300 font-normal";
   const mobileTextStyle = "text-base font-normal text-gray-600 dark:text-gray-300";
@@ -39,10 +40,10 @@ export default function Navbar() {
         <div className="flex flex-col">
           <Link href="/">
             <a>
-              <h1 className="font-semibold text-x1 dark:text-gray-100" style={{fontSize : '60px'}}>
+              <h1 className="font-semibold text-x1 dark:text-gray-100" style={{fontSize: '60px'}}>
                 {userData.name}
               </h1>
-              <p className="text-base font-light text-gray-500 dark:text-gray-300" style={{fontSize : '20px'}}>
+              <p className="text-base font-light text-gray-500 dark:text-gray-300" style={{fontSize: '20px'}}>
                 {userData.role}
               </p>
             </a>
@@ -55,7 +56,7 @@ export default function Navbar() {
               className={`text-base ${
                 router.asPath === aboutPath ? selectedTextStyle : unselectedTextStyle
               }`}
-              style={{fontSize : navbarFontSize}}
+              style={{fontSize: navbarFontSize}}
             >
               My story{" "}
               {router.asPath === aboutPath && (
@@ -80,7 +81,7 @@ export default function Navbar() {
             <DropdownMenu.Trigger>            
               <a className={`text-base ${
                 router.asPath.includes(serviceBasePath) ? selectedTextStyle : unselectedTextStyle }`}
-                style={{fontSize : navbarFontSize}} href={serviceBasePath}
+                style={{fontSize: servicesFontSize}} href={serviceBasePath}
               > 
                 Services{" "} 
                 {router.asPath.includes(serviceBasePath) && ( 
@@ -100,151 +101,136 @@ export default function Navbar() {
                 )} 
               </a>
             </DropdownMenu.Trigger>
-            <DropdownMenu.Content align="start">
-              <br></br>
+            <DropdownMenu.Content align='center'>
               <DropdownMenu.Item>
-                <a className={`text-base ${
-                  router.asPath === serviceBasePath ? selectedTextStyle : unselectedTextStyle }`}
-                  style={{fontSize : navbarFontSize}} href={serviceBasePath}
-                > 
-                  {router.asPath === serviceBasePath && (
-                    <svg 
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16" 
-                      height="16" 
-                      fill="currentColor" 
-                      class="bi bi-arrow-down-right" 
-                      viewBox="0 0 16 16"
-                    >
-                      <path 
-                        fill-rule="evenodd" d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0v6z"
-                      />
-                    </svg>
-                  )} Discover 
-                </a>
+                <div style={{marginTop: '2px', marginBottom:'2px'}}>
+                  <a className={`text-base ${
+                    router.asPath === serviceBasePath ? selectedTextStyle : unselectedTextStyle }`}
+                    style={{fontSize: servicesFontSize}} href={serviceBasePath}
+                  > 
+                    {router.asPath === serviceBasePath && (
+                      <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16" 
+                        height="16" 
+                        fill="currentColor" 
+                        class="bi bi-arrow-down-right" 
+                        viewBox="0 0 16 16"
+                      >
+                        <path 
+                          fill-rule="evenodd" d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0v6z"
+                        />
+                      </svg>
+                    )} Discover 
+                  </a>
+                </div>
               </DropdownMenu.Item>
               <DropdownMenu.Separator />
-              <DropdownMenu.Item>               
-                <a className={`text-base ${
-                  router.asPath === devOpsServicePath ? selectedTextStyle : unselectedTextStyle }`}
-                  style={{fontSize : navbarFontSize}} href={devOpsServicePath}
-                > 
-                  {router.asPath === devOpsServicePath && (
-                    <svg 
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16" 
-                      height="16" 
-                      fill="currentColor" 
-                      class="bi bi-arrow-down-right" 
-                      viewBox="0 0 16 16"
-                    >
-                      <path 
-                        fill-rule="evenodd" d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0v6z"
-                      />
-                    </svg>
-                  )} DevOps & Cloud 
-                </a>
-              </DropdownMenu.Item>
-              <DropdownMenu.Separator />
-              <DropdownMenu.Item>
-                <a className={`text-base ${
-                  router.asPath === siteReliabilityServicePath ? selectedTextStyle : unselectedTextStyle }`}
-                  style={{fontSize : navbarFontSize}} href={siteReliabilityServicePath}
-                > 
-                  {router.asPath === siteReliabilityServicePath && (
-                    <svg 
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16" 
-                      height="16" 
-                      fill="currentColor" 
-                      class="bi bi-arrow-down-right" 
-                      viewBox="0 0 16 16"
-                    >
-                      <path 
-                        fill-rule="evenodd" d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0v6z"
-                      />
-                    </svg>
-                  )} Site Reliability 
-                </a>
+              <DropdownMenu.Item>   
+                <div style={{fontSizmarginTop: '2px', marginBottom:'2px'}}>            
+                  <a className={`text-base ${
+                    router.asPath === devOpsServicePath ? selectedTextStyle : unselectedTextStyle }`}
+                    style={{fontSize: servicesFontSize}} href={devOpsServicePath}
+                  > 
+                    {router.asPath === devOpsServicePath && (
+                      <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16" 
+                        height="16" 
+                        fill="currentColor" 
+                        class="bi bi-arrow-down-right" 
+                        viewBox="0 0 16 16"
+                      >
+                        <path 
+                          fill-rule="evenodd" d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0v6z"
+                        />
+                      </svg>
+                    )} DevOps & Cloud 
+                  </a>
+                </div>
               </DropdownMenu.Item>
               <DropdownMenu.Separator />
               <DropdownMenu.Item>
-                <a className={`text-base ${
-                  router.asPath === coachingServicePath ? selectedTextStyle : unselectedTextStyle }`}
-                  style={{fontSize : navbarFontSize}} href={coachingServicePath}
-                > 
-                  {router.asPath === coachingServicePath && (
-                    <svg 
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16" 
-                      height="16" 
-                      fill="currentColor" 
-                      class="bi bi-arrow-down-right" 
-                      viewBox="0 0 16 16"
-                    >
-                      <path 
-                        fill-rule="evenodd" d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0v6z"
-                      />
-                    </svg>
-                  )} Coaching and Courses 
-                </a>
+              <div style={{fontSizmarginTop: '2px', marginBottom:'2px'}}>
+                  <a className={`text-base ${
+                    router.asPath === siteReliabilityServicePath ? selectedTextStyle : unselectedTextStyle }`}
+                    style={{fontSize: servicesFontSize}} href={siteReliabilityServicePath}
+                  > 
+                    {router.asPath === siteReliabilityServicePath && (
+                      <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16" 
+                        height="16" 
+                        fill="currentColor" 
+                        class="bi bi-arrow-down-right" 
+                        viewBox="0 0 16 16"
+                      >
+                        <path 
+                          fill-rule="evenodd" d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0v6z"
+                        />
+                      </svg>
+                    )} Site Reliability 
+                  </a>
+                </div>
               </DropdownMenu.Item>
               <DropdownMenu.Separator />
               <DropdownMenu.Item>
-                <a className={`text-base ${
-                  router.asPath === softwareServicePath ? selectedTextStyle : unselectedTextStyle }`}
-                  style={{fontSize : navbarFontSize}} href={softwareServicePath}
-                > 
-                  {router.asPath === softwareServicePath && (
-                    <svg 
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16" 
-                      height="16" 
-                      fill="currentColor" 
-                      class="bi bi-arrow-down-right" 
-                      viewBox="0 0 16 16"
-                    >
-                      <path 
-                        fill-rule="evenodd" d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0v6z"
-                      />
-                    </svg>
-                  )} Software Engineering 
-                </a>
+                <div style={{fontSizmarginTop: '2px', marginBottom:'2px'}}>
+                  <a className={`text-base ${
+                    router.asPath === coachingServicePath ? selectedTextStyle : unselectedTextStyle }`}
+                    style={{fontSize: servicesFontSize}} href={coachingServicePath}
+                  > 
+                    {router.asPath === coachingServicePath && (
+                      <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16" 
+                        height="16" 
+                        fill="currentColor" 
+                        class="bi bi-arrow-down-right" 
+                        viewBox="0 0 16 16"
+                      >
+                        <path 
+                          fill-rule="evenodd" d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0v6z"
+                        />
+                      </svg>
+                    )} Coaching and Courses 
+                  </a>
+                </div>
+              </DropdownMenu.Item>
+              <DropdownMenu.Separator />
+              <DropdownMenu.Item>
+                <div style={{fontSizmarginTop: '2px', marginBottom:'2px'}}>
+                  <a className={`text-base ${
+                    router.asPath === softwareServicePath ? selectedTextStyle : unselectedTextStyle }`}
+                    style={{fontSize: servicesFontSize}} href={softwareServicePath}
+                  > 
+                    {router.asPath === softwareServicePath && (
+                      <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16" 
+                        height="16" 
+                        fill="currentColor" 
+                        class="bi bi-arrow-down-right" 
+                        viewBox="0 0 16 16"
+                      >
+                        <path 
+                          fill-rule="evenodd" d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0v6z"
+                        />
+                      </svg>
+                    )} Software Engineering 
+                  </a>
+                </div>
               </DropdownMenu.Item>
             </DropdownMenu.Content>
             <DropdownMenu.ItemIndicator/>
           </DropdownMenu.Root>
-          {/*
-          <Link href="/projects">
-            <a
-              className={`text-base  ${
-                router.asPath === "/projects" ? selectedTextStyle : unselectedTextStyle }`}
-              style={{fontSize : navbarFontSize}}
-            >
-              Projects{" "}
-              {router.asPath === "/projects" && (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  className="bi bi-arrow-down inline-block h-3 w-3"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
-                  />
-                </svg>
-              )}
-            </a>
-          </Link>
-          */}
+          {/* Projects section was here */}
+
           <Link href={clientsPath}>
             <a
               className={`text-base ${
                 router.asPath === clientsPath ? selectedTextStyle : unselectedTextStyle }`}
-              style={{fontSize : navbarFontSize}}
+              style={{fontSize: navbarFontSize}}
             > Clients{" "}
               {router.asPath === clientsPath && (
                 <svg
@@ -265,7 +251,7 @@ export default function Navbar() {
           </Link>
         </div>
 
-        
+        {/*Social Links*/}
         <div className="space-x-4 flex flex-row items-center">
           <a
             href={userData.socialLinks.twitter}
@@ -333,7 +319,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/*Mobile section */}
+      {/*Mobile Navbar */}
 
       <div className="space-x-8 block md:hidden mt-4">
         <Link href={aboutPath}>
