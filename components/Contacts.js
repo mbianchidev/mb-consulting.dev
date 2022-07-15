@@ -39,9 +39,8 @@ export default function Contacts() {
     }).then(result => result.json()).then(result => {
       if (result.success===true) {
         alertService.success(result.message, options);
-      } else {
-        alertService.error(result.message, options);
       }
+      alertService.error(result.message, options);
     });
 
   }
