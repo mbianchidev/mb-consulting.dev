@@ -35,15 +35,13 @@ function Alert({ id, fade }) {
                         // remove 'keepAfterRouteChange' flag on the rest
                         return omit(filteredAlerts, 'keepAfterRouteChange');
                     });
-                } else {
-                    // add alert to array with unique id
-                    alert.itemId = Math.random();
-                    setAlerts(alerts => ([...alerts, alert]));
-
-                    // auto close alert if required
-                    if (alert.autoClose) {
-                        setTimeout(() => removeAlert(alert), alert.autoCloseTimeout || 5000);
-                    }
+                }
+                // if there is a message add alert to array with unique id
+                alert.itemId = Math.random();
+                setAlerts(alerts => ([...alerts, alert]));
+                // auto close alert if required
+                if (alert.autoClose) {
+                    setTimeout(() => removeAlert(alert), alert.autoCloseTimeout || 5000);
                 }
             });
 
@@ -82,10 +80,9 @@ function Alert({ id, fade }) {
             setTimeout(() => {
                 setAlerts(alerts => alerts.filter(x => x.itemId !== alert.itemId));
             }, 250);
-        } else {
-            // remove alert
-            setAlerts(alerts => alerts.filter(x => x.itemId !== alert.itemId));
         }
+        // if is not fading remove alert
+        setAlerts(alerts => alerts.filter(x => x.itemId !== alert.itemId));
     };
 
     function cssClasses(alert) {

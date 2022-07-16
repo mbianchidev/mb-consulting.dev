@@ -11,11 +11,10 @@ export default function Clients() {
       </div>
       <div className="bg-[#F1F1F1] dark:bg-gray-900 -mt-4">
         <div className="grid grid-cols-1 dark:bg-gray-900 max-w-xl mx-auto pt-20">
-          {/* Experience card */}
-          {userData.clients.filter(client => client.show === true).map((client, clientId) => (
+          {/*Fixes warning each child in a list should have a unique "key" prop. */}
+          {React.Children.toArray(userData.clients.filter(client => client.show === true).map((client, clientId) => (
             <>
               <ClientCard
-              clientId={clientId}
               code={client.code}
               companyName={client.companyName}
               companyType={client.companyType}
@@ -27,7 +26,7 @@ export default function Clients() {
               year={client.year}
               show={client.show}
             />
-            {clientId === userData.clients.length - 1 ? null : (
+            {clientId === userData.clients.length - 1 || client.show === false ? null : (
               <div className="divider-container flex flex-col items-center -mt-2">
                 <div className="w-4 h-4 bg-green-500 rounded-full relative z-10">
                   <div className="w-4 h-4 bg-green-500 rounded-full relative z-10 animate-ping"></div>
@@ -36,17 +35,16 @@ export default function Clients() {
               </div>
             )}
             </>
-          ))}
+          )))}
         </div>
       </div>
     </section>
   );
 }
 
-const ClientCard = ({ clientId, code, companyName, companyType, companySector, companyLogo, companyUrl, role, story, year }) => {
+const ClientCard = ({code, companyName, companyType, companySector, companyLogo, companyUrl, role, story, year }) => {
     return (
-      //TODO Fix warning: Each child in a list should have a unique "key" prop. ???
-      <div key={clientId} id={code} className="relative experience-card border p-4 rounded-md shadow-xl bg-white dark:bg-gray-800 z-10 mx-4">
+      <div id={code} className="relative experience-card border p-4 rounded-md shadow-xl bg-white dark:bg-gray-800 z-10 mx-4">
         <img src={companyLogo}></img>
         <h1 className="absolute -top-10 md:-left-10 md:-top-10 text-4xl text-gray-500 font-bold dark:text-gray-500">
         {year}

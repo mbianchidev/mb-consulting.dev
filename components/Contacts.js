@@ -6,6 +6,8 @@ import * as gtag from '@lib/ga'
 
 export default function Contacts() {
 
+  // constant containing regex email validation
+  const regexEmailValidationPattern = "^([a-zA-Z0-9_\\-\\.]+)@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.)|(([a-zA-Z0-9\\-]+\\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\\]?)$";
   const formPlaceHolderTextStyle = "text-sm text-gray-600 mx-4 mt-4";
   const borderedTextStyle = "font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
 
@@ -148,7 +150,9 @@ export default function Contacts() {
               type="text"
               className={borderedTextStyle}
               name="email"
-              placeholder="John.Doe@gmail.com"
+              placeholder="john.doe@example.com"
+              pattern={regexEmailValidationPattern}
+              title="Emails should be in a valid format like john.doe@example.com"
               required
             />
             <label htmlFor="message" className={formPlaceHolderTextStyle}>
