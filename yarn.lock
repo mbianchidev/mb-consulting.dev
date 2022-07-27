@@ -576,9 +576,9 @@ quick-lru@^5.1.1:
   version "5.1.1"
   resolved "https://registry.npmjs.org/quick-lru/-/quick-lru-5.1.1.tgz"
 
-react-cookie-consent@^7.5.0:
-  version "7.5.0"
-  resolved "https://registry.yarnpkg.com/react-cookie-consent/-/react-cookie-consent-7.5.0.tgz#289e391f134f42fc02c16e83f67ae4790e1e08a3"
+react-cookie-consent@^7.6.0:
+  version "7.6.0"
+  resolved "https://registry.yarnpkg.com/react-cookie-consent/-/react-cookie-consent-7.6.0.tgz#1ef99292b74f85b56ba6b93005cb753cc9016cb7"
   dependencies:
     js-cookie "^2.2.1"
     prop-types "^15.7.2"

@@ -15,7 +15,7 @@
     "next": "^12.2.2",
     "next-themes": "0.2.0",
     "react": "^18.2.0",
-    "react-cookie-consent": "^7.5.0",
+    "react-cookie-consent": "^7.6.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.33.1",
     "react-rough-notation": "^1.0.1",
