@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import userData from "@constants/data";
 import Link from "next/link";
+import Image from 'next/image';
+import logo from "../public/images/logo.webp"
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
@@ -36,7 +38,7 @@ export default function Navbar() {
         {/* Logo + Name */}
         <div className="flex flex-col md:flex-row items-center">
           <a href="/">
-                <img src="/images/logo.png"></img>
+            <Image src={logo} alt="mb-consulting logo an infinite symbol turned into a cloud" width={156} height={104} priority />
           </a>
           <div className="flex flex-col">
             <Link href="/" passHref>

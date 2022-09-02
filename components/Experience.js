@@ -1,5 +1,6 @@
 import React from "react";
 import userData from "@constants/data";
+import Image from 'next/image';
 
 export default function Experience() {
   return (
@@ -20,6 +21,8 @@ export default function Experience() {
               companyType={employer.companyType}
               companySector={employer.companySector}
               companyLogo={employer.companyLogo}
+              companyLogoX={employer.companyLogoX}
+              companyLogoY={employer.companyLogoY}
               companyUrl={employer.companyUrl}
               role={employer.role}
               story={employer.story}
@@ -42,10 +45,10 @@ export default function Experience() {
   );
 }
 
-const ExperienceCard = ({code, companyName, companyType, companySector, companyLogo, companyUrl, role, story, year }) => {
+const ExperienceCard = ({code, companyName, companyType, companySector, companyLogo, companyLogoX, companyLogoY, companyUrl, role, story, year }) => {
     return (
       <div id={code} className="relative experience-card border p-4 rounded-md shadow-xl bg-white dark:bg-gray-800 z-10 mx-4">
-        <img src={companyLogo}></img>
+        <Image src={companyLogo} alt={companyName} width={companyLogoX} height={companyLogoY} />
         <h1 className="absolute -top-10 md:-left-10 md:-top-10 text-4xl text-gray-500 font-bold dark:text-gray-500">
         {year}
         </h1>

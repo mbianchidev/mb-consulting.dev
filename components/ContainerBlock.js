@@ -9,7 +9,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
   const meta = {
     title: "Matteo Bianchi - DevOps | SRE | Coach | Developer",
     description: `Learn more about me and my services.`,
-    image: "/images/propic.jpg",
+    image: "/images/propic.webp",
     type: "website",
     ...customMeta,
   };

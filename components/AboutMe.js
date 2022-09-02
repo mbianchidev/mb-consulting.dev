@@ -1,5 +1,7 @@
 import React from "react";
 import userData from "@constants/data";
+import Image from 'next/image';
+import stackshareLogo from "../public/images/stackshare.webp";
 
 export default function AboutMe() {
   return (
@@ -150,7 +152,7 @@ export default function AboutMe() {
                 </span>
               </div>
               <a id="link-stackshare" href={userData.techStack} target="_blank" rel="noopener noreferrer">
-                <img src="./images/stackshare.png" className="h-20 w-20 mx-4 my-4"/>
+                <Image src={stackshareLogo} alt="stackshare logo" className="h-20 w-20 mx-4 my-4" width={80} height={80} priority />
               </a>
             </div>
           </div>

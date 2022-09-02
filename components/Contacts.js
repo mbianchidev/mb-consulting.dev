@@ -40,15 +40,11 @@ export default function Contacts() {
       body: JSON.stringify(formData)
     })
     .catch((err) => console.log(err)) //TODO handle error
-    // .then(result => result.json()) //TODO capire se serve?
     .then(result => {
-      console.log("result: "+result.success); //TODO remove this
       if (result.success===true) {
-        console.log(result.message); //TODO remove this
         alertService.success(result.message, options);
         return response;
       }
-        console.log(result.message); //TODO remove this
         alertService.error(result.message, options);
         return response;
     });
