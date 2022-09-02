@@ -31,7 +31,6 @@ function Alert({ id, fade }) {
                     setAlerts(alerts => {
                         // filter out alerts without 'keepAfterRouteChange' flag
                         const filteredAlerts = alerts.filter(x => x.keepAfterRouteChange);
-                        console.log("Check filteredAlerts->"+filteredAlerts); //TODO REMOVE THIS
                         // remove 'keepAfterRouteChange' flag on the rest
                         return omit(filteredAlerts, 'keepAfterRouteChange');
                     });
