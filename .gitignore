@@ -36,3 +36,6 @@ yarn-error.log*
 
 # bash utils
 .sh
+
+/public/robots.txt
+/public/sitemap.xml
