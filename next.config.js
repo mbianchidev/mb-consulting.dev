@@ -43,7 +43,7 @@ const securityHeaders = [
     },
     {
         key: 'Referrer-Policy',
-        value: 'strict-when-cross-origin'
+        value: 'strict-origin-when-cross-origin'
     },
     {
         key: 'Content-Security-Policy',
@@ -61,5 +61,9 @@ const securityHeaders = [
     {
         key: 'Expect-CT',
         value: 'max-age=0, report-uri="https://mb-consulting.dev"'
-    }
+    },
+    {
+        key: 'X-Download-Options',
+        value: 'noopen'
+    },
 ]
