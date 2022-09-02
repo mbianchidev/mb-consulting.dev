@@ -20,11 +20,9 @@ export default function MBCookies() {
             Cookies.remove("_gat");
             Cookies.remove("_gid")
             Cookies.remove("_ga_"+process.env.GA_TRACKING_ID);
-            console.log("cookies have been removed: ", Cookies);
           }}  
           onAccept={() => {
             if (process.env.REACT_APP_GOOGLE_ANALYTICS_ID && getCookieConsentValue() === "true") {
-              console.log("accepted cookies");
               ga.router(url);
             }
           }}          
@@ -38,7 +36,7 @@ export default function MBCookies() {
         >
         This (awesome?) website uses the smallest amount of cookies possible to enhance the user experience and allow me to perform some traffic/performance analysis.
         For more info checkout <u><a target="_blank" rel="noopener noreferrer" href="/cookie-policy">my cookies policy</a></u>.
-        What's a cookie? Click <u><a target="_blank" rel="noopener noreferrer" href={userData.cookieUrl}>here</a></u> to learn more!
+        What's a cookie? Checkout this <u><a target="_blank" rel="noopener noreferrer" href={userData.cookieUrl}>informative article about cookies</a></u> to learn more!
         <span style={{ fontSize: "10px" }}> Please accept? c:</span>
         </CookieConsent>
     );

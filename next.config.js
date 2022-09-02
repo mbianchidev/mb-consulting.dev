@@ -10,7 +10,11 @@ module.exports = {
           },
         ]
       },
-}
+      i18n: {
+        locales: ["en"],
+        defaultLocale: "en",
+      },
+};
 
 const securityHeaders = [
     {
@@ -42,8 +46,8 @@ const securityHeaders = [
         value: 'origin-when-cross-origin'
     },
     // TODO understand how CSP works in react
-// {
-//     key: 'Content-Security-Policy',
-//     value: `default-src 'self'; style-src 'unsafe-inline'; script-src 'self' 'unsafe-eval';`
-// }
+    {
+        key: 'Content-Security-Policy',
+        value: `` //default-src 'self'; style-src 'unsafe-inline'; script-src 'self' 'unsafe-eval';
+    }
 ]
