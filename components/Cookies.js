@@ -1,22 +1,33 @@
 import React from "react";
 import userData from "@constants/data";
-import CookieConsent from "react-cookie-consent";
+import CookieConsent, { getCookieConsentValue, Cookies } from "react-cookie-consent";
+import * as ga from "@lib/ga";
 
-export default function Cookies() {
+export default function MBCookies() {
 
     return (
         <CookieConsent
           location="bottom"
+          visible="byCookieValue"
           buttonText="Yes! Now just give me that cookie, pls."
           ariaAcceptLabel="Yes, I accept the use of cookies"
           enableDeclineButton={true}
-          setDeclineCookie={false}
+          setDeclineCookie={true}
           declineButtonText="No. I don't like cookies."
           ariaDeclineLabel="No, I do not accept the use of cookies"
-          onDecline={() => {setTimeout(function() {
-            window.open(location.href, "_self", "");
-            window.close()
-            }, 5000);}}
+          onDecline={() => {
+            Cookies.remove("_ga");
+            Cookies.remove("_gat");
+            Cookies.remove("_gid")
+            Cookies.remove("_ga_"+process.env.GA_TRACKING_ID);
+            console.log("cookies have been removed: ", Cookies);
+          }}  
+          onAccept={() => {
+            if (process.env.REACT_APP_GOOGLE_ANALYTICS_ID && getCookieConsentValue() === "true") {
+              console.log("accepted cookies");
+              ga.router(url);
+            }
+          }}          
           declineCookieValue="declined"
           cookieName="mb-consulting-dev"
           sameSite="strict"

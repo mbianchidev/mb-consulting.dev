@@ -5,7 +5,7 @@ import Services from "@components/Services";
 export default function services() {
     return (
       <ContainerBlock title="Services - Matteo Bianchi">
-        <Services />
+        <Services/>
       </ContainerBlock>
     );
   }

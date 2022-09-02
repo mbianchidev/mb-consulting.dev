@@ -1,36 +1,38 @@
 import React from "react";
-import userData from "@constants/data";
 
-export default function Services() {
-  return (
-    <section className="bg-white dark:bg-gray-800">
-      <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
-        <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
-          All services
-        </h1>
-      </div>
-    </section>
-  );
+import getAllServices from "@lib/graphql/queries/getAllServices";
+
+
+export async function getStaticProps() {
+  const  services = await getAllServices();
+  return {
+    props: { 
+      services 
+    },
+  };
 }
 
-const ProjectCard = ({ title, link, imgUrl, number }) => {
+export default function Services(props) {
+
+  console.log(props); //TODO remove this
+  
   return (
-    <a href={link} className="w-full block shadow-2xl">
-      <div className="relative overflow-hidden">
-        <div className="h-72 object-cover">
-          <img
-            src={imgUrl}
-            alt="portfolio"
-            className="transform hover:scale-125 transition duration-2000 ease-out object-cover h-full w-full"
-          />
-        </div>
-        <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
-          {title}
-        </h1>
-        <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
-          {number.length === 1 ? "0" + number : number}
-        </h1>
-      </div>
-    </a>
+  <section className="bg-white dark:bg-gray-800">
+    <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
+      <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
+        Service
+      </h1>
+    </div>
+    <br></br>
+    <br></br>
+    <br></br>
+    <div className="col-span-1 md:col-span-2">
+      <span>
+        <p className="text-xl text-gray-700 mb-4 dark:text-gray-300" style={{textAlign : "center"}}>
+          Work in progress... <a href="/contacts"> <u>Contact me</u></a> if you want to know more about my services.
+        </p>
+      </span>
+    </div>
+  </section>
   );
-};
+}

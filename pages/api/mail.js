@@ -29,6 +29,7 @@ export default async function(req, res) {
       res.status(error.statusCode).json({ success: false, message: 'Error, something went wrong' });
       reject(error);
       res.end(JSON.stringify(error));
+      console.log(error); //TODO remove this
     });
   });
 }

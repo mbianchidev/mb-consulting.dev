@@ -6,13 +6,13 @@ export default function AboutMe() {
     <section className="bg-white dark:bg-gray-800">
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
         <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
-          My story
+          My journey
         </h1>
       </div>
       <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
         <div className="text-container max-w-6xl mx-auto pt-20">
           <span
-            className="leading-loose text-2xl md:text-4xl font-semibold  mx-4"
+            className="leading-loose text-2xl md:text-4xl font-semibold"
             style={{ lineHeight: "3rem" }}
           >
             {userData.about.title}. 
@@ -43,21 +43,29 @@ export default function AboutMe() {
                 My work experience
               </h1>
               <span className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                Check my {" "}
+                You can check my CV{" "}
                 <a
                   href={userData.resumeUrl}
                   target="_blank" rel="noopener noreferrer"
                   className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
                 >
-                  CV
-                </a>{" "} or check out {" "}
-                <a
-                  href="/clients" rel="noopener noreferrer"
-                  className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
-                > my clients </a>{" "}
-                for more details.
+                  here
+                </a>.
+                <p>
+                  Have a look at my {" "}
+                  <a
+                    href="/clients" rel="noopener noreferrer"
+                    className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
+                  > clients </a>{" "} and {" "}
+                  <a
+                    href="/experience" rel="noopener noreferrer"
+                    className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
+                  > past experiences </a>{" "}
+                  as employee for more details about my journey.
+                </p>
               </span>
             </div>
+
             {/* Social Links */}
             <h1 className="text-xl font-semibold text-gray-700 mt-8 dark:text-gray-200">
               Social Links
@@ -73,6 +81,19 @@ export default function AboutMe() {
                   <span className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
                     <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300" suppressHydrationWarning={true}></div>
                     GitHub
+                  </span>
+                </a>
+              </div>
+              <div className="flex flex-row justify-start items-center">
+                <a
+                  href={userData.socialLinks.medium}
+                  target="_blank" rel="noopener noreferrer"
+                  className="flex flex-row items-center space-x-4 group"
+                >
+                  <div className="my-4">&rarr;</div>
+                  <span className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
+                    <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300" suppressHydrationWarning={true}></div>
+                    Medium
                   </span>
                 </a>
               </div>
@@ -104,17 +125,17 @@ export default function AboutMe() {
               </div>
             </div>
           </div>
+
           {/* Text area */}
           <div className="col-span-1 md:col-span-2">
             {userData.about.description?.map((desc, aboutMeId) => (
               <span
                 key={aboutMeId}
-                className="text-xl text-gray-700 mb-4 dark:text-gray-300 "
               >
-                {desc}
+                <p className="text-xl text-gray-700 mb-4 dark:text-gray-300">{desc}</p>
               </span>
             ))}
-
+            
             <h1 className="bg-red-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
               Tech Stack & Tools
             </h1>

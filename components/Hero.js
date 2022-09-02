@@ -32,7 +32,7 @@ export default function Hero() {
             </h1>
           </RainbowHighlight>
         </RoughNotationGroup>
-        {/*contact me section*/}
+        {/*Call to action*/}
         <br></br>
         <p className="font-mono">{userData.hero.catchyPhrase}</p>
         <a href="/contacts">

@@ -38,12 +38,22 @@ export default function Contacts() {
     const response = await fetch('/api/mail', {
       method: 'POST',
       body: JSON.stringify(formData)
-    }).then(result => result.json()).then(result => {
+    })
+    .catch((err) => console.log(err)) //TODO handle error
+    // .then(result => result.json()) //TODO capire se serve?
+    .then(result => {
+      console.log("result: "+result.success); //TODO remove this
       if (result.success===true) {
+        console.log(result.message); //TODO remove this
         alertService.success(result.message, options);
+        return response;
       }
-      alertService.error(result.message, options);
+        console.log(result.message); //TODO remove this
+        alertService.error(result.message, options);
+        return response;
     });
+
+    console.log(response); //TODO remove this
 
   }
   
@@ -59,7 +69,7 @@ export default function Contacts() {
           <div className="md:ml-4">
             <header className="">
               <h1 className="text-gray-50 font-semibold text-2xl">
-                Interested in one of my{" "}
+                Interested in my{" "}
                 <a
                   href="/services" rel="noopener noreferrer"
                   className="text-gray-50 font-bold text-2xl border-b-2 border-gray-50"

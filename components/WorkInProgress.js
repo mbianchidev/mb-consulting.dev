@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/Home.module.css";
 
-// TODO work in progress component
+//TODO work in progress component
 
 export default function WorkInProgress() {
   return (

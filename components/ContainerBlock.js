@@ -1,17 +1,14 @@
 import React from "react";
 import userData from "@constants/data";
 import { useRouter } from "next/router";
-import { Alert } from "@components/Alert"; 
 import Head  from "next/head";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
 
 export default function ContainerBlock({ children, ...customMeta }) {
   const router = useRouter();
 
   const meta = {
-    title: "Matteo Bianchi - Developer | DevOps | SRE | Coach",
-    description: `I've been working in the enterprise IT field for more than 5 years. Get in touch with me to know more.`,
+    title: "Matteo Bianchi - DevOps | SRE | Coach | Developer",
+    description: `Learn more about me and my services.`,
     image: "/images/propic.jpg",
     type: "website",
     ...customMeta,
@@ -44,12 +41,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-      <main className="dark:bg-gray-800 w-full">
-        <Navbar />
-        <Alert />
         <div>{children}</div>
-        <Footer />
-      </main>
     </div>
   );
 }

@@ -5,7 +5,7 @@ import WorkInProgress from "@components/WorkInProgress";
 export default function wip() {
   return (
     <ContainerBlock title="WIP - Matteo Bianchi">
-      <WorkInProgress />
+      <WorkInProgress/>
     </ContainerBlock>
   );
 }

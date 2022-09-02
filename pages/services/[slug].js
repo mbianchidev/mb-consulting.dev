@@ -49,13 +49,15 @@ Contattami per saperne di più!
 I come in handy in situations where you need an outside look at the way you work.
 I look at your code, your processes, your communication and digital product management.
 Then I paint a picture of the situation by highlighting strengths and weaknesses 
-and, if you are willing to work with me, I plan for breaking down the obstacles that stand between you and being a tech company of excellence.
+and, if you are willing to work with me, 
+I plan for breaking down the obstacles that stand between you and being a tech company of excellence.
 
-I guide you in adopting DevOps, Security and Cloud good practices (while improving your existing ones) 
-with the focus on making you and your team independent in their use.
-This is a fundamental principle of coaching; I am not interested in making myself indispensable, quite the contrary!
+How? I coach you in the adoption of new practices (and improve the existing ones)
+Your team will start a training course about DevOps, Security and Cloud good practices!
+I will guide their first steps in adopting those practices making them and independent team.
+This is a fundamental principle of coaching.
+I am not interested in making myself indispensable, quite the contrary!
 
-These skills I can pass on, in part, through courses tailored to your specific needs.
 Contact me for more details!
 */
 
@@ -82,24 +84,51 @@ Can't manage your cloud infrastructure? No problem! I can help you with that.
 Don't have a cloud infrastructure at all? I can create that for you.
 Your Kubernetes cluster collapses or grows without control? I can fix that for you.
 
-We will start by analysing your needs and planning the right solution for your company.
+We will start by analysing your needs and planning the right solution for you.
 
 My focus will be implementing DevOps good practices 
 (like a good ol' CI/CD, automated testing, code review and much more!) 
 We will then move on to designing or re-design your cloud infrastructure to be as efficient as possible 
 and tailored to your needs.
 You will be guided to the right cloud solution and I will make it easy for you and your team to manage it.
+Automation will be a keyword along with: IaC, data, metrics, logging, documentation and
+all you need to be a DevOps company.
 
 You don't believe in what I've just said? Schedule a meeting and I will change your mind!
 Or you can ask my past clients.
 
 /* - SRE
 
+You recently had a data breach and you can't find a way to protect your data?
+Feel free to ask for a consultation.
+Want to secure your infrastructure?  I'm going to build that security door for you!
+Do you need to scan your code for possible vulnerabilities? 
+Yes you do! That's why we should work togheter to make sure your code and your data are safe.
+I will help you implement Security as Code and security by design practices and not only! 
+You will also be empowered by having production-ready alerting and monitoring systems.
+Why? 
+Because even if you are the best incidents will happen.
+Solutions we will implement makes you able to handle incidents 
+in every single phase of their lifecycle: individuation, mitigation, root-cause analysis and resolution.
 
-Not only! I will also help you with the implementation of security and monitoring.
+
+The future is now old man, you better secure it!
+Ask for a consultation.
 
 /*- Software Engineering
 
+Wanna get rid of your technical debt so your developers will have 30% more time for developing amazing stuff?
+Wanna optimize your software lifecycle?
+I can guide your team in the solution design and implementation.
 
+Your ideas will finally come to life and I'll make your products grow.
+I will always be keeping a high attention to balance new and ready-to-production technologies. 
+I'll guide you through many tech choices helping you to maintain the focus on what really matters. 
+You will be enabled to build cutting edge digital products applying good practices of:
+security, reliability, scalability, performance, maintainability, and flexibility.
+All of this without forgetting the cloud-readyness, critical in today's IT scenario.
+
+Feel intrigued?
+I'm always up for a call.
 
 */
