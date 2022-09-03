@@ -4,8 +4,23 @@ import { RoughNotationGroup } from "react-rough-notation";
 import { RainbowHighlight } from "./RainbowHighlight";
 import Image from 'next/image';
 
+function shuffle(array) {
+  var i = array.length,
+      j = 0,
+      temp;
+  while (i--) {
+      j = Math.floor(Math.random() * (i+1));
+      // swap randomly chosen element with current element
+      temp = array[i];
+      array[i] = array[j];
+      array[j] = temp;
+  }
+  return array;
+}
+
 export default function Hero() {
-  const colors = ["#FF7F3F", "#10B981", "#3B82F6","#851DE0"];
+  const colors = shuffle(["#FF7F3F", "#10B981", "#3B82F6","#851DE0"]);
+
   return (
 
     <div className="flex flex-row justify-center items-start overflow-hidden">
