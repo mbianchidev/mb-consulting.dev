@@ -23,7 +23,7 @@ export default function Experience() {
               companyLogo={employer.companyLogo}
               companyLogoX={employer.companyLogoX}
               companyLogoY={employer.companyLogoY}
-              companyUrl={employer.companyUrl}
+              companyUrl={employer.companyUrl.}
               role={employer.role}
               story={employer.story}
               year={employer.year}
