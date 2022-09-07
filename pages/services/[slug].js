@@ -132,3 +132,10 @@ Feel intrigued?
 I'm always up for a call.
 
 */
+
+/*- Fractional CTO
+
+TODO
+
+*/
+

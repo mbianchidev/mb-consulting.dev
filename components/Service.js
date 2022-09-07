@@ -1,3 +1,5 @@
+import { useRouter } from "next/router";
+
 const ServiceCard = ({ title, slug, serviceImage, startingFromRate, serviceDescription}) => {
     const url = `/services/${slug}`;
     return (
@@ -30,25 +32,61 @@ export function getServerSideProps(ctx){
     }
 }
 
-export default function Service(props) {
-    return (
+export function getClientSideProps(){
+  const { query } = useRouter();
+    return {
+        props: {
+            slug: query.slug,
+        }
+    }
+}
+
+export default function Service() {
+  const { query } = useRouter();
+  //{query.slug} is the slug of the service
+  return (
     <section className="bg-white dark:bg-gray-800">
-      <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
-        <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
-          Service
-        </h1>
-      </div>
-      <br></br>
-      <br></br>
-      <br></br>
-      <div className="col-span-1 md:col-span-2">
-        <span>
-          <p className="text-xl text-gray-700 mb-4 dark:text-gray-300" style={{textAlign : "center"}}>
-            Work in progress... <a href="/contacts"> <u>Contact me</u></a> if you want to know more about this service.
-          </p>
-        </span>
+    <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
+      <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
+        Service
+      </h1>
+    </div>
+      <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
+        <div className="text-container max-w-6xl mx-auto pt-20">
+          <span
+            className="leading-loose text-2xl md:text-4xl font-semibold"
+            style={{ lineHeight: "3rem" }}
+          >
+            Work in progress! <br></br><br></br><br></br>
+            <a href="/contacts"> <u>Contact me</u></a> if you want to know more about this service. 
+          </span>
+        </div>
       </div>
     </section>
-      //ServiceCard(props.title,props.slug,props.serviceImage,props.startingFromRate,props.serviceDescription)
-    );
+
+    //ServiceCard(props.title,props.slug,props.serviceImage,props.startingFromRate,props.serviceDescription)
+  );
 }
+
+//export default function Service(props) {
+//    return (
+//    <section className="bg-white dark:bg-gray-800">
+//      <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
+//        <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
+//          {props.slug} Service
+//        </h1>
+//      </div>
+//      <br></br>
+//      <br></br>
+//      <br></br>
+//      <div className="col-span-1 md:col-span-2">
+//        <span>
+//          <p className="text-xl text-gray-700 mb-4 dark:text-gray-300" style={{textAlign : "center"}}>
+//            Work in progress... <a href="/contacts"> <u>Contact me</u></a> if you want to know more about this service.
+//          </p>
+//        </span>
+//      </div>
+//    </section>
+//      //ServiceCard(props.title,props.slug,props.serviceImage,props.startingFromRate,props.serviceDescription)
+//    );
+//}
