@@ -27,7 +27,7 @@ export default function Services() {
             style={{ lineHeight: "3rem" }}
           >
             Work in progress! <br></br><br></br><br></br>
-            <a href="/contacts"> <u>Contact me</u></a> if you want to know more about my available services. 
+            <a href="/contacts" className="hover-underline-animation" style={{color : "#0A369D"}}> Contact me </a> if you want to know more about my available services. 
           </span>
         </div>
       </div>

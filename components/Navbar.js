@@ -63,7 +63,7 @@ export default function Navbar() {
               }`}
               style={{fontSize: navbarFontSize}}
             >
-              My story{" "}
+              About{" "}
               {router.asPath === aboutPath && (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -338,7 +338,7 @@ export default function Navbar() {
       <div className="space-x-8 block md:hidden mt-4">
         <Link href={aboutPath}>
           <a className={mobileTextStyle}>
-            My story
+            About
           </a>
         </Link>
         <Link href={clientsPath}>

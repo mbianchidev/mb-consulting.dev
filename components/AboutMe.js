@@ -4,6 +4,10 @@ import Image from 'next/image';
 import stackshareLogo from "../public/images/stackshare.webp";
 
 export default function AboutMe() {
+  const linkTextStyle = "text-gray-800 font-bold dark:text-gray-300 hover-underline-animation";
+  const socialTextStyle = "text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300"
+  const underlineTransition = "absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"
+
   return (
     <section className="bg-white dark:bg-gray-800">
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
@@ -30,12 +34,13 @@ export default function AboutMe() {
                 Contacts
               </h1>
               <span className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                For any sort of question fill {" "}
+                For any sort of question fill my {" "}
                 <a
                   href="/contacts"
-                  className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
+                  className={linkTextStyle}
+                  style={{color : "#276CC6"}}
                 >
-                  this form
+                  contact form
                 </a>{" "}
                 and I'll get back as soon as I can.
               </span>
@@ -49,7 +54,8 @@ export default function AboutMe() {
                 <a
                   href={userData.resumeUrl}
                   target="_blank" rel="noopener noreferrer"
-                  className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
+                  className={linkTextStyle}
+                  style={{color : "#276CC6"}}
                 >
                   here
                 </a>.
@@ -57,13 +63,15 @@ export default function AboutMe() {
                   Have a look at my {" "}
                   <a
                     href="/clients" rel="noopener noreferrer"
-                    className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
+                    className={linkTextStyle}
+                    style={{color : "#276CC6"}}
                   > clients </a>{" "} and {" "}
                   <a
                     href="/experience" rel="noopener noreferrer"
-                    className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
-                  > past experiences </a>{" "}
-                  as employee for more details about my journey.
+                    className={linkTextStyle}
+                    style={{color : "#276CC6"}}
+                  > experiences </a>{" "}
+                  for more details.
                 </p>
               </span>
             </div>
@@ -80,8 +88,8 @@ export default function AboutMe() {
                   className="flex flex-row items-center space-x-4 group"
                 >
                   <div className="my-4">&rarr;</div>
-                  <span className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
-                    <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300" suppressHydrationWarning={true}></div>
+                  <span className={socialTextStyle}>
+                    <div className={underlineTransition} suppressHydrationWarning={true}></div>
                     GitHub
                   </span>
                 </a>
@@ -93,8 +101,8 @@ export default function AboutMe() {
                   className="flex flex-row items-center space-x-4 group"
                 >
                   <div className="my-4">&rarr;</div>
-                  <span className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
-                    <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300" suppressHydrationWarning={true}></div>
+                  <span className={socialTextStyle}>
+                    <div className={underlineTransition} suppressHydrationWarning={true}></div>
                     Medium
                   </span>
                 </a>
@@ -106,8 +114,8 @@ export default function AboutMe() {
                   className="flex flex-row items-center space-x-4 group"
                 >
                   <div className="my-4">&rarr;</div>
-                  <span className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
-                    <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300" suppressHydrationWarning={true}></div>
+                  <span className={socialTextStyle}>
+                    <div className={underlineTransition} suppressHydrationWarning={true}></div>
                     Twitter
                   </span>
                 </a>
@@ -119,8 +127,8 @@ export default function AboutMe() {
                   className="flex flex-row items-center space-x-4 group"
                 >
                   <div className="my-4">&rarr;</div>
-                  <span className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
-                    <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300" suppressHydrationWarning={true}></div>
+                  <span className={socialTextStyle}>
+                    <div className={underlineTransition} suppressHydrationWarning={true}></div>
                     LinkedIn
                   </span>
                 </a>
