@@ -29,55 +29,55 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>>${baseUrl}/contacts/</loc>
+    <loc>>${baseUrl}/contacts</loc>
     <lastmod>${lastYearDate}</lastmod>
     <changefreq>yearly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>>${baseUrl}/about/</loc>
+    <loc>>${baseUrl}/about</loc>
     <lastmod>${lastYearDate}</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>${baseUrl}/clients/</loc>
+    <loc>${baseUrl}/clients</loc>
     <lastmod>${lastMonthDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>${baseUrl}/services/</loc>
+    <loc>${baseUrl}/services</loc>
     <lastmod>${lastYearDate}</lastmod>
     <changefreq>yearly</changefreq> 
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>${baseUrl}/experience/</loc>
+    <loc>${baseUrl}/experience</loc>
     <lastmod>${lastYearDate}</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>${baseUrl}/privacy-policy/</loc>
+    <loc>${baseUrl}/privacy-policy</loc>
     <lastmod>${lastYearDate}</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>${baseUrl}/cookie-policy/</loc>
+    <loc>${baseUrl}/cookie-policy</loc>
     <lastmod>${lastYearDate}</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>>${baseUrl}/projects/</loc>
+    <loc>>${baseUrl}/projects</loc>
     <lastmod>01-01-1970</lastmod>
     <changefreq>never</changefreq>
     <priority>0.0</priority>
   </url>
   <url>
-    <loc>>${baseUrl}/work-in-progress/</loc>
+    <loc>>${baseUrl}/work-in-progress</loc>
     <lastmod>01-01-1970</lastmod>
     <changefreq>never</changefreq>
     <priority>0.0</priority>

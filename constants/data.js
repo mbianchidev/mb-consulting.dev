@@ -38,7 +38,7 @@ const userData = {
       companyUrl: "https://roarinc.com/",
       role: "Freelance DevOps Engineer | Site Reliability Engineer",
       story: "Collaborated with Roar to enable DevOps culture in all aspects of the company, starting with CI/CD processes on Azure DevOps. Responsible for the DevOps culture and the overall quality of the company's cloud infrastructure.",
-      year: "2022-ongoing",
+      year: "2022",
       show: true
     },
     {
