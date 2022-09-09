@@ -42,9 +42,7 @@ export function getClientSideProps(){
 }
 
 export default function Service() {
-  getClientSideProps();
   //{query.slug} is the slug of the service
-  console.log(query.slug);
   //this => {query.slug.replace(/-/g, ' ')}
   return (
     <section className="bg-white dark:bg-gray-800">
