@@ -282,12 +282,11 @@ export default function PrivacyPolicy() {
       I don't use remarketing services to advertise on third party websites to you after you visited this Service.<br></br>
       
       <br></br>
-      <h3 className="font-light text-xl">Google Ads (AdWords)</h3>  
+      <h3 className="font-light text-xl">Google Ads and Analytics</h3>  
       <br></br>
       I don't use Google Ads or any ads on this Service.<br></br>
 
-      Google Ads (AdWords) is a service provided by Google Inc.<br></br>
-      You can opt-out of Google Analytics for Display Advertising and customize the Google Display Network ads by visiting the Google Ads Settings page: <u><a target="_blank" rel="noopener noreferrer" href="http://www.google.com/settings/ads">http://www.google.com/settings/ads</a></u><br></br>
+      However, you can opt-out of Google Analytics for Display Advertising and customize the Google Display Network ads by visiting the Google Ads Settings page: <u><a target="_blank" rel="noopener noreferrer" href="http://www.google.com/settings/ads">http://www.google.com/settings/ads</a></u><br></br>
       Google also recommends installing the Google Analytics Opt-out Browser Add-on – <u><a target="_blank" rel="noopener noreferrer" href="https://tools.google.com/dlpage/gaoptout">https://tools.google.com/dlpage/gaoptout"</a></u> – for your web browser.<br></br>
       Google Analytics Opt-out Browser Add-on provides visitors with the ability to prevent their data from being collected and used by Google Analytics.<br></br>
       For more information on the privacy practices of Google, please visit the Google Privacy Terms web page: <u><a target="_blank" rel="noopener noreferrer" href="https://policies.google.com/privacy?hl=en">https://policies.google.com/privacy?hl=en</a></u><br></br>
