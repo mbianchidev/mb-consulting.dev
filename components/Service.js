@@ -42,8 +42,10 @@ export function getClientSideProps(){
 }
 
 export default function Service() {
-  const { query } = useRouter();
+  getClientSideProps();
   //{query.slug} is the slug of the service
+  console.log(query.slug);
+  //this => {query.slug.replace(/-/g, ' ')}
   return (
     <section className="bg-white dark:bg-gray-800">
     <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
@@ -67,26 +69,3 @@ export default function Service() {
     //ServiceCard(props.title,props.slug,props.serviceImage,props.startingFromRate,props.serviceDescription)
   );
 }
-
-//export default function Service(props) {
-//    return (
-//    <section className="bg-white dark:bg-gray-800">
-//      <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
-//        <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
-//          {props.slug} Service
-//        </h1>
-//      </div>
-//      <br></br>
-//      <br></br>
-//      <br></br>
-//      <div className="col-span-1 md:col-span-2">
-//        <span>
-//          <p className="text-xl text-gray-700 mb-4 dark:text-gray-300" style={{textAlign : "center"}}>
-//            Work in progress... <a href="/contacts"> <u>Contact me</u></a> if you want to know more about this service.
-//          </p>
-//        </span>
-//      </div>
-//    </section>
-//      //ServiceCard(props.title,props.slug,props.serviceImage,props.startingFromRate,props.serviceDescription)
-//    );
-//}
