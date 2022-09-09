@@ -72,13 +72,13 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
   </url>
   <url>
     <loc>${baseUrl}/projects</loc>
-    <lastmod>01-01-1970</lastmod>
+    <lastmod>1970-01-01</lastmod>
     <changefreq>never</changefreq>
     <priority>0.0</priority>
   </url>
   <url>
     <loc>${baseUrl}/work-in-progress</loc>
-    <lastmod>01-01-1970</lastmod>
+    <lastmod>1970-01-01</lastmod>
     <changefreq>never</changefreq>
     <priority>0.0</priority>
   </url>
