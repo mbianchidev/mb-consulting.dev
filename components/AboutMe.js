@@ -33,6 +33,7 @@ export default function AboutMe() {
               <h1 className="text-xl font-semibold text-gray-700 dark:text-gray-200">
                 Contacts
               </h1>
+              <br></br>
               <span className="text-lg text-gray-500 mt-4 dark:text-gray-300">
                 For any sort of question fill my {" "}
                 <a
@@ -49,6 +50,7 @@ export default function AboutMe() {
               <h1 className="text-xl font-semibold text-gray-700 dark:text-gray-200">
                 My work experience
               </h1>
+              <br></br>
               <span className="text-lg text-gray-500 mt-4 dark:text-gray-300">
                 You can check my CV{" "}
                 <a
