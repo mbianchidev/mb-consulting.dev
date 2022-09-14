@@ -68,7 +68,8 @@ export default function Contacts() {
                 Interested in my{" "}
                 <a
                   href="/services" rel="noopener noreferrer"
-                  className="text-gray-50 font-bold text-2xl border-b-2 border-gray-50"
+                  className="text-gray-800 font-bold dark:text-gray-300 hover-underline-animation"
+                  style={{color : "#276CC6"}}
                 > services </a>?
               </h1>
               <p className="font-light text-base text-gray-200 mt-2">

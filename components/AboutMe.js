@@ -80,7 +80,7 @@ export default function AboutMe() {
 
             {/* Social Links */}
             <h1 className="text-xl font-semibold text-gray-700 mt-8 dark:text-gray-200">
-              Social Links
+              Some Links
             </h1>
             <div className="mt-4 ml-4">
             <div className="flex flex-row justify-start items-center">
@@ -98,32 +98,6 @@ export default function AboutMe() {
               </div>
               <div className="flex flex-row justify-start items-center">
                 <a
-                  href={userData.socialLinks.medium}
-                  target="_blank" rel="noopener noreferrer"
-                  className="flex flex-row items-center space-x-4 group"
-                >
-                  <div className="my-4">&rarr;</div>
-                  <span className={socialTextStyle}>
-                    <div className={underlineTransition} suppressHydrationWarning={true}></div>
-                    Medium
-                  </span>
-                </a>
-              </div>
-              <div className="flex flex-row justify-start items-center">
-                <a
-                  href={userData.socialLinks.twitter}
-                  target="_blank" rel="noopener noreferrer"
-                  className="flex flex-row items-center space-x-4 group"
-                >
-                  <div className="my-4">&rarr;</div>
-                  <span className={socialTextStyle}>
-                    <div className={underlineTransition} suppressHydrationWarning={true}></div>
-                    Twitter
-                  </span>
-                </a>
-              </div>
-              <div className="flex flex-row justify-start items-center">
-                <a
                   href={userData.socialLinks.linkedin}
                   target="_blank" rel="noopener noreferrer"
                   className="flex flex-row items-center space-x-4 group"
@@ -135,6 +109,20 @@ export default function AboutMe() {
                   </span>
                 </a>
               </div>
+              <div className="flex flex-row justify-start items-center">
+                <a
+                  href={userData.socialLinks.linktree}
+                  target="_blank" rel="noopener noreferrer"
+                  className="flex flex-row items-center space-x-4 group"
+                >
+                  <div className="my-4">&rarr;</div>
+                  <span className={socialTextStyle}>
+                    <div className={underlineTransition} suppressHydrationWarning={true}></div>
+                    Linktr.ee
+                  </span>
+                </a>
+              </div>
+
             </div>
           </div>
 

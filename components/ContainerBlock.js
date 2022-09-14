@@ -18,14 +18,15 @@ export default function ContainerBlock({ children, ...customMeta }) {
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
+        <meta name="keywords" content="DevOps, SRE, CTO, Software Engineer, Coach, Courses" />
         <meta content={meta.description} name="description" />
         <meta
           property="og:url"
-          content={`https://${userData.domain}${router.asPath}`}
+          content={`https://${userData.domain}/${router.asPath}`}
         />
         <link
           rel="canonical"
-          href={`https://${userData.domain}${router.asPath}`}
+          href={`https://${userData.domain}/${router.asPath}`}
         />
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content="Matteo Bianchi" />

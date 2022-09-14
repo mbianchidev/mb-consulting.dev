@@ -20,10 +20,11 @@ function shuffle(array) {
 
 export default function Hero() {
   const colors = shuffle(["#FF7F3F", "#10B981", "#3B82F6","#851DE0"]);
+  const catchyPhraseFontSize = "1.5em";
 
   return (
-
     <div className="flex flex-row justify-center items-start overflow-hidden">
+
       {/* Fancy writings */}
       <div className="w-full md:w-1/2 mx-auto text-center md:text-left lg:p-20">
         <RoughNotationGroup show={true}>
@@ -48,18 +49,24 @@ export default function Hero() {
             </h1>
           </RainbowHighlight>
         </RoughNotationGroup>
-        {/*Call to action*/}
+
+      {/* Responsive Mobile image */}   
+      <div className="relative w-full h-56 md:h-[500px] hero__mobile-image">
+        <Image src={userData.mobileAvatarUrl} sizes="100vw" alt="propic" layout="fill" objectFit="cover" objectPosition="center"/>
+      </div>
+
+        {/*CTA - Call to action*/}
         <br></br>
-        <p className="font-mono">{userData.hero.catchyPhrase}</p>
+        <p className="font-mono dark:text-gray-100" style={{fontSize: catchyPhraseFontSize}}>{userData.hero.catchyPhrase}</p>
         <a href="/contacts">
           <button className="bg-[#02044A] rounded-md w-1/2 mx-2 mt-8 py-2 text-gray-200 dark:text-gray-200 text-xl font-bold">Get in touch!</button>
         </a>
       </div>
 
-      {/* Image container */}
+      {/* Desktop Image */}
       <div className="hidden lg:block relative w-full md:w-1/2 -mr-40 mt-20">
         <div className="w-3/4 ">
-          <Image src={userData.avatarUrl} alt="propic" width={954} height={1430} className="shadow" priority />
+          <Image src={userData.avatarUrl} alt="propic" width={954} height={1430} className="shadow hero__desktop-image" priority />
           <div className="flex flex-row justify-between mt-4">
             <div className="flex flex-row space-x-4">
               <svg
@@ -80,6 +87,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
+
     </div>
   );
 }
