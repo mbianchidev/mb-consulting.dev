@@ -1,5 +1,3 @@
-import { useRouter } from "next/router";
-
 const ServiceCard = ({ title, slug, serviceImage, startingFromRate, serviceDescription}) => {
     const url = `/services/${slug}`;
     return (
@@ -24,26 +22,7 @@ const ServiceCard = ({ title, slug, serviceImage, startingFromRate, serviceDescr
     );
   };
 
-export function getServerSideProps(ctx){
-    return {
-        props: {
-            slug: ctx.params.slug,
-        }
-    }
-}
-
-export function getClientSideProps(){
-  const { query } = useRouter();
-    return {
-        props: {
-            slug: query.slug,
-        }
-    }
-}
-
 export default function Service() {
-  //{query.slug} is the slug of the service
-  //this => {query.slug.replace(/-/g, ' ')}
   return (
     <section className="bg-white dark:bg-gray-800">
     <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
