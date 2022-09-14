@@ -5,7 +5,7 @@ import Image from 'next/image';
 import logo from "../public/images/logo.webp"
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
-import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
+import Dropdown from "@components/DropdownMenu";
 
 export default function Navbar() {
   const router = useRouter();
@@ -15,18 +15,12 @@ export default function Navbar() {
   // URL constants
   const clientsPath="/clients";
   const aboutPath="/about";
-  const serviceBasePath= "/services";
-  const devOpsServicePath = serviceBasePath+"/devops-and-cloud-engineering";
-  const siteReliabilityServicePath = serviceBasePath+"/site-reliability";
-  const coachingServicePath = serviceBasePath+"/coaching-and-courses";
-  const softwareServicePath = serviceBasePath+"/software-engineering";
 
   // Style constants
-  const navbarFontSize = '25px';
-  const servicesFontSize = '20px';
-  const selectedTextStyle = "text-gray-800 font-bold dark:text-gray-400 hover-underline-animation";
-  const unselectedTextStyle = "text-gray-600 dark:text-gray-300 font-normal hover-underline-animation";
-  const mobileTextStyle = "text-base font-normal text-gray-600 dark:text-gray-300";
+  const navbarFontSize = '30px';
+  const selectedTextStyle = "text-gray-800 font-bold dark:text-gray-400 dark:hover-underline-animation";
+  const unselectedTextStyle = "text-gray-600 font-normal dark:text-gray-300 dark:hover-underline-animation";
+  const mobileTextStyle = "text-gray-600 font-normal dark:text-gray-300 text-base";
 
   useEffect(() => {
     setMounted(true);
@@ -35,6 +29,7 @@ export default function Navbar() {
   return (
     <div className="max-w-8xl mx-2 px-4 py-10 md:py-20">
       <div className="flex  md:flex-row justify-between items-center navbar-mb">
+
         {/* Logo + Name */}
         <div className="flex flex-col md:flex-row items-center">
           <a href="/">
@@ -54,8 +49,10 @@ export default function Navbar() {
           </div>
         </div>
 
+        {/* Navbar sections */}
         <div className="space-x-8 hidden md:block -mr-40 mt-20">
 
+          {/*About*/}
           <Link href={aboutPath} passHref>
             <a
               className={`text-base ${
@@ -82,8 +79,34 @@ export default function Navbar() {
             </a>
           </Link>
 
-          {/* Projects section was here */}
+          {/*Services*/}
+          <Link href={userData.services.basePath} passHref>         
+            <a className={`text-base ${
+              router.asPath.includes(userData.services.basePath) ? selectedTextStyle : unselectedTextStyle }`}
+              style={{fontSize: navbarFontSize}}
+            > 
+              Services{" "} 
+              {router.asPath.includes(userData.services.basePath) && ( 
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  className="bi bi-arrow-down inline-block h-3 w-3"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
+                  />
+                </svg>
+              )} 
+            </a>
+          </Link>
 
+          {/* Projects section was here */}
+          
+          {/*Clients*/}
           <Link href={clientsPath} passHref>
             <a
               className={`text-base ${
@@ -108,158 +131,16 @@ export default function Navbar() {
             </a>
           </Link>
 
-          {/*Services*/}
-          <Link href={serviceBasePath} passHref>
-            <DropdownMenu.Root>
-              <DropdownMenu.Trigger>           
-                <a className={`text-base ${
-                  router.asPath.includes(serviceBasePath) ? selectedTextStyle : unselectedTextStyle }`}
-                  style={{fontSize: navbarFontSize}}
-                > 
-                  Services{" "} 
-                  {router.asPath.includes(serviceBasePath) && ( 
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      className="bi bi-arrow-down inline-block h-3 w-3"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
-                      />
-                    </svg>
-                  )} 
-                </a> 
-              </DropdownMenu.Trigger>
-              <DropdownMenu.Content align='center'>
-                <DropdownMenu.Item>
-                  <div style={{marginTop: '4px', marginBottom:'2px'}}>
-                    
-                      <a className={`text-base ${
-                        router.asPath === serviceBasePath ? selectedTextStyle : unselectedTextStyle }`}
-                        style={{fontSize: servicesFontSize}} href={serviceBasePath}
-                      > 
-                        {router.asPath === serviceBasePath && (
-                          <svg 
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="16" 
-                            height="16" 
-                            fill="currentColor" 
-                            className="bi bi-arrow-down-right" 
-                            viewBox="0 0 16 16"
-                          >
-                            <path 
-                              fillRule="evenodd" d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0v6z"
-                            />
-                          </svg>
-                        )} Discover 
-                      </a>
-                        
-                  </div>
-                </DropdownMenu.Item>
-                        
-                <DropdownMenu.Item>   
-                  <div style={{fontSizmarginTop: '2px', marginBottom:'2px'}}>            
-                    <a className={`text-base ${
-                      router.asPath === devOpsServicePath ? selectedTextStyle : unselectedTextStyle }`}
-                      style={{fontSize: servicesFontSize}} href={devOpsServicePath}
-                    > 
-                      {router.asPath === devOpsServicePath && (
-                        <svg 
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16" 
-                          height="16" 
-                          fill="currentColor" 
-                          className="bi bi-arrow-down-right" 
-                          viewBox="0 0 16 16"
-                        >
-                          <path 
-                            fillRule="evenodd" d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0v6z"
-                          />
-                        </svg>
-                      )} DevOps & Cloud 
-                    </a>
-                  </div>
-                </DropdownMenu.Item>
-                      
-                <DropdownMenu.Item>
-                <div style={{fontSizmarginTop: '2px', marginBottom:'2px'}}>
-                    <a className={`text-base ${
-                      router.asPath === siteReliabilityServicePath ? selectedTextStyle : unselectedTextStyle }`}
-                      style={{fontSize: servicesFontSize}} href={siteReliabilityServicePath}
-                    > 
-                      {router.asPath === siteReliabilityServicePath && (
-                        <svg 
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16" 
-                          height="16" 
-                          fill="currentColor" 
-                          className="bi bi-arrow-down-right" 
-                          viewBox="0 0 16 16"
-                        >
-                          <path 
-                            fillRule="evenodd" d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0v6z"
-                          />
-                        </svg>
-                      )} Site Reliability 
-                    </a>
-                  </div>
-                </DropdownMenu.Item>
-                      
-                <DropdownMenu.Item>
-                  <div style={{fontSizmarginTop: '2px', marginBottom:'2px'}}>
-                    <a className={`text-base ${
-                      router.asPath === coachingServicePath ? selectedTextStyle : unselectedTextStyle }`}
-                      style={{fontSize: servicesFontSize}} href={coachingServicePath}
-                    > 
-                      {router.asPath === coachingServicePath && (
-                        <svg 
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16" 
-                          height="16" 
-                          fill="currentColor" 
-                          className="bi bi-arrow-down-right" 
-                          viewBox="0 0 16 16"
-                        >
-                          <path 
-                            fillRule="evenodd" d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0v6z"
-                          />
-                        </svg>
-                      )} Coaching and Courses 
-                    </a>
-                  </div>
-                </DropdownMenu.Item>
-                      
-                <DropdownMenu.Item>
-                  <div style={{fontSizmarginTop: '2px', marginBottom:'2px'}}>
-                    <a className={`text-base ${
-                      router.asPath === softwareServicePath ? selectedTextStyle : unselectedTextStyle }`}
-                      style={{fontSize: servicesFontSize}} href={softwareServicePath}
-                    > 
-                      {router.asPath === softwareServicePath && (
-                        <svg 
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16" 
-                          height="16" 
-                          fill="currentColor" 
-                          className="bi bi-arrow-down-right" 
-                          viewBox="0 0 16 16"
-                        >
-                          <path 
-                            fillRule="evenodd" d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0v6z"
-                          />
-                        </svg>
-                      )} Software Engineering 
-                    </a>
-                  </div>
-                </DropdownMenu.Item>
-              </DropdownMenu.Content>
-              <DropdownMenu.ItemIndicator/>
-            </DropdownMenu.Root>
-          </Link>
+          {/*External Medium Blog*/}
+          <Link href={userData.socialLinks.medium} passHref>
+            <a
+              className={`text-base ${
+                router.asPath === clientsPath ? selectedTextStyle : unselectedTextStyle }`}
+              style={{fontSize: navbarFontSize}}
+              target="_blank" rel="noopener noreferrer"
+            > Blog{" "}
+            </a>
+          </Link>          
 
         </div>
 
@@ -334,11 +215,15 @@ export default function Navbar() {
       </div>
 
       {/*Mobile Navbar */}
-
       <div className="space-x-8 block md:hidden mt-4">
         <Link href={aboutPath}>
           <a className={mobileTextStyle}>
             About
+          </a>
+        </Link>
+        <Link href={userData.services.basePath}>
+          <a className={mobileTextStyle}>
+            Services
           </a>
         </Link>
         <Link href={clientsPath}>
@@ -346,11 +231,11 @@ export default function Navbar() {
             Clients
           </a>
         </Link>
-        <Link href={serviceBasePath}>
-          <a className={mobileTextStyle}>
-            Services
+        <Link href={userData.socialLinks.medium}>
+          <a className={mobileTextStyle} target="_blank" rel="noopener noreferrer">
+            Blog
           </a>
-        </Link>
+          </Link>   
       </div>
     </div>
   );

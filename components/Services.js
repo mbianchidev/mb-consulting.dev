@@ -1,18 +1,7 @@
 import React from "react";
 
-import getAllServices from "@lib/graphql/queries/getAllServices";
-
-
-export async function getStaticProps() {
-  const  services = await getAllServices();
-  return {
-    props: { 
-      services 
-    },
-  };
-}
-
 export default function Services() {
+  
   return (
     <section className="bg-white dark:bg-gray-800">
     <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">

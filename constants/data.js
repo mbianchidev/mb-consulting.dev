@@ -3,6 +3,7 @@ const userData = {
   name: "Matteo Bianchi",
   role: "DevOps | SRE | Coach | Developer",
   avatarUrl: "/images/propic.webp",
+  mobileAvatarUrl: "/images/propic-mobile.webp",
   email: "info@mb-consulting.dev",
   privacyMail: "privacy@mb-consulting.dev",
   siteMail: "site@mb-consulting.dev",
@@ -26,6 +27,21 @@ const userData = {
       imgUrl: "/images/devops-course-table-of-contents.webp",
     }
   ],
+  services: {
+    basePath: "/services",
+    firstService: {
+      name: "DevOps & Cloud Engineering",
+      path: "/devops-and-cloud-engineering",
+    },
+    secondService: {
+      name: "Site Reliability Engineering",
+      path: "/site-reliability",
+    },
+    thirdService: {
+      name: "Coaching and Courses",
+      path: "/coaching-and-courses",
+    }
+  },
   clients: [
     {
       code: "ROAR",
@@ -202,12 +218,14 @@ const userData = {
   },
   //fixed URL, do not change file name or anything else on google drive
   resumeUrl:
-    "https://drive.google.com/u/0/uc?id=1IKSaesUuRQmtkOA0SP--3oe7gR4P0X4Y&export=download",
+    //"https://drive.google.com/u/0/uc?id=1IKSaesUuRQmtkOA0SP--3oe7gR4P0X4Y&export=download",
+    "/static/Matteo_Bianchi_CV_smart.pdf",
   socialLinks: {
     twitter: "https://twitter.com/mbianchidev",
     linkedin: "https://www.linkedin.com/in/mbianchidev/",
     github: "https://github.com/mbianchidev",
     medium: "https://medium.com/@mbianchidev",
+    linktree: "https://linktr.ee/mbianchidev",
   },
 };
 
