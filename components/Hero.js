@@ -3,20 +3,7 @@ import userData from "@constants/data";
 import { RoughNotationGroup } from "react-rough-notation";
 import { RainbowHighlight } from "./RainbowHighlight";
 import Image from 'next/image';
-
-function shuffle(array) {
-  var i = array.length,
-      j = 0,
-      temp;
-  while (i--) {
-      j = Math.floor(Math.random() * (i+1));
-      // swap randomly chosen element with current element
-      temp = array[i];
-      array[i] = array[j];
-      array[j] = temp;
-  }
-  return array;
-}
+import { shuffle } from "@lib/utils";
 
 export default function Hero() {
   const colors = shuffle(["#FF7F3F", "#10B981", "#3B82F6","#851DE0"]);
@@ -50,10 +37,10 @@ export default function Hero() {
           </RainbowHighlight>
         </RoughNotationGroup>
 
-      {/* Responsive Mobile image */}   
-      <div className="relative w-full h-56 md:h-[500px] hero__mobile-image">
-        <Image src={userData.mobileAvatarUrl} sizes="100vw" alt="propic" layout="fill" objectFit="cover" objectPosition="center"/>
-      </div>
+        {/* Responsive Mobile image */}   
+        <div className="relative w-full h-56 md:h-[500px] hero__mobile-image">
+          <Image src={userData.mobileAvatarUrl} sizes="100vw" alt="propic" layout="fill" objectFit="cover" objectPosition="center"/>
+        </div>
 
         {/*CTA - Call to action*/}
         <br></br>
@@ -61,6 +48,7 @@ export default function Hero() {
         <a href="/contacts">
           <button className="bg-[#02044A] rounded-md w-1/2 mx-2 mt-8 py-2 text-gray-200 dark:text-gray-200 text-xl font-bold">Get in touch!</button>
         </a>
+        
       </div>
 
       {/* Desktop Image */}

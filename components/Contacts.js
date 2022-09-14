@@ -39,17 +39,21 @@ export default function Contacts() {
       method: 'POST',
       body: JSON.stringify(formData)
     })
-    .catch((err) => console.log(err)) //TODO handle error
+    .catch((err) => {
+      console.log("error catched:", err); //TODO remove this
+      alertService.error('Error: ' + err, options);
+    })
     .then(result => {
+      console.log("Result:", result); //TODO remove this
       if (result.success===true) {
         alertService.success(result.message, options);
+        console.log("success after if success === true:", response); //TODO remove this
         return response;
       }
         alertService.error(result.message, options);
+        console.log("error after if success === true:", response); //TODO remove this
         return response;
     });
-
-    console.log(response); //TODO remove this
 
   }
   

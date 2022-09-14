@@ -1,9 +1,10 @@
 import React from "react";
 import userData from "@constants/data";
 import Image from 'next/image';
+import Link from "next/link";
 import stackshareLogo from "../public/images/stackshare.webp";
 
-export default function AboutMe() {
+export default function About() {
   const linkTextStyle = "text-gray-800 font-bold dark:text-gray-300 hover-underline-animation";
   const socialTextStyle = "text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300"
   const underlineTransition = "absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"
@@ -68,12 +69,12 @@ export default function AboutMe() {
                     className={linkTextStyle}
                     style={{color : "#276CC6"}}
                   > clients </a>{" "} and {" "}
-                  <a
-                    href="/experience" rel="noopener noreferrer"
-                    className={linkTextStyle}
-                    style={{color : "#276CC6"}}
-                  > experiences </a>{" "}
-                  for more details.
+                  <Link href="/experience" passHref rel="noopener noreferrer"> 
+                    <a className={linkTextStyle} style={{color : "#276CC6"}}>
+                      experiences 
+                    </a> 
+                  </Link>{" "}
+                  as employee for more details.
                 </p>
               </span>
             </div>
