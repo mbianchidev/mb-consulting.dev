@@ -4,7 +4,8 @@ let baseUrl="https://www.mb-consulting.dev";
 const fs = require('fs');
 const path = require('path');
 const robots = `User-agent: *
-Disallow: /api/
+Allow: /
+Disallow: /api
 Sitemap: ${baseUrl}/sitemap.xml
 `;
 

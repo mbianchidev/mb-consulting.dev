@@ -134,8 +134,7 @@ export default function Navbar() {
           {/*External Medium Blog*/}
           <Link href={userData.socialLinks.medium} passHref>
             <a
-              className={`text-base ${
-                router.asPath === clientsPath ? selectedTextStyle : unselectedTextStyle }`}
+              className={`text-base ${unselectedTextStyle}`}
               style={{fontSize: navbarFontSize}}
               target="_blank" rel="noopener noreferrer"
             > Blog{" "}
