@@ -22,7 +22,7 @@ export default function MBCookies() {
             Cookies.remove("_ga_"+process.env.GA_TRACKING_ID);
           }}  
           onAccept={() => {
-            if (process.env.REACT_APP_GOOGLE_ANALYTICS_ID && getCookieConsentValue() === "true") {
+            if (process.env.GA_TRACKING_ID && getCookieConsentValue() === "true") {
               ga.router(url);
             }
           }}          

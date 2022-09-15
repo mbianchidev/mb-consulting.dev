@@ -105,9 +105,12 @@ export default function Services() {
 
 7. Other services?
 
+  I'm available for other services such as:
+
   - Technical writing
   - Conference talks (remote)
   - Podcasting / Streaming (remote)
 
+  just <link> contact me <link> and let's see how we can work together.
 
 */

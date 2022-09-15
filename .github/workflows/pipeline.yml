@@ -2,7 +2,7 @@ name: Dependabot auto updates
 on: [push]
 jobs:
   setup:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     name: Setup
     steps:
       - name: git checkout
