@@ -19,6 +19,7 @@ export default function Footer() {
           </div>
           <div className="space-x-4 flex flex-row items-center">
             <a
+              title="Twitter profile"
               href={userData.socialLinks.twitter}
               target="_blank" rel="noopener noreferrer"
               className="text-base font-normal text-gray-600 dark:text-gray-300"
@@ -35,6 +36,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
+              title="LinkedIn profile"
               href={userData.socialLinks.linkedin}
               target="_blank" rel="noopener noreferrer"
               className="text-base font-normal text-gray-600 dark:text-gray-300"

@@ -148,6 +148,7 @@ export default function Navbar() {
         {/*Social Links*/}
         <div className="space-x-4 flex flex-row items-center">
           <a
+            title="Twitter profile"
             href={userData.socialLinks.twitter}
             target="_blank" rel="noopener noreferrer"
           >
@@ -163,6 +164,7 @@ export default function Navbar() {
             </svg>
           </a>
           <a
+            title="LinkedIn profile"
             href={userData.socialLinks.linkedin}
             target="_blank" rel="noopener noreferrer"
           >
