@@ -35,10 +35,10 @@ const userData = {
       x: 80,
       y: 80,
       level: "85",
+      show: true,
     },
     // ...
-    // Git, GitHub, GitLab, SourceTree
-    // AWS, Azure, GCP,
+    // Azure, GCP,
     // Docker, K8s, Helm
     // Terraform, Puppet, AWS CloudFormation,
     // New Relic, Fluentd, SumoLogic, OpsGenie, StatusPage
@@ -48,8 +48,54 @@ const userData = {
     // MYSQL, PostgreSQL, Oracle 
     // Java, Spring, (Kotlin, Flutter, Phyton, Go, Ruby, NodeJS, React, NextJS, TypeScript)
     // Postman, OpenAPI, Swagger,
-    // Maven, Gradle, Maven, NPM, Yarn,
+    // Maven, Gradle, Maven,
     // Slack, Jira, Confluence, Trello
+    {
+      name: "GitHub",
+      image: "/images/techs/github.webp",
+      url: "https://github.com",
+      x: 80,
+      y: 80,
+      level: "85",
+      show: true,
+    },
+    {
+      name: "GitLab",
+      image: "/images/techs/gitlab.webp",
+      url: "https://about.gitlab.com/",
+      x: 100,
+      y: 100,
+      level: "85",
+      show: true,
+    },
+    {
+      name: "BitBucket",
+      image: "/images/techs/bitbucket.webp",
+      url: "https://bitbucket.org/",
+      x: 80,
+      y: 80,
+      level: "85",
+      show: true,
+    },
+    {
+      name: "AWS",
+      image: "/images/techs/aws.webp",
+      url: "https://aws.amazon.com/",
+      x: 80,
+      y: 50,
+      level: "85",
+      show: true,
+    },
+    {
+      name: "xxxx",
+      image: "/images/techs/XXX.webp",
+      url: "XXXX",
+      x: 80,
+      y: 80,
+      level: "0",
+      show: false,
+    },
+
   ],
   services: {
     basePath: "/services",
