@@ -8,7 +8,6 @@ const userData = {
   privacyMail: "privacy@mb-consulting.dev",
   siteMail: "site@mb-consulting.dev",
   address: "Full remote",
-  techStack: "https://stackshare.io/mbianchidev/known-techs",
   vat: "IT11846470968",
   sdi: "M5UXCR1",
   domain: "mb-consulting.dev",
@@ -26,6 +25,31 @@ const userData = {
       link: "https://mb-consulting.dev/workinprogress",
       imgUrl: "/images/devops-course-table-of-contents.webp",
     }
+  ],
+  techStack: "/stack",
+  techs: [
+    {
+      name: "Git",
+      image: "/images/techs/git.webp",
+      url: "https://git-scm.com/",
+      x: 80,
+      y: 80,
+      level: "85",
+    },
+    // ...
+    // Git, GitHub, GitLab, SourceTree
+    // AWS, Azure, GCP,
+    // Docker, K8s, Helm
+    // Terraform, Puppet, AWS CloudFormation,
+    // New Relic, Fluentd, SumoLogic, OpsGenie, StatusPage
+    // Jenkins, Azure DevOps, GitHub Actions, BitBucket Pipelines, AWS CodePipeline,
+    // Tomcat, JBoss, NGINX, Linux, Bashscripting, 
+    // SonarQube, Artifactory, 
+    // MYSQL, PostgreSQL, Oracle 
+    // Java, Spring, (Kotlin, Flutter, Phyton, Go, Ruby, NodeJS, React, NextJS, TypeScript)
+    // Postman, OpenAPI, Swagger,
+    // Maven, Gradle, Maven, NPM, Yarn,
+    // Slack, Jira, Confluence, Trello
   ],
   services: {
     basePath: "/services",
@@ -221,11 +245,11 @@ const userData = {
     //"https://drive.google.com/u/0/uc?id=1IKSaesUuRQmtkOA0SP--3oe7gR4P0X4Y&export=download",
     "/static/Matteo_Bianchi_CV_smart.pdf",
   socialLinks: {
-    twitter: "https://twitter.com/mbianchidev",
-    linkedin: "https://www.linkedin.com/in/mbianchidev/",
-    github: "https://github.com/mbianchidev",
-    medium: "https://medium.com/@mbianchidev",
-    linktree: "https://linktr.ee/mbianchidev",
+    twitter: "/twitter",
+    linkedin: "/linkedin",
+    github: "/github",
+    medium: "/blog",
+    linktree: "/all-links",
   },
 };
 

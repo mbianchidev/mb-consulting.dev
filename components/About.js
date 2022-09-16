@@ -3,6 +3,7 @@ import userData from "@constants/data";
 import Image from 'next/image';
 import Link from "next/link";
 import stackshareLogo from "../public/images/stackshare.webp";
+import gitLogo from "../public/images/techs/git.webp"
 
 export default function About() {
   const linkTextStyle = "text-gray-800 font-bold dark:text-gray-300 hover-underline-animation";
@@ -141,7 +142,14 @@ export default function About() {
               Tech Stack & Tools
             </h1>
             <div className="flex flex-row flex-wrap mt-8">
+              <Image
+                src={gitLogo}
+                alt="git logo"
+                className="h-20 w-20 mx-4 my-4"
+                width={80} height={80}
+              />
               <div>
+                <br></br>
                 <span className="text-xl text-gray-700 mb-4 dark:text-gray-300">
                 Click the 
                 <a 
@@ -150,8 +158,9 @@ export default function About() {
                   style={{color:"#0645AD"}}> stackshare.io </a> logo below to see the full list of technologies I use and/or know about.
                 </span>
               </div>
+              <br></br>
               <a id="link-stackshare" href={userData.techStack} target="_blank" rel="noopener noreferrer">
-                <Image src={stackshareLogo} alt="stackshare logo" className="h-20 w-20 mx-4 my-4" width={80} height={80} priority />
+                <Image src={stackshareLogo} alt="stackshare logo" className="h-20 w-20 mx-4 my-4" width={80} height={80} />
               </a>
             </div>
           </div>
