@@ -14,6 +14,109 @@ module.exports = {
         locales: ["en"],
         defaultLocale: "en",
       },
+    async redirects() {
+        return [
+            // Existing links/projects
+            {
+                source: '/telegram',
+                destination: 'https://t.me/mbianchidev',
+                permanent: false,
+                basePath: false
+            },
+            {
+              source: '/linkedin',
+              destination: 'https://www.linkedin.com/in/mbianchidev/',
+              permanent: false,
+              basePath: false
+            },
+            {
+                source: '/github',
+                destination: 'https://github.com/mbianchidev',
+                permanent: false,
+                basePath: false
+            },
+            {
+                source: '/twitter',
+                destination: 'https://twitter.com/mbianchidev',
+                permanent: false,
+                basePath: false
+            },
+            {
+                source: '/blog',
+                destination: 'https://medium.com/@mbianchidev',
+                permanent: false,
+                basePath: false
+            },
+            {
+                source: '/stackoverflow',
+                destination: 'https://stackoverflow.com/users/7410528/mbianchidev',
+                permanent: false,
+                basePath: false
+            },
+            {
+                source: '/stack',
+                destination: 'https://stackshare.io/mbianchidev/known-techs',
+                permanent: false,
+                basePath: false
+            },
+            {
+                source: '/newsletter',
+                destination: 'https://funews.substack.com/',
+                permanent: false,
+                basePath: false
+            },
+            // Future links for future projects
+            {
+                source: '/streaming',
+                destination: 'https://www.twitch.tv/mbianchidev',
+                permanent: false,
+                basePath: false
+            },
+            {
+                source: '/podcast',
+                destination: '/work-in-progress', //'https://open.spotify.com/show/wip',
+                permanent: false,
+                basePath: false
+            },
+            {
+                source: '/discord',
+                destination: '/work-in-progress', //'https://discord.gg/mbianchidev',
+                permanent: false,
+            },
+            {
+                source: '/tech-articles',
+                destination: '/work-in-progress', //'https://dev.to/mbianchidev',
+                permanent: false,
+            },
+            {
+                source: '/youtube',
+                destination: '/work-in-progress',
+                permanent: false,
+            },
+            {   
+                source: '/instagram',
+                destination: '/work-in-progress',
+                permanent: false,
+            },
+            {
+                source: '/facebook',
+                destination: '/work-in-progress',
+                permanent: false,
+            },
+            {
+                source: '/tiktok',
+                destination: '/work-in-progress',
+                permanent: false,
+            },
+            // Every link
+            {   
+                source: '/all-links',
+                destination: 'https://linktr.ee/mbianchidev',
+                permanent: false,
+                basePath: false
+            },
+          ]
+        },
 };
 
 const securityHeaders = [

@@ -34,10 +34,9 @@ export default function MBCookies() {
           buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
           expires={365}
         >
-        This (awesome?) website uses the smallest amount of cookies possible to enhance the user experience and allow me to perform some traffic/performance analysis.
+        This website uses the smallest amount of cookies possible to enhance the user experience and allow me to perform some traffic/performance analysis.
         For more info checkout <u><a target="_blank" rel="noopener noreferrer" href="/cookie-policy">my cookies policy</a></u>.
         What's a cookie? Checkout this <u><a target="_blank" rel="noopener noreferrer" href={userData.cookieUrl}>informative article about cookies</a></u> to learn more!
-        <span style={{ fontSize: "10px" }}> Please accept? c:</span>
         </CookieConsent>
     );
 }

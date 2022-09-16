@@ -46,7 +46,6 @@ export default function ContainerBlock({ children, ...customMeta }) {
 
   const processEnvGA = "G-B11MCGL84K";
   const processEnvGASource = "https://www.googletagmanager.com/gtag/js?id="+processEnvGA;
-  console.log("process.env.GA_TRACKING_ID", process.env.GA_TRACKING_ID); //TODO remove this
 
   const meta = {
     title: "Matteo Bianchi - DevOps | SRE | Coach | Developer",
