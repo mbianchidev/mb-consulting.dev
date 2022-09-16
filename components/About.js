@@ -1,9 +1,8 @@
 import React from "react";
 import userData from "@constants/data";
-import Image from 'next/image';
+import Image from 'next/future/image';
 import Link from "next/link";
 import stackshareLogo from "../public/images/stackshare.webp";
-import gitLogo from "../public/images/techs/git.webp"
 
 export default function About() {
   const linkTextStyle = "text-gray-800 font-bold dark:text-gray-300 hover-underline-animation";
@@ -142,26 +141,31 @@ export default function About() {
               Tech Stack & Tools
             </h1>
             <div className="flex flex-row flex-wrap mt-8">
-              <Image
-                src={gitLogo}
-                alt="git logo"
-                className="h-20 w-20 mx-4 my-4"
-                width={80} height={80}
-              />
-              <div>
-                <br></br>
-                <span className="text-xl text-gray-700 mb-4 dark:text-gray-300">
+              {/*<Image src={gitLogo} alt="git logo" className="h-20 w-20 mx-4 my-4" width={80} height={80} />*/}
+
+              {/*Tech stack images*/}
+              {React.Children.toArray(userData.techs.filter(tech => tech.show === true).map((tech, techId) => (
+                <TechCard
+                  techId={techId}
+                  techName={tech.name}
+                  techLogo={tech.image}
+                  techLogoX={tech.x}
+                  techLogoY={tech.y}
+                  techUrl={tech.url}
+                />
+              )))}
+              <span className="text-xl text-gray-700 mb-4 dark:text-gray-300">
                 Click the 
-                <a 
-                  href="https://stackshare.io/" 
-                  target="_blank" rel="noopener noreferrer" 
-                  style={{color:"#0645AD"}}> stackshare.io </a> logo below to see the full list of technologies I use and/or know about.
-                </span>
-              </div>
+                <a href="https://stackshare.io/" target="_blank" rel="noopener noreferrer" style={{color:"#0645AD"}}> stackshare.io </a> logo below to see the full list of technologies I use and/or know about.
+              </span>
               <br></br>
               <a id="link-stackshare" href={userData.techStack} target="_blank" rel="noopener noreferrer">
                 <Image src={stackshareLogo} alt="stackshare logo" className="h-20 w-20 mx-4 my-4" width={80} height={80} />
               </a>
+              <br></br>
+              <span className="text-base font-normaltext-gray-700 mb-4 dark:text-gray-300">
+                I'm not affiliated nor endorsed by any of these companies, I've just used or am using their products.
+              </span>
             </div>
           </div>
         </div>
@@ -169,3 +173,14 @@ export default function About() {
     </section>
   );
 }
+
+const TechCard = ({techId, techName, techLogo, techLogoX, techLogoY, techUrl }) => {
+  return (
+    <div id={techId} className="h-20 w-20 mx-4 my-4">
+      <a href={techUrl} target="_blank" rel="noopener noreferrer">
+        <Image src={techLogo} alt={techName} width={techLogoX} height={techLogoY} />
+      </a>
+    </div>
+  );
+};
+
