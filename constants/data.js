@@ -50,18 +50,18 @@ const userData = {
   },
   // currentProject: "this portfolio website",
   // currentProjectUrl: "https://mb-consulting.dev",
-  // projects: [
-  //   {
-  //     title: "Portfolio website",
-  //     link: "https://github.com/mbianchidev/site",
-  //     imgUrl: "/images/this-site.webp",
-  //   },
-  //   {
-  //     title: "DevOps Basics Course for companies",
-  //     link: "https://mb-consulting.dev/workinprogress",
-  //     imgUrl: "/images/devops-course-table-of-contents.webp",
-  //   }
-  // ],
+ projects: [
+   {
+     title: "Portfolio website",
+     link: "https://github.com/mbianchidev/site",
+     imgUrl: "/images/this-site.webp",
+   },
+   {
+     title: "DevOps Basics Course for companies",
+     link: "https://mb-consulting.dev/workinprogress",
+     imgUrl: "/images/devops-course-table-of-contents.webp",
+   }
+ ],
 };
 
 export default userData;
