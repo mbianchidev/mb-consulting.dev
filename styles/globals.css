@@ -228,7 +228,7 @@ a.close.disabled {
 	height: 2px;
 	bottom: 0;
 	left: 0;
-	background-color: #0A369D;
+	background-color: #3B82F6;
 	transform-origin: bottom right;
 	transition: transform 0.25s ease-out;
 }

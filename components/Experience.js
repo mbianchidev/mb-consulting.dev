@@ -1,5 +1,5 @@
 import React from "react";
-import userData from "@constants/data";
+import experiencesData from "@constants/experiences";
 import Image from 'next/image';
 
 export default function Experience() {
@@ -13,7 +13,7 @@ export default function Experience() {
       <div className="bg-[#F1F1F1] dark:bg-gray-900 -mt-4">
         <div className="grid grid-cols-1 dark:bg-gray-900 max-w-xl mx-auto pt-20">
           {/*Fixes warning each child in a list should have a unique "key" prop. */}
-          {React.Children.toArray(userData.experience.filter(employer => employer.show === true).map((employer, employerId) => (
+          {React.Children.toArray(experiencesData.experiences.filter(employer => employer.show === true).map((employer, employerId) => (
             <>
               <ExperienceCard
               code={employer.code}
@@ -29,7 +29,7 @@ export default function Experience() {
               year={employer.year}
               show={employer.show}
             />
-            {employerId === userData.experience.length - 1 || employer.show === false ? null : (
+            {employerId === experiencesData.experiences.length - 1 || employer.show === false ? null : (
               <div className="divider-container flex flex-col items-center -mt-2">
                 <div className="w-4 h-4 bg-green-500 rounded-full relative z-10">
                   <div className="w-4 h-4 bg-green-500 rounded-full relative z-10 animate-ping"></div>
