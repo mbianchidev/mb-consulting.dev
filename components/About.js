@@ -124,7 +124,7 @@ export default function About() {
             </h1>
             <br></br>
             <br></br>
-            <p className="text-xl text-gray-700 mb-4 dark:text-gray-300">Here's some of my favorite technologies (in a random order).</p>
+            <p className="text-xl text-gray-700 mb-4 dark:text-gray-300">Here's some of my favorite technologies.</p>
             <div className="bg-[#F1F1F1] flex flex-row flex-wrap mt-8">
               {/*Tech stack images*/}
               {React.Children.toArray(techsData.techs.filter(tech => tech.show === true).map((tech, techId) => (
@@ -140,7 +140,7 @@ export default function About() {
             </div>
             <br></br>
             <span className="text-xl text-gray-700 mb-4 dark:text-gray-300">
-                Click the <a href="https://stackshare.io/" target="_blank" rel="noopener noreferrer" style={{color:"#0645AD"}}> stackshare.io </a> logo below to see the full list of technologies I use and/or know about.
+                Click the <a href="https://stackshare.io/" target="_blank" rel="noopener noreferrer" style={{color:"#0645AD"}}> stackshare.io </a> logo below to see the full list of technologies I use(d) and/or know about.
               </span>
               <br></br>
               <a id="link-stackshare" href={userData.techStack} target="_blank" rel="noopener noreferrer">
