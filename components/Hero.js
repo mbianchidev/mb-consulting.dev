@@ -3,10 +3,24 @@ import userData from "@constants/data";
 import { RoughNotationGroup } from "react-rough-notation";
 import { RainbowHighlight } from "./RainbowHighlight";
 import Image from 'next/image';
+import { useState, useEffect } from "react";
 import { shuffle } from "@lib/utils";
 
 export default function Hero() {
-  const colors = shuffle(["#FF7F3F", "#10B981", "#3B82F6","#851DE0"]);
+  const titleStyle = "text-4xl md:text-8xl font-bold dark:text-gray-200 my-2";
+  const callToActionsArray = ["Let's talk!","Work with me!","Free call!", "Go cloud!", "Don't click here!"];
+  const colorsArray = ["#FF7F3F", "#10B981", "#02058F","#851DE0"];// #02058F #276CC6 #02044A
+
+  const [CTA, setCTA] = useState(" ");
+  const [color, setColors] = useState(" ");
+
+  useEffect(() => {
+    const randomCTA = shuffle(callToActionsArray)[0];
+    const randomColor = shuffle(colorsArray);
+    setCTA(randomCTA);
+    setColors(randomColor);
+  }, []);
+
   const catchyPhraseFontSize = "1.5em";
 
   return (
@@ -15,23 +29,23 @@ export default function Hero() {
       {/* Fancy writings */}
       <div className="w-full md:w-1/2 mx-auto text-center md:text-left lg:p-20">
         <RoughNotationGroup show={true}>
-          <RainbowHighlight color={colors[0]}>
-            <h1 className="text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
+          <RainbowHighlight color={color[0]}>
+            <h1 className={titleStyle}>
              {userData.hero.firstPrinciple}
             </h1>
           </RainbowHighlight>
-          <RainbowHighlight color={colors[1]}>
-            <h1 className="text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
+          <RainbowHighlight color={color[1]}>
+            <h1 className={titleStyle}>
               {userData.hero.secondPrinciple}
             </h1>
           </RainbowHighlight>
-          <RainbowHighlight color={colors[2]}>
-            <h1 className="text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
+          <RainbowHighlight color={color[2]}>
+            <h1 className={titleStyle}>
               {userData.hero.thirdPrinciple}
             </h1>
           </RainbowHighlight>
-          <RainbowHighlight color={colors[3]}>
-            <h1 className="text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
+          <RainbowHighlight color={color[3]}>
+            <h1 className={titleStyle}>
               {userData.hero.fourthPrinciple}
             </h1>
           </RainbowHighlight>
@@ -39,14 +53,14 @@ export default function Hero() {
 
         {/* Responsive Mobile image */}   
         <div className="relative w-full h-56 md:h-[500px] hero__mobile-image">
-          <Image src={userData.mobileAvatarUrl} sizes="100vw" alt="propic" layout="fill" objectFit="cover" objectPosition="center"/>
+          <Image src={userData.mobileAvatarUrl} sizes="100vw" alt="propic" layout="fill" objectFit="cover" objectPosition="center" priority />
         </div>
 
         {/*CTA - Call to action*/}
         <br></br>
         <p className="font-mono dark:text-gray-100" style={{fontSize: catchyPhraseFontSize}}>{userData.hero.catchyPhrase}</p>
         <a href="/contacts">
-          <button className="bg-[#02044A] rounded-md w-1/2 mx-2 mt-8 py-2 text-gray-200 dark:text-gray-200 text-xl font-bold">Get in touch!</button>
+          <button className="bg-[#02044A] rounded-md w-1/2 mx-2 mt-8 py-2 text-gray-200 dark:text-gray-200 text-xl font-bold">{CTA}</button>
         </a>
         
       </div>

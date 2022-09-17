@@ -64,7 +64,7 @@ export default function Contacts() {
           Let's get in touch!
         </h1>
       </div>
-      <div className="relative z-10 rounded-md shadow-md bg-[#02044A] p-4 md:p-10 lg:p-20 max-w-6xl mx-auto mb-20 -mt-4">
+      <div className="relative z-10 rounded-md shadow-md bg-[#050e96] p-4 md:p-10 lg:p-20 max-w-6xl mx-auto mb-20 -mt-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="md:ml-4">
             <header className="">
@@ -73,7 +73,7 @@ export default function Contacts() {
                 <a
                   href="/services" rel="noopener noreferrer"
                   className="text-gray-800 font-bold dark:text-gray-300 hover-underline-animation"
-                  style={{color : "#276CC6"}}
+                  style={{color : "#3B82F6"}}
                 > services </a>?
               </h1>
               <p className="font-light text-base text-gray-200 mt-2">

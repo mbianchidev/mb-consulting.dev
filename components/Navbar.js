@@ -13,6 +13,7 @@ export default function Navbar() {
   const [mounted, setMounted] = useState(false);
 
   // URL constants
+  const serviceBasePath="/services";
   const clientsPath="/clients";
   const aboutPath="/about";
 
@@ -80,13 +81,13 @@ export default function Navbar() {
           </Link>
 
           {/*Services*/}
-          <Link href={userData.services.basePath} passHref>         
+          <Link href={serviceBasePath} passHref>         
             <a className={`text-base ${
-              router.asPath.includes(userData.services.basePath) ? selectedTextStyle : unselectedTextStyle }`}
+              router.asPath.includes(serviceBasePath) ? selectedTextStyle : unselectedTextStyle }`}
               style={{fontSize: navbarFontSize}}
             > 
               Services{" "} 
-              {router.asPath.includes(userData.services.basePath) && ( 
+              {router.asPath.includes(serviceBasePath) && ( 
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -222,7 +223,7 @@ export default function Navbar() {
             About
           </a>
         </Link>
-        <Link href={userData.services.basePath}>
+        <Link href={serviceBasePath}>
           <a className={mobileTextStyle}>
             Services
           </a>

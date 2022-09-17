@@ -1,5 +1,5 @@
 import React from "react";
-import userData from "@constants/data";
+import clientsData from "@constants/clients";
 import Image from 'next/image';
 
 export default function Clients() {
@@ -13,7 +13,7 @@ export default function Clients() {
       <div className="bg-[#F1F1F1] dark:bg-gray-900 -mt-4">
         <div className="grid grid-cols-1 dark:bg-gray-900 max-w-xl mx-auto pt-20">
           {/*Fixes warning each child in a list should have a unique "key" prop. */}
-          {React.Children.toArray(userData.clients.filter(client => client.show === true).map((client, clientId) => (
+          {React.Children.toArray(clientsData.clients.filter(client => client.show === true).map((client, clientId) => (
             <>
               <ClientCard
               code={client.code}
@@ -29,7 +29,7 @@ export default function Clients() {
               year={client.year}
               show={client.show}
             />
-            {clientId === userData.clients.length - 1 || client.show === false ? null : (
+            {clientId === clientsData.clients.length - 1 || client.show === false ? null : (
               <div className="divider-container flex flex-col items-center -mt-2">
                 <div className="w-4 h-4 bg-green-500 rounded-full relative z-10">
                   <div className="w-4 h-4 bg-green-500 rounded-full relative z-10 animate-ping"></div>
