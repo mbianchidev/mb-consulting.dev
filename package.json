@@ -1,6 +1,6 @@
 {
   "name": "mb-consulting-dev-site",
-  "version": "1.1.12",
+  "version": "1.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev",

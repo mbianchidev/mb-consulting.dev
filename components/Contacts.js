@@ -34,25 +34,23 @@ export default function Contacts() {
 
     // resetting fields as the form is submitted
     e.currentTarget.reset();
-  
+
     const response = await fetch('/api/mail', {
       method: 'POST',
+      headers: {
+        "Content-Type": "application/json",
+      },
       body: JSON.stringify(formData)
     })
     .catch((err) => {
-      console.log("error catched:", err); //TODO remove this
-      alertService.error('Error: ' + err, options);
+      alertService.error('Error!'+ err + ' (please resend the message to '+userData.email+')' , options);
     })
     .then(result => {
-      console.log("Result:", result); //TODO remove this
-      if (result.success===true) {
-        alertService.success(result.message, options);
-        console.log("success after if success === true:", response); //TODO remove this
-        return response;
+      if (result) {
+        alertService.success("Message sent!", options);
+      } else {
+        alertService.error("Ops! There was an error, please resend the message to "+userData.email, options);
       }
-        alertService.error(result.message, options);
-        console.log("error after if success === true:", response); //TODO remove this
-        return response;
     });
 
   }
