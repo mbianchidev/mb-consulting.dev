@@ -1,17 +1,111 @@
 const servicesData = {
+  /* 
+  name => service name
+  image => image path
+  slug => slug for the service
+  shortDescription => one-phrased description of the service
+  description => complete description of the service
+  show => true/false whether to show the service or not
+  startingFromRate => starting from rate for the service (optional)
+  */
     services: [
         {
-            name: "",
-            image: "",
-            slug: "",
-            description: [
-                ``,
-                ``,
-                ``,
-                ``,
-                ``,
-            ],
-            startingFromRate: "",
+          name: "DevOps Fundamentals Course",
+          image: "/images/services/coaching.webp",
+          slug: "devops-fundamentals-course",
+          shortDescription: "Discover what does DevOps can do for you",
+          description: [
+              `This is a mock text 1`,
+              `x`,
+              `x`,
+              `x`,
+              `x`,
+          ],
+          show: true,
+        },
+        {
+          name: "DevOps Adoption Path",
+          image: "/images/services/path.webp",
+          slug: "devops-adoption-path",
+          shortDescription: "Start the complete automation journey",
+          description: [
+              `This is a mock text 2`,
+              ``,
+              ``,
+              ``,
+              ``,
+          ],
+          show: true,
+        },
+        {
+          name: "Cloud Migration & Management",
+          image: "/images/services/cloud.webp",
+          slug: "cloud-migration-and-management",
+          shortDescription: "Scale up your business to the cloud ",
+          description: [
+              `This is a mock text 3`,
+              ``,
+              ``,
+              ``,
+              ``,
+          ],
+          show: true,
+        },
+        {
+          name: "SRE & DevSecOps",
+          image: "/images/services/security.webp",
+          slug: "sre-devsecops",
+          shortDescription: "Perform a reliability and security check-up",
+          description: [
+              `This is a mock text 4`,
+              ``,
+              ``,
+              ``,
+              ``,
+          ],
+          show: true,
+        },
+        {
+          name: "CTO as a Service",
+          image: "/images/services/me.webp",
+          slug: "cto-as-a-service",
+          shortDescription: "Benefit from my fracional CTO services",
+          description: [
+              `This is a mock text 5`,
+              ``,
+              ``,
+              ``,
+              ``,
+          ],
+          show: true,
+        },
+        {
+          name: "Software Engineering",
+          image: "/images/services/programming.webp",
+          slug: "software-engineering",
+          shortDescription: "Take care of your software lifecycle",
+          description: [
+              `This is a mock text 6`,
+              ``,
+              ``,
+              ``,
+              ``,
+          ],
+          show: true,
+        },
+        {
+          name: "Other Services",
+          image: "/images/services/service-mock.webp",
+          slug: "other-services",
+          shortDescription: "I'm available for other services, see the details",
+          description: [
+              `This is a mock text 7`,
+              ``,
+              ``,
+              ``,
+              ``,
+          ],
+          show: true,
         },
     ],
 };
@@ -29,7 +123,7 @@ export default servicesData;
 
   Are you ready to begin your DevOps journey? <link> Discover how <link>.
 
-2. Start the complete automation (DevOps Adoption Path)
+2. Start the complete automation journey (DevOps Adoption Path)
 
   My focus will be enabling your team to automate repetitive and error-prone tasks so your they will have more time to focus on what really matters.
   You will be able to deliver software faster and with higher quality.

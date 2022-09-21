@@ -1,27 +1,3 @@
-const ServiceCard = ({ title, slug, serviceImage, startingFromRate, serviceDescription}) => {
-    const url = `/services/${slug}`;
-    return (
-      <a href={url} className="w-full block shadow-2xl">
-        <div className="relative overflow-hidden">
-          <div className="h-72 object-cover">
-            <img
-              src={serviceImage}
-              alt="portfolio"
-              className="transform hover:scale-125 transition duration-2000 ease-out object-cover h-full w-full"
-            />
-          </div>
-          <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
-            {title}
-          </h1>
-          <div>{serviceDescription}</div>
-          <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
-            {startingFromRate != "0" ? startingFromRate : null}
-          </h1>
-        </div>
-      </a>
-    );
-  };
-
 export default function Service() {
   return (
     <section className="bg-white dark:bg-gray-800">
@@ -42,7 +18,5 @@ export default function Service() {
         </div>
       </div>
     </section>
-
-    //ServiceCard(props.title,props.slug,props.serviceImage,props.startingFromRate,props.serviceDescription)
   );
 }
