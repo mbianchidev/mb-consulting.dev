@@ -182,7 +182,7 @@ export default function Contacts() {
                 <a
                   href="/privacy-policy" rel="noopener noreferrer"
                   className="text-gray-800 border-b-2 border-gray-800 font-bold"
-                > privacy policy </a>{" "} of this site.
+                >privacy policy</a>{" "} of this site.
               </label>
             </div>
             <button

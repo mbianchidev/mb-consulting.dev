@@ -33,20 +33,16 @@ export default function Navbar() {
 
         {/* Logo + Name */}
         <div className="flex flex-col md:flex-row items-center">
-          <a href="/">
+          <Link href="/" passHref>
             <Image src={logo} alt="mb-consulting logo an infinite symbol turned into a cloud" width={156} height={104} priority />
-          </a>
+          </Link>
           <div className="flex flex-col">
-            <Link href="/" passHref>
-              <a>
-                <h1 className="font-semibold text-x1 dark:text-gray-100" style={{fontSize: '60px'}}>
-                  {userData.name}
-                </h1>
-                <p className="text-base font-light text-gray-500 dark:text-gray-300" style={{fontSize: '20px'}}>
-                  {userData.role}
-                </p>
-              </a>
-            </Link>
+            <h1 className="font-semibold text-x1 dark:text-gray-100" style={{fontSize: '60px'}}>
+              {userData.name}
+            </h1>
+            <p className="text-base font-light text-gray-500 dark:text-gray-300" style={{fontSize: '20px'}}>
+              {userData.role}
+            </p>
           </div>
         </div>
 

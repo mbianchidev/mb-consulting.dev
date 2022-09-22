@@ -62,6 +62,7 @@ const userData = {
     secondPrinciple: "Automate.",
     thirdPrinciple: "Secure.",
     fourthPrinciple: "Innovate.",
+    callToActions: ["Let's talk!","Work with me!", "Need a DevOps?", "Looking for a CTO?", "Go cloud!", "Don't click here!", "Grab your free call!"],
   },
   // see next.config.js
   techStack: "/stack",
