@@ -1,15 +1,17 @@
+import servicesData from "../constants/services.js";
+
 //js script to generate robots.txt file
 let baseUrl="https://www.mb-consulting.dev";
 
-const fs = require('fs');
-const path = require('path');
+import { writeFile } from 'fs';
+import { join } from 'path';
 const robots = `User-agent: *
 Allow: /
 Disallow: /api
 Sitemap: ${baseUrl}/sitemap.xml
 `;
 
-fs.writeFile(path.join(__dirname, '../public/robots.txt'), robots, (err) => {
+writeFile(join(__dirname, '../public/robots.txt'), robots, (err) => {
     if (err) throw err;
 } );
 // end of js script to generate robots.txt file
@@ -45,14 +47,23 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <loc>${baseUrl}/clients</loc>
     <lastmod>${lastMonthDate}</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>${baseUrl}/services</loc>
+    <loc>${baseUrl}/service/</loc>
     <lastmod>${lastYearDate}</lastmod>
     <changefreq>yearly</changefreq> 
     <priority>0.9</priority>
   </url>
+  ${servicesData.services.filter(service => service.active === true)?.map((service) => (
+  `
+  <url>
+    <loc>${baseUrl}/service/${service.slug}</loc>
+    <lastmod>${lastMonthDate}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  `)).join('')}
   <url>
     <loc>${baseUrl}/experience</loc>
     <lastmod>${lastYearDate}</lastmod>
@@ -86,9 +97,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 </urlset>
 `;
 
-//TODO add the full services list on sitemap (not yet ready so w/e)
-
-fs.writeFile(path.join(__dirname, '../public/sitemap.xml'), sitemap, (err) => {
+writeFile(join(__dirname, '../public/sitemap.xml'), sitemap, (err) => {
     if (err) throw err;
 } );
 

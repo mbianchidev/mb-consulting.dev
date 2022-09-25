@@ -11,20 +11,7 @@ function DropdownMenu() {
   const selectedTextStyle = "text-gray-800 font-bold dark:text-gray-400 dark:hover-underline-animation";
   const unselectedTextStyle = "text-gray-600 font-normal dark:text-gray-300 dark:hover-underline-animation";
 
-  const MenuItems = [
-    {
-      title: userData.services.firstService.name,
-      path: userData.services.firstService.path
-    },
-    {
-      title: userData.services.secondService.name,
-      path: userData.services.secondService.path
-    },
-    {
-      title: userData.services.thirdService.name,
-      path: userData.services.thirdService.path
-    } 
-  ];
+  const MenuItems = [{ name: "Home", href: "/" }, { name: "Services", href: "/services" }, { name: "About", href: "/about" }, { name: "Contact", href: "/contact" }];
 
   return (
     <></>

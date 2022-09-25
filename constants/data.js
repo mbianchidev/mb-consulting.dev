@@ -7,14 +7,12 @@ const userData = {
   email: "info@mb-consulting.dev",
   privacyMail: "privacy@mb-consulting.dev",
   siteMail: "site@mb-consulting.dev",
+  mailThankYouMessage: "Every client may be former, new or potential matters a lot to me, that's why it may take some time for me to respond. I take my time to carefully read every email and try to answer to all of them. If you don't receive a reply from me within 48 hours, please check your spam folder or contact me again.",
   address: "Full remote",
   vat: "IT11846470968",
   sdi: "M5UXCR1",
   domain: "mb-consulting.dev",
   cookieUrl: "https://www.allaboutcookies.org/",
-  services: {
-    basePath: "/services",
-  },
   about: {
     title: "A long time ago in a galaxy far, far away... I fell in ❤️ with DevOps culture, I became passionate about clouds 🌩️ and obsessed with IT security 🔐. Always eager to learn and teach new stuff, to make a difference",
     story: {

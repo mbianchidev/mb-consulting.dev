@@ -13,7 +13,7 @@ export default function Navbar() {
   const [mounted, setMounted] = useState(false);
 
   // URL constants
-  const serviceBasePath="/services";
+  const servicesPath="/services";
   const clientsPath="/clients";
   const aboutPath="/about";
 
@@ -34,7 +34,9 @@ export default function Navbar() {
         {/* Logo + Name */}
         <div className="flex flex-col md:flex-row items-center">
           <Link href="/" passHref>
-            <Image src={logo} alt="mb-consulting logo an infinite symbol turned into a cloud" width={156} height={104} priority />
+            <a>
+              <Image src={logo} alt="mb-consulting logo an infinite symbol turned into a cloud" width={156} height={104} priority />
+            </a>
           </Link>
           <div className="flex flex-col">
             <h1 className="font-semibold text-x1 dark:text-gray-100" style={{fontSize: '60px'}}>
@@ -77,13 +79,13 @@ export default function Navbar() {
           </Link>
 
           {/*Services*/}
-          <Link href={serviceBasePath} passHref>         
+          <Link href={servicesPath} passHref>         
             <a className={`text-base ${
-              router.asPath.includes(serviceBasePath) ? selectedTextStyle : unselectedTextStyle }`}
+              router.asPath.includes(servicesPath) ? selectedTextStyle : unselectedTextStyle }`}
               style={{fontSize: navbarFontSize}}
             > 
               Services{" "} 
-              {router.asPath.includes(serviceBasePath) && ( 
+              {router.asPath.includes(servicesPath) && ( 
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -219,7 +221,7 @@ export default function Navbar() {
             About
           </a>
         </Link>
-        <Link href={serviceBasePath}>
+        <Link href={servicesPath}>
           <a className={mobileTextStyle}>
             Services
           </a>

@@ -24,7 +24,7 @@ export default function About() {
   return (
     <section className="bg-white dark:bg-gray-800">
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
-        <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
+        <h1 className="text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
           My journey
         </h1>
       </div>
@@ -147,7 +147,7 @@ export default function About() {
 
             {/*Tech stack images*/}
             <div className="bg-[#F1F1F1] flex flex-row flex-wrap mt-8">
-              {React.Children.toArray(techsData.techs.filter(tech => tech.show === true).map((tech, techId) => (
+              {React.Children.toArray(techsData.techs.filter(tech => tech.show === true)?.map((tech, techId) => (
                 <TechCard
                   techId={techId}
                   techName={tech.name}
