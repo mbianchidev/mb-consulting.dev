@@ -1,5 +1,3 @@
-const servicesData = require('../constants/services.js');
-
 //js script to generate robots.txt file
 let baseUrl="https://www.mb-consulting.dev";
 
@@ -22,6 +20,37 @@ let date = new Date(todayDate);
 let lastMonthDate = new Date(date.setMonth(date.getMonth() - 1)).toISOString().split('T')[0];
 date = new Date(todayDate);
 let lastYearDate = new Date(date.setFullYear(date.getFullYear() - 1)).toISOString().split('T')[0];
+
+const services = [
+  {
+    slug: "devops-fundamentals-course",
+    active: true,    
+  },
+  {
+    slug: "devops-adoption-path",
+    active: true,    
+  },
+  {
+    slug: "cloud-migration-and-management",
+    active: true,    
+  },
+  {
+    slug: "sre-devsecops",
+    active: true,    
+  },
+  {
+    slug: "cto-as-a-service",
+    active: true,    
+  },
+  {
+    slug: "software-engineering",
+    active: true,
+  },
+  {
+    slug: "other-services",
+    active: true,
+  },
+];
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -55,7 +84,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <changefreq>yearly</changefreq> 
     <priority>0.9</priority>
   </url>
-  ${servicesData.services.filter(service => service.active === true)?.map((service) => (
+  ${services.filter(service => service.active === true)?.map((service) => (
   `
   <url>
     <loc>${baseUrl}/service/${service.slug}</loc>
