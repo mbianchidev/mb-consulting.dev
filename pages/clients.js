@@ -5,7 +5,7 @@ import Clients from "@components/Clients";
 export default function clients() {
   return (
     <ContainerBlock title="Clients - Matteo Bianchi">
-      <Clients />
+      <Clients/>
     </ContainerBlock>
   );
 }

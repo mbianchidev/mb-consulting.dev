@@ -1,50 +1,66 @@
 import React, { useEffect, useState } from "react";
 import userData from "@constants/data";
 import Link from "next/link";
+import Image from 'next/image';
+import logo from "../public/images/logo.webp"
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
+import Dropdown from "@components/DropdownMenu";
 
 export default function Navbar() {
   const router = useRouter();
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
+  // URL constants
+  const servicesPath="/services";
+  const clientsPath="/clients";
+  const aboutPath="/about";
+
+  // Style constants
+  const navbarFontSize = '30px';
+  const selectedTextStyle = "text-gray-800 font-bold dark:text-gray-400 dark:hover-underline-animation";
+  const unselectedTextStyle = "text-gray-600 font-normal dark:text-gray-300 dark:hover-underline-animation";
+  const mobileTextStyle = "text-gray-600 font-normal dark:text-gray-300 text-base";
+
   useEffect(() => {
     setMounted(true);
   }, []);
 
   return (
-    <div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">
+    <div className="max-w-8xl mx-2 px-4 py-10 md:py-20">
       <div className="flex  md:flex-row justify-between items-center navbar-mb">
-        {/* Logo / Home / Text */}
-        <a href="/">
-          <img src="/images/logo.png"></img>
-        </a>
-        <div className="flex flex-col">
-          <Link href="/">
+
+        {/* Logo + Name */}
+        <div className="flex flex-col md:flex-row items-center">
+          <Link href="/" passHref>
             <a>
-              <h1 className="font-semibold text-x1 dark:text-gray-100" style={{fontSize : '50px'}}>
-                {userData.name}
-              </h1>
-              <p className="text-base font-light text-gray-500 dark:text-gray-300">
-                {userData.role}
-              </p>
+              <Image src={logo} alt="mb-consulting logo an infinite symbol turned into a cloud" width={156} height={104} priority />
             </a>
           </Link>
+          <div className="flex flex-col">
+            <h1 className="font-semibold text-x1 dark:text-gray-100" style={{fontSize: '60px'}}>
+              {userData.name}
+            </h1>
+            <p className="text-base font-light text-gray-500 dark:text-gray-300" style={{fontSize: '20px'}}>
+              {userData.role}
+            </p>
+          </div>
         </div>
 
-        <div className="space-x-8 hidden md:block">
-          <Link href="/about">
+        {/* Navbar sections */}
+        <div className="space-x-8 hidden md:block -mr-40 mt-20">
+
+          {/*About*/}
+          <Link href={aboutPath} passHref>
             <a
-              className={`text-base  ${
-                router.asPath === "/about"
-                  ? "text-gray-800 font-bold dark:text-gray-400"
-                  : "text-gray-600 dark:text-gray-300 font-normal "
+              className={`text-base ${
+                router.asPath === aboutPath ? selectedTextStyle : unselectedTextStyle
               }`}
-              style={{fontSize : '20px'}}
+              style={{fontSize: navbarFontSize}}
             >
-              My story{" "}
-              {router.asPath === "/about" && (
+              About{" "}
+              {router.asPath === aboutPath && (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -61,17 +77,42 @@ export default function Navbar() {
               )}
             </a>
           </Link>
-          <Link href="/projects">
+
+          {/*Services*/}
+          <Link href={servicesPath} passHref>         
+            <a className={`text-base ${
+              router.asPath.includes(servicesPath) ? selectedTextStyle : unselectedTextStyle }`}
+              style={{fontSize: navbarFontSize}}
+            > 
+              Services{" "} 
+              {router.asPath.includes(servicesPath) && ( 
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  className="bi bi-arrow-down inline-block h-3 w-3"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
+                  />
+                </svg>
+              )} 
+            </a>
+          </Link>
+
+          {/* Projects section was here */}
+          
+          {/*Clients*/}
+          <Link href={clientsPath} passHref>
             <a
-              className={`text-base  ${
-                router.asPath === "/projects"
-                  ? "text-gray-800 font-bold dark:text-gray-400"
-                  : "text-gray-600 dark:text-gray-300 font-normal "
-              }`}
-              style={{fontSize : '20px'}}
-            >
-              Projects
-              {router.asPath === "/projects" && (
+              className={`text-base ${
+                router.asPath === clientsPath ? selectedTextStyle : unselectedTextStyle }`}
+              style={{fontSize: navbarFontSize}}
+            > Clients{" "}
+              {router.asPath === clientsPath && (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -88,99 +129,27 @@ export default function Navbar() {
               )}
             </a>
           </Link>
-          <Link href="/clients">
+
+          {/*External Medium Blog*/}
+          <Link href={userData.socialLinks.medium} passHref>
             <a
-              className={`text-base  ${
-                router.asPath === "/clients"
-                  ? "text-gray-800 font-bold dark:text-gray-400"
-                  : "text-gray-600 dark:text-gray-300 font-normal "
-              }`}
-              style={{fontSize : '20px'}}
-            >
-              Clients{" "}
-              {router.asPath === "/clients" && (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  className="bi bi-arrow-down inline-block h-3 w-3"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
-                  />
-                </svg>
-              )}
+              className={`text-base ${unselectedTextStyle}`}
+              style={{fontSize: navbarFontSize}}
+              target="_blank" rel="noopener noreferrer"
+            > Blog{" "}
             </a>
-          </Link>
-          {/* 
-          <Link href="/contacts">
-            <a
-              className={`text-base  ${
-                router.asPath === "/contacts"
-                  ? "text-gray-800 font-bold dark:text-gray-400"
-                  : "text-gray-600 dark:text-gray-300 font-normal "
-              }`}
-              style={{fontSize : '20px'}}
-            >
-              {" "}
-              {router.asPath === "/contacts" && (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  className="bi bi-arrow-down inline-block h-3 w-3"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
-                  />
-                </svg>
-              )}
-            </a>
-          </Link>
-          */}
-          {/* 
-          <Link href="/experience">
-            <a
-              className={`text-base  ${
-                router.asPath === "/experience"
-                  ? "text-gray-800 font-bold dark:text-gray-400"
-                  : "text-gray-600 dark:text-gray-300 font-normal "
-              }`}
-              style={{fontSize : '20px'}}
-            >
-              Experience{" "}
-              {router.asPath === "/experience" && (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  className="bi bi-arrow-down inline-block h-3 w-3"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
-                  />
-                </svg>
-              )}
-            </a>
-          </Link>
-          */}
+          </Link>          
+
         </div>
 
-        
+
+
+        {/*Social Links*/}
         <div className="space-x-4 flex flex-row items-center">
           <a
+            title="Twitter profile"
             href={userData.socialLinks.twitter}
             target="_blank" rel="noopener noreferrer"
-            className="text-base font-normal text-gray-600 dark:text-gray-300"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -194,9 +163,9 @@ export default function Navbar() {
             </svg>
           </a>
           <a
+            title="LinkedIn profile"
             href={userData.socialLinks.linkedin}
             target="_blank" rel="noopener noreferrer"
-            className="text-base font-normal text-gray-600 dark:text-gray-300"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -209,11 +178,12 @@ export default function Navbar() {
               <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
             </svg>
           </a>
+
           <button
             aria-label="Toggle Dark Mode"
             type="button"
             className="w-10 h-10 p-3 rounded focus:outline-none"
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            onClick={() => setTheme(theme === "light" ? "dark" : "light")}
           >
             {mounted && (
               <svg
@@ -243,23 +213,29 @@ export default function Navbar() {
           </button>
         </div>
       </div>
-      {/*Mobile section */}
+
+      {/*Mobile Navbar */}
       <div className="space-x-8 block md:hidden mt-4">
-        <Link href="/about">
-          <a className="text-base font-normal text-gray-600 dark:text-gray-300">
-            My story
+        <Link href={aboutPath}>
+          <a className={mobileTextStyle}>
+            About
           </a>
         </Link>
-        <Link href="/projects">
-          <a className="text-base font-normal text-gray-600 dark:text-gray-300">
-            Projects
+        <Link href={servicesPath}>
+          <a className={mobileTextStyle}>
+            Services
           </a>
         </Link>
-        <Link href="/clients">
-          <a className="text-base font-normal text-gray-600 dark:text-gray-300">
+        <Link href={clientsPath}>
+          <a className={mobileTextStyle}>
             Clients
           </a>
         </Link>
+        <Link href={userData.socialLinks.medium}>
+          <a className={mobileTextStyle} target="_blank" rel="noopener noreferrer">
+            Blog
+          </a>
+          </Link>   
       </div>
     </div>
   );

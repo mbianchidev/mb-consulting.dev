@@ -1,164 +1,90 @@
 const userData = {
   githubUsername: "mbianchidev",
   name: "Matteo Bianchi",
-  role: "Developer | DevOps | SRE | Coach",
-  avatarUrl: "/images/propic.jpg",
+  role: "DevOps | SRE | Coach | Developer",
+  avatarUrl: "/images/propic.webp",
+  mobileAvatarUrl: "/images/propic-mobile.webp",
   email: "info@mb-consulting.dev",
   privacyMail: "privacy@mb-consulting.dev",
   siteMail: "site@mb-consulting.dev",
+  mailThankYouMessage: "Every client may be former, new or potential matters a lot to me, that's why it may take some time for me to respond. I take my time to carefully read every email and try to answer to all of them. If you don't receive a reply from me within 48 hours, please check your spam folder or contact me again.",
   address: "Full remote",
-  techStack: "https://stackshare.io/mbianchidev/known-techs",
   vat: "IT11846470968",
   sdi: "M5UXCR1",
   domain: "mb-consulting.dev",
-  policyUrl: "https://mb-consulting.dev/policy",
   cookieUrl: "https://www.allaboutcookies.org/",
-  projects: [
-    {
-      title: "Portfolio website",
-      link: "https://github.com/mbianchidev/site",
-      imgUrl: "/images/this-site.png",
-    },
-    {
-      title: "DevOps Basics Course for companies",
-      link: "https://mb-consulting.dev/workinprogress",
-      imgUrl: "/images/devops-course-table-of-contents.png",
-    }
-  ],
-  clients: [
-    {
-      companyName: "GreenChic",
-      companyType: "Scaleup",
-      companySector: "Sustainable Fashion",
-      companyLogo: "/images/clients/greenchic.png",
-      companyUrl: "https://greenchic.it/",
-      role: "Freelance DevOps Engineer | Site Reliability Engineer",
-      story: "Currently collaborating with GreenChic to build a new cloud infrastructure for their fashion brand. The infrastructure is built on AWS and it's made of microservices, containers, EC2 instances and so much more.",
-      year: "2021-2022",
-      show: true
-    },
-    {
-      companyName: "Italian Financial Police",
-      companyType: "Public Administration",
-      companySector: "Security and finance",
-      companyLogo: "/images/clients/gdf.png",
-      companyUrl: "https://www.gdf.gov.it/",
-      role: "Freelance Coach (DevOps)",
-      story: "Helped their IT sector to improve their DevOps practices by providing them with a DevOps course and in-depth technical knowledge on Azure.",
-      year: "2021",
-      show: true
-    },
-    {
-      companyName: "D-Share",
-      companyType: "Corporate",
-      companySector: "Digital News & Media",
-      companyLogo: "/images/clients/dshare.png",
-      companyUrl: "https://www.dshare.com/",
-      role: "Freelance DevOps Engineer | Site Reliability Engineer",
-      story: "Managing Azure and AWS infrastructures for their news and media platform and digital products. I am responsible for the infrastructure, deployments, security and everything about the cloud.",
-      year: "2021-2022",
-      show: true
-    },
-    {
-      companyName: "Infocert",
-      companyType: "Corporate",
-      companySector: "Digital Trust Services",
-      companyLogo: "/images/clients/infocert.png",
-      companyUrl: "https://gosignweb.infocert.it",
-      role: "Senior Software Engineer | DevOps Engineer | Site Reliability Engineer",
-      story: "I brought DevOps in a digital signature product used by thousands of people and companies all over Europe: GoSign. I managed to improve the reliability and security of the product by developing document management processes in Java and by automating infrastructure provisioning, deployment, delivery and incident management processes.",
-      year: "2019-2021",
-      show: true
-    },
-    {
-      companyName: "Eco-Mind Software @ Olivetti",
-      companyType: "Medium size company",
-      companySector: "IT Consulting",
-      companyLogo: "/images/clients/ecomind.png",
-      companyUrl: "https://eco-mind.eu/",
-      role: "Senior Software Engineer",
-      story: "Improved my Spring and Java skills by working side by side with valuable professionals both internal and external to the company. Here I learnt the true meaning of the word 'teamwork' and how to work in a team with a diverse set of skills.",
-      year: "2018-2021",
-      show: true
-    },  
-    {
-      companyName: "Reply @ A2A",
-      companyType: "Corporate",
-      companySector: "IT Consulting",
-      companyLogo: "/images/clients/reply.png",
-      companyUrl: "https://www.reply.com/it/content/smart-seller",
-      role: "Fullstack Software Developer",
-      story: "Got in touch with modern frontend and backend frameworks (Spring and Angular) for the first time. I was able to learn how to use them and how to build reusable components. This was also the first time i got in touch with DevOps culture and started my journey torwards my objective to become a DevOps engineer.",
-      year: "2018",
-      show: true
-    },
-    {
-      companyName: "Vodafone",
-      companyType: "Corporate",
-      companySector: "Internet Provider & Telecomunication Services",
-      companyLogo: "/images/clients/vodafone.png",
-      companyUrl: "https://www.vodafone.com/",
-      role: "Fullstack Software Developer",
-      story: "I worked on a product that was used by the financial group of Vodafone. Here I learnt the importance of refactoring, optimization and keeping up to date with techs. I also learnt how to work in a team and how to work in a fast-paced environment and how to manage a complex IT infrastructure.",
-      year: "2017-2018",
-      show: true
-    },
-    {
-      companyName: "Cambiomarcia",
-      companyType: "Startup",
-      companySector: "Automotive",
-      companyLogo: "/images/clients/cambiomarcia.png",
-      companyUrl: "https://www.cambiomarcia.com/homepage",
-      role: "Fullstack Software Developer",
-      story: "I learnt how a startup works and scales up and started my journey in the web development world.",
-      year: "2017",
-      show: true
-    }
-  ],
   about: {
-    title:
-      "I have been working in the IT industry since 2017. I'm a software developer and passionate DevOps always eager to build something new",
-    description: [
-      `I like to introduce myself as an agnostic and versatile engineer with a deep passion for well-written code, automation and cloud technologies.`,
-      `I also love coaching and mentoring people because I strongly believe in knowledge as the only way to get rid of technical debt and develop new and game-changing digital products.`,
-      `My goal is to bring value to your business by crafting quality software, choosing the best techs for your use-case, enhancing \& optimizing your processes, implementing good practices and boosting your team(s) knowledge base.`,
-      `You can find out more about me in this site or by asking me, either way enjoy your stay! :)`
-    ],
-    currentProject: "this portfolio website",
-    currentProjectUrl: "https://mb-consulting.dev",
+    title: "A long time ago in a galaxy far, far away... I fell in ❤️ with DevOps culture, I became passionate about clouds 🌩️ and obsessed with IT security 🔐. Always eager to learn and teach new stuff, to make a difference",
+    story: {
+      shortTitle: "Star Wars: A DevOps Story",
+      description: [
+        `My story was filled with monstrous bugs 🐞, amazing features ✨, large scale products ⛰️, many programming languages and frameworks 📚, huge infrastructures 🗼 and amazing colleagues 👨‍💻.`,
+        `I changed my path from Software to the Dark Side by becoming a DevOps/SRE taking the best from both worlds (never stopped to use the --force).`,
+        `I've started to coach and mentor my padawans (ehm I mean, fellow IT people) as I strongly believe that knowledge is the only way to grow both as a person and a professional.`, 
+        `In the time I've been in the IT industry, since 2017, I've learned a lot from both experience and people. The same knowledge that made me the engineer I am today I'm now willing to share with you.`,
+        `I've seen and made many mistakes along the way but always learnt from them. Quoting Yoda: "The greatest teacher, failure is."`,
+        `That is the reason I decided to start my journey as a freelance: to help people and companies to learn from their mistakes instead of avoiding them.`,
+        `A few other things about me: I'm a remote worker 🏝️ and a Hybrid Digital Nomad™ ✈️🏡️ This means I will be reliable even if we live and work in different timezones!`,
+        `In the last few years I've developed a strong interest in the world of finance 💲, cryptocurrencies and blockchain technologies.`,
+        `I'm a combat sport amateur (boxe, K1, muay thai) 🥊 a musician/metal singer 🎹 and a passionate gamer 🕹️. I'm also a huge fan of Star Wars 🌌 and Lord of The Rings ⚔️. I play D&D 🎲 and cook italian dishes 🍝.`,
+      ],
+    },
+    goals: {
+      title: "",
+      shortTitle: "Goals and values",
+      description: [
+        `My main goal is to enable DevOps culture in your company to add tons of value to your products and improve your developers experience.`,
+        `In our time toghether we will build a strong bond, because trust is the foundation of every professional relationship.`,
+        `I value communication over control, dialog rather than command, good design instead of "as long as it works", leaving a legacy above making myself indispensable, being safe more than being sorry, and being always kind not always right.`,
+        `My framework enables your company to craft quality software because not only we are working toghether here and now but our efforts are going to be built to last.`,
+        `What do I like most of my job?`, 
+        `Recommending the fresh techs (always production-ready), automating \& optimizing your processes (yes, cost optimization included 💸), spreading good practices and boosting your team(s) knowledge base so they become your dream team.`,
+      ],
+    },
+    techs: {
+      title: "",
+      shortTitle: "Tech Stack & Tools",
+      description: [
+        `I'm a polyglot developer, I love to learn new languages, frameworks and cloud technologies.`,
+        `I'm a big fan of the following technologies:`,
+      ],
+      warning: "I'm not affiliated with nor endorsed by any of these companies, I've just used or am using some of their products."
+    }
+
   },
-  // deprecated experience
-  experience: [
-    {
-      title: "Senior Software Developer | DevOps Engineer | Site Reliability Engineer | Coach",
-      company: "Self-employed",
-      year: "2021-now",
-      companyLink: "https://mb-consulting.dev",
-      desc: "Offering software development craftsmanship, DevOps, SRE and cloud management services; I also teach DevOps/SRE courses tailored to your business and IT needs."
-    },
-    {
-      title: "IT Consultant",
-      company: "Various clients (InfoCert, Olivetti, Vodafone, Reply, etc.)",
-      year: "2017-2021",
-      companyLink: "",
-      desc: "Worked in both short and long term projects for a wide pool of customers in many kind of dev teams. Learnt about the Java world and Spring in particular, always keeping an eye on the cloud. Dealt with various aspects of dev: technical doc writing, code reviewing, collaborating to ensure scalability, reliability and security of the developed solutions. As DevOps my daily focuses were: IaC, monitoring, test automation, CI/CD and cloud orchestration/management. Always had sysadmin level privileges and responsibilities while ensuring SLA compliance by designing solutions to remediate, mitigate and prevent incidents to improve services."
-    },
-    {
-      title: "High School",
-      company: "ITIS N. Baldini, Ravenna",
-      year: "2017",
-      companyLink: "https://itisravenna.edu.it/",
-      desc: "Programming languages, hw maintenance, sw development, project management, economics fundamentals, networking and security, english language, and a lot more."
-    },
-  ],
-  //fixed URL
-  resumeUrl:
-    "https://drive.google.com/u/0/uc?id=1IKSaesUuRQmtkOA0SP--3oe7gR4P0X4Y&export=download",
+  resumeUrl: "/static/Matteo_Bianchi_CV_smart.pdf",
+  hero: {
+    catchyPhrase: "",
+    funnySentence: "This is definitely my fancy version, I usually wear shorts and a band t-shirt 😎",
+    firstPrinciple: "Craft.",
+    secondPrinciple: "Automate.",
+    thirdPrinciple: "Secure.",
+    fourthPrinciple: "Innovate.",
+    callToActions: ["Let's talk!","Work with me!", "Need a DevOps?", "Looking for a CTO?", "Go cloud!", "Don't click here!", "Grab your free call!"],
+  },
+  // see next.config.js
+  techStack: "/stack",
   socialLinks: {
-    twitter: "https://twitter.com/mbianchidev",
-    linkedin: "https://www.linkedin.com/in/matteo-bianchi-dev/",
-    github: "https://github.com/mbianchidev"
+    twitter: "/twitter",
+    linkedin: "/linkedin",
+    github: "/github",
+    medium: "/blog",
+    linktree: "/all-links",
   },
+  // currentProject: "this portfolio website",
+  // currentProjectUrl: "https://mb-consulting.dev",
+ projects: [
+   {
+     title: "Portfolio website",
+     link: "https://github.com/mbianchidev/site",
+     imgUrl: "/images/this-site.webp",
+   },
+   {
+     title: "DevOps Basics Course for companies",
+     link: "https://mb-consulting.dev/workinprogress",
+     imgUrl: "/images/devops-course-table-of-contents.webp",
+   }
+ ],
 };
 
 export default userData;

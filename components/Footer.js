@@ -8,14 +8,18 @@ export default function Footer() {
         <div className="h-0.5 w-full bg-white dark:bg-gray-700"></div>
         <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between md:items-center mt-8">
           <div>
-            <p>&copy; Matteo Bianchi. All Rights Reserved. 2021-{new Date().getFullYear()}</p>
-            <p>VAT number: {userData.vat} | SDI: {userData.sdi}</p>
+            <p>&copy; 2021-{new Date().getFullYear()} Matteo Bianchi. All Rights Reserved. </p>
+            <p>VAT number: {userData.vat}{" | "}SDI: {userData.sdi}</p>
           </div>
           <div className="flex flex-col md:flex-row">
-          <a href="/policy">Privacy & Cookie Policy</a>
+            <a href="/privacy-policy">Privacy Policy </a>
+          </div>
+          <div className="flex flex-col md:flex-row">
+          <a href="/cookie-policy">Cookie Policy</a>
           </div>
           <div className="space-x-4 flex flex-row items-center">
             <a
+              title="Twitter profile"
               href={userData.socialLinks.twitter}
               target="_blank" rel="noopener noreferrer"
               className="text-base font-normal text-gray-600 dark:text-gray-300"
@@ -32,6 +36,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
+              title="LinkedIn profile"
               href={userData.socialLinks.linkedin}
               target="_blank" rel="noopener noreferrer"
               className="text-base font-normal text-gray-600 dark:text-gray-300"
