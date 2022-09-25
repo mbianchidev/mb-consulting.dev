@@ -1,5 +1,4 @@
-import servicesData from "../constants/services.js";
-// const servicesData = require('../constants/services.js');
+const servicesData = require('../constants/services.js');
 
 //js script to generate robots.txt file
 let baseUrl="https://www.mb-consulting.dev";
