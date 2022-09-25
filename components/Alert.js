@@ -62,7 +62,7 @@ function Alert({ id, fade }) {
     }, []);
 
     function omit(arr, key) {
-        return arr.map(obj => {
+        return arr?.map(obj => {
             const { [key]: omitted, ...rest } = obj;
             return rest;
         });
@@ -73,11 +73,11 @@ function Alert({ id, fade }) {
 
         if (fade) {
             // fade out alert
-            setAlerts(alerts => alerts.map(x => x.itemId === alert.itemId ? { ...x, fade: true } : x));
+            setAlerts(alerts => alerts?.map(x => x.itemId === alert.itemId ? { ...x, fade: true } : x));
 
             // remove alert after faded out
             setTimeout(() => {
-                setAlerts(alerts => alerts.filter(x => x.itemId !== alert.itemId));
+                setAlerts(alerts => alerts?.filter(x => x.itemId !== alert.itemId));
             }, 250);
         }
         // if is not fading remove alert
@@ -109,7 +109,7 @@ function Alert({ id, fade }) {
 
     return (
         <div>
-            {alerts.map((alert, index) =>
+            {alerts?.map((alert, index) =>
                 <div key={index} className={cssClasses(alert)}>
                     <a className="close" onClick={() => removeAlert(alert)}>&times;</a>
                     <span dangerouslySetInnerHTML={{ __html: alert.message }}></span>

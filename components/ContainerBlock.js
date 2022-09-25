@@ -35,7 +35,6 @@ export function reportWebVitals(metric) {
       // handle render results
       break
     default:
-      console.log(metric); //TODO: remove this
       ga.reportWebVitalsToGoogle(metric.id, metric.name, metric.label, metric.value); // send to Google Analytics
       break
   }

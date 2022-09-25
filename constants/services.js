@@ -1,110 +1,196 @@
+
+/* 
+{
+  category: "Service macro category",
+  name: "Service name",
+  image: "/images/services/service.webp",
+  slug: "slug-for-the-service",
+  shortDescription: "one-phrased description of the service",
+  description: [
+      `Service description`,
+      `Multiline`,
+  ],
+  CTA: 'call to action text',
+  type: 'brief service description',
+  active: true|false,
+  offer: 'special offers for the service' | null | default: 'Free introductory call, first activity analysis and first activity estimate are billed at a discounted rate',
+  rate: 'starting from X €' | 'X-Y €' | 0 | default: 'To be discussed',
+},
+*/
 const servicesData = {
+    basePath: '/service',
     services: [
         {
-            name: "",
-            image: "",
-            slug: "",
-            description: [
-                ``,
-                ``,
-                ``,
-                ``,
-                ``,
-            ],
-            startingFromRate: "",
+          category: "DevOps",
+          name: "Fundamentals Course",
+          image: "/images/services/coaching.webp",
+          slug: "devops-fundamentals-course",
+          shortDescription: "Discover what does DevOps can do for you",
+          description: [
+              `I offer a 3-day course about the DevOps culture allowing you and your team to learn the fundamentals and how it can help you as it helped a lot of companies in their growth.`,
+              `Your grade of maturity will be assessed before the course and, based on the results, we will plan the right learning path for you to follow.`,
+              `DevOps is a lot like martial arts (seems a lot like MMA at the beginning), it cannot be learnt through a single 3-day course but see this as a good start of your training journey. I will give you the tools to learn by yourself and advices on what to learn afterwards.`,
+              `There will be hands-on exercises to apply and see results of what you've learned as well as a second maturity assessment to measure your progress.`,
+              ``,
+              `This course is meant for both companies and people willing to know more about DevOps and how it can help them to improve their software lifecycle or developer life.`,
+              `The course is structured for an audience of 5-10 people and it can be held in English or in Italian, course's slides require a basic proficency in professional english.`,
+              `The course has no specific or mandatory pre-requisites altough it is necessary to have some technical background as software developer, system administrator, product manager or similar.`,
+              `If you are a company it is possible to ask for a specific technology to focus on (e.g. Kubernetes, Azure, GitLab, etc.) it will be covered in a mini-course during the third day of the course, taking the place of some of the mini-workshop exercises (additional costs may apply).`,
+              ``,
+              `Are you ready to take your first step and begin your DevOps journey?`,
+          ],
+          CTA: 'Discover how',
+          type: '3 days course and mini-workshop (remote only), classes can consist of either employees of a company or indipendent individuals (in which case the course will start only when the quota is reached and the cost is shared among the participants)',
+          active: true,
+          offer: '30% discount on the specific technology mini-course (if requested), free pitch call to discuss your needs and the course details, pre-course DevOps maturity assessment included',
+          rate: 'Starting from 3000 €', // - payment for companies in 2 installments (50% before the beginning of the course, 50% at the end) - payment for individuals at the beginning of the course
+        },
+        {
+          category: "DevOps",
+          name: "Adoption Path",
+          image: "/images/services/path.webp",
+          slug: "devops-adoption-path",
+          shortDescription: "Start the complete automation journey",
+          description: [
+              `The focus of this service is guiding your company in a full functioning DevOps adoption to make you able to deliver your software product faster and with a much higher quality.`,
+              `Everything about this service is tailored to your grade of DevOps maturity, evalutated after an initial assessment.`,
+              `Adopting DevOps is like training a full team of martial artists, you cannot expect your people to implement it in one week but see this as an opportunity to jump-start your adoption process with me as your guide in this process.`,
+              `Starting with a 1 week course and workshop about the DevOps culture we will then implementing DevOps methods, choose a DevOps toolchain and create good practices & standards across your team.`,
+              `You will learn in depth: Continuous Integration (CI), Continuous Delivery (CD), Continuous Deployment (CD), Automated Testing (AT), Code Review (CR) and much more!`,
+              `I will be there to track your progress and ensure you are on the right path. Automation will become a keyword for your company along with: security, IaC, data, metrics, logging, documentation and all you need to be a top-notch DevOps adopter.`,
+              `After the course, I will be available for a 3-6 months period to help you and your team to start implement everything you've learned, choose the right technology to adopt, manage the most complex issues and monitor your progress.`,
+              ``,
+              `This service is meant for companies only, companies willing to know more about DevOps and how it can help them to improve their software lifecycle and developer happyness.`,
+              `Service structure is made to work even for multiple teams, it can be provided in English or in Italian, course's slides and further interactions require a basic proficency in professional english.`,
+              `The course has no specific or mandatory pre-requisites altough it is necessary to have some technical background as software developer, system administrator, product manager or similar.`,
+              `It is possible to ask for a specific technology to focus on (e.g. Kubernetes, Azure, GitLab, etc.) it will be heavily covered in a mini-course during the last 2 days, taking the place of the workshop exercises (additional costs may apply).`,              
+              ``,
+              `What are you waiting for? `,
+              `The future is now!`,
+          ],
+          CTA: 'Become the new DevOps company today!',
+          type: '1 week course and workshop (remote or on-site) + 3-6 months of support (remote only)',
+          active: true,
+          offer: '50% discount on the specific technology mini-course (if requested), free pitch call to discuss your needs and the course details, Full DevOps maturity assessment and evalutation included',
+          rate: 'Course starting from 5000 €, additional support to be discussed',
+        },
+        {
+          category: "Cloud",
+          name: "Migration & Management",
+          image: "/images/services/cloud.webp",
+          slug: "cloud-migration-and-management",
+          shortDescription: "Scale up your business to the cloud ",
+          description: [
+              `This service is made for both companies already in the cloud and are willing to know how to best manage and scale up their infrastructure and companies willing to migrate their products to the cloud.`,
+              `If you don't have a cloud infrastructure we will create that togheter starting from a zero-penny architecture.`,
+              `I'll guide you through choices between SaaS, PaaS and IaaS components.`,
+              `Every component will be designed and optimized to be efficient, secure and reliable abd you will be guided to the right cloud provider (AWS, Azure or GCP)`,
+              `I'll make sure you pay the cloud provider just the right amount of money and upgrade your service cost only when your product really needs to scale.`,
+              `The infrastructure will be easy to manage: scale up and down, adding a new component, setting up an environment and everything you need to do to make your product grow strong.`,
+              ``,
+              `You don't believe in what I've just said? I will change your mind.`,
+          ],
+          CTA: 'Schedule a meeting now!',
+          type: '1/2 weeks of problem analysis (remote or on-site) + 6-12 months of support (remote only)',
+          active: true,
+          offer: null,
+          rate: 0,
+        },
+        {
+          category: "SRE & DevSecOps",
+          name: "Sec & Reliability Review",
+          image: "/images/services/security.webp",
+          slug: "sre-devsecops",
+          shortDescription: "Perform a reliability and security check-up",
+          description: [
+              `Does your app die without apparent reason? I will fix that for you.`,
+              `Are your processes resource-hungry without control? I will save you some!`,
+              `Have you reacently had a data breach and you can't find a way to protect your customers data? Let's build that security door and make it bulletproof!`,
+              `We will build a solid, secure and reliable foundation for your products.`,
+              `Incidents will happen, but you will be ready to face them and to recover fast.`,
+              `Having a production-ready alerting and monitoring system will allow you to be notified as soon as something goes wrong while your team will be enabled to react quickly and handle the issue before it becomes a bigger problem.`,
+              `Individuation, Analysis, Migitation, Resolution, Communication and Improvement will be their mantra.`,
+              `Your product will be secure by design and you will be able to detect vulnerabilities and bugs before it's too late. `,
+              ``,
+              `Don't procrastinate! Let's talk about your site reliability and security issues.`,              
+          ],
+          CTA: 'Contact me ASAP.',
+          type: '1 week of problem analysis (remote or on-site) + 3-6 months of support (remote only)',
+          active: true,
+          offer: null,
+          rate: 0,
+        },
+        {
+          category: "Management",
+          name: "CTO as a Service",
+          image: "/images/services/me.webp",
+          slug: "cto-as-a-service",
+          shortDescription: "Benefit from my fracional CTO services",
+          description: [
+              `You are a startup and you need a CTO but you can't afford one? I'm here for you!`,
+              `Did your organization’s CTO role recently become vacant? I can fill in and help you find a new one meanwhile.`,
+              `Is your CTO overloaded with tasks and you need someone to help him? I will be his right hand (or left).`,
+              `Are you missing deadlines and you don't know why? Let's figure out what is going on and turn around your situation.`,
+              `You will focus on your business and I will take care of the tech side from product roadmaps to strategic choices always overseeing your team's work.`,
+              `I can help you to build your product from scratch, from the idea to the MVP and then to the final product.`,
+              `I will guide you through the right tech choices and I will help you to hire a team of software engineers.`,
+              `Your team will have better guidance, clearer parameters, and a manager who can communicate with your stakeholders.`,
+              `As a result, your products will be developed more quickly and with a great attention to marketable qualities. `,
+              ``,
+              `How does a real CTO (for a fraction of the cost of a full-time CTO) sound like? Good? `,
+          ],
+          CTA: 'Let\'s talk about it.',
+          type: '2/3 weeks of onboarding (remote only) + 6-12 months of support (remote only)',
+          active: true,
+          offer: "20% discount on the first month of support, free consulting call included",
+          rate: 0,
+        },
+        {
+          category: "Software",
+          name: "Engineering and Architecture",
+          image: "/images/services/programming.webp",
+          slug: "software-engineering",
+          shortDescription: "Take care of your software lifecycle",
+          description: [
+              `Wanna get rid of your technical debt so your developers will have 30% more time for developing amazing stuff?`,
+              `Need to optimize your software lifecycle?`,
+              `I can guide your team in software solutions design and implementation.`,
+              `Your ideas will finally come to life and I'll make your products grow.`,
+              `I will always be keeping a high attention to balance new and ready-to-production technologies.`,
+              `I'll guide you through everty tech choice helping you to maintain the focus on what really matters.`,
+              `You will be enabled to build cutting edge digital products applying good practices of: security, reliability, scalability, performance, maintainability, and flexibility.`,
+              ``,
+              `Feel intrigued? Let's talk about your software.`,
+          ],
+          type: '1/2 weeks of onboarding (remote only) + 3-6 months of support (remote only)',
+          CTA: 'What are you waiting for?',
+          active: true,
+          offer: null,
+          rate: 0,
+        },
+        {
+          category: "Other",
+          name: "Services",
+          image: "/images/services/service-mock.webp",
+          slug: "other-services",
+          shortDescription: "For anything else you need",
+          description: [
+              `I'm available for services such as:`,
+              `- Technical writing`,
+              `- Tech conference talks and keynotes`,
+              `- Podcasting / Streaming`,
+              `- Structure a new course on tech-related topics or finance-related ones (manily crypto and blockchain)`,
+              ``,
+              `I'm open to new ideas and challenges you may have. We can talk always about it!`,
+              `Every service is offered in english or italian.`,
+          ],
+          type: 'mixed',
+          CTA: 'Let\'s see how we can work together',
+          active: true,
+          offer: null,
+          rate: 0,
         },
     ],
 };
 
 export default servicesData;
-
-/*
-
-1. What does DevOps can do for me? (DevOps Fundamentals Course)
-
-  This course is made for companies willing to know more about DevOps and how it can help them to improve their software lifecycle and developer happyness.
-  I offer a 3-day course and workshop about the DevOps culture allowing you and your team to learn the fundamentals and how it can help you as it helped a lot of companies in their growth.
-  Your grade of maturity will be assessed before the course and we will plan the right learning path for you to follow.
-  There will also be hands-on exercises to apply and see results of what you've learned.
-
-  Are you ready to begin your DevOps journey? <link> Discover how <link>.
-
-2. Start the complete automation (DevOps Adoption Path)
-
-  My focus will be enabling your team to automate repetitive and error-prone tasks so your they will have more time to focus on what really matters.
-  You will be able to deliver software faster and with higher quality.
-  Starting with a 1 week course and workshop about the DevOps culture and then implementing DevOps methods, adopting tools and build good practices & standards across your team.
-  You will explore Continuous Integration (CI), Continuous Delivery (CD), Continuous Deployment (CD), Automated Testing (AT), Code Review (CR) and much more! 
-  Everything will be tailored to your grade of DevOps maturity, after an initial assessment.
-  Automation will become a keyword for your company along with: security, IaC, data, metrics, logging, documentation and all you need to be a top-notch DevOps adopter.
-  After the course, I will be available for a 3-6 months period to help you and your team to start implement everything you've learned.
-
-  What are you waiting for? 
-  The future is now! 
-  <link> Let's talk <link> about your needs and become a new DevOps adopter today!
-
-3. Scale up your business to the cloud (Cloud Migration & Management)
-
-  This service is made for both companies already in the cloud and are willing to know how to best manage and scale up their infrastructure 
-  and companies willing to migrate their products to the cloud. If you don't have a cloud infrastructure we will create that togheter starting from a zero penny architecture.
-  Every component will be designed and optimized to be efficient, secure and reliable. I'll make sure you start to pay a cloud provider only when your product really needs to scale.
-  You will be guided to the right cloud provider (AWS, Azure or GCP) and I will make it easy for you and your team to manage the infrastructure.
-  
-  You don't believe in what I've just said? <link> Schedule a meeting <link> and I will change your mind!
-
-4. Reliability and security check-up (SRE & DevSecOps)
-
-  Your app dies without apparent reason? 
-  I will fix that for you.
-  Your resources are consumed without control and you have to pay too much to your infrastucture providers? 
-  I will save you some money!
-  You recently had a data breach and you can't find a way to protect your customers data? 
-  Let's build that security door and make it bulletproof!
-  
-  We will build a solid, secure and reliable foundation for your products. 
-
-  Incidents will happen, but you will be ready to face them and to recover quickly.
-  Having a production-ready alerting and monitoring system will allow you to be notified as soon as something goes wrong
-  while your team will be enabled to react quickly and handle the issue before it becomes a bigger problem.
-  Individuation, Analysis, Migitation, Resolution, Communication and Improvement will be their mantra.
-
-  Your product will be secure by design and you will be able to detect vulnerabilities and fix them before it's too late. 
-
-  Don't procrastinate! <link> Contact me <link> and let's talk about your site reliability and security issues.
-  
-5. Fracional CTO for startups (CTO as a Service)
-
-  You are a startup and you need a CTO but you can't afford one? I'm here for you!
-  I will help you to build your product from scratch, from the idea to the MVP and then to the final product.
-  I will guide you through the right tech choices and I will help you to build a team of developers.
-  I will be your CTO as a service, I will be your technical partner and whenever you decide I will help you find the right CTO for your company.
-
-  How does a CTO (for a fraction of the cost of a full-time CTO) sound like? Good? <link> Let's talk <link> about it.
-
-6. Software Power-Up (Software Engineering)
-
-  Wanna get rid of your technical debt so your developers will have 30% more time for developing amazing stuff?
-  Wanna optimize your software lifecycle?
-  I can guide your team in the solution design and implementation.
-
-  Your ideas will finally come to life and I'll make your products grow.
-  I will always be keeping a high attention to balance new and ready-to-production technologies. 
-  I'll guide you through everty tech choice helping you to maintain the focus on what really matters. 
-  You will be enabled to build cutting edge digital products applying good practices of:
-  security, reliability, scalability, performance, maintainability, and flexibility.
-
-  Feel intrigued?
-  I'm always up for a call! 
-  <link>Contact me<link> and let's talk about your software.
-
-7. Other services?
-
-  I'm available for other services such as:
-
-  - Technical writing
-  - Conference talks (remote)
-  - Podcasting / Streaming (remote)
-
-  just <link> contact me <link> and let's see how we can work together.
-
-*/

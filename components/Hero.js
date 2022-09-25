@@ -5,17 +5,17 @@ import { RainbowHighlight } from "./RainbowHighlight";
 import Image from 'next/image';
 import { useState, useEffect } from "react";
 import { shuffle } from "@lib/utils";
+import Link from "next/link";
 
 export default function Hero() {
   const titleStyle = "text-4xl md:text-8xl font-bold dark:text-gray-200 my-2";
-  const callToActionsArray = ["Let's talk!","Work with me!","Free call!", "Go cloud!", "Don't click here!"];
-  const colorsArray = ["#FF7F3F", "#10B981", "#02058F","#851DE0"];// #02058F #276CC6 #02044A
+  const colorsArray = ["#FF7F3F", "#10B981", "#02058F","#851DE0"]; // #02058F #276CC6 #02044A
 
   const [CTA, setCTA] = useState(" ");
   const [color, setColors] = useState(" ");
 
   useEffect(() => {
-    const randomCTA = shuffle(callToActionsArray)[0];
+    const randomCTA = shuffle(userData.hero.callToActions)[0];
     const randomColor = shuffle(colorsArray);
     setCTA(randomCTA);
     setColors(randomColor);
@@ -59,9 +59,9 @@ export default function Hero() {
         {/*CTA - Call to action*/}
         <br></br>
         <p className="font-mono dark:text-gray-100" style={{fontSize: catchyPhraseFontSize}}>{userData.hero.catchyPhrase}</p>
-        <a href="/contacts">
+        <Link href="/contacts" passHref>
           <button className="bg-[#02044A] rounded-md w-1/2 mx-2 mt-8 py-2 text-gray-200 dark:text-gray-200 text-xl font-bold">{CTA}</button>
-        </a>
+        </Link>
         
       </div>
 

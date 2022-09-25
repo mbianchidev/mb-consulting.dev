@@ -21,6 +21,37 @@ let lastMonthDate = new Date(date.setMonth(date.getMonth() - 1)).toISOString().s
 date = new Date(todayDate);
 let lastYearDate = new Date(date.setFullYear(date.getFullYear() - 1)).toISOString().split('T')[0];
 
+const services = [
+  {
+    slug: "devops-fundamentals-course",
+    active: true,    
+  },
+  {
+    slug: "devops-adoption-path",
+    active: true,    
+  },
+  {
+    slug: "cloud-migration-and-management",
+    active: true,    
+  },
+  {
+    slug: "sre-devsecops",
+    active: true,    
+  },
+  {
+    slug: "cto-as-a-service",
+    active: true,    
+  },
+  {
+    slug: "software-engineering",
+    active: true,
+  },
+  {
+    slug: "other-services",
+    active: true,
+  },
+];
+
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
@@ -45,14 +76,23 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <loc>${baseUrl}/clients</loc>
     <lastmod>${lastMonthDate}</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>${baseUrl}/services</loc>
+    <loc>${baseUrl}/service/</loc>
     <lastmod>${lastYearDate}</lastmod>
     <changefreq>yearly</changefreq> 
     <priority>0.9</priority>
   </url>
+  ${services.filter(service => service.active === true)?.map((service) => (
+  `
+  <url>
+    <loc>${baseUrl}/service/${service.slug}</loc>
+    <lastmod>${lastMonthDate}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  `)).join('')}
   <url>
     <loc>${baseUrl}/experience</loc>
     <lastmod>${lastYearDate}</lastmod>
@@ -85,8 +125,6 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
   </url>
 </urlset>
 `;
-
-//TODO add the full services list on sitemap (not yet ready so w/e)
 
 fs.writeFile(path.join(__dirname, '../public/sitemap.xml'), sitemap, (err) => {
     if (err) throw err;

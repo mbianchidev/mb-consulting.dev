@@ -24,7 +24,7 @@ export default function About() {
   return (
     <section className="bg-white dark:bg-gray-800">
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
-        <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
+        <h1 className="text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
           My journey
         </h1>
       </div>
@@ -58,7 +58,7 @@ export default function About() {
               </h1>
               <br></br>
               <span className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                You can check my CV{" "} <a href={userData.resumeUrl} target="_blank" rel="noopener noreferrer" className={linkTextStyle} style={{color : "#3B82F6"}}> here </a>.
+                Check my{" "} <a href={userData.resumeUrl} target="_blank" rel="noopener noreferrer" className={linkTextStyle} style={{color : "#3B82F6"}}> CV </a>.
                 <p>
                   Have a look at my {" "} <a href="/clients" rel="noopener noreferrer" className={linkTextStyle} style={{color : "#3B82F6"}}> clients </a>{" "} and {" "}
                   <Link href="/experience" passHref rel="noopener noreferrer"> 
@@ -108,26 +108,46 @@ export default function About() {
 
           {/* Text area */}
           <div className="col-span-1 md:col-span-2">
+
+            {/* Story */}
             <h1 className="bg-red-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
-              Star Wars: A DevOps Story
+              {userData.about.story.shortTitle}
             </h1>
             <br></br>
             <br></br>
-            {userData.about.description?.map((desc, aboutMeId) => (
+            {userData.about.story.description?.map((desc, aboutMeId) => (
               <span key={aboutMeId}>
                 <p className="text-xl text-gray-700 mb-4 dark:text-gray-300">{desc}</p>
               </span>
             ))}
-            
-            <h1 className="bg-green-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
-              Tech Stack & Tools
+
+            {/* Goals and values */}
+            <h1 className="bg-blue-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
+              {userData.about.goals.shortTitle}
             </h1>
             <br></br>
             <br></br>
-            <p className="text-xl text-gray-700 mb-4 dark:text-gray-300">Here's some of my favorite technologies.</p>
+            {userData.about.goals.description?.map((desc, aboutMeId) => (
+              <span key={aboutMeId}>
+                <p className="text-xl text-gray-700 mb-4 dark:text-gray-300">{desc}</p>
+              </span>
+            ))}
+
+            {/* Techs */}
+            <h1 className="bg-green-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
+              {userData.about.techs.shortTitle}
+            </h1>
+            <br></br>
+            <br></br>
+            {userData.about.techs.description?.map((desc, aboutMeId) => (
+              <span key={aboutMeId}>
+                <p className="text-xl text-gray-700 mb-4 dark:text-gray-300">{desc}</p>
+              </span>
+            ))}
+
+            {/*Tech stack images*/}
             <div className="bg-[#F1F1F1] flex flex-row flex-wrap mt-8">
-              {/*Tech stack images*/}
-              {React.Children.toArray(techsData.techs.filter(tech => tech.show === true).map((tech, techId) => (
+              {React.Children.toArray(techsData.techs.filter(tech => tech.show === true)?.map((tech, techId) => (
                 <TechCard
                   techId={techId}
                   techName={tech.name}
@@ -139,16 +159,8 @@ export default function About() {
               )))}
             </div>
             <br></br>
-            <span className="text-xl text-gray-700 mb-4 dark:text-gray-300">
-                Click the <a href="https://stackshare.io/" target="_blank" rel="noopener noreferrer" style={{color:"#0645AD"}}> stackshare.io </a> logo below to see the full list of technologies I use(d) and/or know about.
-              </span>
-              <br></br>
-              <a id="link-stackshare" href={userData.techStack} target="_blank" rel="noopener noreferrer">
-                <Image src={stackshareLogo} alt="stackshare logo" className="h-20 w-20 mx-4 my-4" layout="fill" /> {/*this is the stackshare logo*/}
-              </a>
-              <br></br>
-              <span className="text-base font-normaltext-gray-700 mb-4 dark:text-gray-300">
-                I'm not affiliated with nor endorsed by any of these companies, I've just used or am using some of their products.
+            <span className="text-base font-normaltext-gray-700 mb-4 dark:text-gray-300">
+              {userData.about.techs.warning}
             </span>
           </div>
         </div>
@@ -161,7 +173,7 @@ const TechCard = ({techId, techName, techLogo, techLogoX, techLogoY, techUrl }) 
   return (
     <div id={techId} className="h-20 w-20 mx-4 my-4">
       <a href={techUrl} target="_blank" rel="noopener noreferrer">
-        <Image src={techLogo} alt={techName} layout="fill" width={techLogoX} height={techLogoY} /> {/*   */}
+        <Image src={techLogo} alt={techName} layout="fill" width={techLogoX} height={techLogoY} />
       </a>
     </div>
   );
