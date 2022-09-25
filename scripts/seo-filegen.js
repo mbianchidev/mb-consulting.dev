@@ -1,17 +1,18 @@
 import servicesData from "../constants/services.js";
+// const servicesData = require('../constants/services.js');
 
 //js script to generate robots.txt file
 let baseUrl="https://www.mb-consulting.dev";
 
-import { writeFile } from 'fs';
-import { join } from 'path';
+const fs = require('fs');
+const path = require('path');
 const robots = `User-agent: *
 Allow: /
 Disallow: /api
 Sitemap: ${baseUrl}/sitemap.xml
 `;
 
-writeFile(join(__dirname, '../public/robots.txt'), robots, (err) => {
+fs.writeFile(path.join(__dirname, '../public/robots.txt'), robots, (err) => {
     if (err) throw err;
 } );
 // end of js script to generate robots.txt file
@@ -97,7 +98,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 </urlset>
 `;
 
-writeFile(join(__dirname, '../public/sitemap.xml'), sitemap, (err) => {
+fs.writeFile(path.join(__dirname, '../public/sitemap.xml'), sitemap, (err) => {
     if (err) throw err;
 } );
 
