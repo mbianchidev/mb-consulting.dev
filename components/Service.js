@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { useRouter } from 'next/router'
 import servicesData from '@constants/services';
 import Link from "next/link";
@@ -17,9 +17,18 @@ export default function Service() {
   };
 
   const router = useRouter();
+  const service = servicesData.services.filter(service => service.slug === router.query.slug && service.active === true);
+
+  useEffect(() => {
+    // if slug is not valid, explicitly redirect to 404 page
+    if(!service[0]){
+      router.push('/404');
+    }
+  }, []);
+
   return (
     <section className="bg-white dark:bg-gray-800">
-      {React.Children.toArray(servicesData.services.filter(service => service.slug === router.query.slug && service.active === true)?.map((service, serviceId) => (
+      {React.Children.toArray(service?.map((service, serviceId) => (
         <ServiceSection
           serviceId={serviceId}
           slug={service.slug}

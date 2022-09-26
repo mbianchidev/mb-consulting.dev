@@ -26,6 +26,8 @@ export default function Contacts() {
   const [parent, setParent] = useState(selectedService);
 
   useEffect(() => {
+    const href = `/contacts?serviceName=${selectedService}`;
+    router.push(href, href, { shallow: true })
     setParent(selectedService);
   }, [selectedService, query.serviceName]);
 
