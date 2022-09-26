@@ -12,7 +12,7 @@ export default function Home() {
       title="Matteo Bianchi - DevOps, SRE, Coach, Developer"
       description="This is my professional website. I am a DevOps, SRE, coach and software engineer."
     >
-      <Hero />
+      <Hero/>
       {/* 
       // Temporary disabled because my github is too poor 
       <FavouriteProjects />

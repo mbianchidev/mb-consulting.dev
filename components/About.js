@@ -1,11 +1,29 @@
-import React from "react";
+import React, {useState} from "react";
 import userData from "@constants/data";
 import techsData from "@constants/techs";
 import Image from 'next/future/image';
 import Link from "next/link";
-import stackshareLogo from "../public/images/stackshare.webp";
 
 export default function About() {
+
+  const [showStory, setShowStory] = useState(false);
+  const [showGoals, setShowGoals] = useState(false);
+  const [showTechs, setShowTechs] = useState(false);
+  function toggleStory(){      
+    setShowStory(!showStory);
+    setShowGoals(false);
+    setShowTechs(false);
+  }
+  function toggleGoals(){      
+    setShowGoals(!showGoals);
+    setShowTechs(false);
+    setShowStory(false);
+  }
+  function toggleTechs(){      
+    setShowTechs(!showTechs);
+    setShowStory(false);
+    setShowGoals(false);
+  }
 
   const backup = console.warn;
 
@@ -20,6 +38,7 @@ export default function About() {
   const linkTextStyle = "text-gray-800 font-bold dark:text-gray-300 hover-underline-animation";
   const socialTextStyle = "text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300"
   const underlineTransition = "absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"
+  const standardAboutText = "text-xl text-gray-700 mb-4 dark:text-gray-300";
 
   return (
     <section className="bg-white dark:bg-gray-800">
@@ -40,6 +59,7 @@ export default function About() {
       </div>
       <div className="bg-[#F1F1F1] dark:bg-gray-900 px-4">
         <div className="pt-20 grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-y-20 gap-x-20">
+
           {/* Social Buttons */}
           <div className="inline-flex flex-col">
             <div>
@@ -109,59 +129,77 @@ export default function About() {
           {/* Text area */}
           <div className="col-span-1 md:col-span-2">
 
-            {/* Story */}
-            <h1 className="bg-red-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
-              {userData.about.story.shortTitle}
+            <h1 className="text-xl font-semibold text-gray-700 mt-8 dark:text-gray-200">
+              {userData.about.clickText}
             </h1>
             <br></br>
             <br></br>
-            {userData.about.story.description?.map((desc, aboutMeId) => (
-              <span key={aboutMeId}>
-                <p className="text-xl text-gray-700 mb-4 dark:text-gray-300">{desc}</p>
-              </span>
-            ))}
+
+            {/* Story */}
+            <h1 className="bg-red-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
+              <a onClick={toggleStory}>
+                {userData.about.story.shortTitle}
+              </a>
+            </h1>
+            <br></br>
+            <br></br>
+            <div style={{display: showStory ? "block" : "none"}}>
+              {userData.about.story.description?.map((desc, aboutMeId) => (
+                <span key={aboutMeId}>
+                  <p className={standardAboutText}>{desc}</p>
+                </span>
+              ))}
+            </div>
 
             {/* Goals and values */}
             <h1 className="bg-blue-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
-              {userData.about.goals.shortTitle}
+              <a onClick={toggleGoals}>
+                {userData.about.goals.shortTitle}
+              </a>
             </h1>
             <br></br>
             <br></br>
-            {userData.about.goals.description?.map((desc, aboutMeId) => (
-              <span key={aboutMeId}>
-                <p className="text-xl text-gray-700 mb-4 dark:text-gray-300">{desc}</p>
-              </span>
-            ))}
+            <div style={{display: showGoals ? "block" : "none"}}>
+              {userData.about.goals.description?.map((desc, aboutMeId) => (
+                <span key={aboutMeId}>
+                  <p className={standardAboutText}>{desc}</p>
+                </span>
+              ))}
+            </div>
 
             {/* Techs */}
             <h1 className="bg-green-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
-              {userData.about.techs.shortTitle}
+              <a onClick={toggleTechs}>
+                {userData.about.techs.shortTitle}
+              </a>
             </h1>
             <br></br>
             <br></br>
-            {userData.about.techs.description?.map((desc, aboutMeId) => (
-              <span key={aboutMeId}>
-                <p className="text-xl text-gray-700 mb-4 dark:text-gray-300">{desc}</p>
+            <div style={{display: showTechs ? "block" : "none"}}>
+              {userData.about.techs.description?.map((desc, aboutMeId) => (
+                <span key={aboutMeId}>
+                  <p className={standardAboutText}>{desc}</p>
+                </span>
+              ))}
+              {/*Tech stack images*/}
+              <div className="bg-[#F1F1F1] flex flex-row flex-wrap mt-8">
+                {React.Children.toArray(techsData.techs.filter(tech => tech.show === true)?.map((tech, techId) => (
+                  <TechCard
+                    techId={techId}
+                    techName={tech.name}
+                    techLogo={tech.image}
+                    techLogoX={tech.x}
+                    techLogoY={tech.y}
+                    techUrl={tech.url}
+                  />
+                )))}
+              </div>
+              <br></br>
+              <span className="text-base font-normaltext-gray-700 mb-4 dark:text-gray-300">
+                {userData.about.techs.warning}
               </span>
-            ))}
-
-            {/*Tech stack images*/}
-            <div className="bg-[#F1F1F1] flex flex-row flex-wrap mt-8">
-              {React.Children.toArray(techsData.techs.filter(tech => tech.show === true)?.map((tech, techId) => (
-                <TechCard
-                  techId={techId}
-                  techName={tech.name}
-                  techLogo={tech.image}
-                  techLogoX={tech.x}
-                  techLogoY={tech.y}
-                  techUrl={tech.url}
-                />
-              )))}
             </div>
-            <br></br>
-            <span className="text-base font-normaltext-gray-700 mb-4 dark:text-gray-300">
-              {userData.about.techs.warning}
-            </span>
+
           </div>
         </div>
       </div>

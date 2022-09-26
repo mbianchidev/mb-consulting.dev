@@ -4,11 +4,22 @@ import Image from "next/future/image";
 import Link from "next/link";
 
 export default function Services() {
+
+  const backup = console.warn;
+
+  console.warn = function filterWarnings(msg) {
+    const supressedWarnings = ['If you use CSS to change the size of your image, also include the styles'];
+  
+    if (!supressedWarnings.some(entry => msg.includes(entry))) {
+      backup.apply(console, arguments);
+    }
+  };
+
   return (
     <section className="bg-white dark:bg-gray-800">
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
         <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
-          Available Services
+          Services
         </h1>
       </div>
       {/* Grid starts here */}

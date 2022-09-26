@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export default function Hero() {
   const titleStyle = "text-4xl md:text-8xl font-bold dark:text-gray-200 my-2";
-  const colorsArray = ["#FF7F3F", "#10B981", "#02058F","#851DE0"]; // #02058F #276CC6 #02044A
+  const colorsArray = ["#FF7F3F", "#10B981", "#02058F","#851DE0"];
 
   const [CTA, setCTA] = useState(" ");
   const [color, setColors] = useState(" ");

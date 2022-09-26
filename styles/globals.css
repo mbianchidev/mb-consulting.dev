@@ -252,3 +252,25 @@ a.close.disabled {
 		margin-top: auto;
 	}
 }
+
+@media screen and (max-width: 1024px) {
+	.service__mobile-back-button {
+		display: none !important;
+		margin-top: auto;
+	}
+	.navbar__mobile-blog {
+		display: none !important;
+		margin-top: auto;
+	}
+	.navbar__mobile-social-icons {
+		display: none !important;
+		margin-top: auto;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.navbar__logo-name-role {
+		display: none !important;
+		margin-top: auto;
+	}
+}
