@@ -16,6 +16,8 @@ export default function Contacts() {
 
   // State variables -> used mainly for select and alert
   const {query} = useRouter();
+  const router = useRouter();
+
   let selectedService = query.serviceName;
   if (!selectedService){
     selectedService = "other-services";
@@ -25,7 +27,14 @@ export default function Contacts() {
 
   useEffect(() => {
     setParent(selectedService);
-  }, [selectedService]);
+  }, [selectedService, query.serviceName]);
+
+  function onChange (event) {
+    const href = `/contacts?serviceName=${event.target.value}`;
+    setParent(event.target.value);
+    // update the url based on selected service
+    router.push(href, href, { shallow: true })
+  }
 
   const [options] = useState({
     autoClose: true,
@@ -185,7 +194,7 @@ export default function Contacts() {
             <label htmlFor="serviceName" className={formPlaceHolderTextStyle}>
               Select a service
             </label>
-            <select name="serviceName" value={parent} className={borderedTextStyle} onChange={(event) => setParent(event.target.value)}>
+            <select name="serviceName" value={parent} className={borderedTextStyle} onChange={(event) => onChange(event)}>
               {servicesData.services.filter(service => service.active === true)?.map((service, serviceId) => (
                 <option key={serviceId} value={service.slug}>{service.category} - {service.name}</option>
               ))}

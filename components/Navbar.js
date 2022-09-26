@@ -32,7 +32,7 @@ export default function Navbar() {
       <div className="flex  md:flex-row justify-between items-center navbar-mb">
 
         {/* Logo + Name */}
-        <div className="flex flex-col md:flex-row items-center">
+        <div className="flex flex-col md:flex-row items-center navbar__logo-name-role">
           <Link href="/" passHref>
             <a>
               <Image src={logo} alt="mb-consulting logo an infinite symbol turned into a cloud" width={156} height={104} priority />
@@ -133,7 +133,7 @@ export default function Navbar() {
           {/*External Medium Blog*/}
           <Link href={userData.socialLinks.medium} passHref>
             <a
-              className={`text-base ${unselectedTextStyle}`}
+              className={`text-base ${unselectedTextStyle} navbar__mobile-blog`}
               style={{fontSize: navbarFontSize}}
               target="_blank" rel="noopener noreferrer"
             > Blog{" "}
@@ -145,7 +145,7 @@ export default function Navbar() {
 
 
         {/*Social Links*/}
-        <div className="space-x-4 flex flex-row items-center">
+        <div className="space-x-4 flex flex-row items-center navbar__mobile-social-icons">
           <a
             title="Twitter profile"
             href={userData.socialLinks.twitter}

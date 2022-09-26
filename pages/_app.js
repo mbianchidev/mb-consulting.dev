@@ -11,12 +11,12 @@ function MyApp({ Component, pageProps }) {
     <>
       <ThemeProvider defaultTheme="dark" attribute="class">
         <main className="dark:bg-gray-800 w-full">
-          <Navbar />
+          <Navbar/>
           <CustomError>
             <Component {...pageProps} />
           </CustomError>
-          <MBCookies />
-          <Footer />
+          <MBCookies/>
+          <Footer/>
         </main>
       </ThemeProvider>
     </>

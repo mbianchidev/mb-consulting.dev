@@ -15,8 +15,9 @@ const userData = {
   cookieUrl: "https://www.allaboutcookies.org/",
   about: {
     title: "A long time ago in a galaxy far, far away... I fell in ❤️ with DevOps culture, I became passionate about clouds 🌩️ and obsessed with IT security 🔐. Always eager to learn and teach new stuff, to make a difference",
+    clickText: "Get to know me better 👇",
     story: {
-      shortTitle: "Star Wars: A DevOps Story",
+      shortTitle: "DevOps: A Star Wars Story",
       description: [
         `My story was filled with monstrous bugs 🐞, amazing features ✨, large scale products ⛰️, many programming languages and frameworks 📚, huge infrastructures 🗼 and amazing colleagues 👨‍💻.`,
         `I changed my path from Software to the Dark Side by becoming a DevOps/SRE taking the best from both worlds (never stopped to use the --force).`,
@@ -31,7 +32,7 @@ const userData = {
     },
     goals: {
       title: "",
-      shortTitle: "Goals and values",
+      shortTitle: "My Jedi Code",
       description: [
         `My main goal is to enable DevOps culture in your company to add tons of value to your products and improve your developers experience.`,
         `In our time toghether we will build a strong bond, because trust is the foundation of every professional relationship.`,
@@ -43,7 +44,7 @@ const userData = {
     },
     techs: {
       title: "",
-      shortTitle: "Tech Stack & Tools",
+      shortTitle: "Tech Stack & Lightsabers",
       description: [
         `I'm a polyglot developer, I love to learn new languages, frameworks and cloud technologies.`,
         `I'm a big fan of the following technologies:`,
