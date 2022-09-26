@@ -84,8 +84,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <changefreq>yearly</changefreq> 
     <priority>0.9</priority>
   </url>
-  ${services.filter(service => service.active === true)?.map((service) => (
-  `
+  ${services.filter(service => service.active === true)?.map((service) => (`
   <url>
     <loc>${baseUrl}/service/${service.slug}</loc>
     <lastmod>${lastMonthDate}</lastmod>
