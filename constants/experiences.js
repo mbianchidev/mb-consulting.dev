@@ -1,3 +1,19 @@
+/* 
+{
+    companyName: "Company name",
+    companyType: ["Corporate", "Startup", "Scaleup"...],
+    companySector: ["Finance", "Healthcare", "Automotive"...],
+    companyLogo: "/images/employers/company.webp",
+    companyLogoX: logo width,
+    companyLogoY: logo height,
+    companyUrl: "https://acme.com",
+    role: "What was your role?",
+    story: "Details about the role and the company",
+    year: "years of employment",
+    show: true|false
+},
+*/
+
 const experiencesData = {
     experiences: [
         {

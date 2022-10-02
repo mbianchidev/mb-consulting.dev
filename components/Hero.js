@@ -1,7 +1,7 @@
 import React from "react";
 import userData from "@constants/data";
 import { RoughNotationGroup } from "react-rough-notation";
-import { RainbowHighlight } from "./RainbowHighlight";
+import { RainbowHighlight } from "./custom/Highlight/RainbowHighlight";
 import Image from 'next/image';
 import { useState, useEffect } from "react";
 import { shuffle } from "@lib/utils";

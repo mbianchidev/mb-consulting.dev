@@ -2,6 +2,7 @@ import React from "react";
 import servicesData from "@constants/services";
 import Image from "next/future/image";
 import Link from "next/link";
+import BackButton from "@components/custom/BackButton/BackButton";
 
 export default function Services() {
 
@@ -22,8 +23,11 @@ export default function Services() {
           Services
         </h1>
       </div>
+
+      <BackButton href="/" name="homepage"/>
+
       {/* Grid starts here */}
-      <div className="bg-[#F1F1F1] dark:bg-gray-900">
+      <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
           {React.Children.toArray(servicesData.services.filter(service => service.active === true)?.map((service, serviceId) => (
             <ServiceCard

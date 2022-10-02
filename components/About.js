@@ -3,6 +3,7 @@ import userData from "@constants/data";
 import techsData from "@constants/techs";
 import Image from 'next/future/image';
 import Link from "next/link";
+import BackButton from "./custom/BackButton/BackButton";
 
 export default function About() {
 
@@ -47,6 +48,9 @@ export default function About() {
           My journey
         </h1>
       </div>
+      
+      <BackButton href="/" name="homepage"/>
+
       <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
         <div className="text-container max-w-6xl mx-auto pt-20">
           <span
