@@ -1,4 +1,3 @@
-
 /* 
 {
   category: "Service macro category",
@@ -17,6 +16,7 @@
   rate: 'starting from X €' | 'X-Y €' | 0 | default: 'To be discussed',
 },
 */
+
 const servicesData = {
     basePath: '/service',
     services: [
@@ -41,8 +41,8 @@ const servicesData = {
           CTA: 'Discover how!',
           type: '3 days course and mini-workshop (remote only), classes can consist of either employees of a company or indipendent individuals (in which case the course will start only when the quota is reached and the cost is shared among the participants).',
           active: true,
-          offer: '30% discount on the specific technology mini-course (if requested), free pitch call to discuss your needs and the course details, pre-course DevOps maturity assessment included.',
-          rate: 'Starting from 3000 €', // - payment for companies in 2 installments (50% before the beginning of the course, 50% at the end) - payment for individuals at the beginning of the course
+          offer: '30% discount on the specific technology mini-course, 100% FREE pitch call to discuss your needs and the course details, pre-course DevOps maturity assessment included.',
+          rate: 'Starting from 2999', // - payment for companies in 2 installments (50% before the beginning of the course, 50% at the end) - payment for individuals at the beginning of the course
         },
         {
           category: "DevOps",
@@ -67,8 +67,8 @@ const servicesData = {
           CTA: 'Become the new DevOps company today!',
           type: '1 week course and workshop (remote or on-site) + 3-6 months of support (remote only)',
           active: true,
-          offer: '50% discount on the specific technology workshop (if requested), free pitch call to discuss your needs and the course details, Full DevOps maturity assessment and evalutation included.',
-          rate: 'Course starting from 5000 €, additional support mode and rate is to be discussed.',
+          offer: '50% discount on the specific technology workshop, 100% FREE pitch call to discuss your needs and the course details, FREE Full DevOps maturity assessment and evalutation.',
+          rate: 'Course starting from 4999, additional support is to be discussed.',
         },
         {
           category: "Cloud",
@@ -129,7 +129,7 @@ const servicesData = {
           CTA: 'Let\'s talk about it.',
           type: '2/3 weeks of onboarding (remote only) + 6-12 months of support (remote only).',
           active: true,
-          offer: "20% discount on the first month of support, free consulting call included.",
+          offer: "20% discount off the 1st month of support, FREE consulting call included.",
           rate: 0,
         },
         {

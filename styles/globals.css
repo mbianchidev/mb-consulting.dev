@@ -217,7 +217,7 @@ a.close.disabled {
 .hover-underline-animation {
 	display: inline-block;
 	position: relative;
-	color: #0A369D;
+	color: #3B82F6;
 }
   
 .hover-underline-animation:after {
@@ -238,10 +238,10 @@ a.close.disabled {
 	transform-origin: bottom left;
 }
 
-/* Hero Image */
+/* Hero Images for desktop and mobile */
 .hero__desktop-image {
 	display: none !important;
-  }
+}
 
 @media(orientation: landscape) {
 	.hero__desktop-image {
@@ -253,22 +253,28 @@ a.close.disabled {
 	}
 }
 
+/* Pixels < 1024  */
 @media screen and (max-width: 1024px) {
-	.service__mobile-back-button {
-		display: none !important;
-		margin-top: auto;
-	}
+    /* Not visible */
+    .service__mobile-back-button {
+        display: none !important;
+        margin-top: auto;
+    }
+	/* Not visibile */
 	.navbar__mobile-blog {
 		display: none !important;
 		margin-top: auto;
 	}
+	/* Not visibile */
 	.navbar__mobile-social-icons {
 		display: none !important;
 		margin-top: auto;
 	}
 }
 
+/* Between 768 and 1024 pixels */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+	/* Not visible */
 	.navbar__logo-name-role {
 		display: none !important;
 		margin-top: auto;

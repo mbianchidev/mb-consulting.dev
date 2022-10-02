@@ -1,0 +1,25 @@
+.backButton {
+    position: relative; 
+    width: 12.5%;
+    padding-top: 1rem;
+    padding-bottom: 1rem; 
+    padding-left: 1rem;
+    padding-right: 1rem; 
+    margin-left: 1rem;
+    margin-right: 1rem; 
+    margin-top: 2rem; 
+    color: #E5E7EB; 
+    font-size: 1.25rem;
+    line-height: 1.75rem; 
+    font-weight: 700; 
+    border-radius: 0.375rem; 
+    background: #02044A;
+}
+
+@media screen and (max-width: 1024px) {
+    /* Not visible */
+    .service__mobile-back-button {
+        display: none !important;
+        margin-top: auto;
+    }
+}

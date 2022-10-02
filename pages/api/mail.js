@@ -48,7 +48,7 @@ export default async function(req, res) {
                     <img src="https://mb-consulting.dev/static/logo.webp" class="logo-image" style="height: 104px;width: 156px;border-radius: 5px;overflow: hidden;">
                     <p class="footer" style="font-size: 16px;padding-bottom: 20px;border-bottom: 1px solid #D1D5DB;">Have a nice one,<br>${userData.name}<br>${userData.role}<br>${userData.email}</p>
                     <div class="footer-links" style="display: flex;justify-content: center;align-items: center;">
-                      <a href="https://mb-consulting.dev/all-links" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Explore more content</a>
+                      <a style="text-decoration: none;margin: 8px;color: #9CA3AF;">Explore more content, visit https://mb-consulting.dev/all-links</a>
                     </div>
                   </div>
                 </div>
@@ -90,7 +90,7 @@ export default async function(req, res) {
                     <img src="https://mb-consulting.dev/static/logo.webp" class="logo-image" style="height: 104px;width: 156px;border-radius: 5px;overflow: hidden;">
                     <p class="footer" style="font-size: 16px;padding-bottom: 20px;border-bottom: 1px solid #D1D5DB;">See you soon,<br>${userData.name}<br>${userData.role}<br>${userData.email}</p>
                     <div class="footer-links" style="display: flex;justify-content: center;align-items: center;">
-                      <a href="https://google.com" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Explore more content, visit https://mb-consulting.dev/all-links</a>
+                      <a style="text-decoration: none;margin: 8px;color: #9CA3AF;">Explore more content, visit https://mb-consulting.dev/all-links</a>
                     </div>
                   </div>
                 </div>

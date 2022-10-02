@@ -1,5 +1,5 @@
 import React from "react";
-import ErrorFallback from "@components/ErrorFallback";
+import ErrorFallback from "./ErrorFallback";
 
 class CustomError extends React.Component {
     constructor(props) {
@@ -22,7 +22,7 @@ class CustomError extends React.Component {
       if (this.state.hasError) {
         // You can render any custom fallback UI
         return (
-            <ErrorFallback />
+            <ErrorFallback/>
         )
       }
   

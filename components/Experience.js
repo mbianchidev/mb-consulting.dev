@@ -1,6 +1,7 @@
 import React from "react";
 import experiencesData from "@constants/experiences";
 import Image from 'next/image';
+import BackButton from "./custom/BackButton/BackButton";
 
 export default function Experience() {
   return (
@@ -10,7 +11,10 @@ export default function Experience() {
           Employers
         </h1>
       </div>
-      <div className="bg-[#F1F1F1] dark:bg-gray-900 -mt-4">
+
+      <BackButton href="/about" name="about"/>
+
+      <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
         <div className="grid grid-cols-1 dark:bg-gray-900 max-w-xl mx-auto pt-20">
           {/*Fixes warning each child in a list should have a unique "key" prop. */}
           {React.Children.toArray(experiencesData.experiences.filter(employer => employer.show === true)?.map((employer, employerId) => (

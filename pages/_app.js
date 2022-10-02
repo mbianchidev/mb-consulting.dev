@@ -3,7 +3,7 @@ import { ThemeProvider } from "next-themes";
 import Navbar from "@components/Navbar";
 import Footer from "@components/Footer";
 import MBCookies from "@components/MBCookies";
-import CustomError from '@components/CustomError'
+import CustomError from '@components/custom/Error/CustomError'
 
 function MyApp({ Component, pageProps }) {
 
