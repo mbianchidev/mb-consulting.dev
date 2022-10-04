@@ -4,6 +4,15 @@ const mail = require('@sendgrid/mail');
 mail.setApiKey(process.env.SENDGRID_API_KEY);
 
 export default async function(req, res) {
+
+  const customerMessage = `
+  ${userData.mailThankYouMessage.description?.map((row, id) => (
+    `<p id=${id}>${row}</p>`
+  ))}
+  `.replace(/,/g, '');
+
+  console.log(customerMessage);
+
   return new Promise((resolve, reject) => {
     const researchString = "site_form_message_request"; // this is an util string to identify the email in gmail search
     const body = req.body;
@@ -14,11 +23,12 @@ export default async function(req, res) {
       return;
     }
     const data = `
-    ResearchString: ${researchString}\r\n
-    Name: ${body.name}\r\n
-    Email: ${body.email}\r\n
-    Service requested: ${body.serviceName}\r\n
-    Message: ${body.message.replace(/\n/g, '\r\n')}
+    <b>ResearchString</b>: ${researchString}\r\n
+    <br></br>
+    <b>Name:</b> ${body.name}\r\n
+    <b>Email:</b> ${body.email}\r\n
+    <b>Service requested:</b> ${body.serviceName}\r\n
+    <b>Message:</b><br></br> ${body.message.replace(/\n/g, '\r\n')}
     `;
     
     {/* My email */}
@@ -46,9 +56,9 @@ export default async function(req, res) {
                   <div style="font-size: 16px;">
                     <p id="customer-message">${data.replace(/\r\n/g, '<br>')}</p>
                     <img src="https://mb-consulting.dev/static/logo.webp" class="logo-image" style="height: 104px;width: 156px;border-radius: 5px;overflow: hidden;">
-                    <p class="footer" style="font-size: 16px;padding-bottom: 20px;border-bottom: 1px solid #D1D5DB;">Have a nice one,<br>${userData.name}<br>${userData.role}<br>${userData.email}</p>
+                    <p class="footer" style="font-size: 16px;padding-bottom: 20px;border-bottom: 1px solid #D1D5DB;">Best,<br>${userData.name}<br>${userData.role}<br>${userData.email}</p>
                     <div class="footer-links" style="display: flex;justify-content: center;align-items: center;">
-                      <a style="text-decoration: none;margin: 8px;color: #9CA3AF;">Explore more content, visit https://mb-consulting.dev/all-links</a>
+                      <a style="text-decoration: none;margin: 8px;color: #9CA3AF;">Craft, Automate, Secure, Innovate</a>
                     </div>
                   </div>
                 </div>
@@ -66,7 +76,6 @@ export default async function(req, res) {
       {/* Customer email */}
       mail.send({
         to: body.email,
-        // cc: userData.email,
         from: userData.siteMail,
         subject: body.name + ' greetings from MB-Consulting',
         text: data,
@@ -86,7 +95,8 @@ export default async function(req, res) {
                 <div class="container" style="margin-left: 20px;margin-right: 20px;">
                   <h3>Thanks for your email! </h3>
                   <div style="font-size: 16px;">
-                    <p id="customer-message">${userData.mailThankYouMessage}</p>
+                    Dear ${body.name},<br>
+                    ${customerMessage}
                     <img src="https://mb-consulting.dev/static/logo.webp" class="logo-image" style="height: 104px;width: 156px;border-radius: 5px;overflow: hidden;">
                     <p class="footer" style="font-size: 16px;padding-bottom: 20px;border-bottom: 1px solid #D1D5DB;">See you soon,<br>${userData.name}<br>${userData.role}<br>${userData.email}</p>
                     <div class="footer-links" style="display: flex;justify-content: center;align-items: center;">

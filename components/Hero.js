@@ -30,24 +30,32 @@ export default function Hero() {
       <div className="w-full md:w-1/2 mx-auto text-center md:text-left lg:p-20">
         <RoughNotationGroup show={true}>
           <RainbowHighlight color={color[0]}>
-            <h1 className={titleStyle}>
-             {userData.hero.firstPrinciple}
-            </h1>
+            <Link href={userData.hero.firstLink} passHref>
+              <h1 className={titleStyle}>
+               {userData.hero.firstPrinciple}
+              </h1>
+            </Link>
           </RainbowHighlight>
           <RainbowHighlight color={color[1]}>
-            <h1 className={titleStyle}>
-              {userData.hero.secondPrinciple}
-            </h1>
+            <Link href={userData.hero.secondLink} passHref>
+              <h1 className={titleStyle}>
+                {userData.hero.secondPrinciple}
+              </h1>
+            </Link>
           </RainbowHighlight>
           <RainbowHighlight color={color[2]}>
-            <h1 className={titleStyle}>
-              {userData.hero.thirdPrinciple}
-            </h1>
+            <Link href={userData.hero.thirdLink} passHref>
+              <h1 className={titleStyle}>
+                {userData.hero.thirdPrinciple}
+              </h1>
+            </Link>
           </RainbowHighlight>
           <RainbowHighlight color={color[3]}>
-            <h1 className={titleStyle}>
-              {userData.hero.fourthPrinciple}
-            </h1>
+            <Link href={userData.hero.fourthLink} passHref>
+              <h1 className={titleStyle}>
+                {userData.hero.fourthPrinciple}
+              </h1>
+            </Link>
           </RainbowHighlight>
         </RoughNotationGroup>
 

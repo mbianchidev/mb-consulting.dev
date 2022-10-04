@@ -1,7 +1,7 @@
 import React from "react";
 import clientsData from "@constants/clients";
 import Image from 'next/image';
-import BackButton from "./custom/BackButton/BackButton";
+import Breadcrumb from "./custom/Breadcrumb/Breadcrumb";
 
 export default function Clients() {
   return (
@@ -12,7 +12,7 @@ export default function Clients() {
         </h1>
       </div>
       
-      <BackButton href="/" name="homepage"/>
+      <Breadcrumb/>
 
       <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
         <div className="grid grid-cols-1 dark:bg-gray-900 max-w-xl mx-auto pt-20">

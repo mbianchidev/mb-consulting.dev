@@ -9,7 +9,17 @@ const userData = {
     email: "info@mb-consulting.dev",
     privacyMail: "privacy@mb-consulting.dev",
     siteMail: "site@mb-consulting.dev",
-    mailThankYouMessage: "Every client may be former, new or potential matters a lot to me, that's why it may take some time for me to respond. I take my time to carefully read every email and try to answer to all of them. If you don't receive a reply from me within 48 hours, please check your spam folder or contact me again.",
+    mailThankYouMessage: 
+    {
+        description: [
+            `How are you? Hope everything is fine.`,
+            `You are receiving this email because you have contacted me through my website (or someone used your email in my contact form)`,
+            `You won't regret this! Every client may be former, new or potential matters a lot to me.`,
+            `That's why it may take some time for me to respond. I carefully read every email and try to answer to all of them.`,
+            `If I can't directly help you, I'll try to find someone who can in my network.`,
+            `If you don't receive a reply from me within 72 hours, please check your spam folder or contact me again.`,
+        ],
+    },
     address: "Full remote",
     vat: "IT11846470968",
     sdi: "M5UXCR1",
@@ -60,9 +70,13 @@ const userData = {
         catchyPhrase: "",
         funnySentence: "This is definitely my fancy version, I usually wear shorts and a band t-shirt 😎",
         firstPrinciple: "Craft.",
+        firstLink: "/service/software-engineering",
         secondPrinciple: "Automate.",
+        secondLink: "/service/devops-adoption-path",
         thirdPrinciple: "Secure.",
+        thirdLink: "/service/sre-devsecops",
         fourthPrinciple: "Innovate.",
+        fourthLink: "/service/cto-as-a-service",
         callToActions: ["Let's talk!", "Work with me!", "Need a DevOps?", "Looking for a CTO?", "Go cloud!", "Don't click here!", "Grab your free call!"],
     },
     // see next.config.js

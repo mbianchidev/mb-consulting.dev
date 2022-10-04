@@ -24,27 +24,26 @@ export default function Navbar() {
 
   return (
     <div className="max-w-8xl mx-2 px-4 py-10 md:py-20">
-      <div className="flex  md:flex-row justify-between items-center navbar-mb">
+
+      <div className="flex md:flex-row justify-between items-center navbar-mb">
 
         {/* Logo + Name */}
-        <div className="flex flex-col md:flex-row items-center navbar__logo-name-role">
-          <Link href="/" passHref>
-            <a>
-              <Image src={logo} alt="mb-consulting logo an infinite symbol turned into a cloud" width={156} height={104} priority />
-            </a>
-          </Link>
-          <div className="flex flex-col">
-            <h1 className="font-semibold text-x1 dark:text-gray-100" style={{fontSize: '60px'}}>
-              {userData.name}
-            </h1>
-            <p className="text-base font-light text-gray-500 dark:text-gray-300" style={{fontSize: '20px'}}>
-              {userData.role}
-            </p>
+        <Link href="/" passHref>
+          <div className="flex flex-col md:flex-row items-center navbar__logo-name-role">
+            <Image src={logo} alt="mb-consulting logo an infinite symbol turned into a cloud" width={156} height={104} priority />
+            <div className="flex flex-col">
+              <h1 className="font-semibold text-x1 dark:text-gray-100" style={{fontSize: '60px'}}>
+                {userData.name}
+              </h1>
+              <p className="text-base font-light text-gray-500 dark:text-gray-300" style={{fontSize: '20px'}}>
+                {userData.role}
+              </p>
+            </div>
           </div>
-        </div>
+        </Link>
 
         {/* Navbar sections */}
-        <div className="space-x-8 hidden md:block -mr-40 mt-20">
+        <div className="space-x-8 hidden md:block -mr-40 mt-30">
 
           {/*About*/}
           <Link href={aboutPath} passHref>
@@ -133,12 +132,11 @@ export default function Navbar() {
               target="_blank" rel="noopener noreferrer"
             > Blog{" "}
             </a>
-          </Link>          
-
+          </Link>    
         </div>
 
-        {/*Social Links*/}
-        <SocialElement twitter="true" linkedin="true" hideIfMobile="true" hasDarkMode="true"/>
+          {/*Social Links*/}
+          <SocialElement twitter="true" linkedin="true" hideIfMobile="true" hasDarkMode="true"/>   
 
       </div>
 

@@ -1,6 +1,6 @@
 import React from "react";
 import userData from "@constants/data";
-import BackButton from "./custom/BackButton/BackButton";
+import Breadcrumb from "./custom/Breadcrumb/Breadcrumb";
 
 export default function PrivacyPolicy() {
   const mailTo = "mailto:"+userData.privacyMail;
@@ -17,7 +17,7 @@ export default function PrivacyPolicy() {
         </h1>
       </div>
 
-      <BackButton href="/" name="homepage"/>
+      <Breadcrumb/>
 
       <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
         <div className="text-container mx-auto pt-20" style={{marginLeft : "10px"}}>

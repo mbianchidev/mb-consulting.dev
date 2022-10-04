@@ -16,6 +16,12 @@ module.exports = {
       },
     async redirects() {
         return [
+            // Internal
+            {
+                source: '/service',
+                destination: '/services',
+                permanent: false,
+            },
             // Existing links/projects
             {
                 source: '/telegram',

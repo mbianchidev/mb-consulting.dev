@@ -14,7 +14,7 @@ export default function Contacts() {
   const regexNameValidationPattern = "^.{3,}$";
   const regexCaptchaValidationPattern = "^(42|420|69|143)$"
   const formPlaceHolderTextStyle = "text-sm text-gray-600 mx-4 mt-4";
-  const borderedTextStyle = "font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
+  const borderedTextStyle = "font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500";
 
   // State variables -> used mainly for select and alert
   const {query} = useRouter();
@@ -42,7 +42,8 @@ export default function Contacts() {
 
   const [options] = useState({
     autoClose: true,
-    keepAfterRouteChange: false
+    keepAfterRouteChange: false,
+    alerts: [],
   });
 
   // Mail API Call
@@ -98,23 +99,19 @@ export default function Contacts() {
           Let's get in touch!
         </h1>
       </div>
-      <div className="relative z-10 rounded-md shadow-md bg-[#050e96] p-4 md:p-10 lg:p-20 max-w-6xl mx-auto mb-20 -mt-4">
+      <div className="bg-[#050e96] relative z-10 rounded-md shadow-md p-4 md:p-10 lg:p-20 max-w-6xl mx-auto mb-20 -mt-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="md:ml-4">
             <header className="">
               <h1 className="text-gray-50 font-semibold text-2xl">
-                Interested in my{" "}
-                <a href="/services" rel="noopener noreferrer" className="text-gray-800 font-bold dark:text-gray-300 hover-underline-animation" style={{color : "#3B82F6"}}> 
-                services 
-                </a>?
+                One step closer to your problem solved!
               </h1>
-              <p className="font-light text-base text-gray-200 mt-2">
-                Fill in the details and I'll get back to you as soon as possible.
-              </p>
+              <p className="font-light text-base text-gray-200 mt-2"> Fill in the details and I'll get back to you in no time. </p>
+              <p className="font-light text-base text-gray-200 mt-2"> If you are looking to hire me for a permanent role, you are welcome to contact me on LinkedIn.</p>
             </header>
-            {/* Social Buttons */}
+            {/* Email/Address */}
             <div className="icons-container inline-flex flex-col my-20">
-              <div className="flex flex-row items-center space-x-6 rounded-md border border-[#02044A] hover:border hover:border-blue-500 p-4">
+              <div className="flex flex-row items-center space-x-6 p-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -129,7 +126,7 @@ export default function Contacts() {
                   {userData.email}
                 </p>
               </div>
-              <div className="flex flex-row items-center space-x-6 rounded-md border border-[#02044A] hover:border hover:border-blue-500 p-4">
+              <div className="flex flex-row items-center space-x-6 p-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"

@@ -22,7 +22,7 @@ export default function Custom500() {
             className="leading-loose text-2xl md:text-4xl font-semibold"
             style={{ lineHeight: "3rem" }}
           >
-            If you ended up here you found an error on my side and I'm so sorry about it. If the error persists please <a href="/contacts" className="hover-underline-animation" style={{color : "#0A369D"}}> contact me </a>.
+            If you ended up here you found an error on my side and I'm so sorry about it. If the error persists please <a href="/contacts" className="hover-underline-animation text-[#02058F]"> contact me </a>.
             Click on the logo to return to the hompage. <br></br><br></br><br></br>
             <Image src="/images/gifs/hello-it.gif" alt="'Hello IT, have you tried turning in on and off again?' GIF from the IT Crowd series" width="480" height="270" />
           </span>
