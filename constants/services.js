@@ -23,7 +23,7 @@ const servicesData = {
         {
           category: "DevOps",
           name: "Fundamentals Course",
-          image: "/images/services/coaching.webp",
+          image: "/images/service/course.webp",
           slug: "devops-fundamentals-course",
           shortDescription: "Discover what does DevOps can do for you",
           description: [
@@ -46,7 +46,7 @@ const servicesData = {
         {
           category: "DevOps",
           name: "Adoption Path",
-          image: "/images/services/path.webp",
+          image: "/images/service/devops-path.webp",
           slug: "devops-adoption-path",
           shortDescription: "Start the complete automation journey",
           description: [
@@ -70,7 +70,7 @@ const servicesData = {
         {
           category: "Cloud",
           name: "Migration & Management",
-          image: "/images/services/cloud.webp",
+          image: "/images/service/cloud-management.webp",
           slug: "cloud-migration-and-management",
           shortDescription: "Scale up your business to the cloud ",
           description: [
@@ -90,7 +90,7 @@ const servicesData = {
         {
           category: "SRE & DevSecOps",
           name: "Sec & Reliability Review",
-          image: "/images/services/security.webp",
+          image: "/images/service/devsecops-sre.webp",
           slug: "sre-devsecops",
           shortDescription: "Perform a reliability and security review of your product",
           description: [
@@ -111,7 +111,7 @@ const servicesData = {
         {
           category: "Management",
           name: "CTO as a Service",
-          image: "/images/services/me.webp",
+          image: "/images/service/cto-as-a-service.webp",
           slug: "cto-as-a-service",
           shortDescription: "Benefit from my fracional CTO services",
           description: [
@@ -130,7 +130,7 @@ const servicesData = {
         {
           category: "Software",
           name: "Engineering and Architecture",
-          image: "/images/services/programming.webp",
+          image: "/images/service/software.webp",
           slug: "software-engineering",
           shortDescription: "Take care of your software lifecycle",
           description: [
@@ -150,7 +150,7 @@ const servicesData = {
         {
           category: "Other",
           name: "Services",
-          image: "/images/services/service-mock.webp",
+          image: "/images/service/other.webp",
           slug: "other-services",
           shortDescription: "For anything else you need",
           description: [

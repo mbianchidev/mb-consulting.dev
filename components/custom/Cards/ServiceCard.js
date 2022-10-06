@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import servicesData from "@constants/services";
 
-export default function ServiceCard ({ serviceId, category, name, slug, image, imageX, imageY, description, startingFromRate}) {
+export default function ServiceCard ({ serviceId, category, name, slug, image, imageX, imageY, description, startingFromRate }) {
 
     const [visible, setVisible] = useState(false);
   
@@ -36,4 +36,4 @@ export default function ServiceCard ({ serviceId, category, name, slug, image, i
         </a>
       </Link>
     );
-  };
+}
