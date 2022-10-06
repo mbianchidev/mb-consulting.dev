@@ -1,6 +1,6 @@
 import React from "react";
 import userData from "@constants/data";
-import Breadcrumb from "./custom/Breadcrumb/Breadcrumb";
+import Breadcrumb from "@custom/Breadcrumb/Breadcrumb";
 
 export default function CookiePolicy() {
   const mailTo = "mailto:"+userData.privacyMail;

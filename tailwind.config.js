@@ -4,6 +4,12 @@ module.exports = {
   content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: "class", // or 'media' or 'class'
   theme: {
+    extend: {
+      transitionDuration: {
+        0: "0ms",
+        2000: "2000ms",
+        4000: "4000ms",
+      },
 // colors: { => DO NOT use this, it will override the default colors and you will have to redefine them all somehow lol
 //   mb_blue: 
 //   { 
@@ -13,12 +19,6 @@ module.exports = {
 //     400: "#02044A",
 //   },
 // },
-    extend: {
-      transitionDuration: {
-        0: "0ms",
-        2000: "2000ms",
-        4000: "4000ms",
-      },
     },
   },
   variants: {

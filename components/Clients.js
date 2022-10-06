@@ -1,7 +1,7 @@
 import React from "react";
 import clientsData from "@constants/clients";
 import Image from 'next/image';
-import Breadcrumb from "./custom/Breadcrumb/Breadcrumb";
+import Breadcrumb from "@custom/Breadcrumb/Breadcrumb";
 
 export default function Clients() {
   return (

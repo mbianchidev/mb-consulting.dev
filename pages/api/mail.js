@@ -11,8 +11,6 @@ export default async function(req, res) {
   ))}
   `.replace(/,/g, '');
 
-  console.log(customerMessage);
-
   return new Promise((resolve, reject) => {
     const researchString = "site_form_message_request"; // this is an util string to identify the email in gmail search
     const body = req.body;

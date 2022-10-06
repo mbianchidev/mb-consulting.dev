@@ -14,7 +14,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(context) {
-  const service = servicesData.services.filter(service => service.slug === context.params?.slug && service.active === true);
+  const service = servicesData.services.filter(service => service.slug === context.params?.slug && service.active === true)[0];
   return {
     // Passed to the page component as props
     props: { service },
@@ -22,8 +22,9 @@ export async function getStaticProps(context) {
 }
 
 export default function service({service}) {
+  const title = "Service - " + service.name + " - Matteo Bianchi";
   return (
-    <ContainerBlock>
+    <ContainerBlock title={title}>
       <Service service={service}/>
     </ContainerBlock>
   );

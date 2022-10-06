@@ -261,7 +261,12 @@ a.close.disabled {
 		margin-top: auto;
 	}
 	/* Not visibile */
-	.navbar__mobile-social-icons {
+	.mobile-social-icons {
+		display: none !important;
+		margin-top: auto;
+	}
+	/* Not visibile */
+	.mobile-extra-info {
 		display: none !important;
 		margin-top: auto;
 	}

@@ -1,9 +1,9 @@
 import "@styles/globals.css";
 import { ThemeProvider } from "next-themes";
-import Navbar from "@components/Navbar";
-import Footer from "@components/Footer";
-import MBCookies from "@components/MBCookies";
-import CustomError from '@components/custom/Error/CustomError'
+import Navbar from "@custom/Navbar/Navbar";
+import Footer from "@custom/Footer/Footer";
+import MBCookies from "@custom/Cookies/MBCookies";
+import CustomError from '@custom/Error/CustomError'
 
 function MyApp({ Component, pageProps }) {
 

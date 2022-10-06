@@ -3,8 +3,8 @@ import userData from "@constants/data";
 import techsData from "@constants/techs";
 import Image from 'next/future/image';
 import Link from "next/link";
-import LinkList from "./custom/LinkList/LinkList";
-import Breadcrumb from "./custom/Breadcrumb/Breadcrumb";
+import LinkList from "@custom/LinkList/LinkList";
+import Breadcrumb from "@custom/Breadcrumb/Breadcrumb";
 
 export default function About() {
 

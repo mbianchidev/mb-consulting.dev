@@ -2,10 +2,10 @@ import React from "react";
 import userData from "@constants/data";
 import Link from "next/link";
 import Image from 'next/image';
-import logo from "../public/images/logo.webp"
+import logo from "@images/logo.webp"
 import { useRouter } from "next/router";
-import SocialElement from "./custom/SocialElement/SocialElement";
-import Dropdown from "@components/custom/DropdownMenu/DropdownMenu";
+import SocialElement from "@custom/SocialElement/SocialElement";
+import Dropdown from "@custom/DropdownMenu/DropdownMenu";
 
 export default function Navbar() {
   const router = useRouter();

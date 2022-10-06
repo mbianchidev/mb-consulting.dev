@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import servicesData from "@constants/services";
 import Image from "next/future/image";
 import Link from "next/link";
-import Breadcrumb from "./custom/Breadcrumb/Breadcrumb";
+import Breadcrumb from "@custom/Breadcrumb/Breadcrumb";
 
 export default function Services() {
 
@@ -61,11 +61,9 @@ const ServiceCard = ({ serviceId, category, name, slug, image, imageX, imageY, d
   const [visible, setVisible] = useState(false);
 
   const handleMouseOver = () => {
-    console.log("Mouse over");
     setVisible(true);
   };
   const handleMouseOut = () => {
-    console.log("Mouse out");
     setVisible(false);
   };
 
@@ -81,7 +79,7 @@ const ServiceCard = ({ serviceId, category, name, slug, image, imageX, imageY, d
           <div className="h-72 object-cover">
             <Image src={image} alt={altText} layout="fill" width={imageX} height={imageY} className="transform hover:scale-125 transition duration-2000 ease-out object-cover h-full w-full" />
           </div>
-          <h1 className="absolute bottom-10 left-5 text-gray-50 font-bold text-xl bg-blue-500 rounded-md px-2">
+          <h1 className="absolute bottom-10 left-5 text-gray-50 font-bold text-xl dark:bg-blue-500 bg-[#2376C7] rounded-md px-2">
             {category} - {name}
           </h1>
           <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl">

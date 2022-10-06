@@ -12,8 +12,8 @@ export default function SocialElement({ twitter, linkedin, linkStyle, iconStyle,
       iconStyle = styles.socialElementIcon;
   }
   const twitterIconStyle = `bi bi-twitter ${iconStyle}`;
-  const linkedinIconStyle = `bi bi-linkedin ${iconStyle}`;  
-  const divStyle = hideIfMobile ? "space-x-4 flex flex-row items-center navbar__mobile-social-icons" : "space-x-4 flex flex-row items-center";
+  const linkedinIconStyle = `bi bi-linkedin ${iconStyle}`;
+  const divStyle = hideIfMobile ? "space-x-4 flex flex-row items-center mobile-social-icons" : "space-x-4 flex flex-row items-center";
 
   return (
     <div className={divStyle}>
