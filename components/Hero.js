@@ -28,8 +28,8 @@ export default function Hero() {
   return (
     <div className="flex flex-row justify-center items-start overflow-hidden">
 
-      {/* Fancy writings */}
       <div className="w-full md:w-1/2 mx-auto text-center md:text-left lg:p-20">
+        {/* Fancy writings */}
         <RoughNotationGroup show={true}>
           <RainbowHighlight color={color[0]}>
             <Link href={userData.hero.firstLink} passHref>

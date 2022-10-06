@@ -1,7 +1,7 @@
 import styles from "./SocialElement.module.css";
 import userData from "@constants/data";
 import React from "react";
-import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
+import DarkModeToggle from "../Toggles/DarkModeToggle";
 
 export default function SocialElement({ twitter, linkedin, linkStyle, iconStyle, hideIfMobile, hasDarkMode }) {
 

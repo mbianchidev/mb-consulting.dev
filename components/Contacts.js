@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import SocialElement from "@custom/SocialElement/SocialElement";
-import ContactExtraInfo from "@custom/ContactExtraInfo/ContactExtraInfo";
-import ContactForm from "@custom/ContactForm/ContactForm";
+import SocialElement from "@components/custom/Social/SocialElement";
+import ContactExtraInfo from "@components/custom/Info/ContactExtraInfo";
+import ContactForm from "@components/custom/Forms/ContactForm";
 
 export default function Contacts() {
 

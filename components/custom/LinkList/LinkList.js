@@ -22,7 +22,8 @@ export default function LinkList({ github, linkedin, linktree }) {
           </span>
         </a>
       </div>}
-      {linktree && <div className="flex flex-row justify-start items-center">
+      {linktree && 
+      <div className="flex flex-row justify-start items-center">
         <a href={userData.socialLinks.linktree} target="_blank" rel="noopener noreferrer" className="flex flex-row items-center space-x-4 group" >
           <div className="my-4">&rarr;</div>
           <span className={socialTextStyle}>

@@ -11,6 +11,7 @@ export default function About() {
   const [showStory, setShowStory] = useState(false);
   const [showGoals, setShowGoals] = useState(false);
   const [showTechs, setShowTechs] = useState(false);
+
   function toggleStory(){      
     setShowStory(!showStory);
     setShowGoals(false);
