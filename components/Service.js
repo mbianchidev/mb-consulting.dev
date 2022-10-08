@@ -76,9 +76,13 @@ export default function Service({ service }) {
             <br></br>
             <br></br>
             {/* Service Rate */}
-            <p className={largeTextStyle}><li>Mode and timing - {service.type != null? service.type : "to be discussed"}</li></p>
-            <p className={largeTextStyle}><li>Cost range - {service.rate != 0 ? service.rate+"*" : "to be discussed"}</li></p>
-            <p className={largeTextStyle}><li>Special offer - {service.offer != null ? service.offer+"**" : "None for now but we can work something out!"}</li></p>
+            <p className={largeTextStyle}>
+              <ul>
+                <li>Mode and timing - {service.type != null? service.type : "to be discussed"}</li>
+                <li>Cost range - {service.rate != 0 ? service.rate+"*" : "to be discussed"}</li>
+                <li>Special offer - {service.offer != null ? service.offer+"**" : "None for now but we can work something out!"}</li>              
+              </ul>
+            </p>
             <br></br>
             {/* Service Disclaimers */}
             {service.rate != 0 && <p className={smallTextStyle}>* Cost range is only indicative based on the cost of similar services in the market, it will be tailored on every single agreement, based on complexity and budget needs.</p>}

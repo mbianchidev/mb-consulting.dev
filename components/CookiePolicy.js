@@ -27,10 +27,12 @@ export default function CookiePolicy() {
             Cookies are sent to your browser from a website and stored on your device.<br></br>
             You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.<br></br><br></br>
             Here are some pages you might find useful for disabling cookies:<br></br>
-            <li> <u><a target="_blank" rel="noopener noreferrer" href="https://support.microsoft.com/en-us/search?query=disable%20cookies%20in%20microsoft%20edge"> Edge </a></u> </li>
-            <li> <u><a target="_blank" rel="noopener noreferrer" href="https://support.google.com/accounts/answer/61416?hl=en&co=GENIE.Platform%3DDesktop"> Chrome </a></u> </li> 
-            <li> <u><a target="_blank" rel="noopener noreferrer" href="https://support.mozilla.org/en-US/kb/block-websites-storing-cookies-site-data-firefox"> Firefox </a></u> </li>
-            <li> <u><a target="_blank" rel="noopener noreferrer" href="http://docs.info.apple.com/article.html?path=Safari/5.0/en/9277.html"> Safari </a></u> </li>
+            <ul>
+              <li> <u><a target="_blank" rel="noopener noreferrer" href="https://support.microsoft.com/en-us/search?query=disable%20cookies%20in%20microsoft%20edge"> Edge </a></u> </li>
+              <li> <u><a target="_blank" rel="noopener noreferrer" href="https://support.google.com/accounts/answer/61416?hl=en&co=GENIE.Platform%3DDesktop"> Chrome </a></u> </li> 
+              <li> <u><a target="_blank" rel="noopener noreferrer" href="https://support.mozilla.org/en-US/kb/block-websites-storing-cookies-site-data-firefox"> Firefox </a></u> </li>
+              <li> <u><a target="_blank" rel="noopener noreferrer" href="http://docs.info.apple.com/article.html?path=Safari/5.0/en/9277.html"> Safari </a></u> </li>
+            </ul>
             <br></br>
             If you use other browsers like <u><a target="_blank" rel="noopener noreferrer" href="https://brave.com/"> Brave</a></u> or search engines like <u><a target="_blank" rel="noopener noreferrer" href="https://duckduckgo.com/ ">DuckDuckGo</a></u>, please consult their websites for more information.
             <br></br>
@@ -40,10 +42,12 @@ export default function CookiePolicy() {
           <h1 className="font-bold text-xl" style={{textAlign : "center"}}>Cookies used</h1>
           <br></br>
           <div className="text-xl text-gray-700 mb-4 dark:text-gray-300">
-            <li>Session Cookies: Session Cookies are used to operate this Service.</li>
-            <li>Preference Cookies: Preference Cookies are used to remember your preferences and various settings.</li>
-            <li>Security Cookies: Security Cookies are used for security purposes.</li>
-            <li>Analysis Cookies: Analysis Cookies are used to better understand user traffic flows and improve this Service accordingly.</li>
+            <ul>
+              <li>Session Cookies: Session Cookies are used to operate this Service.</li>
+              <li>Preference Cookies: Preference Cookies are used to remember your preferences and various settings.</li>
+              <li>Security Cookies: Security Cookies are used for security purposes.</li>
+              <li>Analysis Cookies: Analysis Cookies are used to better understand user traffic flows and improve this Service accordingly.</li>
+            </ul>
             <br></br>
             I don't use advertising cookies and there is no advertisement on this site.
           </div>
@@ -51,9 +55,11 @@ export default function CookiePolicy() {
           <h1 className="font-bold text-xl" style={{textAlign : "center"}}>Cookies details</h1>
           <br></br>
           <div className="text-xl text-gray-700 mb-4 dark:text-gray-300">
-            <li>mb-consulting-dev: functional first party cookie, used to operate the service and to store your preferences (1 year)</li>
-            <li>_ga: analytics third party cookie (Google.com), used to analyze this site traffic and performance (2 years)</li>
-            <li>_ga_*: technical third party cookie, identifies my Google Analytics account (2 years)</li>
+            <ul>
+              <li>mb-consulting-dev: functional first party cookie, used to operate the service and to store your preferences (1 year)</li>
+              <li>_ga: analytics third party cookie (Google.com), used to analyze this site traffic and performance (2 years)</li>
+              <li>_ga_*: technical third party cookie, identifies my Google Analytics account (2 years)</li>
+            </ul>
             <br></br>
             This Cookie Policy may be updated from time to time. Any change will be posted on this page.<br></br>
             Changes to this Cookie Policy are effective when they are posted on this page.<br></br>
