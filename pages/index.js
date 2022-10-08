@@ -8,8 +8,7 @@ import Hero from "@components/Hero";
 export default function Home() {
   // pass the argument { repositories } to Home() function to use it below: Home({ repositories })
   return (
-    <ContainerBlock
-      title="Matteo Bianchi - DevOps, SRE, Coach, Developer"
+    <ContainerBlock title="Matteo Bianchi - DevOps, SRE, Coach, Developer"
       description="This is my professional website. I am a DevOps, SRE, coach and software engineer."
     >
       <Hero/>

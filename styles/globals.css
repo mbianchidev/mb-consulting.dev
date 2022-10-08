@@ -255,18 +255,18 @@ a.close.disabled {
 
 /* Pixels < 1024  */
 @media screen and (max-width: 1024px) {
-    /* Not visible */
-    .service__mobile-back-button {
-        display: none !important;
-        margin-top: auto;
-    }
 	/* Not visibile */
 	.navbar__mobile-blog {
 		display: none !important;
 		margin-top: auto;
 	}
 	/* Not visibile */
-	.navbar__mobile-social-icons {
+	.mobile-social-icons {
+		display: none !important;
+		margin-top: auto;
+	}
+	/* Not visibile */
+	.mobile-extra-info {
 		display: none !important;
 		margin-top: auto;
 	}
@@ -279,4 +279,25 @@ a.close.disabled {
 		display: none !important;
 		margin-top: auto;
 	}
+    /* Not visible */
+    .service__mobile-breadcrumb {
+        display: none !important;
+        margin-top: auto;
+    }
+}
+
+/* Fade effect */
+.fadeOut{
+	opacity:0;
+	width:0;
+	height:0;
+	transition: width 0.5s 0.5s, height 0.5s 0.5s, opacity 0.6s;
+
+}
+.fadeIn{
+	opacity:1;
+	width:100px;
+	height:100px;
+	transition: width 0.5s, height 0.5s, opacity 0.4s 0.4s;
+
 }

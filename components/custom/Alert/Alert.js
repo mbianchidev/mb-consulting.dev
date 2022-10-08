@@ -34,16 +34,16 @@ function Alert({ id, fade }) {
                         // remove 'keepAfterRouteChange' flag on the rest
                         return omit(filteredAlerts, 'keepAfterRouteChange');
                     });
-                }
-                // if there is a message add alert to array with unique id
-                alert.itemId = Math.random();
-                setAlerts(alerts => ([...alerts, alert]));
-                // auto close alert if required
-                if (alert.autoClose) {
-                    setTimeout(() => removeAlert(alert), alert.autoCloseTimeout || 5000);
-                }
+                } else {
+                    // if there is a message add alert to array with unique id
+                    alert.itemId = Math.random();
+                    setAlerts(alerts => ([...alerts, alert]));
+                    // auto close alert if required
+                    if (alert.autoClose) {
+                        setTimeout(() => removeAlert(alert), alert.autoCloseTimeout || 5000);
+                    }
+                }  
             });
-
 
         // clear alerts on location change
         const clearAlerts = () => alertService.clear(id);

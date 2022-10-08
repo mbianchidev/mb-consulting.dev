@@ -1,6 +1,6 @@
 import React from "react";
 import userData from "@constants/data";
-import SocialElement from "./custom/SocialElement/SocialElement";
+import SocialElement from "@components/custom/Social/SocialElement";
 
 export default function Footer() {
   return (

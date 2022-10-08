@@ -3,13 +3,15 @@ import userData from "@constants/data";
 import techsData from "@constants/techs";
 import Image from 'next/future/image';
 import Link from "next/link";
-import BackButton from "./custom/BackButton/BackButton";
+import LinkList from "@custom/LinkList/LinkList";
+import Breadcrumb from "@custom/Breadcrumb/Breadcrumb";
 
 export default function About() {
 
   const [showStory, setShowStory] = useState(false);
   const [showGoals, setShowGoals] = useState(false);
   const [showTechs, setShowTechs] = useState(false);
+
   function toggleStory(){      
     setShowStory(!showStory);
     setShowGoals(false);
@@ -36,9 +38,7 @@ export default function About() {
     }
   };
 
-  const linkTextStyle = "text-gray-800 font-bold dark:text-gray-300 hover-underline-animation";
-  const socialTextStyle = "text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300"
-  const underlineTransition = "absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"
+  const linkTextStyle = "text-[#3B82F6] font-bold hover-underline-animation";
   const standardAboutText = "text-xl text-gray-700 mb-4 dark:text-gray-300";
 
   return (
@@ -49,7 +49,7 @@ export default function About() {
         </h1>
       </div>
       
-      <BackButton href="/" name="homepage"/>
+      <Breadcrumb/>
 
       <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
         <div className="text-container max-w-6xl mx-auto pt-20">
@@ -73,7 +73,7 @@ export default function About() {
               <br></br>
               <span className="text-lg text-gray-500 mt-4 dark:text-gray-300">
                 Interested in a collaboration? Got any question? Fill the {" "}
-                <a href="/contacts" className={linkTextStyle} style={{color : "#3B82F6"}}> contact form </a>{" "} and I'll get back as soon as I can.
+                <a href="/contacts" className={linkTextStyle}> contact form </a>{" "} and I'll get back as soon as I can.
               </span>
             </div>
             <div className="mt-8">
@@ -82,11 +82,11 @@ export default function About() {
               </h1>
               <br></br>
               <span className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                Check my{" "} <a href={userData.resumeUrl} target="_blank" rel="noopener noreferrer" className={linkTextStyle} style={{color : "#3B82F6"}}> CV </a>.
+                Check my{" "} <a href={userData.resumeUrl} target="_blank" rel="noopener noreferrer" className={linkTextStyle}> CV </a>.
                 <p>
-                  Have a look at my {" "} <a href="/clients" rel="noopener noreferrer" className={linkTextStyle} style={{color : "#3B82F6"}}> clients </a>{" "} and {" "}
-                  <Link href="/experience" passHref rel="noopener noreferrer"> 
-                    <a className={linkTextStyle} style={{color : "#3B82F6"}}>
+                  Have a look at my {" "} <a href="/clients" rel="noopener noreferrer" className={linkTextStyle}> clients </a>{" "} and {" "}
+                  <Link href="/about/experience" passHref rel="noopener noreferrer"> 
+                    <a className={linkTextStyle}>
                       experiences 
                     </a> 
                   </Link>{" "} as employee for more details.
@@ -98,36 +98,7 @@ export default function About() {
             <h1 className="text-xl font-semibold text-gray-700 mt-8 dark:text-gray-200">
               Links
             </h1>
-            <div className="mt-4 ml-4">
-            <div className="flex flex-row justify-start items-center">
-                <a href={userData.socialLinks.github} target="_blank" rel="noopener noreferrer" className="flex flex-row items-center space-x-4 group" >
-                  <div className="my-4">&rarr;</div>
-                  <span className={socialTextStyle}>
-                    <div className={underlineTransition} suppressHydrationWarning={true}></div>
-                    GitHub
-                  </span>
-                </a>
-              </div>
-              <div className="flex flex-row justify-start items-center">
-                <a href={userData.socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="flex flex-row items-center space-x-4 group" >
-                  <div className="my-4">&rarr;</div>
-                  <span className={socialTextStyle}>
-                    <div className={underlineTransition} suppressHydrationWarning={true}></div>
-                    LinkedIn
-                  </span>
-                </a>
-              </div>
-              <div className="flex flex-row justify-start items-center">
-                <a href={userData.socialLinks.linktree} target="_blank" rel="noopener noreferrer" className="flex flex-row items-center space-x-4 group" >
-                  <div className="my-4">&rarr;</div>
-                  <span className={socialTextStyle}>
-                    <div className={underlineTransition} suppressHydrationWarning={true}></div>
-                    Linktr.ee
-                  </span>
-                </a>
-              </div>
-
-            </div>
+            <LinkList github="true" linkedin="true" linktree="true"/>
           </div>
 
           {/* Text area */}

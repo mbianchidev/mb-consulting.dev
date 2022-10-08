@@ -1,6 +1,6 @@
 import React from "react";
 import userData from "@constants/data";
-import BackButton from "./custom/BackButton/BackButton";
+import Breadcrumb from "@custom/Breadcrumb/Breadcrumb";
 
 export default function PrivacyPolicy() {
   const mailTo = "mailto:"+userData.privacyMail;
@@ -17,7 +17,7 @@ export default function PrivacyPolicy() {
         </h1>
       </div>
 
-      <BackButton href="/" name="homepage"/>
+      <Breadcrumb/>
 
       <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
         <div className="text-container mx-auto pt-20" style={{marginLeft : "10px"}}>
@@ -60,9 +60,11 @@ export default function PrivacyPolicy() {
 
             While using this Service, I may ask you to provide me with certain personally identifiable information that can be used to contact or identify you (<b>"Personal Data"</b>). <br></br>
             Personally identifiable information may include, but is not limited to:<br></br>
-            <li>Email address</li>
-            <li>First name and last name</li>
-            <li>Cookies and Usage Data</li>
+            <ul>
+              <li>Email address</li>
+              <li>First name and last name</li>
+              <li>Cookies and Usage Data</li>
+            </ul>
             <br></br>
             Your Personal Data won't be used to contact you with newsletters, marketing or promotional materials unless you asked for it explicitly. <br></br>
             In any case you may opt out of receiving any, or all, of these communications from the site by following the unsubscribe link provided automatically.<br></br>
@@ -89,17 +91,18 @@ export default function PrivacyPolicy() {
 
             The collected data can be used for various purposes:
             <br></br>
-            <li>to provide and maintain this Service;</li>
-            <li>to notify you about changes to parts of this Service;</li>
-            <li>to gather analysis or valuable information so that I can improve this Service;</li>
-            <li>to monitor the usage of this Service;</li>
-            <li>to detect, prevent and address technical issues;</li>
-            <li>to fulfill any other purpose for which you provide it;</li>
-            <li>to carry out my obligations and enforce my rights arising from any contracts entered into between you and me, including for billing and collection;</li>
-            <li>to provide you with news, special offers and general information about other goods, services and events which I offer that are similar to those that you have already purchased or enquired about (only if you have opted to receive such information);</li>
-            <li>in any other way it is described when you provide the information;</li>
-            <li>for any other purpose with your explicit consent.</li>
-
+            <ul>
+              <li>to provide and maintain this Service;</li>
+              <li>to notify you about changes to parts of this Service;</li>
+              <li>to gather analysis or valuable information so that I can improve this Service;</li>
+              <li>to monitor the usage of this Service;</li>
+              <li>to detect, prevent and address technical issues;</li>
+              <li>to fulfill any other purpose for which you provide it;</li>
+              <li>to carry out my obligations and enforce my rights arising from any contracts entered into between you and me, including for billing and collection;</li>
+              <li>to provide you with news, special offers and general information about other goods, services and events which I offer that are similar to those that you have already purchased or enquired about (only if you have opted to receive such information);</li>
+              <li>in any other way it is described when you provide the information;</li>
+              <li>for any other purpose with your explicit consent.</li>
+            </ul>
             <br></br>
             <h2 className={h2TextStyle}>Retention of Data</h2>
             <br></br>
@@ -134,13 +137,14 @@ export default function PrivacyPolicy() {
             <br></br>
             <h3 className={h3TextStyle}>Other cases. I may disclose your information also:</h3>
             <br></br>
-            <li>to my affiliates;</li>
-            <li>to contractors, service providers, and other third parties used to support my business;</li>
-            <li>to fulfill the purpose for which you provide it (e.g. consultancy requests);</li>
-            <li>for any other purpose disclosed by me when you provide the information;</li>
-            <li>with your consent in any other cases;</li>
-            <li>if I believe disclosure is necessary or appropriate to protect the rights, property, or safety of the Company.</li>
-
+            <ul>
+              <li>to my affiliates;</li>
+              <li>to contractors, service providers, and other third parties used to support my business;</li>
+              <li>to fulfill the purpose for which you provide it (e.g. consultancy requests);</li>
+              <li>for any other purpose disclosed by me when you provide the information;</li>
+              <li>with your consent in any other cases;</li>
+              <li>if I believe disclosure is necessary or appropriate to protect the rights, property, or safety of the Company.</li>
+            </ul>
             <br></br>
             <h2 className={h2TextStyle}>Security of Data</h2>
             <br></br>
@@ -158,12 +162,14 @@ export default function PrivacyPolicy() {
             I aim to take reasonable steps to allow you to correct, amend, delete, or limit the use of your Personal Data.<br></br>
             If you wish to be informed what Personal Data I hold about you and if you want it to be removed from my system, please contact me at: <a href={mailTo}><u>privacy@mb-consulting.dev</u></a>.<br></br>
             You have the following data protection rights (even when living outside EU):<br></br>
-            <li>the right to access, update or to delete the information I have on you;</li>
-            <li>the right of rectification. You have the right to have your information rectified if that information is inaccurate or incomplete;</li>
-            <li>the right to object. You have the right to object to the processing of your Personal Data;</li>
-            <li>the right of restriction. You have the right to request that the processing of your personal information is restricted;</li>
-            <li>the right to data portability. You have the right to be provided with a copy of your Personal Data in a structured, machine-readable and commonly used format;</li>
-            <li>the right to withdraw consent. You also have the right to withdraw your consent at any time where I rely on your consent to process your personal information;</li>
+            <ul>
+              <li>the right to access, update or to delete the information I have on you;</li>
+              <li>the right of rectification. You have the right to have your information rectified if that information is inaccurate or incomplete;</li>
+              <li>the right to object. You have the right to object to the processing of your Personal Data;</li>
+              <li>the right of restriction. You have the right to request that the processing of your personal information is restricted;</li>
+              <li>the right to data portability. You have the right to be provided with a copy of your Personal Data in a structured, machine-readable and commonly used format;</li>
+              <li>the right to withdraw consent. You also have the right to withdraw your consent at any time where I rely on your consent to process your personal information;</li>
+            </ul>
             <br></br> 
             Please note that I will ask you to verify your identity before responding to such requests. <br></br>
             Please note, I may not able to provide Service without some necessary data.<br></br>
@@ -183,10 +189,12 @@ export default function PrivacyPolicy() {
             <br></br>
             According to CalOPPA I agree to the following:
             <br></br>
-            <li>users can visit this site anonymously;</li>
-            <li>this Privacy Policy link includes the word "Privacy", and can easily be found on the page specified above on the home page of this website;</li>
-            <li>users will be notified of any privacy policy changes on this Privacy Policy Page;</li>
-            <li>users are able to change their personal information by emailing me at <a href={mailTo}><u>privacy@mb-consulting.dev</u></a>.</li>
+            <ul>
+              <li>users can visit this site anonymously;</li>
+              <li>this Privacy Policy link includes the word "Privacy", and can easily be found on the page specified above on the home page of this website;</li>
+              <li>users will be notified of any privacy policy changes on this Privacy Policy Page;</li>
+              <li>users are able to change their personal information by emailing me at <a href={mailTo}><u>privacy@mb-consulting.dev</u></a>.</li>
+            </ul>
             <br></br>
 
             My Policy on "Do Not Track" Signals:
@@ -205,13 +213,15 @@ export default function PrivacyPolicy() {
             <br></br>
             <b>What personal information I have about you.</b><br></br>
             If you make this request, I will return to you:<br></br>
-            <li>The categories of personal information I have collected about you.</li>
-            <li>The categories of sources from which I collect your personal information.</li>
-            <li>The business or commercial purpose for collecting or selling your personal information.</li>
-            <li>The categories of third parties with whom I share personal information.</li>
-            <li>The specific pieces of personal information I have collected about you.</li>
-            <li>A list of categories of personal information that I may have sold, along with the category of any other company I sold it to. If I have not sold your personal information, I will inform you of that fact.</li>
-            <li>A list of categories of personal information that I may have have disclosed for a business purpose, along with the category of any other company I shared it with.</li>
+            <ul>
+              <li>The categories of personal information I have collected about you.</li>
+              <li>The categories of sources from which I collect your personal information.</li>
+              <li>The business or commercial purpose for collecting or selling your personal information.</li>
+              <li>The categories of third parties with whom I share personal information.</li>
+              <li>The specific pieces of personal information I have collected about you.</li>
+              <li>A list of categories of personal information that I may have sold, along with the category of any other company I sold it to. If I have not sold your personal information, I will inform you of that fact.</li>
+              <li>A list of categories of personal information that I may have have disclosed for a business purpose, along with the category of any other company I shared it with.</li>
+            </ul>
             <br></br>
 
             Please note, you are entitled to ask me to provide you with this information up to two times in a rolling twelve-month period.<br></br> 
