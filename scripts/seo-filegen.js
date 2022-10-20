@@ -93,7 +93,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
   </url>
   `)).join('')}
   <url>
-    <loc>${baseUrl}/experience</loc>
+    <loc>${baseUrl}/about/experience</loc>
     <lastmod>${lastYearDate}</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>

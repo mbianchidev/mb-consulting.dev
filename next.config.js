@@ -162,14 +162,9 @@ const securityHeaders = [
         key: 'Access-Control-Allow-Origin',
         value: `https://www.mb-consulting.dev https://mb-consulting.dev`, 
     },
-    //NEW
     {
         key: 'X-Permitted-Cross-Domain-Policies',
         value: 'none'
-    },
-    {
-        key: 'Expect-CT',
-        value: 'max-age=0, report-uri="https://mb-consulting.dev"'
     },
     {
         key: 'X-Download-Options',
