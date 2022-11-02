@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import userData from "@constants/data";
 import techsData from "@constants/techs";
-import Image from 'next/future/image';
+import Image from 'next/image';
 import Link from "next/link";
 import LinkList from "@custom/LinkList/LinkList";
 import Breadcrumb from "@custom/Breadcrumb/Breadcrumb";
@@ -85,10 +85,8 @@ export default function About() {
                 Check my{" "} <a href={userData.resumeUrl} target="_blank" rel="noopener noreferrer" className={linkTextStyle}> CV </a>.
                 <p>
                   Have a look at my {" "} <a href="/clients" rel="noopener noreferrer" className={linkTextStyle}> clients </a>{" "} and {" "}
-                  <Link href="/about/experience" passHref rel="noopener noreferrer"> 
-                    <a className={linkTextStyle}>
-                      experiences 
-                    </a> 
+                  <Link href="/about/experience" passHref rel="noopener noreferrer" className={linkTextStyle}> 
+                      experiences
                   </Link>{" "} as employee for more details.
                 </p>
               </span>
@@ -186,7 +184,7 @@ const TechCard = ({techId, techName, techLogo, techLogoX, techLogoY, techUrl }) 
   return (
     <div id={techId} className="h-20 w-20 mx-4 my-4">
       <a href={techUrl} target="_blank" rel="noopener noreferrer">
-        <Image src={techLogo} alt={techName} layout="fill" width={techLogoX} height={techLogoY} />
+          <Image src={techLogo} alt={techName} className="fill" width={techLogoX} height={techLogoY} />
       </a>
     </div>
   );

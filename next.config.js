@@ -1,6 +1,14 @@
 // next.config.js
+const { version } = require('./package.json');
+
 module.exports = {
+    experimental: {
+        appDir: false //future use
+    },
     swcMinify: true,
+    publicRuntimeConfig: {
+        version,
+    },
     async headers() {
         return [
           {

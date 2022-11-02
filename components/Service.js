@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import Image from "next/future/image";
+import Image from "next/image";
 import Breadcrumb from "@custom/Breadcrumb/Breadcrumb";
 
 export default function Service({ service }) {
@@ -29,7 +29,7 @@ export default function Service({ service }) {
 
   return (
     // we are avoiding any hydration warning: https://github.com/vercel/next.js/discussions/17443#discussioncomment-637879
-    mounted && 
+    mounted ? (
     <section className="bg-white dark:bg-gray-800">
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
         <h1 className="text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
@@ -49,7 +49,7 @@ export default function Service({ service }) {
       <div className="bg-[#F1F1F1] dark:bg-gray-900 px-4">
         <div className="pt-20 max-w-6xl mx-auto gap-y-20 gap-x-20">
           {/* Service Image */}
-          <Image src={service.image} alt={altText} layout="fill" width={imageX} height={imageY} priority/>
+          <Image src={service.image} alt={altText} className="fill" width={imageX} height={imageY} priority/>
           <br></br>
         </div>
         {/* Grid */}
@@ -85,12 +85,13 @@ export default function Service({ service }) {
             </p>
             <br></br>
             {/* Service Disclaimers */}
-            {service.rate != 0 && <p className={smallTextStyle}>* Cost range is only indicative based on the cost of similar services in the market, it will be tailored on every single agreement, based on complexity and budget needs.</p>}
-            {service.offer != null && <p className={smallTextStyle}>** Offers are subject to company policies all clarified in the agreement.</p>}
+            {service.rate != 0 ? <p className={smallTextStyle}>* Cost range is only indicative based on the cost of similar services in the market, it will be tailored on every single agreement, based on complexity and budget needs.</p>: null}
+            {service.offer != null ? <p className={smallTextStyle}>** Offers are subject to company policies all clarified in the agreement.</p>: null}
             <br></br>
           </div>
         </div>
       </div>
     </section>
+    ) : null
   );
 }

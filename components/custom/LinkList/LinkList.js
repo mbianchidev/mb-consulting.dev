@@ -4,7 +4,7 @@ export default function LinkList({ github, linkedin, linktree }) {
   const socialTextStyle = "text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300 hover_underline-animation";
   return (
     <div className="mt-4 ml-4">
-      {github &&
+      {github ?
       <div className="flex flex-row justify-start items-center">
         <a href={userData.socialLinks.github} target="_blank" rel="noopener noreferrer" className="flex flex-row items-center space-x-4 group" >
           <div className="my-4">&rarr;</div>
@@ -12,8 +12,9 @@ export default function LinkList({ github, linkedin, linktree }) {
             GitHub
           </span>
         </a>
-      </div>}
-      {linkedin &&
+      </div>
+      : null}
+      {linkedin ?
       <div className="flex flex-row justify-start items-center">
         <a href={userData.socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="flex flex-row items-center space-x-4 group" >
           <div className="my-4">&rarr;</div>
@@ -21,8 +22,9 @@ export default function LinkList({ github, linkedin, linktree }) {
             LinkedIn
           </span>
         </a>
-      </div>}
-      {linktree && 
+      </div>
+      : null}
+      {linktree ? 
       <div className="flex flex-row justify-start items-center">
         <a href={userData.socialLinks.linktree} target="_blank" rel="noopener noreferrer" className="flex flex-row items-center space-x-4 group" >
           <div className="my-4">&rarr;</div>
@@ -30,7 +32,8 @@ export default function LinkList({ github, linkedin, linktree }) {
             Linktr.ee
           </span>
         </a>
-      </div>}
+      </div>
+      : null}
     </div>
   );
 }

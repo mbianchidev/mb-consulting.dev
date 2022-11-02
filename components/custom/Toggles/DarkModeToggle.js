@@ -16,7 +16,7 @@ export default function DarkModeToggle() {
       className="w-10 h-10 p-3 rounded focus:outline-none"
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
     >
-      {mounted && (
+      {mounted ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -40,7 +40,7 @@ export default function DarkModeToggle() {
             />
           )}
         </svg>
-      )}
+      ): null}
     </button>
   );
 
