@@ -5,7 +5,7 @@ export default function ContactExtraInfo({ mail, pin }) {
 
   return (
     <div className="icons-container inline-flex flex-col my-20 mobile-extra-info">
-      {mail && (
+      {mail ? (
       <div className="flex flex-row items-center space-x-6 p-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -21,8 +21,8 @@ export default function ContactExtraInfo({ mail, pin }) {
           {userData.email}
         </p>
       </div>
-      )}
-      {pin && (
+      ): null}
+      {pin ? (
       <div className="flex flex-row items-center space-x-6 p-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,7 @@ export default function ContactExtraInfo({ mail, pin }) {
           {userData.address}
         </p>
       </div>
-      )}
+      ): null}
   </div>
   );
 }

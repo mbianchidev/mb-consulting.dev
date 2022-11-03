@@ -1,6 +1,14 @@
 // next.config.js
+const { version } = require('./package.json');
+
 module.exports = {
+    experimental: {
+        appDir: false //future use
+    },
     swcMinify: true,
+    publicRuntimeConfig: {
+        version,
+    },
     async headers() {
         return [
           {
@@ -162,14 +170,9 @@ const securityHeaders = [
         key: 'Access-Control-Allow-Origin',
         value: `https://www.mb-consulting.dev https://mb-consulting.dev`, 
     },
-    //NEW
     {
         key: 'X-Permitted-Cross-Domain-Policies',
         value: 'none'
-    },
-    {
-        key: 'Expect-CT',
-        value: 'max-age=0, report-uri="https://mb-consulting.dev"'
     },
     {
         key: 'X-Download-Options',

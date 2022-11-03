@@ -9,8 +9,7 @@ export default function FavouriteProjects() {
           <h1 className="text-6xl lg:text-9xl max-w-lg font-bold text-gray-500 my-20 md:my-0 md:text-white dark:text-gray-600 text-center">
             Favourite Projects
           </h1>
-          <Link href="/projects">
-            <a className="mb-20 md:mb-0 px-8 py-4 rounded-md bg-white shadow-lg text-xl font-semibold flex flex-row space-x-4 items-center dark:text-gray-700">
+          <Link href="/projects" className="mb-20 md:mb-0 px-8 py-4 rounded-md bg-white shadow-lg text-xl font-semibold flex flex-row space-x-4 items-center dark:text-gray-700">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -27,14 +26,13 @@ export default function FavouriteProjects() {
                 />
               </svg>
               <p>View all</p>
-            </a>
           </Link>
         </header>
 
         {/* Grid starts here */}
         <div className="grid md:grid-cols-3 gap-8 lg:-mt-8 pb-40">
           {/* Single card */}
-          <a
+          <Link
             href="https://github.com/mbianchidev/site"
             target="_blank" rel="noopener noreferrer"
             className="w-full block col-span-3 sm:col-span-1  object-cover"
@@ -50,7 +48,7 @@ export default function FavouriteProjects() {
                 Portfolio
               </h1>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

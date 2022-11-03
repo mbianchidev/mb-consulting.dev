@@ -37,8 +37,8 @@ export default function Breadcrumb({ router, style }) {
           return (
             // the first crumb is a link to the home page and the rest are links until the current page
             <span key={idx} className="text-[#3B82F6]">
-              <Link href={crumb.href} passHref>
-                <a className="hover-underline-animation">{text}</a>
+              <Link href={crumb.href} passHref className="hover-underline-animation">
+                {text}
               </Link>
               {" > "}
             </span>

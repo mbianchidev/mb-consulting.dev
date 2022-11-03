@@ -18,6 +18,34 @@
 const clientsData = {
     clients: [
         {
+            code: "EXOR",
+            companyName: "Extraordy",
+            companyType: "Subsidiary",
+            companySector: "Training",
+            companyLogo: "/images/clients/extraordy.webp",
+            companyLogoX: 187,
+            companyLogoY: 48,
+            companyUrl: "https://www.extraordy.com/",
+            role: "RedHat Certified Trainer",
+            story: "I teach courses to Extraordy's customers on RedHat technologies.",
+            year: "2022-2025",
+            show: false
+        },
+        {
+            code: "RH",
+            companyName: "RedHat",
+            companyType: "Corporate & OSS",
+            companySector: "Software",
+            companyLogo: "/images/clients/redhat.webp",
+            companyLogoX: 187,
+            companyLogoY: 48,
+            companyUrl: "https://www.redhat.com",
+            role: "RedHat Certified Engineer | RedHat Certified Architect | RedHat Certified Trainer",
+            story: "I'm a RedHat Certified Trainer, helding courses on RedHat Enterprise Linux and Ansible. I'm also a RedHat Certified Engineer and RedHat Certified Architect.",
+            year: "2022-2025",
+            show: false
+        },
+        {
             code: "ROAR",
             companyName: "Roar",
             companyType: "Corporate",

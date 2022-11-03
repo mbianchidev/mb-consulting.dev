@@ -64,7 +64,7 @@ export default function Hero() {
         {/* Responsive Mobile image */}   
         <div className="relative w-full h-56 md:h-[500px] hero__mobile-image">
           <Link href="/about" passHref>
-            <Image src={userData.mobileAvatarUrl} sizes="100vw" alt="propic" layout="fill" objectFit="cover" objectPosition="center" priority />
+            <Image src={userData.mobileAvatarUrl} sizes="100vw" alt="propic" width={954} height={1430} style="cover center fill" priority />
           </Link>
         </div>
 

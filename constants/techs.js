@@ -121,6 +121,15 @@ const techsData = {
             show: true,
         },
         {
+            name: "Ansible",
+            image: "/images/techs/ansible.webp",
+            url: "https://ansible.com",
+            x: 80,
+            y: 80,
+            level: "60",
+            show: true,            
+        },
+        {
             name: "AWS CloudFormation",
             image: "/images/techs/aws-cloudformation.webp",
             url: "https://aws.amazon.com/cloudformation",
