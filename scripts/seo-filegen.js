@@ -32,18 +32,18 @@ const services = [
   },
   {
     slug: "cloud-migration-and-management",
-    active: true,    
+    active: false,    
   },
   {
     slug: "sre-devsecops",
-    active: true,    
+    active: false,    
   },
   {
     slug: "cto-as-a-service",
     active: true,    
   },
   {
-    slug: "software-engineering",
+    slug: "dev-as-a-service",
     active: true,
   },
   {

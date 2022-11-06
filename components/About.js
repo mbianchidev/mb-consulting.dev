@@ -160,6 +160,7 @@ export default function About() {
                   <TechCard
                     techId={techId}
                     techName={tech.name}
+                    techDescription={tech.description}
                     techLogo={tech.image}
                     techLogoX={tech.x}
                     techLogoY={tech.y}
@@ -180,12 +181,25 @@ export default function About() {
   );
 }
 
-const TechCard = ({techId, techName, techLogo, techLogoX, techLogoY, techUrl }) => {
+const TechCard = ({techId, techName, techDescription, techLogo, techLogoX, techLogoY, techUrl }) => {
+  const [hover, setHover] = useState(false);
+  const onHover = () => {
+    setHover(true);
+  };
+
+  const onLeave = () => {
+    setHover(false);
+  };
+
   return (
     <div id={techId} className="h-20 w-20 mx-4 my-4">
-      <a href={techUrl} target="_blank" rel="noopener noreferrer">
-          <Image src={techLogo} alt={techName} className="fill" width={techLogoX} height={techLogoY} />
-      </a>
+      <Link href={techUrl} target="_blank" rel="noopener noreferrer" onMouseEnter={onHover} onMouseLeave={onLeave}>
+        <Image src={techLogo} alt={techName} className="fill" width={techLogoX} height={techLogoY} />
+        <div className="tooltip rounded bg-gray-800" style={{display: hover ? "block" : "none"}}>
+          <h1 className="tooltiptitle m-1 text-sm text-gray-300 font-bold">{techName}</h1>
+          <p className="tooltiptext m-1 text-sm text-gray-300 font-normal">{techDescription}</p>
+        </div>
+      </Link>
     </div>
   );
 };

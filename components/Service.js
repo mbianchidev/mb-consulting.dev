@@ -78,15 +78,15 @@ export default function Service({ service }) {
             {/* Service Rate */}
             <p className={largeTextStyle}>
               <ul>
-                <li>Mode and timing - {service.type != null? service.type : "to be discussed"}</li>
-                <li>Cost range - {service.rate != 0 ? service.rate+"*" : "to be discussed"}</li>
-                <li>Special offer - {service.offer != null ? service.offer+"**" : "None for now but we can work something out!"}</li>              
+                <li><b>Mode and timing</b> - {service.type != null? service.type : "to be discussed"}</li>
+                <li><b>Cost range</b> - {service.rate != 0 ? service.rate+"*" : "to be discussed"}</li>
+                <li><b>Special offer</b> - {service.offer != null ? service.offer+"**" : "None for now but we can work something out!"}</li>              
               </ul>
             </p>
             <br></br>
             {/* Service Disclaimers */}
-            {service.rate != 0 ? <p className={smallTextStyle}>* Cost range is only indicative based on the cost of similar services in the market, it will be tailored on every single agreement, based on complexity and budget needs.</p>: null}
-            {service.offer != null ? <p className={smallTextStyle}>** Offers are subject to company policies all clarified in the agreement.</p>: null}
+            {service.rate != 0 ? <p className={smallTextStyle}>* Cost and modes are defined via a signed agreement.</p>: null}
+            {service.offer != null ? <p className={smallTextStyle}>** Offers are subject to company policies all terms are clarified in the agreement.</p>: null}
             <br></br>
           </div>
         </div>

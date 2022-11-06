@@ -14,6 +14,7 @@ const techsData = {
     techs: [
         {
             name: "Git",
+            description: "The king of VCS tools. I can't imagine working without it.",
             image: "/images/techs/git.webp",
             url: "https://git-scm.com",
             x: 80,
@@ -23,6 +24,7 @@ const techsData = {
         },
         {
             name: "GitHub",
+            description: "Since Microsoft bought GitHub, it has become quite a tool. I use it for my personal and OSS projects.",
             image: "/images/techs/github.webp",
             url: "https://github.com",
             x: 80,
@@ -32,6 +34,7 @@ const techsData = {
         },
         {
             name: "GitLab",
+            description: "Great tool for enterprise repositories and DevOps processes. A bit pricy.",
             image: "/images/techs/gitlab.webp",
             url: "https://about.gitlab.com",
             x: 100,
@@ -41,6 +44,7 @@ const techsData = {
         },
         {
             name: "BitBucket",
+            description: "BitBucket is also a great tool for enterprise repositories and DevOps processes. I think it's free for small teams.",
             image: "/images/techs/bitbucket.webp",
             url: "https://bitbucket.org",
             x: 80,
@@ -50,6 +54,7 @@ const techsData = {
         },
         {
             name: "Amazon Web Services",
+            description: "The most popular cloud provider (for a reason) and the one I use the most.",
             image: "/images/techs/aws.webp",
             url: "https://aws.amazon.com",
             x: 80,
@@ -59,6 +64,7 @@ const techsData = {
         },
         {
             name: "Microsoft Azure",
+            description: "At first I hated it, but I learnt to like it. It's a great tool for DevOps processes. The enterprise support is 'meh'.",
             image: "/images/techs/azure.webp",
             url: "https://azure.microsoft.com",
             x: 80,
@@ -68,6 +74,7 @@ const techsData = {
         },
         {
             name: "Google Cloud Platform",
+            description: "Used it a few times for experiments and I think it has a great potential. I quite like the pricing model.",
             image: "/images/techs/gcp.webp",
             url: "https://cloud.google.com",
             x: 80,
@@ -77,6 +84,7 @@ const techsData = {
         },
         {
             name: "Docker",
+            description: "Docker (and containerization) was a game changer for me. I use it for almast all of my projects.",
             image: "/images/techs/docker.webp",
             url: "https://www.docker.com",
             x: 80,
@@ -86,6 +94,7 @@ const techsData = {
         },
         {
             name: "Kubernetes",
+            description: "K8s is love and hate. I love it for its flexibility and hate it for its complexity.",
             image: "/images/techs/kubernetes.webp",
             url: "https://kubernetes.io",
             x: 80,
@@ -95,6 +104,7 @@ const techsData = {
         },
         {
             name: "Helm",
+            description: "Great tool for managing Kubernetes deployments but don't take it too far with templates.",
             image: "/images/techs/helm.webp",
             url: "https://helm.sh",
             x: 80,
@@ -104,6 +114,7 @@ const techsData = {
         },
         {
             name: "Terraform",
+            description: "My favorite IaC tool. It's kinda easy to use and it's very flexible.",
             image: "/images/techs/terraform.webp",
             url: "https://www.terraform.io",
             x: 80,
@@ -113,6 +124,7 @@ const techsData = {
         },
         {
             name: "Puppet",
+            description: "Good configuration management software. I used it for a few years and I ejoyed every puppet apply so far.",
             image: "/images/techs/puppet.webp",
             url: "https://puppet.com",
             x: 80,
@@ -122,6 +134,7 @@ const techsData = {
         },
         {
             name: "Ansible",
+            description: "I even took an official RedHat exam for this! I like it, but I prefer Terraform.",
             image: "/images/techs/ansible.webp",
             url: "https://ansible.com",
             x: 80,
@@ -131,6 +144,7 @@ const techsData = {
         },
         {
             name: "AWS CloudFormation",
+            description: "Great tool for managing AWS resources, of course it's not as flexible as Terraform and you know: vendor lock-in.",
             image: "/images/techs/aws-cloudformation.webp",
             url: "https://aws.amazon.com/cloudformation",
             x: 80,
@@ -140,6 +154,7 @@ const techsData = {
         },
         {
             name: "New Relic",
+            description: "I recommend it for monitoring your applications. It's very easy to use compared to other tools and it has a great UI. It's not free though.",
             image: "/images/techs/newrelic.webp",
             url: "https://newrelic.com",
             x: 80,
@@ -149,6 +164,7 @@ const techsData = {
         },
         {
             name: "Fluentd",
+            description: "Logging is SO important and Fluentd is a great tool for collecting it.",
             image: "/images/techs/fluentd.webp",
             url: "https://www.fluentd.org",
             x: 80,
@@ -158,6 +174,7 @@ const techsData = {
         },
         {
             name: "SumoLogic",
+            description: "Logs and metrics can be a mess but Sumo helps a lot!",
             image: "/images/techs/sumologic.webp",
             url: "https://www.sumologic.com",
             x: 80,
@@ -167,6 +184,7 @@ const techsData = {
         },
         {
             name: "Atlassian OpsGenie",
+            description: "I've been waking up to OpsGenie alerts for a few years now. Unfortunately works so well that SREs don't sleep anymore.",
             image: "/images/techs/opsgenie.webp",
             url: "https://www.atlassian.com/software/opsgenie",
             x: 80,
@@ -176,6 +194,7 @@ const techsData = {
         },
         {
             name: "Atlassian StatusPage",
+            description: "A really nice addition to your incident management process. Remember to close the page when you're done!",
             image: "/images/techs/statuspage.webp",
             url: "https://www.atlassian.com/software/statuspage",
             x: 80,
@@ -185,6 +204,7 @@ const techsData = {
         },
         {
             name: "Jenkins",
+            description: "A great CI/CD tool, rich ecosystem and a lot of plugins. 8/10 would recommend.",
             image: "/images/techs/jenkins.webp",
             url: "https://www.jenkins.io",
             x: 80,
@@ -194,6 +214,7 @@ const techsData = {
         },
         {
             name: "Azure DevOps",
+            description: "If you are using Azure please use Azure DevOps.",
             image: "/images/techs/azure-devops.webp",
             url: "https://azure.microsoft.com/en-us/services/devops",
             x: 80,
@@ -203,6 +224,7 @@ const techsData = {
         },
         {
             name: "GitHub Actions",
+            description: "They improved a lot since the first release, it has a great integration with GitHub and it's free until a certain level of use.",
             image: "/images/techs/github-actions.webp",
             url: "https://github.com/features/actions",
             x: 80,
@@ -212,6 +234,7 @@ const techsData = {
         },
         {
             name: "BitBucket Pipelines",
+            description: "Adopt it if you are using BitBucket, it's perfectlly integrated with the platform.",
             image: "/images/techs/bitbucket-pipelines.webp",
             url: "https://bitbucket.org/product/features/pipelines",
             x: 80,
@@ -221,6 +244,7 @@ const techsData = {
         },
         {
             name: "AWS CodePipeline",
+            description: "Overall good continuous delivery service, helps you automate your whole delivery process.",
             image: "/images/techs/aws-codepipeline.webp",
             url: "https://aws.amazon.com/codepipeline",
             x: 80,
@@ -230,6 +254,7 @@ const techsData = {
         },
         {
             name: "Apache Tomcat",
+            description: "Good old Tomacat, it's been around for a long time and it's still a great choice for Java applications.",
             image: "/images/techs/tomcat.webp",
             url: "https://tomcat.apache.org",
             x: 80,
@@ -239,6 +264,7 @@ const techsData = {
         },
         {
             name: "JBoss",
+            description: "RedHat backed Java application server, it's a good choice if you are using Java.",
             image: "/images/techs/jboss.webp",
             url: "https://www.redhat.com/en/technologies/jboss-middleware/application-platform",
             x: 80,
@@ -248,6 +274,7 @@ const techsData = {
         },
         {
             name: "NGINX",
+            description: "Favourite web server, it's fast and it's easy to configure even if you are not a sysadmin.",
             image: "/images/techs/nginx.webp",
             url: "https://www.nginx.com",
             x: 80,
@@ -257,6 +284,7 @@ const techsData = {
         },
         {
             name: "Bash scripting",
+            description: "Easy to learn, hard to master. I use it when I need to automate something quickly (but then I refactor I swear).",
             image: "/images/techs/bash.webp",
             url: "https://www.gnu.org/software/bash",
             x: 80,
@@ -266,6 +294,7 @@ const techsData = {
         },
         {
             name: "SonarQube",
+            description: "Want to scan your code? You should and Sonar is cool.",
             image: "/images/techs/sonarqube.webp",
             url: "https://www.sonarqube.org",
             x: 80,
@@ -275,6 +304,7 @@ const techsData = {
         },
         {
             name: "JFrog Artifactory",
+            description: "Store everything in here but please organize it and don't think it's a reliable backup, thanks.",
             image: "/images/techs/artifactory.webp",
             url: "https://jfrog.com/artifactory",
             x: 80,
@@ -284,6 +314,7 @@ const techsData = {
         },
         {
             name: "MYSQL",
+            description: "Well, it's a database. It's not the best but it's not the worst. Super easy though.",
             image: "/images/techs/mysql.webp",
             url: "https://www.mysql.com",
             x: 80,
@@ -293,6 +324,7 @@ const techsData = {
         },
         {
             name: "PostgreSQL",
+            description: "Good performance, good features, good community. It's an overall good choice if you are looking for a relational database.",
             image: "/images/techs/postgresql.webp",
             url: "https://www.postgresql.org",
             x: 80,
@@ -302,6 +334,7 @@ const techsData = {
         },
         {
             name: "Oracle",
+            description: "Great if you have a lot of money and a team of DBAs. Otherwise, it's not the best choice.",
             image: "/images/techs/oracle.webp",
             url: "https://www.oracle.com",
             x: 80,
@@ -311,6 +344,7 @@ const techsData = {
         },
         {
             name: "Java",
+            description: "My first programming language, I still love it. It's a fantastic choice for enterprise applications and with new developments like Quarkus it's even better.",
             image: "/images/techs/java.webp",
             url: "https://www.java.com",
             x: 80,
@@ -320,6 +354,7 @@ const techsData = {
         },
         {
             name: "Spring Framework",
+            description: "Mother of all Java frameworks, it's just a MUST.",
             image: "/images/techs/spring.webp",
             url: "https://spring.io",
             x: 80,
@@ -329,6 +364,7 @@ const techsData = {
         },
         {
             name: "Python",
+            description: "No I don't use it for machine learning (not a data master), I use it for automation and APIs.",
             image: "/images/techs/python.webp",
             url: "https://www.python.org",
             x: 80,
@@ -338,6 +374,7 @@ const techsData = {
         },
         {
             name: "NextJS",
+            description: "This site is built with NextJS and even if I'm not a frontend developer I kina managed to make it work.",
             image: "/images/techs/nextjs.webp",
             url: "https://nextjs.org",
             x: 80,
@@ -347,6 +384,7 @@ const techsData = {
         },
         {
             name: "Vercel",
+            description: "Kudos to Vercel for making it so easy to deploy a NextJS site with so many features on top of that.",
             image: "/images/techs/vercel.webp",
             url: "https://vercel.com/features/infrastructure ",
             x: 80,
@@ -356,6 +394,7 @@ const techsData = {
         },
         {
             name: "Postman",
+            description: "I can't test my APIs without it, it's free, easy to setup and has a really nice UI.",
             image: "/images/techs/postman.webp",
             url: "https://www.postman.com",
             x: 80,
@@ -365,6 +404,7 @@ const techsData = {
         },
         {
             name: "OpenAPI",
+            description: "Adopt a standard for your APIs and you(r employees) will be happy.",
             image: "/images/techs/openapi.webp",
             url: "https://www.openapis.org",
             x: 80,
@@ -374,6 +414,7 @@ const techsData = {
         },
         {
             name: "Slack",
+            description: "Good UI, good features. Pricy (I think?) but it's worth it.",
             image: "/images/techs/slack.webp",
             url: "https://slack.com",
             x: 80,
@@ -383,6 +424,7 @@ const techsData = {
         },
         {
             name: "Atlassian Jira",
+            description: "Not always the best choice but if you have to use it be sure to use its potential to the max.",
             image: "/images/techs/jira.webp",
             url: "https://www.atlassian.com/software/jira",
             x: 80,
@@ -392,6 +434,7 @@ const techsData = {
         },
         {
             name: "Atlassian Confluence",
+            description: "Wikis are cool, Confluence is cool. It's a good choice for documentation.",
             image: "/images/techs/confluence.webp",
             url: "https://www.atlassian.com/software/confluence",
             x: 80,
@@ -401,6 +444,7 @@ const techsData = {
         },
         {
             name: "Atlassian Trello",
+            description: "I use it even for personal matters, it's fast and light.",
             image: "/images/techs/trello.webp",
             url: "https://trello.com",
             x: 80,

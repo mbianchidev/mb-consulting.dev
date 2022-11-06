@@ -2,8 +2,8 @@
 
 const userData = {
     githubUsername: "mbianchidev",
-    name: "MB-Consulting",
-    role: "Engineering | DevOps | Site Reliability | Coaching",
+    name: "MBit",
+    role: "DevOps Engineering | SRE | Coaching",
     avatarUrl: "/images/propic.webp",
     mobileAvatarUrl: "/images/propic-mobile.webp",
     email: "info@mb-consulting.dev",
@@ -21,8 +21,10 @@ const userData = {
         ],
     },
     address: "Full remote",
-    vat: "IT11846470968",
-    sdi: "M5UXCR1",
+    it_vat: "IT11846470968",
+    it_sdi: "M5UXCR1",
+    nl_kvk: "KvK xxxxxxxx",
+    nl_vat: "NLxxxxxxx",
     domain: "mb-consulting.dev",
     cookieUrl: "https://www.allaboutcookies.org/",
     about: {
@@ -118,7 +120,7 @@ const userData = {
             "The best code is no code at all.",
         ],
         firstPrinciple: "Build",
-        firstLink: "/service/software-engineering",
+        firstLink: "/service/dev-as-a-service",
         secondPrinciple: "Automate",
         secondLink: "/service/devops-adoption-path",
         thirdPrinciple: "Secure",

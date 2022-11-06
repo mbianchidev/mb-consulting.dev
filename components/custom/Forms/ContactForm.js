@@ -8,6 +8,7 @@ import servicesData from "@constants/services";
 export default function ContactForm() {
 
   const regexEmailValidationPattern = "^([a-zA-Z0-9_\\-\\.]+)@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.)|(([a-zA-Z0-9\\-]+\\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\\]?)$";
+  const regexPhoneValidationPattern = "^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$";
   const regexNameValidationPattern = "^.{3,}$";
   const regexCaptchaValidationPattern = "^(42|420|69|143)$"
   const formPlaceHolderTextStyle = "text-sm text-gray-600 mx-4 mt-4";
@@ -94,7 +95,7 @@ export default function ContactForm() {
       {/* Name */}
       <label htmlFor="name" className={formPlaceHolderTextStyle}>
         {" "}
-        Your Name
+        Your Name *
       </label>
       <input
         type="text"
@@ -107,7 +108,7 @@ export default function ContactForm() {
       />
       {/* Email */}
       <label htmlFor="email" className={formPlaceHolderTextStyle}>
-        Your email
+        Your email *
       </label>
       <input
         type="text"
@@ -118,6 +119,30 @@ export default function ContactForm() {
         title="Remember that the email should be a valid one and in a format like john.doe@example.com (no plus-aliases allowed, sorry)"
         required
       />
+      {/* Phone number */}
+      <label htmlFor="phone" className={formPlaceHolderTextStyle}>
+        Your phone number
+      </label>
+      <input
+        type="text"
+        className={borderedTextStyle}
+        name="phone"
+        placeholder="Please include the country code (+39, +44, +316, etc.)"
+        pattern={regexPhoneValidationPattern}
+        title="Remember that the phone number should be a valid one and in a format like +39 123 456 7890"
+        required={false}
+      />
+      {/* Select reason */}
+      <label htmlFor="reason" className={formPlaceHolderTextStyle}>
+        How did you find me?
+      </label>
+      <select name="reason" defaultValue="OTHER" className={borderedTextStyle}>
+        <option key="ad" value="GOOGLE_AD">via Google/Youtube Advertisement</option>
+        <option key="srch" value="GOOGLE_SEARCH">via Google Search</option>
+        <option key="lkdn" value="LINKEDIN">On LinkedIn</option>
+        <option key="ref" value="REFERRAL">Someone recommended your services</option>
+        <option key="oth" value="OTHER">Just somewhere</option>
+      </select>
       {/* Select service */}
       <label htmlFor="serviceName" className={formPlaceHolderTextStyle}>
         Select a service
@@ -129,7 +154,7 @@ export default function ContactForm() {
       </select>
       {/* Message */}
       <label htmlFor="message" className={formPlaceHolderTextStyle}>
-        Your request
+        Your request *
       </label>
       <textarea
         rows="4"

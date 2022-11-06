@@ -29,10 +29,10 @@ export default function Navbar() {
 
         {/* Logo + Name */}
         <Link href="/" passHref>
-          <div className="flex flex-col md:flex-row items-center navbar__logo-name-role">
-            <Image src={logo} alt="mb-consulting logo an infinite symbol turned into a cloud" width={156} height={104} priority />
-            <div className="flex flex-col">
-              <h1 className="font-semibold text-x1 dark:text-gray-100" style={{fontSize: '60px'}}>
+          <div className="flex flex-col md:flex-row items-center">
+            <Image src={logo} alt="mb-consulting logo an infinite symbol turned into a cloud" width={156} height={104} priority quality="100" />
+            <div className="flex flex-col navbar__logo-name-role">
+              <h1 className="font-semibold text-x1 dark:text-gray-100" style={{fontSize: '50px'}}>
                 {userData.name}
               </h1>
               <p className="text-base font-light text-gray-500 dark:text-gray-300" style={{fontSize: '20px'}}>
@@ -43,7 +43,7 @@ export default function Navbar() {
         </Link>
 
         {/* Navbar sections */}
-        <div className="space-x-8 hidden md:block -mr-40 mt-30">
+        <div className="space-x-8 hidden md:block -mr-50 mt-30">
 
           {/*About*/}
           <Link href={aboutPath} passHref
@@ -118,16 +118,7 @@ export default function Navbar() {
                 />
               </svg>
             ): null}
-          </Link>
-
-          {/*External Medium Blog*/}
-          <Link href={userData.socialLinks.medium} passHref
-            className={`text-base ${unselectedTextStyle} navbar__mobile-blog`}
-            style={{fontSize: navbarFontSize}}
-            target="_blank" rel="noopener noreferrer"
-          >
-            Blog{" "}
-          </Link>    
+          </Link>   
         </div>
 
           {/*Social Links*/}
@@ -146,10 +137,7 @@ export default function Navbar() {
         </Link>
         <Link href={clientsPath} className={mobileTextStyle}>
           Clients
-        </Link>
-        <Link href={userData.socialLinks.medium} className={mobileTextStyle} target="_blank" rel="noopener noreferrer">
-          Blog
-        </Link>   
+        </Link> 
       </div>
     </div>
   );

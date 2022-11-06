@@ -29,7 +29,8 @@ export default function Breadcrumb({ router, style }) {
         let text = crumb.text.replace(/-/g, " ");
         // capitalize the first letter of every word
         text = text.replace(/\w\S*/g, function (txt) { return txt.charAt(0).toUpperCase() + txt.slice(1); });
-        //text = text.charAt(0).toUpperCase() + text.slice(1);
+        // Exeption for Service(s) page
+        text === "Service" ? text = "Services" : text = text;
         if (idx === breadcrumbs.length - 1) {
           // the last crumb is not a link, just text representing the current page
           return <span key={idx}>{text}</span>

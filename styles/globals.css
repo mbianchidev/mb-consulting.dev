@@ -243,23 +243,18 @@ a.close.disabled {
 	display: none !important;
 }
 
+.hero__mobile-image {
+	display: none !important;
+}
+
 @media(orientation: landscape) {
 	.hero__desktop-image {
 		display: block !important;
-	}
-	.hero__mobile-image {
-		display: none !important;
-		margin-top: auto;
 	}
 }
 
 /* Pixels < 1024  */
 @media screen and (max-width: 1024px) {
-	/* Not visibile */
-	.navbar__mobile-blog {
-		display: none !important;
-		margin-top: auto;
-	}
 	/* Not visibile */
 	.mobile-social-icons {
 		display: none !important;
@@ -268,6 +263,15 @@ a.close.disabled {
 	/* Not visibile */
 	.mobile-extra-info {
 		display: none !important;
+		margin-top: auto;
+	}
+}
+
+/* Pixels < 768  */
+@media screen and (max-width: 768px) {
+	/* Visible */
+	.hero__mobile-image {
+		display: block !important;
 		margin-top: auto;
 	}
 }
@@ -300,4 +304,11 @@ a.close.disabled {
 	height:100px;
 	transition: width 0.5s, height 0.5s, opacity 0.4s 0.4s;
 
+}
+
+/* Tooltip */
+
+.tooltip {
+	position: absolute;
+	z-index: 2;
 }
