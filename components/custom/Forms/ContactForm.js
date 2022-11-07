@@ -11,7 +11,7 @@ export default function ContactForm() {
   const regexPhoneValidationPattern = "^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$";
   const regexNameValidationPattern = "^.{3,}$";
   const regexCaptchaValidationPattern = "^(42|420|69|143)$"
-  const formPlaceHolderTextStyle = "text-sm text-gray-600 mx-4 mt-4";
+  const formPlaceHolderTextStyle = "text-sm text-gray-600 font-semibold mx-4 mt-4";
   const borderedTextStyle = "font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500";
 
   // State variables -> used mainly for select and alert
@@ -169,7 +169,7 @@ export default function ContactForm() {
       />
       {/* Captcha */}
       <label htmlFor="captcha" className={formPlaceHolderTextStyle}>
-        41+1=? (just to make sure you are not a robot)
+        Captcha 41+1=? (just to make sure you are not a robot)
       </label>
       <input
         type="text"

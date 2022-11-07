@@ -2,12 +2,23 @@
 {
   category: "Service macro category",
   name: "Service name",
-  image: "/images/services/service.webp",
+  coverImage: "/images/services/service.webp",
+  images: [
+    {
+      url: "/images/services/data1.webp",
+      altText: "Some alt text",
+      imageX: 500,
+      imageY: 400,
+      description: "Some image description",
+    },
+    ...
+  ],
   slug: "slug-for-the-service",
   shortDescription: "one-phrased description of the service",
   description: [
       `Service description`,
       `Multiline`,
+      ...
   ],
   CTA: 'call to action text',
   type: 'brief service description',
@@ -23,7 +34,16 @@ const servicesData = {
         {
           category: "DevOps",
           name: "Fundamentals Course",
-          image: "/images/service/course.webp",
+          coverImage: "/images/service/course.webp", 
+          images: [
+            {
+              url: "/images/service/course.webp",
+              altText: "DevOps Fundamental Course service image",
+              imageX: 500,
+              imageY: 400,
+              description: "DevOps Fundamental Course",
+            },
+          ],
           slug: "devops-fundamentals-course",
           shortDescription: "Discover what does DevOps can do for you",
           description: [
@@ -52,7 +72,30 @@ const servicesData = {
         {
           category: "DevOps",
           name: "Adoption Path",
-          image: "/images/service/devops-path.webp",
+          coverImage: "/images/service/devops-path.webp",
+          images: [
+            {
+              url: "/images/service/devops-path-modules.webp",
+              altText: "DevOps Adoption Path learning modules list",
+              imageX: 500,
+              imageY: 400,
+              description: "Course learning core modules",
+            },
+            {
+              url: "/images/service/devops-path-prices.webp",
+              altText: "DevOps Adoption Path pricing",
+              imageX: 500,
+              imageY: 400,
+              description: "DevOps Adoption Path packages",
+            },
+            {
+              url: "/images/service/devops-path-support.webp",
+              altText: "DevOps Adoption Path support options",
+              imageX: 500,
+              imageY: 400,
+              description: "DevOps Adoption Path support options",
+            },
+          ],
           slug: "devops-adoption-path",
           shortDescription: "Start the complete DevOps journey",
           description: [
@@ -69,15 +112,24 @@ const servicesData = {
             ],
           callout: 'Are you ready to become the next DevOps star to be?',
           CTA: 'Sign up!',
-          type: 'Training (remote or on-site) and support (remote only)',
+          type: 'Training (available on-site) and support (remote only)',
           active: true,
-          offer: '25% discount off the 1-week course for the first 3 companies, 100% FREE pitch call to discuss the details.',
-          rate: 'Starting from 2999 (in case of individual participants, the cost is to be divided among the participants after meeting the quota)',
+          offer: '25% discount off the Enterprise package for the first 3 companies, 100% FREE pitch call to discuss the details.',
+          rate: 'See carousel - In case of Basic package with individual participants, the cost is to be divided among the participants after meeting the quota -',
         },
         {
           category: "Cloud",
           name: "Migration & Management",
-          image: "/images/service/cloud-management.webp",
+          coverImage: "/images/service/cloud-management.webp",
+          images: [
+            {
+              url: "/images/service/cloud-management.webp",
+              altText: "Cloud Management service image",
+              imageX: 500,
+              imageY: 400,
+              description: "Cloud Management",
+            },
+          ],
           slug: "cloud-migration-and-management",
           shortDescription: "Scale up your business to the cloud ",
           description: [
@@ -116,7 +168,51 @@ const servicesData = {
         {
           category: "SRE & DevSecOps",
           name: "Sec & Reliability Review",
-          image: "/images/service/devsecops-sre.webp",
+          coverImage: "/images/service/devsecops-sre-2.webp",
+          images: [
+            {
+              url: "/images/service/devsecops-sre-frequency.webp",
+              altText: "Frequency of cyber-attacks",
+              imageX: 500,
+              imageY: 400,
+              description: "Frequency of attacks is increasing",
+            },
+            {
+              url: "/images/service/devsecops-sre-cost-percentage.webp",
+              altText: "Revenue lost due to security breaches in percentage",
+              imageX: 500,
+              imageY: 400,
+              description: "The cost of attacks isn't limited to the direct damage",
+            },
+            {
+              url: "/images/service/devsecops-sre-distribution.webp",
+              altText: "Distribution of attacks in different industries",
+              imageX: 500,
+              imageY: 400,
+              description: "Your reputation is at stake",
+            },
+            {
+              url: "/images/service/devsecops-sre-time.webp",
+              altText: "SRE & DevSecOps service image",
+              imageX: 500,
+              imageY: 400,
+              description: "Your clients are at risk",
+            },
+            {
+              url: "/images/service/devsecops-sre-money.webp",
+              altText: "SRE & DevSecOps money lost due to security breaches",
+              imageX: 500,
+              imageY: 400,
+              description: "You can't afford to ignore security",
+            },          
+            {
+              url: "/images/service/devsecops-sre-chain.webp",
+              altText: "SRE & DevSecOps solution chain",
+              imageX: 500,
+              imageY: 400,
+              description: "Your sec is only as strong as the weakest link",
+            },
+          ],
           slug: "sre-devsecops",
           shortDescription: "Discover how to secure your product and your success",
           description: [
@@ -150,7 +246,7 @@ const servicesData = {
               `Your product will become secure by design following the most important privacy and security standards such as GDPR, PCI-DSS, ISO 27001, NIST, etc.`,
               `Security won't be an optional feature no more, it will become a mindset. Do not limit your company at having a security door, make it a fortress.`,             
           ],
-          callout: 'Is IT security a priority for you?',
+          callout: 'Is cybersecurity a priority for you?',
           CTA: 'Contact me!',
           type: 'on call support or 3+ months of support (remote only).',
           active: true,
@@ -160,7 +256,16 @@ const servicesData = {
         {
           category: "Management",
           name: "CTO as a Service",
-          image: "/images/service/cto-as-a-service.webp",
+          coverImage: "/images/service/cto-as-a-service.webp",
+          images: [
+            {
+              url: "/images/service/cto-as-a-service.webp",
+              altText: "My photo looking at the camera while smiling",
+              imageX: 500,
+              imageY: 400,
+              description: "I run the tech, you run the business",
+            },
+          ],
           slug: "cto-as-a-service",
           shortDescription: "Benefit from my fracional CTO services",
           description: [
@@ -196,7 +301,16 @@ const servicesData = {
         {
           category: "Software",
           name: "Engineering as a Service",
-          image: "/images/service/software.webp",
+          coverImage: "/images/service/software.webp",
+          images: [
+            {
+              url: "/images/service/software.webp",
+              altText: "People working at a table",
+              imageX: 500,
+              imageY: 400,
+              description: "Software Engineering but tailored as you need it",
+            },
+          ],
           slug: "dev-as-a-service",
           shortDescription: "Engineering made easy",
           description: [
@@ -220,18 +334,14 @@ const servicesData = {
               `- News and Media Platform`,
               `- Mobile Applications (iOS, Android)`,
               `- Microservices & APIs`,
-              `What about your team?`,
-              `I will be able to guide and help your team in using the following technologies:`,
-              `- Backend: Java (Spring), Node.js, Python`,
-              `- Databases: MySQL, PostgreSQL, Aurora, RDS, CosmosDB, DynamoDB`,
-              `- Cloud providers: AWS, GCP, Azure`,
               `Me and your team will set coding standards and create code review routines.`,
               `Testing and refactoring will be priorities and we will also improve the documentation so your new hires will be able to onboard faster.`,
               `Setting up a local development environment will be a breeze, we will use tecnologies such as Docker, devcontainers and Docker Compose to make it easy for everyone.`,
               `Code quality will be enforced in the CI/CD pipelines.`,
               `Code will be well versioned and backupped, we will use Git and a good branching strategy to make sure that it remains manageable.`,
+              `All of this at a fraction of the cost of a full-time engineer.`,
           ],
-          callout: 'Ready to turn your software into a product?',
+          callout: 'Ready to turn your software into a competitive product?',
           type: '3+ months of support (remote only).',
           CTA: 'Get in touch!',
           active: true,
@@ -241,7 +351,16 @@ const servicesData = {
         {
           category: "Other",
           name: "Services",
-          image: "/images/service/other.webp",
+          coverImage: "/images/service/other.webp",
+          images: [
+            {
+              url: "/images/service/other.webp",
+              altText: "Other services service image",
+              imageX: 500,
+              imageY: 400,
+              description: "Other Services",
+            },
+          ],
           slug: "other-services",
           shortDescription: "For anything else you need",
           description: [

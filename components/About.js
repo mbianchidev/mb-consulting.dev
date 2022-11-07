@@ -78,7 +78,7 @@ export default function About() {
             </div>
             <div className="mt-8">
               <h1 className="text-xl font-semibold text-gray-700 dark:text-gray-200">
-                My experience
+                Experience
               </h1>
               <br></br>
               <span className="text-lg text-gray-500 mt-4 dark:text-gray-300">
