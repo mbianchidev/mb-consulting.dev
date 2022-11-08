@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import Breadcrumb from "@custom/Breadcrumb/Breadcrumb";
+import ServiceCarousel from "@custom/Carousel/ServiceCarousel";
 
 export default function Service({ service }) {
 
@@ -21,9 +21,6 @@ export default function Service({ service }) {
     }
   };
 
-  const imageX=500;
-  const imageY=400;
-  const altText = `${service.category} ${service.name} service`;
   const smallTextStyle = "text-sm text-gray-700 mb-4 dark:text-gray-300";
   const largeTextStyle = "text-xl text-gray-700 mb-4 dark:text-gray-300";
 
@@ -47,15 +44,12 @@ export default function Service({ service }) {
         </div>
       </div>
       <div className="bg-[#F1F1F1] dark:bg-gray-900 px-4">
-        <div className="pt-20 max-w-6xl mx-auto gap-y-20 gap-x-20">
-          {/* Service Image */}
-          <Image src={service.image} alt={altText} className="fill" width={imageX} height={imageY} priority/>
-          <br></br>
-        </div>
         {/* Grid */}
         <div className="pt-20 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-10 gap-3 max-w-6xl mx-auto gap-y-20 gap-x-20">
           {/* Left column */}
           <div className="col-span-1 md:col-span-2 lg:col-span-7">
+            {/* Images Carousel */}
+            <ServiceCarousel images={service.images}/>
             <div>
               {/* Service Description */}
               {service.description?.map((desc, serviceDescriptionId) => (
@@ -78,15 +72,15 @@ export default function Service({ service }) {
             {/* Service Rate */}
             <p className={largeTextStyle}>
               <ul>
-                <li>Mode and timing - {service.type != null? service.type : "to be discussed"}</li>
-                <li>Cost range - {service.rate != 0 ? service.rate+"*" : "to be discussed"}</li>
-                <li>Special offer - {service.offer != null ? service.offer+"**" : "None for now but we can work something out!"}</li>              
+                <li><b>Mode and timing</b> - {service.type != null? service.type : "to be discussed"}</li>
+                <li><b>Cost range</b> - {service.rate != 0 ? service.rate+"*" : "to be discussed"}</li>
+                <li><b>Special offer</b> - {service.offer != null ? service.offer+"**" : "None for now but we can work something out!"}</li>              
               </ul>
             </p>
             <br></br>
             {/* Service Disclaimers */}
-            {service.rate != 0 ? <p className={smallTextStyle}>* Cost range is only indicative based on the cost of similar services in the market, it will be tailored on every single agreement, based on complexity and budget needs.</p>: null}
-            {service.offer != null ? <p className={smallTextStyle}>** Offers are subject to company policies all clarified in the agreement.</p>: null}
+            {service.rate != 0 ? <p className={smallTextStyle}>* Cost and modes are defined via a signed agreement.</p>: null}
+            {service.offer != null ? <p className={smallTextStyle}>** Offers are subject to company policies all terms are clarified in the agreement.</p>: null}
             <br></br>
           </div>
         </div>

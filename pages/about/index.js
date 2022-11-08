@@ -4,7 +4,7 @@ import About from "@components/About";
 
 export default function about() {
   return (
-    <ContainerBlock title="About - Matteo Bianchi">
+    <ContainerBlock title="About - MB-Consulting">
       <About/>
     </ContainerBlock>
   );

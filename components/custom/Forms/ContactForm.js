@@ -2,15 +2,17 @@ import React, {useState, useEffect} from "react";
 import { useRouter } from 'next/router';
 import { alertService } from "@services/alert.service";
 import * as gtag from '@lib/ga';
-import userData from "@constants/data";
+import mailData from "@constants/mail";
 import servicesData from "@constants/services";
+import Link from "next/link";
 
 export default function ContactForm() {
 
   const regexEmailValidationPattern = "^([a-zA-Z0-9_\\-\\.]+)@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.)|(([a-zA-Z0-9\\-]+\\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\\]?)$";
+  const regexPhoneValidationPattern = "^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$";
   const regexNameValidationPattern = "^.{3,}$";
   const regexCaptchaValidationPattern = "^(42|420|69|143)$"
-  const formPlaceHolderTextStyle = "text-sm text-gray-600 mx-4 mt-4";
+  const formPlaceHolderTextStyle = "text-sm text-gray-600 font-semibold mx-4 mt-4";
   const borderedTextStyle = "font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500";
 
   // State variables -> used mainly for select and alert
@@ -77,13 +79,13 @@ export default function ContactForm() {
       body: JSON.stringify(formData)
     })
     .catch((err) => {
-      alertService.error('Error!'+ err + ' (please resend the message to '+userData.email+')' , options);
+      alertService.error('Error!'+ err + ' (please resend the message to '+mailData.email+')' , options);
     })
     .then(result => {
       if (result) {
         alertService.success("Message sent! I will reply ASAP :)", options);
       } else {
-        alertService.error("Ops! There was an error, please resend the message to "+userData.email, options);
+        alertService.error("Ops! There was an error, please resend the message directly to "+mailData.email, options);
       }
     });
   
@@ -94,7 +96,7 @@ export default function ContactForm() {
       {/* Name */}
       <label htmlFor="name" className={formPlaceHolderTextStyle}>
         {" "}
-        Your Name
+        Your Name *
       </label>
       <input
         type="text"
@@ -107,7 +109,7 @@ export default function ContactForm() {
       />
       {/* Email */}
       <label htmlFor="email" className={formPlaceHolderTextStyle}>
-        Your email
+        Your email *
       </label>
       <input
         type="text"
@@ -118,6 +120,30 @@ export default function ContactForm() {
         title="Remember that the email should be a valid one and in a format like john.doe@example.com (no plus-aliases allowed, sorry)"
         required
       />
+      {/* Phone number */}
+      <label htmlFor="phone" className={formPlaceHolderTextStyle}>
+        Your phone number
+      </label>
+      <input
+        type="text"
+        className={borderedTextStyle}
+        name="phone"
+        placeholder="Please include the country code (+39, +44, +316, etc.)"
+        pattern={regexPhoneValidationPattern}
+        title="Remember that the phone number should be a valid one and in a format like +39 123 456 7890"
+        required={false}
+      />
+      {/* Select reason */}
+      <label htmlFor="reason" className={formPlaceHolderTextStyle}>
+        How did you find us?
+      </label>
+      <select name="reason" defaultValue="OTHER" className={borderedTextStyle}>
+        <option key="ad" value="GOOGLE_AD">via Google/Youtube Advertisement</option>
+        <option key="srch" value="GOOGLE_SEARCH">via Google Search</option>
+        <option key="lkdn" value="LINKEDIN">On LinkedIn</option>
+        <option key="ref" value="REFERRAL">Someone recommended your services</option>
+        <option key="oth" value="OTHER">Just somewhere</option>
+      </select>
       {/* Select service */}
       <label htmlFor="serviceName" className={formPlaceHolderTextStyle}>
         Select a service
@@ -129,7 +155,7 @@ export default function ContactForm() {
       </select>
       {/* Message */}
       <label htmlFor="message" className={formPlaceHolderTextStyle}>
-        Your request
+        Your request *
       </label>
       <textarea
         rows="4"
@@ -144,7 +170,7 @@ export default function ContactForm() {
       />
       {/* Captcha */}
       <label htmlFor="captcha" className={formPlaceHolderTextStyle}>
-        41+1=? (just to make sure you are not a robot)
+        Captcha 41+1=? (just to make sure you are not a robot)
       </label>
       <input
         type="text"
@@ -165,10 +191,10 @@ export default function ContactForm() {
         />
         <label htmlFor="consent" className={formPlaceHolderTextStyle}>
           I have read and agree to the{" "}
-          <a
+          <Link
             href="/privacy-policy" rel="noopener noreferrer" target="_blank"
             className="text-gray-800 border-b-2 border-gray-800 font-bold"
-          >privacy policy</a>{" "} of this site.
+          >privacy policy</Link>{" "} of this site.
         </label>
       </div>
       {/* Submit Button */}

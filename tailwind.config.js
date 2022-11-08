@@ -1,4 +1,6 @@
 const colors = require("tailwindcss/colors");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
 module.exports = {
   mode: "jit",
   content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],

@@ -1,6 +1,6 @@
 import React from "react";
 import experiencesData from "@constants/experiences";
-import ExperienceCard from "@components/custom/Cards/ExperienceCard";
+import ExperienceCard from "@custom/Cards/ExperienceCard";
 import Breadcrumb from "@custom/Breadcrumb/Breadcrumb";
 
 export default function Experience() {

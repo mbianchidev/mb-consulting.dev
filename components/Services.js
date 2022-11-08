@@ -42,7 +42,7 @@ export default function Services() {
               category={service.category}
               name={service.name}
               slug={service.slug}
-              image={service.image}
+              image={service.coverImage}
               imageX={500}
               imageY={400}
               description={service.shortDescription}

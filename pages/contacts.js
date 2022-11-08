@@ -5,7 +5,7 @@ import { Alert } from "@custom/Alert/Alert";
 
 export default function contacts() {
   return (
-    <ContainerBlock title="Contacts - Matteo Bianchi">
+    <ContainerBlock title="Contacts - MB-Consulting">
       <Alert/>
       <Contacts/>
     </ContainerBlock>

@@ -22,7 +22,7 @@ export async function getStaticProps(context) {
 }
 
 export default function service({service}) {
-  const title = "Service - " + service.name + " - Matteo Bianchi";
+  const title = "Service - " + service.name + " - MB-Consulting";
   return (
     <ContainerBlock title={title}>
       <Service service={service}/>

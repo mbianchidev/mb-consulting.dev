@@ -15,8 +15,10 @@ export default function WorkInProgress() {
             className="leading-loose text-2xl md:text-4xl font-semibold"
             style={{ lineHeight: "3rem" }}
           >
-            If you ended up here you found some secret stuff I'm working on (or there's a wrong redirect somewhere lol) <br></br><br></br>
-            <Image src="/images/gifs/hypno-toad.gif" alt="The hypnotoad from Futurama, a cartoon series by Matt Groening (The Simpson creator)" width="480" height="480" /> <br></br>
+            If you ended up here you found some secret stuff I'm working on (or there's a wrong redirect somewhere lol) 
+            <br></br><br></br>
+            <Image src="/images/gifs/hypno-toad.gif" alt="The hypnotoad from Futurama, a cartoon series by Matt Groening (The Simpson creator)" width="480" height="480" /> 
+            <br></br>
             ALL GLORY TO THE HYPNOTOAD!
           </span>
         </div>

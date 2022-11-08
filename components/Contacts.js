@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import SocialElement from "@components/custom/Social/SocialElement";
-import ContactExtraInfo from "@components/custom/Info/ContactExtraInfo";
-import ContactForm from "@components/custom/Forms/ContactForm";
+import React from "react";
+import SocialElement from "@custom/Social/SocialElement";
+import ContactExtraInfo from "@custom/Info/ContactExtraInfo";
+import ContactForm from "@custom/Forms/ContactForm";
 
 export default function Contacts() {
 
@@ -20,11 +20,9 @@ export default function Contacts() {
                 One step closer to your problem solved!
               </h1>
               <p className="font-light text-base dark:text-gray-200 mt-2"> Fill in the details and I'll get back to you in no time. </p>
-              <p className="font-light text-base dark:text-gray-200 mt-2"> If you are looking to hire me for a permanent role, you are welcome to contact me on LinkedIn.</p>
             </header>
             {/* Email/Address */}
             <ContactExtraInfo pin="true" mail="true"/>
-            {/*<ContactExtraInfo mail="true" pin="true"/>*/}
             <SocialElement twitter="true" linkedin="true" hideIfMobile="true"/>
           </div>
           {/* Contact Form */}

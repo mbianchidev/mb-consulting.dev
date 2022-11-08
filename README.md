@@ -6,6 +6,13 @@ My portfolio is a website to showcase my services, clients, experiences and valu
 
 - Responsive layout, works well on both Desktop and mobile.
 - Dark mode support.
+- Target modern browsers
+
+Chrome 64+
+Edge 79+
+Firefox 67+
+Opera 51+
+Safari 12+
 
 # Tech Stack
 

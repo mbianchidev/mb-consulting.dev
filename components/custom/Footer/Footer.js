@@ -1,6 +1,7 @@
 import React from "react";
 import getConfig from 'next/config';
-import SocialElement from "@components/custom/Social/SocialElement";
+import SocialElement from "@custom/Social/SocialElement";
+import Link from "next/link";
 
 export default function Footer() {
   
@@ -11,14 +12,14 @@ export default function Footer() {
         <div className="h-0.5 w-full bg-white dark:bg-gray-700"></div>
         <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between md:items-center mt-8">
           <div>
-            <p>&copy; 2021-{new Date().getFullYear()} MB-Consulting. All Rights Reserved. </p>
-            <p className="text-sm">Site version - {publicRuntimeConfig?.version}</p>
+            <p>&copy; 2021-{new Date().getFullYear()} MBit-Consulting B.V. - All Rights Reserved. </p>
+            <p className="text-sm">site version - {publicRuntimeConfig?.version}</p>
           </div>
           <div className="flex flex-col md:flex-row">
-            <a href="/privacy-policy">Privacy Policy </a>
+            <Link href="/privacy-policy">Privacy Policy </Link>
           </div>
           <div className="flex flex-col md:flex-row">
-          <a href="/cookie-policy">Cookie Policy</a>
+          <Link href="/cookie-policy">Cookie Policy</Link>
           </div>
           {/*Social Element*/}
           <SocialElement twitter="true" linkedin="true" />
