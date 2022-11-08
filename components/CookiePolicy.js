@@ -1,9 +1,10 @@
 import React from "react";
-import userData from "@constants/data";
+import mailData from "@constants/mail";
 import Breadcrumb from "@custom/Breadcrumb/Breadcrumb";
+import Link from "next/link";
 
 export default function CookiePolicy() {
-  const mailTo = "mailto:"+userData.privacyMail;
+  const mailTo = "mailto:"+mailData.privacyMail;
   return (
     <section id="cookie-policy-container" className="bg-white dark:bg-gray-800">
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
@@ -22,21 +23,21 @@ export default function CookiePolicy() {
           <div className="text-xl text-gray-700 mb-4 dark:text-gray-300">
             First of all, in case you don't accept cookies you will still be able to use this site without limitations.
             <br></br>
-            However, only if you'll allow it, this site uses cookies and similar tracking technologies (e.g. <u><a target="_blank" rel="noopener noreferrer" href="https://support.google.com/tagmanager/answer/6102821?hl=en ">Google Tag Manager</a></u>) to track the activity on the site.<br></br>
+            However, only if you'll allow it, this site uses cookies and similar tracking technologies (e.g. <u><Link target="_blank" rel="noopener noreferrer" href="https://support.google.com/tagmanager/answer/6102821?hl=en ">Google Tag Manager</Link></u>) to track the activity on the site.<br></br>
             Cookies are files with a small amount of data which may include an anonymous unique identifier.<br></br>
             Cookies are sent to your browser from a website and stored on your device.<br></br>
             You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.<br></br><br></br>
             Here are some pages you might find useful for disabling cookies:<br></br>
             <ul>
-              <li> <u><a target="_blank" rel="noopener noreferrer" href="https://support.microsoft.com/en-us/search?query=disable%20cookies%20in%20microsoft%20edge"> Edge </a></u> </li>
-              <li> <u><a target="_blank" rel="noopener noreferrer" href="https://support.google.com/accounts/answer/61416?hl=en&co=GENIE.Platform%3DDesktop"> Chrome </a></u> </li> 
-              <li> <u><a target="_blank" rel="noopener noreferrer" href="https://support.mozilla.org/en-US/kb/block-websites-storing-cookies-site-data-firefox"> Firefox </a></u> </li>
-              <li> <u><a target="_blank" rel="noopener noreferrer" href="http://docs.info.apple.com/article.html?path=Safari/5.0/en/9277.html"> Safari </a></u> </li>
+              <li> <u><Link target="_blank" rel="noopener noreferrer" href="https://support.microsoft.com/en-us/search?query=disable%20cookies%20in%20microsoft%20edge"> Edge </Link></u> </li>
+              <li> <u><Link target="_blank" rel="noopener noreferrer" href="https://support.google.com/accounts/answer/61416?hl=en&co=GENIE.Platform%3DDesktop"> Chrome </Link></u> </li> 
+              <li> <u><Link target="_blank" rel="noopener noreferrer" href="https://support.mozilla.org/en-US/kb/block-websites-storing-cookies-site-data-firefox"> Firefox </Link></u> </li>
+              <li> <u><Link target="_blank" rel="noopener noreferrer" href="http://docs.info.apple.com/article.html?path=Safari/5.0/en/9277.html"> Safari </Link></u> </li>
             </ul>
             <br></br>
-            If you use other browsers like <u><a target="_blank" rel="noopener noreferrer" href="https://brave.com/"> Brave</a></u> or search engines like <u><a target="_blank" rel="noopener noreferrer" href="https://duckduckgo.com/ ">DuckDuckGo</a></u>, please consult their websites for more information.
+            If you use other browsers like <u><Link target="_blank" rel="noopener noreferrer" href="https://brave.com/"> Brave</Link></u> or search engines like <u><Link target="_blank" rel="noopener noreferrer" href="https://duckduckgo.com/ ">DuckDuckGo</Link></u>, please consult their websites for more information.
             <br></br>
-            You can disable Google Analytics too, you can find the instructions to do so in this <u><a href="https://tools.google.com/dlpage/gaoptout/">GA optout guide by Google</a></u> .
+            You can disable Google Analytics too, you can find the instructions to do so in this <u><Link href="https://tools.google.com/dlpage/gaoptout/">GA optout guide by Google</Link></u> .
           </div>
 
           <h1 className="font-bold text-xl" style={{textAlign : "center"}}>Cookies used</h1>
@@ -63,13 +64,13 @@ export default function CookiePolicy() {
             <br></br>
             This Cookie Policy may be updated from time to time. Any change will be posted on this page.<br></br>
             Changes to this Cookie Policy are effective when they are posted on this page.<br></br>
-            For every other concern about your privacy please visit the <u><a target="_blank" rel="noopener noreferrer" href="/privacy-policy">privacy policy page</a></u>.<br></br>
+            For every other concern about your privacy please visit the <u><Link target="_blank" rel="noopener noreferrer" href="/privacy-policy">privacy policy page</Link></u>.<br></br>
           </div>  
 
           <h1 className="font-bold text-xl" style={{textAlign : "center"}}>Contact me</h1>
           <br></br>
           <div className="text-xl text-gray-700 mb-4 dark:text-gray-300">
-            If you have any questions about this Cookie Policy, please contact me at <a href={mailTo}><u>privacy@mb-consulting.dev</u></a>.
+            If you have any questions about this Cookie Policy, please contact me at <Link href={mailTo}><u>{mailData.privacyMail}</u></Link>.
           </div>
 
         </div>

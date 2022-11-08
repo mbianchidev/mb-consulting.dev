@@ -1,5 +1,6 @@
 import React from "react";
 import userData from "@constants/data";
+import heroData from "@constants/pages/hero";
 import { RoughNotationGroup } from "react-rough-notation";
 import { RainbowHighlight } from "@custom/Highlight/RainbowHighlight";
 import Image from 'next/image';
@@ -15,9 +16,9 @@ export default function Hero() {
   const [funnySentence, setFunnySentence] = useState(" ");
 
   useEffect(() => {
-    const randomFunnySentence = shuffle(userData.hero.funnySentences)[randomNum(userData.hero.funnySentences.length)];
-    const randomCTA = shuffle(userData.hero.CTAs)[randomNum(userData.hero.CTAs.length)];
-    const randomColor = shuffle(userData.hero.colors);
+    const randomFunnySentence = shuffle(heroData.hero.funnySentences)[randomNum(heroData.hero.funnySentences.length)];
+    const randomCTA = shuffle(heroData.hero.CTAs)[randomNum(heroData.hero.CTAs.length)];
+    const randomColor = shuffle(heroData.hero.colors);
     setFunnySentence(randomFunnySentence);
     setCTA(randomCTA);
     setColors(randomColor);
@@ -32,30 +33,30 @@ export default function Hero() {
         {/* Fancy writings */}
         <RoughNotationGroup show={true}>
           <RainbowHighlight color={color[0]}>
-            <Link href={userData.hero.firstLink} passHref>
+            <Link href={heroData.hero.firstLink} passHref>
               <h1 className={titleStyle}>
-               {userData.hero.firstPrinciple}
+               {heroData.hero.firstPrinciple}
               </h1>
             </Link>
           </RainbowHighlight>
           <RainbowHighlight color={color[1]}>
-            <Link href={userData.hero.secondLink} passHref>
+            <Link href={heroData.hero.secondLink} passHref>
               <h1 className={titleStyle}>
-                {userData.hero.secondPrinciple}
+                {heroData.hero.secondPrinciple}
               </h1>
             </Link>
           </RainbowHighlight>
           <RainbowHighlight color={color[2]}>
-            <Link href={userData.hero.thirdLink} passHref>
+            <Link href={heroData.hero.thirdLink} passHref>
               <h1 className={titleStyle}>
-                {userData.hero.thirdPrinciple}
+                {heroData.hero.thirdPrinciple}
               </h1>
             </Link>
           </RainbowHighlight>
           <RainbowHighlight color={color[3]}>
-            <Link href={userData.hero.fourthLink} passHref>
+            <Link href={heroData.hero.fourthLink} passHref>
               <h1 className={titleStyle}>
-                {userData.hero.fourthPrinciple}
+                {heroData.hero.fourthPrinciple}
               </h1>
             </Link>
           </RainbowHighlight>
@@ -71,7 +72,7 @@ export default function Hero() {
   
         {/*CTA - Call to action*/}
         <br></br>
-        <p className="font-mono dark:text-gray-100" style={{fontSize: catchyPhraseFontSize}}>{userData.hero.catchyPhrase}</p>
+        <p className="font-mono dark:text-gray-100" style={{fontSize: catchyPhraseFontSize}}>{heroData.hero.catchyPhrase}</p>
         <Link href="/contacts" passHref>
           <button className="dark:bg-[#00B2CA] bg-[#33A1FD] rounded-md w-1/2 mx-2 mt-8 py-2 text-gray-200 dark:text-gray-200 text-xl font-bold">{CTA}</button>
         </Link>

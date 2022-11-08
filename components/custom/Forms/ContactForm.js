@@ -2,8 +2,9 @@ import React, {useState, useEffect} from "react";
 import { useRouter } from 'next/router';
 import { alertService } from "@services/alert.service";
 import * as gtag from '@lib/ga';
-import userData from "@constants/data";
+import mailData from "@constants/mail";
 import servicesData from "@constants/services";
+import Link from "next/link";
 
 export default function ContactForm() {
 
@@ -78,13 +79,13 @@ export default function ContactForm() {
       body: JSON.stringify(formData)
     })
     .catch((err) => {
-      alertService.error('Error!'+ err + ' (please resend the message to '+userData.email+')' , options);
+      alertService.error('Error!'+ err + ' (please resend the message to '+mailData.email+')' , options);
     })
     .then(result => {
       if (result) {
         alertService.success("Message sent! I will reply ASAP :)", options);
       } else {
-        alertService.error("Ops! There was an error, please resend the message to "+userData.email, options);
+        alertService.error("Ops! There was an error, please resend the message directly to "+mailData.email, options);
       }
     });
   
@@ -190,10 +191,10 @@ export default function ContactForm() {
         />
         <label htmlFor="consent" className={formPlaceHolderTextStyle}>
           I have read and agree to the{" "}
-          <a
+          <Link
             href="/privacy-policy" rel="noopener noreferrer" target="_blank"
             className="text-gray-800 border-b-2 border-gray-800 font-bold"
-          >privacy policy</a>{" "} of this site.
+          >privacy policy</Link>{" "} of this site.
         </label>
       </div>
       {/* Submit Button */}

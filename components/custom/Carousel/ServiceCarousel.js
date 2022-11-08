@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import { Carousel } from 'react-responsive-carousel';
-import styles from "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+// do not remove, loaded by webpack
+import styles from "react-responsive-carousel/lib/styles/carousel.min.css"; 
 
 export default function ServiceCarousel ({ images }) {
   return (

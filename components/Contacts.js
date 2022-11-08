@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import SocialElement from "@components/custom/Social/SocialElement";
-import ContactExtraInfo from "@components/custom/Info/ContactExtraInfo";
-import ContactForm from "@components/custom/Forms/ContactForm";
+import React from "react";
+import SocialElement from "@custom/Social/SocialElement";
+import ContactExtraInfo from "@custom/Info/ContactExtraInfo";
+import ContactForm from "@custom/Forms/ContactForm";
 
 export default function Contacts() {
 
@@ -24,7 +24,6 @@ export default function Contacts() {
             </header>
             {/* Email/Address */}
             <ContactExtraInfo pin="true" mail="true"/>
-            {/*<ContactExtraInfo mail="true" pin="true"/>*/}
             <SocialElement twitter="true" linkedin="true" hideIfMobile="true"/>
           </div>
           {/* Contact Form */}

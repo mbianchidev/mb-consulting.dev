@@ -1,9 +1,11 @@
 import React from "react";
 import userData from "@constants/data";
+import mailData from "@constants/mail";
 import Breadcrumb from "@custom/Breadcrumb/Breadcrumb";
+import Link from "next/link";
 
 export default function PrivacyPolicy() {
-  const mailTo = "mailto:"+userData.privacyMail;
+  const mailTo = "mailto:"+mailData.privacyMail;
   const h1TextStyle = "font-bold text-xl";
   const h2TextStyle = "font-semibold text-xl";
   const h3TextStyle = "font-light text-xl";
@@ -77,13 +79,13 @@ export default function PrivacyPolicy() {
             Information that your browser sends whenever you visit this Service are collected also when you access through a mobile device (<b>"Usage Data"</b>).<br></br>
             This Usage Data may include information such as your computer's Internet Protocol address (e.g. IP address), browser type, browser version, pages that you visit, time and date of your visit, time spent on those pages, unique device identifiers and other diagnostic data.<br></br>
             When you visit with a mobile device, this Usage Data may include information such as the type of mobile device you use, your mobile device unique ID, the IP address of your mobile device, your mobile operating system, the type of mobile Internet browser you use, unique device identifiers and other diagnostic data.<br></br>
-            I strongly advise you to use a VPN service to protect your privacy and navigate possibly with privacy enforcing browsers and services such as <u><a target="_blank" rel="noopener noreferrer" href="https://www.torproject.org">Tor</a></u>.<br></br>
+            I strongly advise you to use a VPN service to protect your privacy and navigate possibly with privacy enforcing browsers and services such as <u><Link target="_blank" rel="noopener noreferrer" href="https://www.torproject.org">Tor</Link></u>.<br></br>
 
             <br></br>
             <h3 className={h3TextStyle}>Tracking Cookies Data</h3>
             <br></br>
             
-            Visit my <u><a target="_blank" rel="noopener noreferrer" href="/cookie-policy">Cookie Policy page</a></u> to learn more about cookies and how I use them.<br></br>
+            Visit my <u><Link target="_blank" rel="noopener noreferrer" href="/cookie-policy">Cookie Policy page</Link></u> to learn more about cookies and how I use them.<br></br>
 
             <br></br>
             <h2 className={h2TextStyle}>Use of Data</h2>
@@ -158,9 +160,9 @@ export default function PrivacyPolicy() {
           <br></br>
           <div className={normalTextStyle}>
             If you are a resident of the European Union (EU) and European Economic Area (EEA), you have certain data protection rights, covered by GDPR.<br></br> 
-            – See more at <u><a target="_blank" rel="noopener noreferrer" href="https://eur-lex.europa.eu/eli/reg/2016/679/oj">eur-lex europa site</a></u>.<br></br>
+            – See more at <u><Link target="_blank" rel="noopener noreferrer" href="https://eur-lex.europa.eu/eli/reg/2016/679/oj">eur-lex europa site</Link></u>.<br></br>
             I aim to take reasonable steps to allow you to correct, amend, delete, or limit the use of your Personal Data.<br></br>
-            If you wish to be informed what Personal Data I hold about you and if you want it to be removed from my system, please contact me at: <a href={mailTo}><u>privacy@mb-consulting.dev</u></a>.<br></br>
+            If you wish to be informed what Personal Data I hold about you and if you want it to be removed from my system, please contact me at: <Link href={mailTo}><u>privacy@mb-consulting.dev</u></Link>.<br></br>
             You have the following data protection rights (even when living outside EU):<br></br>
             <ul>
               <li>the right to access, update or to delete the information I have on you;</li>
@@ -184,7 +186,7 @@ export default function PrivacyPolicy() {
             The law’s reach stretches well beyond California to require a person or company in the United States (and conceivable the world)<br></br>
             that operates websites collecting personally identifiable information from California consumers to post a conspicuous privacy policy on its website<br></br>
             stating exactly the information being collected and those individuals with whom it is being shared, and to comply with this policy.<br></br>
-            – See more at consumercal.org <u><a target="_blank" rel="noopener noreferrer" href="https://consumercal.org/about-cfc/cfc-education-foundation/california-online-privacy-protection-act-caloppa-3/">info page about CALOPPA</a></u>.<br></br>
+            – See more at consumercal.org <u><Link target="_blank" rel="noopener noreferrer" href="https://consumercal.org/about-cfc/cfc-education-foundation/california-online-privacy-protection-act-caloppa-3/">info page about CALOPPA</Link></u>.<br></br>
 
             <br></br>
             According to CalOPPA I agree to the following:
@@ -193,7 +195,7 @@ export default function PrivacyPolicy() {
               <li>users can visit this site anonymously;</li>
               <li>this Privacy Policy link includes the word "Privacy", and can easily be found on the page specified above on the home page of this website;</li>
               <li>users will be notified of any privacy policy changes on this Privacy Policy Page;</li>
-              <li>users are able to change their personal information by emailing me at <a href={mailTo}><u>privacy@mb-consulting.dev</u></a>.</li>
+              <li>users are able to change their personal information by emailing me at <Link href={mailTo}><u>privacy@mb-consulting.dev</u></Link>.</li>
             </ul>
             <br></br>
 
@@ -240,10 +242,10 @@ export default function PrivacyPolicy() {
             I don't sell or rent your personal information to any third parties for any purpose.<br></br>
             You are the only owner of your Personal Data and can request disclosure or deletion at any time.<br></br>
             In no circumstances, I will discriminate against you for exercising your rights.<br></br>
-            To exercise your California data protection rights described above, please send your request(s) by email: <a href={mailTo}><u>privacy@mb-consulting.dev</u></a><br></br>
+            To exercise your California data protection rights described above, please send your request(s) by email: <Link href={mailTo}><u>privacy@mb-consulting.dev</u></Link><br></br>
             <br></br>
             Your data protection rights, described above, are covered by the CCPA, short for the California Consumer Privacy Act.<br></br>
-            To find out more, visit the official <u><a target="_blank" rel="noopener noreferrer" href="https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=3.&part=4.&lawCode=CIV&title=1.81.5">California Legislative Information website</a></u>. The CCPA took effect on 01/01/2020.<br></br> 
+            To find out more, visit the official <u><Link target="_blank" rel="noopener noreferrer" href="https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=3.&part=4.&lawCode=CIV&title=1.81.5">California Legislative Information website</Link></u>. The CCPA took effect on 01/01/2020.<br></br> 
           </div>  
 
           <h1 className={h1TextStyle} style={{textAlign : "center"}}>Service Providers</h1>
@@ -268,8 +270,8 @@ export default function PrivacyPolicy() {
             Google will use the collected data to contextualise and personalise the ads of its own advertising network.<br></br>
 
             <br></br>
-            For more information on the privacy practices of Google, please visit <u><a target="_blank" rel="noopener noreferrer" href="https://policies.google.com/privacy?hl=en">Google Privacy Terms</a></u>.<br></br>
-            I also encourage you to review the <u><a target="_blank" rel="noopener noreferrer" href="https://support.google.com/analytics/answer/6004245">Google's policy for safeguarding your data</a></u>.<br></br>
+            For more information on the privacy practices of Google, please visit <u><Link target="_blank" rel="noopener noreferrer" href="https://policies.google.com/privacy?hl=en">Google Privacy Terms</Link></u>.<br></br>
+            I also encourage you to review the <u><Link target="_blank" rel="noopener noreferrer" href="https://support.google.com/analytics/answer/6004245">Google's policy for safeguarding your data</Link></u>.<br></br>
           </div>
 
           <h1 className={h1TextStyle} style={{textAlign : "center"}}>CI/CD tools</h1>
@@ -283,7 +285,7 @@ export default function PrivacyPolicy() {
 
             GitHub is provided by GitHub, Inc.
             GitHub is a development platform to host and review code, manage projects, and build software.<br></br>
-            For more information on what data GitHub collects for what purpose and how the protection of the data is ensured, please visit <u><a target="_blank" rel="noopener noreferrer" href="https://help.github.com/en/articles/github-privacy-statement">GitHub Privacy Policy page</a></u>.<br></br>
+            For more information on what data GitHub collects for what purpose and how the protection of the data is ensured, please visit <u><Link target="_blank" rel="noopener noreferrer" href="https://help.github.com/en/articles/github-privacy-statement">GitHub Privacy Policy page</Link></u>.<br></br>
 
             <br></br>
             <h3 className={h3TextStyle}>Vercel</h3>
@@ -291,7 +293,7 @@ export default function PrivacyPolicy() {
 
             Vercel is provided by Vercel, Inc.
             Vercel is a plaftorm used to deploy websites and webapps.<br></br>
-            For more information on what data Vercel collects for what purpose and how the protection of the data is ensured, please visit <u><a target="_blank" rel="noopener noreferrer" href="https://vercel.com/legal/privacy-policy">Vercel Privacy Policy page</a></u>.<br></br>
+            For more information on what data Vercel collects for what purpose and how the protection of the data is ensured, please visit <u><Link target="_blank" rel="noopener noreferrer" href="https://vercel.com/legal/privacy-policy">Vercel Privacy Policy page</Link></u>.<br></br>
           </div>
 
           <h1 className={h1TextStyle} style={{textAlign : "center"}}>Behavioral Remarketing</h1>
@@ -304,10 +306,10 @@ export default function PrivacyPolicy() {
             <br></br>
             I don't use Google Ads or any ads on this Service.<br></br>
 
-            However, you can opt-out of Google Analytics for Display Advertising and customize the Google Display Network ads by visiting <u><a target="_blank" rel="noopener noreferrer" href="http://www.google.com/settings/ads">Google Ads Settings page</a></u><br></br>
-            Google also recommends installing the <u><a target="_blank" rel="noopener noreferrer" href="https://tools.google.com/dlpage/gaoptout">Google Analytics Opt-out Browser Add-on</a></u> for your web browser.<br></br>
+            However, you can opt-out of Google Analytics for Display Advertising and customize the Google Display Network ads by visiting <u><Link target="_blank" rel="noopener noreferrer" href="http://www.google.com/settings/ads">Google Ads Settings page</Link></u><br></br>
+            Google also recommends installing the <u><Link target="_blank" rel="noopener noreferrer" href="https://tools.google.com/dlpage/gaoptout">Google Analytics Opt-out Browser Add-on</Link></u> for your web browser.<br></br>
             Google Analytics Opt-out Browser Add-on provides visitors with the ability to prevent their data from being collected and used by Google Analytics.<br></br>
-            For more information on the privacy practices of Google, please visit the <u><a target="_blank" rel="noopener noreferrer" href="https://policies.google.com/privacy?hl=en">Google Privacy Terms page</a></u><br></br>
+            For more information on the privacy practices of Google, please visit the <u><Link target="_blank" rel="noopener noreferrer" href="https://policies.google.com/privacy?hl=en">Google Privacy Terms page</Link></u><br></br>
           </div>
 
           <h1 className={h1TextStyle} style={{textAlign : "center"}}>Links to Other Sites</h1>
@@ -323,7 +325,7 @@ export default function PrivacyPolicy() {
           <div className={normalTextStyle}>
             My Services are not intended for use by children under the age of 13 (<b>"Children"</b>).<br></br>
             I do not knowingly collect personally identifiable information from Children under 13.<br></br> 
-            If you become aware that a Child has provided this Service with Personal Data, please contact me at <a href={mailTo}><u>privacy@mb-consulting.dev</u></a>.<br></br>
+            If you become aware that a Child has provided this Service with Personal Data, please contact me at <Link href={mailTo}><u>privacy@mb-consulting.dev</u></Link>.<br></br>
             If I become aware that Personal Data from Children has been collected, I take steps to remove that information.<br></br>
           </div>
 
@@ -338,7 +340,7 @@ export default function PrivacyPolicy() {
           <h1 className={h1TextStyle} style={{textAlign : "center"}}>Contact me</h1>
           <br></br>
           <div className={normalTextStyle}>
-            If you have any questions about this Cookie Policy, please contact me at <a href={mailTo}><u>privacy@mb-consulting.dev</u></a>.
+            If you have any questions about this Cookie Policy, please contact me at <Link href={mailTo}><u>privacy@mb-consulting.dev</u></Link>.
           </div>
 
         </div>

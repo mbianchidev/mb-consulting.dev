@@ -4,7 +4,7 @@ import CookiePolicy from "@components/CookiePolicy";
 
 export default function cookiePolicy() {
   return (
-    <ContainerBlock title="Cookie Policy - Matteo Bianchi">
+    <ContainerBlock title="Cookie Policy - MB-Consulting">
       <CookiePolicy/>
     </ContainerBlock>
   );

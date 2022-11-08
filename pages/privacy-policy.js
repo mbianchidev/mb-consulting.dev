@@ -4,7 +4,7 @@ import PrivacyPolicy from "@components/PrivacyPolicy";
 
 export default function privacyPolicy() {
   return (
-    <ContainerBlock title="Privacy Policy - Matteo Bianchi">
+    <ContainerBlock title="Privacy Policy - MB-Consulting">
       <PrivacyPolicy/>
     </ContainerBlock>
   );

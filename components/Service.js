@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Breadcrumb from "@custom/Breadcrumb/Breadcrumb";
-import ServiceCarousel from "@components/custom/Carousel/ServiceCarousel";
+import ServiceCarousel from "@custom/Carousel/ServiceCarousel";
 
 export default function Service({ service }) {
 

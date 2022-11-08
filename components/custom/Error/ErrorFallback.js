@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import Image from 'next/image';
+import Link from "next/link";
 
 export default function ErrorFallback() {
 
@@ -13,18 +14,20 @@ export default function ErrorFallback() {
     mounted ? 
     <section className="bg-white dark:bg-gray-800">
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
-        <h1>Oops, there is an error!</h1>
+        <h1 className="text-5xl md:text-9xl font-bold py-20 text-center md:text-left">Error</h1>
       </div>
       <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
-        <div style="width:100%;height:0;padding-bottom:55%;position:relative;">
+        <div className="text-container mx-auto pt-20">
           <Image src="/images/gifs/hello-it.gif" alt="'Hello IT, have you tried turning in on and off again?' GIF from the IT Crowd series" width="480" height="270" />
+          <Link href={{ pathname: "/contacts", query: { serviceName: service.slug} }} passHref> 
+          <button
+            type="submit"
+            className="bg-[#00B2CA] rounded-md w-1/2 mx-4 mt-8 py-2 text-gray-50 text-xs font-bold"
+          >
+            Try (turning it on and off) again?
+          </button>
+          </Link>
         </div>
-        <button
-          type="button"
-          onClick={() => this.setState({ hasError: false })}
-        >
-          Try (turning it on and off) again?
-        </button>
       </div>
     </section>
     : null

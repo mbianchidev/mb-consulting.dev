@@ -1,10 +1,10 @@
 import React, {useState} from "react";
-import userData from "@constants/data";
 import techsData from "@constants/techs";
-import Image from 'next/image';
+import aboutData from "@constants/pages/about";
 import Link from "next/link";
 import LinkList from "@custom/LinkList/LinkList";
 import Breadcrumb from "@custom/Breadcrumb/Breadcrumb";
+import TechCard from "@custom/Cards/TechCard";
 
 export default function About() {
 
@@ -57,7 +57,7 @@ export default function About() {
             className="leading-loose text-2xl md:text-4xl font-semibold"
             style={{ lineHeight: "3rem" }}
           >
-            {userData.about.title}. 
+            {aboutData.about.title}. 
           </span>
         </div>
       </div>
@@ -73,7 +73,7 @@ export default function About() {
               <br></br>
               <span className="text-lg text-gray-500 mt-4 dark:text-gray-300">
                 Interested in a collaboration? Got any question? Fill the {" "}
-                <a href="/contacts" className={linkTextStyle}> contact form </a>{" "} and I'll get back as soon as I can.
+                <Link href="/contacts" className={linkTextStyle}> contact form </Link>{" "} and I'll get back as soon as I can.
               </span>
             </div>
             <div className="mt-8">
@@ -82,9 +82,9 @@ export default function About() {
               </h1>
               <br></br>
               <span className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                Check my{" "} <a href={userData.resumeUrl} target="_blank" rel="noopener noreferrer" className={linkTextStyle}> CV </a>.
+                Check my{" "} <Link href={aboutData.resumeUrl} target="_blank" rel="noopener noreferrer" className={linkTextStyle}> CV </Link>.
                 <p>
-                  Have a look at my {" "} <a href="/clients" rel="noopener noreferrer" className={linkTextStyle}> clients </a>{" "} and {" "}
+                  Have a look at my {" "} <Link href="/clients" rel="noopener noreferrer" className={linkTextStyle}> clients </Link>{" "} and {" "}
                   <Link href="/about/experience" passHref rel="noopener noreferrer" className={linkTextStyle}> 
                       experiences
                   </Link>{" "} as employee for more details.
@@ -103,7 +103,7 @@ export default function About() {
           <div className="col-span-1 md:col-span-2">
 
             <h1 className="text-xl font-semibold text-gray-700 mt-8 dark:text-gray-200">
-              {userData.about.clickText}
+              {aboutData.about.clickText}
             </h1>
             <br></br>
             <br></br>
@@ -111,13 +111,13 @@ export default function About() {
             {/* Story */}
             <h1 className="bg-red-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
               <a onClick={toggleStory}>
-                {userData.about.story.shortTitle}
+                {aboutData.about.story.shortTitle}
               </a>
             </h1>
             <br></br>
             <br></br>
             <div style={{display: showStory ? "block" : "none"}}>
-              {userData.about.story.description?.map((desc, aboutMeId) => (
+              {aboutData.about.story.description?.map((desc, aboutMeId) => (
                 <span key={aboutMeId}>
                   <p className={standardAboutText}>{desc}</p>
                 </span>
@@ -127,13 +127,13 @@ export default function About() {
             {/* Goals and values */}
             <h1 className="bg-blue-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
               <a onClick={toggleGoals}>
-                {userData.about.goals.shortTitle}
+                {aboutData.about.goals.shortTitle}
               </a>
             </h1>
             <br></br>
             <br></br>
             <div style={{display: showGoals ? "block" : "none"}}>
-              {userData.about.goals.description?.map((desc, aboutMeId) => (
+              {aboutData.about.goals.description?.map((desc, aboutMeId) => (
                 <span key={aboutMeId}>
                   <p className={standardAboutText}>{desc}</p>
                 </span>
@@ -143,13 +143,13 @@ export default function About() {
             {/* Techs */}
             <h1 className="bg-green-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
               <a onClick={toggleTechs}>
-                {userData.about.techs.shortTitle}
+                {aboutData.about.techs.shortTitle}
               </a>
             </h1>
             <br></br>
             <br></br>
             <div style={{display: showTechs ? "block" : "none"}}>
-              {userData.about.techs.description?.map((desc, aboutMeId) => (
+              {aboutData.about.techs.description?.map((desc, aboutMeId) => (
                 <span key={aboutMeId}>
                   <p className={standardAboutText}>{desc}</p>
                 </span>
@@ -169,8 +169,8 @@ export default function About() {
                 )))}
               </div>
               <br></br>
-              <span className="text-base font-normaltext-gray-700 mb-4 dark:text-gray-300">
-                {userData.about.techs.warning}
+              <span className="text-base font-normal text-gray-700 mb-4 dark:text-gray-300">
+                {aboutData.about.techs.warning}
               </span>
             </div>
 
@@ -181,26 +181,4 @@ export default function About() {
   );
 }
 
-const TechCard = ({techId, techName, techDescription, techLogo, techLogoX, techLogoY, techUrl }) => {
-  const [hover, setHover] = useState(false);
-  const onHover = () => {
-    setHover(true);
-  };
-
-  const onLeave = () => {
-    setHover(false);
-  };
-
-  return (
-    <div id={techId} className="h-20 w-20 mx-4 my-4">
-      <Link href={techUrl} target="_blank" rel="noopener noreferrer" onMouseEnter={onHover} onMouseLeave={onLeave}>
-        <Image src={techLogo} alt={techName} className="fill" width={techLogoX} height={techLogoY} />
-        <div className="tooltip rounded bg-gray-800" style={{display: hover ? "block" : "none"}}>
-          <h1 className="tooltiptitle m-1 text-sm text-gray-300 font-bold">{techName}</h1>
-          <p className="tooltiptext m-1 text-sm text-gray-300 font-normal">{techDescription}</p>
-        </div>
-      </Link>
-    </div>
-  );
-};
 

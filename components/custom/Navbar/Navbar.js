@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from 'next/image';
 import logo from "@images/logo.webp"
 import { useRouter } from "next/router";
-import SocialElement from "@components/custom/Social/SocialElement";
+import SocialElement from "@custom/Social/SocialElement";
 import Dropdown from "@custom/DropdownMenu/DropdownMenu";
 
 export default function Navbar() {

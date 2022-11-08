@@ -1,6 +1,7 @@
 import React from "react";
 import getConfig from 'next/config';
-import SocialElement from "@components/custom/Social/SocialElement";
+import SocialElement from "@custom/Social/SocialElement";
+import Link from "next/link";
 
 export default function Footer() {
   
@@ -15,10 +16,10 @@ export default function Footer() {
             <p className="text-sm">Site version - {publicRuntimeConfig?.version}</p>
           </div>
           <div className="flex flex-col md:flex-row">
-            <a href="/privacy-policy">Privacy Policy </a>
+            <Link href="/privacy-policy">Privacy Policy </Link>
           </div>
           <div className="flex flex-col md:flex-row">
-          <a href="/cookie-policy">Cookie Policy</a>
+          <Link href="/cookie-policy">Cookie Policy</Link>
           </div>
           {/*Social Element*/}
           <SocialElement twitter="true" linkedin="true" />

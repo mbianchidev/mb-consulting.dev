@@ -2,6 +2,7 @@ import React from "react";
 import userData from "@constants/data";
 import CookieConsent, { getCookieConsentValue, Cookies } from "react-cookie-consent";
 import * as ga from "@lib/ga";
+import Link from "next/link";
 
 export default function MBCookies() {
 
@@ -35,8 +36,8 @@ export default function MBCookies() {
           expires={365}
         >
         This website uses the smallest amount of cookies possible to enhance the user experience and allow me to perform some traffic/performance analysis.
-        For more info checkout <u><a target="_blank" rel="noopener noreferrer" href="/cookie-policy">my cookies policy</a></u>.
-        What's a cookie? Checkout this <u><a target="_blank" rel="noopener noreferrer" href={userData.cookieUrl}>informative article about cookies</a></u> to learn more!
+        For more info checkout <u><Link target="_blank" rel="noopener noreferrer" href="/cookie-policy">my cookies policy</Link></u>.
+        What's a cookie? Checkout this <u><Link target="_blank" rel="noopener noreferrer" href={userData.cookieUrl}>informative article about cookies</Link></u> to learn more!
         </CookieConsent>
     );
 }

@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import userData from "@constants/data";
+import Link from "next/link";
 
 export default function LatestCode({ repositories }) {
   const [repos, setRepos] = useState([]);
 
-  useEffect(async () => {
+  useEffect(() => {
     setRepos(repositories);
-  }, []);
+  }, [repos]);
+
   return (
     <section className="bg-[#F1F1F1] -mt-40 dark:bg-gray-900 pb-40">
       <div className="max-w-6xl mx-auto">
@@ -15,7 +17,7 @@ export default function LatestCode({ repositories }) {
             Latest Code
           </h1>
 
-          <a
+          <Link
             href={`https://github.com/${userData.githubUsername}`}
             target="_blank" rel="noopener noreferrer"
             className="mb-20 md:mb-0 px-8 py-4 rounded-md bg-white shadow-lg text-xl font-semibold flex flex-row space-x-4 items-center dark:text-gray-700"
@@ -36,7 +38,7 @@ export default function LatestCode({ repositories }) {
               />
             </svg>
             <p>View my GitHub</p>
-          </a>
+          </Link>
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-10 lg:-mt-10 gap-y-20">
@@ -55,13 +57,13 @@ const GithubRepoCard = ({ latestRepo }) => {
   return (
     <div className="github-repo">
       <h1 className="font-semibold text-xl dark:text-gray-200 text-gray-700">
-        {latestRepo.name}
+        {latestRepo.repo}
       </h1>
       <p className="text-base font-normal my-4 text-gray-500">
         {latestRepo.description}
       </p>
-      <a
-        href={latestRepo.clone_url}
+      <Link
+        href={latestRepo.link}
         target="_blank" rel="noopener noreferrer"
         className="font-semibold group flex flex-row space-x-2 w-full items-center"
       >
@@ -69,7 +71,7 @@ const GithubRepoCard = ({ latestRepo }) => {
         <div className="transform  group-hover:translate-x-2 transition duration-300">
           &rarr;
         </div>
-      </a>
+      </Link>
     </div>
   );
 };
