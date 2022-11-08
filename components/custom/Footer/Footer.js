@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between md:items-center mt-8">
           <div>
             <p>&copy; 2021-{new Date().getFullYear()} MBit-Consulting B.V. - All Rights Reserved. </p>
-            <p className="text-sm">Site version - {publicRuntimeConfig?.version}</p>
+            <p className="text-sm">site version - {publicRuntimeConfig?.version}</p>
           </div>
           <div className="flex flex-col md:flex-row">
             <Link href="/privacy-policy">Privacy Policy </Link>

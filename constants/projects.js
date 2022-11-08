@@ -1,5 +1,5 @@
 const projectsData = {
-  warning: "This projects do not belong to me, I'm not endorsed by them and I'm not responsible for their content. I'm just a fan!",
+  warning: "These projects do not belong to me or MBit, we are not endorsed by them and not responsible for their content.",
   projects: [
     {
       title: "Falco - Cloud native security runtime",
