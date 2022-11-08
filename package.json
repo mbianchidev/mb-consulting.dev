@@ -1,6 +1,6 @@
 {
   "name": "mb-consulting-dev-site",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -11,6 +11,7 @@
     "start": "NODE_OPTIONS=--max-old-space-size=1024 next start"
   },
   "dependencies": {
+    "@jsdevtools/version-bump-prompt": "^6.1.0",
     "@sendgrid/mail": "^7.7.0",
     "axios": "^1.1.2",
     "eslint-config-next": "^13.0.1",
