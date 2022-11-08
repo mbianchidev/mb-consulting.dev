@@ -59,7 +59,7 @@ const heroData = {
     thirdLink: "/service/sre-devsecops",
     fourthPrinciple: "Innovate",
     fourthLink: "/service/cto-as-a-service",
-    CTAs: ["Let's talk!", "Work with me!", "Need a DevOps?", "Looking for a CTO?", "Go cloud!", "Don't click here!", "Grab your free call!"],
+    CTAs: ["Let's talk!", "Work together!", "Need a DevOps?", "Looking for a CTO?", "Go cloud!", "Don't click here!", "Grab your free call!"],
   },
 };
 

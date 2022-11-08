@@ -135,7 +135,7 @@ export default function ContactForm() {
       />
       {/* Select reason */}
       <label htmlFor="reason" className={formPlaceHolderTextStyle}>
-        How did you find me?
+        How did you find us?
       </label>
       <select name="reason" defaultValue="OTHER" className={borderedTextStyle}>
         <option key="ad" value="GOOGLE_AD">via Google/Youtube Advertisement</option>

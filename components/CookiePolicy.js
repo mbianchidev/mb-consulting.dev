@@ -50,7 +50,7 @@ export default function CookiePolicy() {
               <li>Analysis Cookies: Analysis Cookies are used to better understand user traffic flows and improve this Service accordingly.</li>
             </ul>
             <br></br>
-            I don't use advertising cookies and there is no advertisement on this site.
+            We don't use advertising cookies and there is no advertisement on this site.
           </div>
 
           <h1 className="font-bold text-xl" style={{textAlign : "center"}}>Cookies details</h1>
@@ -67,10 +67,10 @@ export default function CookiePolicy() {
             For every other concern about your privacy please visit the <u><Link target="_blank" rel="noopener noreferrer" href="/privacy-policy">privacy policy page</Link></u>.<br></br>
           </div>  
 
-          <h1 className="font-bold text-xl" style={{textAlign : "center"}}>Contact me</h1>
+          <h1 className="font-bold text-xl" style={{textAlign : "center"}}>Contact us</h1>
           <br></br>
           <div className="text-xl text-gray-700 mb-4 dark:text-gray-300">
-            If you have any questions about this Cookie Policy, please contact me at <Link href={mailTo}><u>{mailData.privacyMail}</u></Link>.
+            If you have any questions about this Cookie Policy, please contact us at <Link href={mailTo}><u>{mailData.privacyMail}</u></Link>.
           </div>
 
         </div>

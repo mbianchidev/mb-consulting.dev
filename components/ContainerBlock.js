@@ -47,8 +47,8 @@ export default function ContainerBlock({ children, ...customMeta }) {
   const processEnvGASource = "https://www.googletagmanager.com/gtag/js?id="+processEnvGA;
 
   const meta = {
-    title: "MB-Consulting - DevOps | SRE | Coach | Developer",
-    description: `Learn more about me and my services.`,
+    title: "MBit Consulting - DevOps | SRE | Coach | SWE",
+    description: `Learn more about us and our services.`,
     image: "/images/propic.webp",
     type: "website",
     ...customMeta,

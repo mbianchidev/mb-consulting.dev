@@ -20,7 +20,6 @@ export default function Contacts() {
                 One step closer to your problem solved!
               </h1>
               <p className="font-light text-base dark:text-gray-200 mt-2"> Fill in the details and I'll get back to you in no time. </p>
-              <p className="font-light text-base dark:text-gray-200 mt-2"> If you are looking to hire me for a permanent role, you are welcome to contact me on LinkedIn.</p>
             </header>
             {/* Email/Address */}
             <ContactExtraInfo pin="true" mail="true"/>
