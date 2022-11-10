@@ -33,44 +33,6 @@ const servicesData = {
   services: [
     {
       category: "DevOps",
-      name: "Fundamentals Course",
-      coverImage: "/images/service/course.webp",
-      images: [
-        {
-          url: "/images/service/course.webp",
-          altText: "DevOps Fundamental Course service image",
-          imageX: 500,
-          imageY: 400,
-          description: "DevOps Fundamental Course",
-        },
-      ],
-      slug: "devops-fundamentals-course",
-      shortDescription: "Discover what does DevOps can do for you",
-      description: [
-        `I offer a 3-day course about the DevOps culture allowing you and your team to learn the fundamentals and how it can help you as it helped a lot of companies in their growth.`,
-        `Your grade of maturity will be assessed before the course and, based on the results, we will plan the right learning path for you to follow.`,
-        `The course is designed to be interactive and hands-on, so you will be able to apply the knowledge you will gain during the course in a workshop, during the last day.`,
-        `I cannot stress this enough: DevOps is much like martial arts, it cannot be learned through a single 3-day course, but this aims to be a good start to your training, an opportunity to jump-start your DevOps journey.`,
-        ``,
-        `This course is aimed at both companies and people who want to learn more about DevOps and how it can help them improve the software lifecycle and the lives of developers.`,
-        `The program is structured to be suitable for an audience of 5-10 attendants and can be held in English or Italian; the slides and documents require a basic knowledge of professional English`,
-        `The course has no specific or mandatory pre-requisites altough it is necessary to have some technical background as software developer, system administrator, product manager or similar.`,
-        `I will pass you the knowledge you need to start implementing various DevOps initiatives, without forcing you to use specific tools. An overview of what tools and methods are currently used in the industry will be given.`,
-        `After the course there will be a final certificate of completion.`,
-        `These are some of the concepts contained in the course:`,
-        `Code Review (CR), Feedback Loops, DevOps Toolchain, Continuous Integration / Countinous Delivery (CI/CD), Automated testing (AT), Cloud, Infrastructure as Code (IAC), Monitoring, Security, DevSecOps, etc.`,
-        `If you are a company you can ask for a specific technology or toolchain to focus on (e.g. Kubernetes + Docker, Jenkins, New Relic, etc.) it will be covered in a mini-course during the third day, taking the place of some of the exercises included in the workshop (additional costs may apply).`,
-      ],
-      callout: 'Are you ready to take your first step and begin your DevOps journey?',
-      CTA: 'Discover how!',
-      type: '3 days course and mini-workshop (remote only), classes can consist of either employees of a company or indipendent individuals (in which case the course will start only when the quota is reached and the cost is shared among the participants).',
-      active: false,
-      offer: '30% discount on the specific technology mini-course, 100% FREE pitch call to discuss your needs and the course details, pre-course DevOps maturity assessment included.',
-      rate: 'Starting from 2999 (in case of individual participants, the cost is to be divided among the participants)',
-      // - payment for companies in 2 installments (50% before the beginning of the course, 50% at the end) - payment for individuals before the beginning of the course
-    },
-    {
-      category: "DevOps",
       name: "Adoption Path",
       coverImage: "/images/service/devops-path.webp",
       images: [

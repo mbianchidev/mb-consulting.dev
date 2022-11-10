@@ -19,13 +19,13 @@ export default function ErrorFallback() {
       <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
         <div className="text-container mx-auto pt-20">
           <Image src="/images/gifs/hello-it.gif" alt="'Hello IT, have you tried turning in on and off again?' GIF from the IT Crowd series" width="480" height="270" />
-          <Link href={{ pathname: "/contacts", query: { serviceName: service.slug} }} passHref> 
-          <button
-            type="submit"
-            className="bg-[#00B2CA] rounded-md w-1/2 mx-4 mt-8 py-2 text-gray-50 text-xs font-bold"
-          >
-            Try (turning it on and off) again?
-          </button>
+          <Link href="/" passHref>
+            <button
+              type="submit"
+              className="bg-[#00B2CA] rounded-md w-1/2 mx-4 mt-8 py-2 text-gray-50 text-xs font-bold"
+            >
+              Try (turning it on and off) again?
+            </button>
           </Link>
         </div>
       </div>

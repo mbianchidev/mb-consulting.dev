@@ -13,7 +13,7 @@ export default function LatestCode({ repositories }) {
     <section className="bg-[#F1F1F1] -mt-40 dark:bg-gray-900 pb-40">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center md:pt-40 mx-10">
-          <h1 className="text-6xl lg:text-9xl max-w-lg font-bold text-gray-500 my-20 md:my-0 md:text-white dark:text-gray-600 text-center lg:text-left">
+          <h1 className="text-6xl lg:text-9xl max-w-lg font-bold text-gray-600 my-20 md:my-0 dark:text-gray-300 text-center lg:text-left">
             Latest Code
           </h1>
 
@@ -45,18 +45,23 @@ export default function LatestCode({ repositories }) {
         {/* Single github Repo */}
 
         {repos ? (
-          repos?.map((latestRepo, repoId) => (
-            <GithubRepoCard latestRepo={latestRepo} key={repoId} />
-          ))): null}
+          React.Children.toArray(repos?.map((latestRepo, repoId) => (
+            <GithubRepoCard latestRepo={latestRepo} num={repoId} />
+          )))): null}
       </div>
     </section>
   );
 }
 
-const GithubRepoCard = ({ latestRepo }) => {
+const GithubRepoCard = ({ latestRepo, num }) => {
+
+  let h1Class = "font-semibold text-xl dark:text-gray-50 text-gray-700";//"font-semibold text-xl dark:text-gray-300 text-gray-700"
+  if (num==0) {
+    h1Class = "font-semibold text-xl dark:text-gray-50 bg-red-500 rounded-md px-2 text-gray-50";
+  }
   return (
     <div className="github-repo">
-      <h1 className="font-semibold text-xl dark:text-gray-200 text-gray-700">
+      <h1 className={h1Class}>
         {latestRepo.repo}
       </h1>
       <p className="text-base font-normal my-4 text-gray-500">
@@ -68,7 +73,7 @@ const GithubRepoCard = ({ latestRepo }) => {
         className="font-semibold group flex flex-row space-x-2 w-full items-center"
       >
         <p>View Repository </p>
-        <div className="transform  group-hover:translate-x-2 transition duration-300">
+        <div className="transform group-hover:translate-x-2 transition duration-300">
           &rarr;
         </div>
       </Link>

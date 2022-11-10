@@ -23,10 +23,6 @@ let lastYearDate = new Date(date.setFullYear(date.getFullYear() - 1)).toISOStrin
 
 const services = [
   {
-    slug: "devops-fundamentals-course",
-    active: true,    
-  },
-  {
     slug: "devops-adoption-path",
     active: true,    
   },
@@ -36,7 +32,7 @@ const services = [
   },
   {
     slug: "sre-devsecops",
-    active: false,    
+    active: true,    
   },
   {
     slug: "cto-as-a-service",
@@ -118,6 +114,18 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
   </url>
   <url>
     <loc>${baseUrl}/work-in-progress</loc>
+    <lastmod>1970-01-01</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.0</priority>
+  </url>
+  <url>
+    <loc>${baseUrl}/404</loc>
+    <lastmod>1970-01-01</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.0</priority>
+  </url>
+  <url>
+    <loc>${baseUrl}/500</loc>
     <lastmod>1970-01-01</lastmod>
     <changefreq>never</changefreq>
     <priority>0.0</priority>
