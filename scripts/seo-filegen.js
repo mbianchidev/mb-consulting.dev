@@ -75,7 +75,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>${baseUrl}/service/</loc>
+    <loc>${baseUrl}/services</loc>
     <lastmod>${lastYearDate}</lastmod>
     <changefreq>yearly</changefreq> 
     <priority>0.9</priority>
