@@ -118,18 +118,6 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <changefreq>never</changefreq>
     <priority>0.0</priority>
   </url>
-  <url>
-    <loc>${baseUrl}/404</loc>
-    <lastmod>1970-01-01</lastmod>
-    <changefreq>never</changefreq>
-    <priority>0.0</priority>
-  </url>
-  <url>
-    <loc>${baseUrl}/500</loc>
-    <lastmod>1970-01-01</lastmod>
-    <changefreq>never</changefreq>
-    <priority>0.0</priority>
-  </url>
 </urlset>
 `;
 
