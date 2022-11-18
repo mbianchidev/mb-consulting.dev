@@ -4,6 +4,7 @@ import Navbar from "@custom/Navbar/Navbar";
 import Footer from "@custom/Footer/Footer";
 import MBCookies from "@custom/Cookies/MBCookies";
 import CustomError from '@custom/Error/CustomError'
+import { Analytics } from '@vercel/analytics/react';
 
 function MyApp({ Component, pageProps }) {
 
@@ -14,6 +15,7 @@ function MyApp({ Component, pageProps }) {
           <Navbar/>
           <CustomError>
             <Component {...pageProps} />
+            <Analytics/>
           </CustomError>
           <MBCookies/>
           <Footer/>
