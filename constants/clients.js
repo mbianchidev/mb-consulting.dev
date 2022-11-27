@@ -126,7 +126,7 @@ const clientsData = {
       companyLogoY: 48,
       companyUrl: "https://www.dshare.com/",
       role: "Freelance DevOps Engineer | Site Reliability Engineer",
-      story: "Managing Azure and AWS infrastructures for their news and media platform and digital products. I am responsible for the infrastructure, deployments, security and everything about the cloud.",
+      story: "Managed Azure and AWS infrastructures for their news and media platform and digital products. I was responsible for the infrastructure, deployments, security and everything about the cloud.",
       year: "2021-2022",
       show: true
     },

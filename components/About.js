@@ -84,7 +84,7 @@ export default function About() {
               <span className="text-lg text-gray-500 mt-4 dark:text-gray-300">
                 <p>
                   Have a look at my {" "} <Link href="/clients" rel="noopener noreferrer" className={linkTextStyle}> clients </Link>{" "} and {" "}
-                  <Link href="/about/experience" passHref rel="noopener noreferrer" className={linkTextStyle}> 
+                  <Link href="/experience" passHref rel="noopener noreferrer" className={linkTextStyle}> 
                       experience
                   </Link>{" "} for more details.
                 </p>
