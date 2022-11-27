@@ -164,7 +164,7 @@ const techsData = {
     },
     {
       name: "Fluentd",
-      description: "Logging and metrics are SO important and Fluentd is a great tool for collecting it.",
+      description: "Logging and metrics are SO important and Fluentd is a great tool for collecting those.",
       image: "/images/techs/fluentd.webp",
       url: "https://www.fluentd.org",
       x: 80,
@@ -374,7 +374,7 @@ const techsData = {
     },
     {
       name: "NextJS",
-      description: "This site is built with NextJS and even if I'm not a frontend developer I kina managed to make it work.",
+      description: "This site is built with NextJS and even if I'm not a frontend developer I kinda managed to make it work.",
       image: "/images/techs/nextjs.webp",
       url: "https://nextjs.org",
       x: 80,

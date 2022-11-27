@@ -1,4 +1,4 @@
-/* 
+/* // DEPRECATED, USE EXPERIENCES INSTEAD! //
 {   
     code: "internal field"
     companyName: "Company name",
@@ -15,6 +15,7 @@
 },
 */
 
+// DEPRECATED, USE EXPERIENCES INSTEAD! //
 const clientsData = {
   clients: [
     {
@@ -131,5 +132,6 @@ const clientsData = {
     },
   ],
 }
+// DEPRECATED, USE EXPERIENCES INSTEAD! //
 
 export default clientsData;

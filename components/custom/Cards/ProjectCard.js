@@ -9,7 +9,7 @@ export default function ProjectCard ({ title, link, imgUrl, number }) {
         <div className="h-72 object-cover">
           <Image src={imgUrl} alt={title} fill className="transform hover:scale-125 transition duration-2000 ease-out object-cover h-full w-full" />
         </div>
-        <h1 className="absolute bottom-10 right-10 text-gray-50 font-bold text-xl bg-[#2376C7] rounded-md px-2">
+        <h1 className="absolute bottom-10 right-10 text-gray-50 font-bold text-xl bg-mb_secondary rounded-md px-2">
           {title}
         </h1>
       </div>

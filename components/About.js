@@ -82,12 +82,11 @@ export default function About() {
               </h1>
               <br></br>
               <span className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                Check my{" "} <Link href={aboutData.resumeUrl} target="_blank" rel="noopener noreferrer" className={linkTextStyle}> CV </Link>.
                 <p>
                   Have a look at my {" "} <Link href="/clients" rel="noopener noreferrer" className={linkTextStyle}> clients </Link>{" "} and {" "}
                   <Link href="/about/experience" passHref rel="noopener noreferrer" className={linkTextStyle}> 
-                      experiences
-                  </Link>{" "} as employee for more details.
+                      experience
+                  </Link>{" "} for more details.
                 </p>
               </span>
             </div>
@@ -96,7 +95,7 @@ export default function About() {
             <h1 className="text-xl font-semibold text-gray-700 mt-8 dark:text-gray-200">
               Links
             </h1>
-            <LinkList github="true" linkedin="true" linktree="true"/>
+            <LinkList linktree="true"/>
           </div>
 
           {/* Text area */}
