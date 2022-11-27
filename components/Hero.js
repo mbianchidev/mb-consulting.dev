@@ -64,11 +64,11 @@ export default function Hero() {
 
         {/* Responsive Mobile image */}   
 
-          <Link href="/about" passHref>
-            <div className="relative w-full h-56 md:h-[500px] hero__mobile-image" style={{position: "relative" }}>
-              <Image src={userData.mobileAvatarUrl} sizes="100vw" alt="propic" fill/>
-            </div>
-          </Link>
+        <Link href="/about" passHref>
+          <div className="relative w-full h-56 md:h-[500px] hero__mobile-image" style={{position: "relative" }}>
+            <Image src={userData.mobileAvatarUrl} sizes="100vw" alt="propic" fill/>
+          </div>
+        </Link>
   
         {/*CTA - Call to action*/}
         <br></br>

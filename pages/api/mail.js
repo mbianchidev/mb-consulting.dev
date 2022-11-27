@@ -79,7 +79,7 @@ export default async function(req, res) {
       mail.send({
         to: body.email,
         from: mailData.siteMail,
-        subject: body.name + ' greetings from MB-Consulting',
+        subject: body.name + ' greetings from Matteo',
         text: data,
         html: `
         <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -87,8 +87,8 @@ export default async function(req, res) {
           <head>
             <meta charset="utf-8">
             <title>New message</title>
-            <meta name="description" content="MB-Consulting-dev - New email message">
-            <meta name="author" content="MB-Consulting">
+            <meta name="description" content="Matteo Bianchi - New email message">
+            <meta name="author" content="Matteo Bianchi">
             <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
             <link rel="stylesheet" href="css/styles.css?v=1.0">
           </head>

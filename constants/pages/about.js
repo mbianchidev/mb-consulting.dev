@@ -1,7 +1,7 @@
 const aboutData = {
   resumeUrl: "/static/Matteo_Bianchi_CV_smart.pdf",
   about: {
-    title: "A long time ago in a galaxy far, far away... I fell in ❤️ with DevOps culture, became passionate about clouds 🌩️ and obsessed with security 🔐. MBit is my way to make a difference in the IT world.",
+    title: "A long time ago in a galaxy far, far away... I fell in ❤️ with DevOps culture, became passionate about clouds 🌩️ and obsessed with security 🔐",
     clickText: "Get to know me better 👇",
     story: {
       shortTitle: "DevOps: A Star Wars Story",
