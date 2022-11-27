@@ -9,7 +9,7 @@ const navbarData = {
       name: "Services",
     },
     {
-      link: "/about/experience",
+      link: "/experience",
       name: "Experience",
     }
   ],
