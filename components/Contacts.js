@@ -12,7 +12,7 @@ export default function Contacts() {
           Let's get in touch!
         </h1>
       </div>
-      <div className="dark:bg-[#02058F] bg-[#2376C7] relative z-10 rounded-md shadow-md p-4 md:p-10 lg:p-20 max-w-6xl mx-auto mb-20 -mt-4">
+      <div className="dark:bg-mb_primary bg-mb_secondary relative z-10 rounded-md shadow-md p-4 md:p-10 lg:p-20 max-w-6xl mx-auto mb-20 -mt-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="md:ml-4">
             <header className="">
@@ -23,7 +23,8 @@ export default function Contacts() {
             </header>
             {/* Email/Address */}
             <ContactExtraInfo pin="true" mail="true"/>
-            <SocialElement twitter="true" linkedin="true" hideIfMobile="true"/>
+            {/* Socials */}
+            <SocialElement twitter="true" telegram="true" linkedin="true" hideIfMobile="true"/>
           </div>
           {/* Contact Form */}
           <ContactForm/>

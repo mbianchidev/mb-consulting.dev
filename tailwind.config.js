@@ -12,15 +12,11 @@ module.exports = {
         2000: "2000ms",
         4000: "4000ms",
       },
-// colors: { => DO NOT use this, it will override the default colors and you will have to redefine them all somehow lol
-//   mb_blue: 
-//   { 
-//     100: "#3B82F6",
-//     200: "#02058F",
-//     300: "#050e96",
-//     400: "#02044A",
-//   },
-// },
+      colors: {
+          mb_primary: "#02058F",
+          mb_secondary: "#2376C7",
+          mb_tertiary: "",
+      },
     },
   },
   variants: {

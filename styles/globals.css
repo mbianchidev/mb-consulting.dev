@@ -196,23 +196,6 @@ a.close.disabled {
 	margin: -1rem -1rem -1rem auto
 }
 
-/* Navbar */
-.navbar-mb {
-	width: 100%;
-	overflow: auto;
-  }
-  
-.navbar-mb a {
-	float: none;
-}
-  
-@media screen and (max-width: 500px) {
-	.navbar-mb a {
-	  float: none;
-	  display: block;
-	}
-}
-
 /* Underline animation */
 .hover-underline-animation {
 	display: inline-block;
@@ -256,12 +239,7 @@ a.close.disabled {
 /* Pixels < 1024  */
 @media screen and (max-width: 1024px) {
 	/* Not visibile */
-	.mobile-social-icons {
-		display: none !important;
-		margin-top: auto;
-	}
-	/* Not visibile */
-	.mobile-extra-info {
+	.navbar__logo-name-role {
 		display: none !important;
 		margin-top: auto;
 	}
@@ -274,20 +252,6 @@ a.close.disabled {
 		display: block !important;
 		margin-top: auto;
 	}
-}
-
-/* Between 768 and 1024 pixels */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-	/* Not visible */
-	.navbar__logo-name-role {
-		display: none !important;
-		margin-top: auto;
-	}
-    /* Not visible */
-    .service__mobile-breadcrumb {
-        display: none !important;
-        margin-top: auto;
-    }
 }
 
 /* Fade effect */

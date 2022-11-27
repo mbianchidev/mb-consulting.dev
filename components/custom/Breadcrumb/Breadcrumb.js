@@ -19,7 +19,7 @@ export default function Breadcrumb({ router, style }) {
   }, [router.asPath]);
 
   if (!style) {
-    style = "ml-4 font-light .service__mobile-breadcrumb";
+    style = "ml-4 font-light";
   }
 
   return (
