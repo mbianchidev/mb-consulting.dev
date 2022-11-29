@@ -2,7 +2,6 @@ import React from "react";
 import userData from "@constants/data";
 import { useRouter } from "next/router";
 import Head  from "next/head";
-import Script from 'next/script'
 import * as ga from "@lib/ga";
 import GoogleScript from "@custom/Cookies/GoogleScript";
 import GoogleTag from "@custom/Cookies/GoogleTag";
@@ -45,6 +44,8 @@ export function reportWebVitals(metric) {
 
 export default function ContainerBlock({ children, ...customMeta }) {
   const router = useRouter();
+
+  const consentValue = getCookieConsentValue("mb-consulting-dev");
 
   const meta = {
     title: "MBit Consulting - DevOps | SRE | Coach | SWE",
