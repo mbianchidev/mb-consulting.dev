@@ -20,7 +20,7 @@ export default function MBCookies() {
             Cookies.remove("_ga");
             Cookies.remove("_gat");
             Cookies.remove("_gid")
-            Cookies.remove("_ga_"+process.env.GA_TRACKING_ID);
+            Cookies.remove("_ga_G-B11MCGL84K");
           }}  
           onAccept={() => {
             if (process.env.GA_TRACKING_ID && getCookieConsentValue() === "true") {
