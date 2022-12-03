@@ -2,8 +2,10 @@ import React from "react";
 import userData from "@constants/data";
 import { useRouter } from "next/router";
 import Head  from "next/head";
-import Script from 'next/script'
 import * as ga from "@lib/ga";
+import GoogleScript from "@custom/Cookies/GoogleScript";
+import GoogleTag from "@custom/Cookies/GoogleTag";
+import CookieConsent, { Cookies, getCookieConsentValue } from "react-cookie-consent";
 
 export function reportWebVitals(metric) {
   switch (metric.name) {
@@ -43,8 +45,7 @@ export function reportWebVitals(metric) {
 export default function ContainerBlock({ children, ...customMeta }) {
   const router = useRouter();
 
-  const processEnvGA = "G-B11MCGL84K";
-  const processEnvGASource = "https://www.googletagmanager.com/gtag/js?id="+processEnvGA;
+  const consentValue = getCookieConsentValue("mb-consulting-dev");
 
   const meta = {
     title: "MBit Consulting - DevOps | SRE | Coach | SWE",
@@ -82,24 +83,12 @@ export default function ContainerBlock({ children, ...customMeta }) {
           <meta property="article:published_time" content={meta.date} />
         ): null}
       </Head>
-      <Script
-          strategy="afterInteractive"
-          src={`${processEnvGASource}`}
-        />
-        <Script
-          id="gtag-init"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${processEnvGA}', {
-              page_path: window.location.pathname,
-            });
-          `
-          }} 
-        />
+      {consentValue === "true" ? (
+        <GoogleScript/>
+      ) : null}
+      {consentValue === "true" ? (
+        <GoogleTag/>
+      ) : null}
         <div>{children}</div>
     </div>
   );
