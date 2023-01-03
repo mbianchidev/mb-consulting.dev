@@ -64,7 +64,7 @@ export default function Service({ service }) {
             <p className={largeTextStyle}>{service.callout}</p>
             {/*Service CTA*/}
             <Link href={{ pathname: "/contacts", query: { serviceName: service.slug} }} passHref>
-              <button className="dark:bg-[#00B2CA] bg-[#33A1FD] rounded-md w-1/2 mx-2 mt-8 py-2 text-gray-200 dark:text-gray-200 text-xl font-bold">{service.CTA}</button>
+              <button className="dark:bg-mb_tertiary bg-mb_quaternary rounded-md w-1/2 mx-2 mt-8 py-2 text-gray-200 dark:text-gray-200 text-xl font-bold">{service.CTA}</button>
             </Link>
             <br></br>
             <br></br>

@@ -1,6 +1,7 @@
 import React from "react";
 import mailData from "@constants/mail";
 import Breadcrumb from "@custom/Breadcrumb/Breadcrumb";
+import CookieConsent, { Cookies, resetCookieConsentValue } from "react-cookie-consent";
 import Link from "next/link";
 
 export default function CookiePolicy() {
@@ -17,6 +18,22 @@ export default function CookiePolicy() {
 
       <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
         <div className="text-container mx-auto pt-20" style={{marginLeft : "10px"}}>
+          
+          <h1 className="font-bold text-xl" style={{textAlign : "center"}}>Revoke cookie consent</h1>
+          <br></br>
+          <div>
+            <p className="text-xl text-gray-700 dark:text-gray-300">You can revoke consent by clicking on this button.</p>
+            <br></br>
+            <button className="dark:bg-mb_tertiary bg-mb_quaternary rounded-md w-1/2 mx-2 mt-8 py-2 text-gray-200 dark:text-gray-200 text-xl font-bold" onClick={() => {
+              resetCookieConsentValue("mb-consulting-dev");
+              window.location.reload();
+            }}>
+              Revoke consent
+            </button>
+            <br></br>
+            <p className="text-sm">You can also revoke your consent at any time by deleting the cookies stored in your browser. You can find out how to do this in the help function of your browser.</p>
+          </div>
+          <br></br>
 
           <h1 className="font-bold text-xl" style={{textAlign : "center"}}>Tracking Cookies Data</h1>
           <br></br>
