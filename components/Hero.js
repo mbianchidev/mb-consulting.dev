@@ -74,7 +74,7 @@ export default function Hero() {
         <br></br>
         <p className="font-mono dark:text-gray-100" style={{fontSize: catchyPhraseFontSize}}>{heroData.hero.catchyPhrase}</p>
         <Link href="/contacts" passHref>
-          <button className="dark:bg-[#00B2CA] bg-[#33A1FD] rounded-md w-1/2 mx-2 mt-8 py-2 text-gray-200 dark:text-gray-200 text-xl font-bold">{CTA}</button>
+          <button className="dark:bg-mb_tertiary bg-mb_quaternary rounded-md w-1/2 mx-2 mt-8 py-2 text-gray-200 dark:text-gray-200 text-xl font-bold">{CTA}</button>
         </Link>
         
       </div>

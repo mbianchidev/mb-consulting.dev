@@ -200,7 +200,7 @@ export default function ContactForm() {
       {/* Submit Button */}
       <button
         type="submit"
-        className="bg-[#00B2CA] rounded-md w-1/2 mx-4 mt-8 py-2 text-gray-50 text-xs font-bold"
+        className="dark:bg-mb_tertiary bg-mb_quaternary rounded-md w-1/2 mx-4 mt-8 py-2 text-gray-50 text-xs font-bold"
       >
         Send
       </button>

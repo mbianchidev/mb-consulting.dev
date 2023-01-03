@@ -15,7 +15,8 @@ module.exports = {
       colors: {
           mb_primary: "#02058F",
           mb_secondary: "#2376C7",
-          mb_tertiary: "",
+          mb_tertiary: "#00B2CA",
+          mb_quaternary: "#33A1FD",
       },
     },
   },
