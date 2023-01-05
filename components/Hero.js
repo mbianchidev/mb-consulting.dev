@@ -33,28 +33,28 @@ export default function Hero() {
         {/* Fancy writings */}
         <RoughNotationGroup show={true}>
           <RainbowHighlight color={color[0]}>
-            <Link href={heroData.hero.firstLink} passHref>
+            <Link href={heroData.hero.kubeLabLink} passHref>
               <h1 className={titleStyle}>
                {heroData.hero.firstPrinciple}
               </h1>
             </Link>
           </RainbowHighlight>
           <RainbowHighlight color={color[1]}>
-            <Link href={heroData.hero.secondLink} passHref>
+            <Link href={heroData.hero.kubeLabLink} passHref>
               <h1 className={titleStyle}>
                 {heroData.hero.secondPrinciple}
               </h1>
             </Link>
           </RainbowHighlight>
           <RainbowHighlight color={color[2]}>
-            <Link href={heroData.hero.thirdLink} passHref>
+            <Link href={heroData.hero.kubeLabLink} passHref>
               <h1 className={titleStyle}>
                 {heroData.hero.thirdPrinciple}
               </h1>
             </Link>
           </RainbowHighlight>
           <RainbowHighlight color={color[3]}>
-            <Link href={heroData.hero.fourthLink} passHref>
+            <Link href={heroData.hero.kubeLabLink} passHref>
               <h1 className={titleStyle}>
                 {heroData.hero.fourthPrinciple}
               </h1>
