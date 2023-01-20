@@ -59,7 +59,7 @@ const heroData = {
     thirdLink: "/service/sre-devsecops",
     fourthPrinciple: "Innovate",
     fourthLink: "/service/cto-as-a-service",
-    kubeLabLink: "https://kubelab.cloud",
+    kubeLabLink: "https://www.kubelab.cloud/",
     CTAs: ["Let's talk!", "Work together!", "Need a DevOps?", "Go cloud!", "Don't click here!", "Grab your free call!"],
   },
 };
