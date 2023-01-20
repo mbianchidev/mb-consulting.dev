@@ -24,7 +24,7 @@ export default function CookiePolicy() {
           <div>
             <p className="text-xl text-gray-700 dark:text-gray-300">You can revoke consent by clicking on this button.</p>
             <br></br>
-            <button className="dark:bg-mb_tertiary bg-mb_quaternary rounded-md w-1/2 mx-2 mt-8 py-2 text-gray-200 dark:text-gray-200 text-xl font-bold" onClick={() => {
+            <button className="dark:bg-mb_tertiary bg-mb_quaternary rounded-md mx-2 mt-8 py-2 px-2 text-gray-200 dark:text-gray-200 text-xl font-bold" onClick={() => {
               resetCookieConsentValue("mb-consulting-dev");
               window.location.reload();
             }}>
@@ -76,7 +76,7 @@ export default function CookiePolicy() {
             <ul>
               <li>mb-consulting-dev: functional first party cookie, used to operate the service and to store your preferences (1 year)</li>
               <li>_ga: analytics third party cookie (Google.com), used to analyze this site traffic and performance (2 years)</li>
-              <li>_ga_*: technical third party cookie, identifies my Google Analytics account (2 years)</li>
+              <li>_ga_*: technical third party cookie, identifies our Google Analytics account (2 years)</li>
             </ul>
             <br></br>
             This Cookie Policy may be updated from time to time. Any change will be posted on this page.<br></br>
