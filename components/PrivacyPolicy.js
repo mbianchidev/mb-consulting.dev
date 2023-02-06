@@ -60,7 +60,7 @@ export default function PrivacyPolicy() {
             <h3 className={h3TextStyle}>Personal Data</h3>
             <br></br> 
 
-            While using this Service, I may ask you to provide us with certain personally identifiable information that can be used to contact or identify you (<b>"Personal Data"</b>). <br></br>
+            While using this Service, I may ask you to provide me with certain personally identifiable information that can be used to contact or identify you (<b>"Personal Data"</b>). <br></br>
             Personally identifiable information may include, but is not limited to:<br></br>
             <ul>
               <li>Email address</li>
@@ -100,7 +100,7 @@ export default function PrivacyPolicy() {
               <li>to monitor the usage of this Service;</li>
               <li>to detect, prevent and address technical issues;</li>
               <li>to fulfill any other purpose for which you provide it;</li>
-              <li>to carry out my obligations and enforce my rights arising from any contracts entered into between you and us, including for billing and collection;</li>
+              <li>to carry out my obligations and enforce my rights arising from any contracts entered into between you and me, including for billing and collection;</li>
               <li>to provide you with news, special offers and general information about other goods, services and events which I offer that are similar to those that you have already purchased or enquired about (only if you have opted to receive such information);</li>
               <li>in any other way it is described when you provide the information;</li>
               <li>for any other purpose with your explicit consent.</li>
@@ -143,7 +143,7 @@ export default function PrivacyPolicy() {
               <li>to my affiliates;</li>
               <li>to contractors, service providers, and other third parties used to support my business;</li>
               <li>to fulfill the purpose for which you provide it (e.g. consultancy requests);</li>
-              <li>for any other purpose disclosed by us when you provide the information;</li>
+              <li>for any other purpose disclosed by me when you provide the information;</li>
               <li>with your consent in any other cases;</li>
               <li>if I believe disclosure is necessary or appropriate to protect the rights, property, or safety of the Company.</li>
             </ul>
@@ -151,7 +151,7 @@ export default function PrivacyPolicy() {
             <h2 className={h2TextStyle}>Security of Data</h2>
             <br></br>
 
-            The security of your data is important to us but remember that no method of transmission over the Internet or method of electronic storage is 100% secure.<br></br> 
+            The security of your data is important to me but remember that no method of transmission over the Internet or method of electronic storage is 100% secure.<br></br> 
             While I strive to use commercially acceptable means to protect your Personal Data, I cannot guarantee its absolute security.<br></br>
             In case of data breaches or hacks, I will notify you as soon as possible while taking appropriate actions to protect your data and legally prosecute the entity responsible for the attack.<br></br>
           </div>
@@ -162,7 +162,7 @@ export default function PrivacyPolicy() {
             If you are a resident of the European Union (EU) and European Economic Area (EEA), you have certain data protection rights, covered by GDPR.<br></br> 
             – See more at <u><Link target="_blank" rel="noopener noreferrer" href="https://eur-lex.europa.eu/eli/reg/2016/679/oj">eur-lex europa site</Link></u>.<br></br>
             I aim to take reasonable steps to allow you to correct, amend, delete, or limit the use of your Personal Data.<br></br>
-            If you wish to be informed what Personal Data I hold about you and if you want it to be removed from my system, please contact us at: <Link href={mailTo}><u>privacy@mb-consulting.dev</u></Link>.<br></br>
+            If you wish to be informed what Personal Data I hold about you and if you want it to be removed from my system, please contact me at: <Link href={mailTo}><u>privacy@mb-consulting.dev</u></Link>.<br></br>
             You have the following data protection rights (even when living outside EU):<br></br>
             <ul>
               <li>the right to access, update or to delete the information I have on you;</li>
@@ -195,7 +195,7 @@ export default function PrivacyPolicy() {
               <li>users can visit this site anonymously;</li>
               <li>this Privacy Policy link includes the word "Privacy", and can easily be found on the page specified above on the home page of this website;</li>
               <li>users will be notified of any privacy policy changes on this Privacy Policy Page;</li>
-              <li>users are able to change their personal information by emailing us at <Link href={mailTo}><u>privacy@mb-consulting.dev</u></Link>.</li>
+              <li>users are able to change their personal information by emailing me at <Link href={mailTo}><u>privacy@mb-consulting.dev</u></Link>.</li>
             </ul>
             <br></br>
 
@@ -210,7 +210,7 @@ export default function PrivacyPolicy() {
           <br></br>
           <div className={normalTextStyle}>
             If you are a California resident, you are entitled to learn what data is being collected about you, ask to delete your data and not to sell (or share) it.<br></br> 
-            To exercise your data protection rights, you can ask us: 
+            To exercise your data protection rights, you can ask me: 
             <br></br>
             <br></br>
             <b>What personal information I have about you.</b><br></br>
@@ -226,7 +226,7 @@ export default function PrivacyPolicy() {
             </ul>
             <br></br>
 
-            Please note, you are entitled to ask us to provide you with this information up to two times in a rolling twelve-month period.<br></br> 
+            Please note, you are entitled to ask me to provide you with this information up to two times in a rolling twelve-month period.<br></br> 
             When you make this request, the information provided may be limited to the personal information I collected about you in the previous 12 months.<br></br>  
 
             <br></br>
@@ -251,7 +251,7 @@ export default function PrivacyPolicy() {
           <h1 className={h1TextStyle} style={{textAlign : "center"}}>Service Providers</h1>
           <br></br>
           <div className={normalTextStyle}>
-            I may employ third party companies and individuals to facilitate this Service (<b>"Service Providers"</b>), provide Service on my behalf, perform Service-related services or assist us in analysing how this Service is used.<br></br>
+            I may employ third party companies and individuals to facilitate this Service (<b>"Service Providers"</b>), provide Service on my behalf, perform Service-related services or assist me in analysing how this Service is used.<br></br>
             These third parties have access to your Personal Data only to perform these tasks on my behalf and are obligated not to disclose or use it for any other purpose.<br></br>
           </div>
 
@@ -315,7 +315,7 @@ export default function PrivacyPolicy() {
           <h1 className={h1TextStyle} style={{textAlign : "center"}}>Links to Other Sites</h1>
           <br></br>
           <div className={normalTextStyle}>
-            This site may contain links to other sites that are not operated by us. If you click a third party link, you will be directed to that third party's site.<br></br>
+            This site may contain links to other sites that are not operated by me. If you click a third party link, you will be directed to that third party's site.<br></br>
             I strongly advise you to review the Privacy Policy of every site you visit.<br></br>
             I have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.<br></br>
           </div>
@@ -325,7 +325,7 @@ export default function PrivacyPolicy() {
           <div className={normalTextStyle}>
             My Services are not intended for use by children under the age of 13 (<b>"Children"</b>).<br></br>
             I do not knowingly collect personally identifiable information from Children under 13.<br></br> 
-            If you become aware that a Child has provided this Service with Personal Data, please contact us at <Link href={mailTo}><u>privacy@mb-consulting.dev</u></Link>.<br></br>
+            If you become aware that a Child has provided this Service with Personal Data, please contact me at <Link href={mailTo}><u>privacy@mb-consulting.dev</u></Link>.<br></br>
             If I become aware that Personal Data from Children has been collected, I take steps to remove that information.<br></br>
           </div>
 
@@ -337,10 +337,10 @@ export default function PrivacyPolicy() {
             You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.<br></br>
           </div>
 
-          <h1 className={h1TextStyle} style={{textAlign : "center"}}>Contact us</h1>
+          <h1 className={h1TextStyle} style={{textAlign : "center"}}>Contact me</h1>
           <br></br>
           <div className={normalTextStyle}>
-            If you have any questions about this Privacy Policy, please contact us at <Link href={mailTo}><u>privacy@mb-consulting.dev</u></Link>.
+            If you have any questions about this Privacy Policy, please contact me at <Link href={mailTo}><u>privacy@mb-consulting.dev</u></Link>.
           </div>
 
         </div>
