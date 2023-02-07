@@ -19,19 +19,23 @@ export default function CookiePolicy() {
       <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
         <div className="text-container mx-auto pt-20" style={{marginLeft : "10px"}}>
           
-          <h1 className="font-bold text-xl" style={{textAlign : "center"}}>Revoke cookie consent</h1>
+          <h1 className="font-bold text-xl" style={{textAlign : "center"}}>Reset cookie consent</h1>
           <br></br>
           <div>
-            <p className="text-xl text-gray-700 dark:text-gray-300">You can revoke consent by clicking on this button.</p>
+            <p className="text-xl text-gray-700 dark:text-gray-300">You can reset consent by clicking on this button.</p>
             <br></br>
             <button className="dark:bg-mb_tertiary bg-mb_quaternary rounded-md mx-2 mt-8 py-2 px-2 text-gray-200 dark:text-gray-200 text-xl font-bold" onClick={() => {
               resetCookieConsentValue("mb-consulting-dev");
+              Cookies.remove("_ga");
+              Cookies.remove("_gat");
+              Cookies.remove("_gid")
+              Cookies.remove("_ga_B11MCGL84K");             
               window.location.reload();
             }}>
-              Revoke consent
+              Reset consent
             </button>
             <br></br>
-            <p className="text-sm">You can also revoke your consent at any time by deleting the cookies stored in your browser. You can find out how to do this in the help function of your browser.</p>
+            <p className="text-sm">You can also reset your consent at any time by deleting the cookies stored in your browser. You can find out how to do this in the help function of your browser.</p>
           </div>
           <br></br>
 
@@ -84,10 +88,10 @@ export default function CookiePolicy() {
             For every other concern about your privacy please visit the <u><Link target="_blank" rel="noopener noreferrer" href="/privacy-policy">privacy policy page</Link></u>.<br></br>
           </div>  
 
-          <h1 className="font-bold text-xl" style={{textAlign : "center"}}>Contact us</h1>
+          <h1 className="font-bold text-xl" style={{textAlign : "center"}}>Contact me</h1>
           <br></br>
           <div className="text-xl text-gray-700 mb-4 dark:text-gray-300">
-            If you have any questions about this Cookie Policy, please contact us at <Link href={mailTo}><u>{mailData.privacyMail}</u></Link>.
+            If you have any questions about this Cookie Policy, please contact me at <Link href={mailTo}><u>{mailData.privacyMail}</u></Link>.
           </div>
 
         </div>

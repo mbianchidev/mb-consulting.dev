@@ -35,7 +35,7 @@ export default function MBCookies() {
           buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
           expires={365}
         >
-        This website uses the smallest amount of cookies possible to enhance the user experience and allow us to perform some traffic/performance analysis.
+        This website uses the smallest amount of cookies possible to enhance the user experience and allows me to perform some traffic/performance analysis.
         For more info checkout <u><Link target="_blank" rel="noopener noreferrer" href="/cookie-policy">my cookies policy</Link></u>.
         What's a cookie? Checkout this <u><Link target="_blank" rel="noopener noreferrer" href={userData.cookieUrl}>informative article about cookies</Link></u> to learn more!
         </CookieConsent>

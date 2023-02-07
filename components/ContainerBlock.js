@@ -49,7 +49,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
 
   const meta = {
     title: "MBit Consulting - DevOps | SRE | Coach | SWE",
-    description: `Learn more about us and our services.`,
+    description: `Learn more about me and our services.`,
     image: "/images/propic.webp",
     type: "website",
     ...customMeta,

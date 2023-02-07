@@ -24,9 +24,9 @@ const experiencesData = {
       companyLogo: "/images/clients/kubelab.webp",
       companyLogoX: 187,
       companyLogoY: 62,
-      companyUrl: "https://www.kubelab.com/",
+      companyUrl: "https://www.kubelab.cloud/",
       role: "Chief Technology Officer",
-      story: "I partnered with KubeLab to help their customers with their cloud native journeys. They liked my work so much that they asked me to join the team as their CTO.",
+      story: "I joined KubeLab as CTO because I believe in its values, our aim is to enable people and businesses to make a positive impact on the world, through technology. My effort towards our clients is to be the bridge that fills the distance between their business needs and our technology solutions. My effort towards my team is to enable their full potential and ensure a smooth developer experience.",
       year: "2022-now",
       show: true
     },
@@ -38,9 +38,9 @@ const experiencesData = {
       companyLogo: "/images/clients/kubelab.webp",
       companyLogoX: 187,
       companyLogoY: 62,
-      companyUrl: "https://www.kubelab.com/",
+      companyUrl: "https://www.kubelab.cloud/",
       role: "Freelance Consultant",
-      story: "I partnered with KubeLab to help their customers with their cloud native journeys. I'm also a member of the KubeLab team, helping to build the company's cloud native expertise.",
+      story: "I partnered with KubeLab to help them to shape their company.",
       year: "2022",
       show: true
     },
