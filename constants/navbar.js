@@ -11,6 +11,10 @@ const navbarData = {
     {
       link: "/experience",
       name: "Experience",
+    },
+    {
+      link: "https://medium.com/@mbianchidev",
+      name: "Blog",
     }
   ],
 };

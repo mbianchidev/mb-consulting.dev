@@ -71,7 +71,7 @@ export default function CookiePolicy() {
               <li>Analysis Cookies: Analysis Cookies are used to better understand user traffic flows and improve this Service accordingly.</li>
             </ul>
             <br></br>
-            We don't use advertising cookies and there is no advertisement on this site.
+            I don't use advertising cookies and there is no advertisement on this site.
           </div>
 
           <h1 className="font-bold text-xl" style={{textAlign : "center"}}>Cookies details</h1>
