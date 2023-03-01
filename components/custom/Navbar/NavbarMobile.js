@@ -9,7 +9,12 @@ export default function NavbarMobile() {
   return (
     <div className="space-x-8 block md:hidden mt-4">
       {React.Children.toArray(navbarData.urls.map((item) => (
-        <Link href={item.link} className={mobileTextStyle}>
+        <Link 
+          href={item.link} 
+          className={mobileTextStyle} 
+          target={item.isExternal === true ? "_blank" : null} 
+          rel={item.isExternal === true ? "noopener noreferrer" : null}
+        >
           {item.name}
         </Link>
       )))}
