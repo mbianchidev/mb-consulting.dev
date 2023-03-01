@@ -15,6 +15,7 @@ const navbarData = {
     {
       link: "https://medium.com/@mbianchidev",
       name: "Blog",
+      isExternal: true,
     }
   ],
 };
