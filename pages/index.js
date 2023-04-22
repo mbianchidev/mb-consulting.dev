@@ -3,6 +3,9 @@ import Hero from "@components/Hero";
 import getLatestRepos from "@lib/getLatestRepos";
 import userData from "@constants/data";
 import FavouriteProjects from "@custom/ProjectShowcase/FavouriteProjects";
+import Badges from "@custom/Badges/Badges";
+
+
 import LatestCode from "@custom/CodeShowcase/LatestCode";
 
 export default function Home({repositories}) {
@@ -12,8 +15,9 @@ export default function Home({repositories}) {
       description="Discover my projects, my code and my thoughts."
     >
       <Hero/>
-      <FavouriteProjects />
-      <LatestCode repositories={repositories} />
+      <FavouriteProjects/>
+      <LatestCode repositories={repositories}/>
+      <Badges/>
     </ContainerBlock>
   );
 }
