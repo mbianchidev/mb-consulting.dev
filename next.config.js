@@ -33,7 +33,7 @@ module.exports = {
       // Existing links/projects
       {
         source: '/telegram',
-        destination: 'https://t.me/mbianchidev',
+        destination: 'https://t.me/mbianchidev_bot',
         permanent: false,
         basePath: false
       },
@@ -48,6 +48,11 @@ module.exports = {
         destination: 'https://github.com/mbianchidev',
         permanent: false,
         basePath: false
+      },
+      {
+        source: '/cv',
+        destination: '/static/Matteo_Bianchi_CV_smart.pdf',
+        permanent: false,
       },
       {
         source: '/twitter',
