@@ -125,7 +125,7 @@ const experiencesData = {
       companyName: "RedHat",
       companyType: "Subsidiary",
       companySector: "Training",
-      companyLogo: "/images/experiences/RedHat.webp",
+      companyLogo: "/images/employers/RedHat.webp",
       companyLogoX: 187,
       companyLogoY: 48,
       companyUrl: "https://www.redhat.com/en",
