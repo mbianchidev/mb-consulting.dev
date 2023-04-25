@@ -121,6 +121,20 @@ const experiencesData = {
       show: true
     },
     {
+      code: "RDHT",
+      companyName: "RedHat",
+      companyType: "Subsidiary",
+      companySector: "Training",
+      companyLogo: "/images/experiences/RedHat.webp",
+      companyLogoX: 187,
+      companyLogoY: 48,
+      companyUrl: "https://www.redhat.com/en",
+      role: "RedHat Trainer",
+      story: "I had to held courses to Extraordy's customers on RedHat technologies.",
+      year: "2022",
+      show: true
+    },
+    {
       code: "ROAR",
       companyName: "Roar",
       companyType: "🇺🇸 Corporate",
