@@ -102,9 +102,23 @@ const experiencesData = {
       companyLogoY: 62,
       companyUrl: "https://www.kubelab.cloud/",
       role: "Chief Technology Officer",
-      story: "Managing clients' projects and explore new opportunities, facilitating agile workflows, upskilling the engineering team (10+ people), setting up a career framework, finding new fits for the team, keeping a tech radar to enable safe adoption of new tools (by building MVPs and demos), designing cloud infrastructures, taking key decisions steering the company long-term tech strategy. All of this while building a product, in stealth mode.",
-      year: "2022-now",
+      story: "Managing clients' projects and explore new opportunities, facilitating agile workflows, upskilling the full remote engineering team (10+ people), setting up a career framework, finding new talents, keeping a tech radar to enable safe adoption of new tools (by building MVPs and demos), designing cloud infrastructures, taking key decisions steering the company long-term tech strategy. All of this while building a cloud native product, in stealth mode.",
+      year: "2023-now",
       show: true
+    },
+    {
+      code: "CYBADV",
+      companyName: "[Redacted]",
+      companyType: "Law Enforcement Agency and Military IT partner",
+      companySector: "Intelligence & Defense",
+      companyLogo: "/images/clients/redacted.webp",
+      companyLogoX: 187,
+      companyLogoY: 62,
+      companyUrl: "https://www.urbandictionary.com/define.php?term=%5BRedacted%5D/",
+      role: "IT Advisor",
+      story: "[Redacted]",
+      year: "2023-now",
+      show: false
     },
     {
       code: "KBLAB",
@@ -115,8 +129,8 @@ const experiencesData = {
       companyLogoX: 187,
       companyLogoY: 62,
       companyUrl: "https://www.kubelab.cloud/",
-      role: "Freelance Consultant",
-      story: "I partnered with KubeLab to help them shape their company policies, training and offering.",
+      role: "Freelance Fractional CTO",
+      story: "I partnered with KubeLab to help them shape their company policies, training and cloud native services offering.",
       year: "2022",
       show: true
     },
@@ -130,7 +144,7 @@ const experiencesData = {
       companyLogoY: 48,
       companyUrl: "https://www.redhat.com/en",
       role: "RedHat Trainer",
-      story: "I had to held courses to Extraordy's customers on RedHat technologies.",
+      story: "I had to held courses to Extraordy's customers on RedHat technologies (Ansible and Linux SysAdmin).",
       year: "2022",
       show: true
     },
@@ -144,7 +158,7 @@ const experiencesData = {
       companyLogoY: 48,
       companyUrl: "https://roarinc.com/",
       role: "Freelance DevOps Engineer | Site Reliability Engineer",
-      story: "Collaborated with Roar to enable DevOps culture in all aspects of the company, starting with CI/CD processes on Azure DevOps and evolving their infrastructure. Automated deployment processes on K8S and increased deployment speed by 100%.",
+      story: "Collaborated with Roar to enable DevOps culture in all aspects of the company, starting with CI/CD processes on Azure DevOps and evolving their infrastructure. Automated deployment processes on K8S clusters by creating a proper CI/CD process (standardized for the whole company) increasing deployment speed by over 100%.",
       year: "2022",
       show: true
     },
@@ -158,7 +172,7 @@ const experiencesData = {
       companyLogoY: 75,
       companyUrl: "https://coopolis.it/",
       role: "Freelance Coach (DevOps)",
-      story: "Enabled them to better understand DevOps culture by teaching classes with in-depth focus on Gitlab and CI/CD processes, they were able to automate and increment deployment speed by a x4 factor.",
+      story: "Enabled the company Devs and Managers to understand DevOps culture by teaching classes with in-depth focuses on Gitlab and CI/CD processes. They were able to automate and increment deployment speed by a x4 factor after the course.",
       year: "2022",
       show: true
     },
@@ -172,7 +186,7 @@ const experiencesData = {
       companyLogoY: 80,
       companyUrl: "https://greenchic.it/",
       role: "Freelance DevOps Engineer | Site Reliability Engineer",
-      story: "Built part of a new cloud infrastructure on AWS for their sustainable fashion e-commerce and hardened their security policies partnering with a 3rd party security company, solved a critical security bug sparing 100k in losses.",
+      story: "Built part of a new cloud infrastructure on AWS for their sustainable fashion e-commerce and hardened their security policies partnering with a 3rd party security company, solved a critical security bug sparing over 100k in potential losses due to sensitive data exposure.",
       year: "2021-2022",
       show: true
     },
@@ -186,7 +200,7 @@ const experiencesData = {
       companyLogoY: 75,
       companyUrl: "https://www.gdf.gov.it/",
       role: "Freelance Coach (DevOps)",
-      story: "Helped their IT sector to improve DevOps practices by delivering a DevOps course and in-depth technical knowledge on Azure. They started to use Azure DevOps and Azure Kubernetes Service (AKS) to deploy their applications after the course.",
+      story: "Helped their IT sector to improve DevOps practices by delivering a DevOps course and in-depth technical knowledge on Azure. They started to use Azure DevOps and Azure Kubernetes Service (AKS) to deploy their applications right after the course, greatly improving their deployment speed.",
       year: "2021",
       show: true
     },
@@ -200,7 +214,7 @@ const experiencesData = {
       companyLogoY: 49,
       companyUrl: "https://www.mvc-technology.eu/",
       role: "Freelance Coach (DevOps)",
-      story: "Delivered DevOps course to their clients helping them to understand how to implement DevOps culture.",
+      story: "Delivered DevOps courses to their clients helping them to understand how to implement DevOps culture.",
       year: "2021",
       show: true
     },
@@ -214,7 +228,7 @@ const experiencesData = {
       companyLogoY: 48,
       companyUrl: "https://www.dshare.com/",
       role: "Freelance DevOps Engineer | Site Reliability Engineer",
-      story: "Managed Azure and AWS infrastructures and some deployments for their news and media platforms. Solved a critical situation where a DDoS attack coming from Chinese and Russian IPs caused a 100% downtime on one of their managed institutional websites.",
+      story: "Managed Azure and AWS infrastructures and deployments for their news and media platforms. Solved a critical situation where a DDoS attack coming from Chinese and Russian IPs caused a 100% downtime on one of their managed institutional websites.",
       year: "2021-2022",
       show: true
     },
@@ -240,7 +254,7 @@ const experiencesData = {
       companyLogoY: 100,
       companyUrl: "https://www.generali.it/",
       role: "Digital Signature & DevOps Consultant",
-      story: "Consultancy offered via InfoCert on digital signature products for the Italian insurance branch of Generali. I was responsible for the migration of their solution from on-premise to AWS EKS cluster, test and production critical deployments on AWS, monitoring of their cloud infra, day to day operations and customer support.",
+      story: "Consultancy offered via InfoCert on digital signature products for the Italian insurance branch of Generali. I was responsible for the migration of their solution from on-premise monolith to a Docker containerized and Kubernetes-based one. All deployed on an AWS EKS cluster, conducted test and production critical deployments on AWS (off-peak hours, night and weekend included), automated the monitoring of their cloud infra exposing data dashboards, managed day to day operations and high end tech support.",
       year: "2019-2021",
       show: true
     },
@@ -253,7 +267,7 @@ const experiencesData = {
       companyLogoY: 50,
       companyUrl: "https://www.enel.it/",
       role: "Digital Signature & DevOps Consultant",
-      story: "Consultancy offered via InfoCert on digital signature products for Enel. I was responsible for remote test and production critical deployments on VMWare provided - Foreman provisioned Linux VMs puppet-configured, integration with multiple custom systems including even-driven dispatcher systems, notification queues, massive bulk signature processes, new features development, and high-end customer support to C-level management.",
+      story: "Consultancy offered via InfoCert on digital signature products for Enel. I was responsible for remote test and production critical deployments on VMWare provided - Foreman provisioned puppet-configured Linux VMs, integration with multiple custom systems including even-driven dispatcher systems, notification queues, massive bulk signature processes, new features development, and high-end tech support to C-level management.",
       year: "2019-2021",
       show: true
     },
@@ -266,7 +280,7 @@ const experiencesData = {
       companyLogoY: 50,
       companyUrl: "https://www.allianz.it/",
       role: "Digital Signature & DevOps Consultant",
-      story: "Consultancy offered via InfoCert on digital signature products for the Italian and French insurance branch of Allianz. I was responsible for the migration of their old digital signature system, orchestration of multiple 3rd party consultants, remote test and production critical deployments on VMWare provided, Foreman provisioned and puppet-configured Linux VMs, new feature implementations, and customer support.",
+      story: "Consultancy offered via InfoCert on digital signature products for the Italian and French insurance branch of Allianz. I was responsible for the migration of their old digital signature system, orchestration of multiple 3rd party consultants, remote test and production critical deployments on VMWare provided, Foreman provisioned and puppet-configured Linux VMs, new features development and tech support.",
       year: "2019-2021",
       show: true
     },
@@ -278,8 +292,8 @@ const experiencesData = {
       companyLogoX: 350,
       companyLogoY: 50,
       companyUrl: "https://www.leonardocompany.com/it/it/",
-      role: "Digital Signature & DevOps Consultant",
-      story: "Consultancy offered via InfoCert on digital signature products for the Finance deparment of Leonardo. I was responsible for remote test and production critical deployments on their on-premise Windows server environment, integration with their SAP systems, and customer support.",
+      role: "Digital Signature & IT Security Consultant",
+      story: "Consultancy offered via InfoCert on digital signature products for the Finance deparment of Leonardo. I was responsible for remote test and production critical deployments on their on-premise Windows server environment, integration with their SAP multiple systems, IT security advisory and customer tech support.",
       year: "2019-2021",
       show: true
     },
@@ -291,8 +305,8 @@ const experiencesData = {
       companyLogoX: 350,
       companyLogoY: 50,
       companyUrl: "https://frontex.europa.eu/",
-      role: "Digital Signature & DevOps Consultant",
-      story: "Consultancy offered via InfoCert on digital signature products for the IT deparment of Frontex. I was responsible for remote test and production critical deployments on their on-premise Linux, integration with their Salesforce systems with custom plugins, and customer support.",
+      role: "Digital Signature & IT Security Consultant",
+      story: "Consultancy offered via InfoCert on digital signature products for the IT deparment of Frontex. I was responsible for test and production critical deployments on their on-premise Linux infra in compliance with EU regulations, integration with their Salesforce systems including custom plugins development, technical support and IT security advisory.",
       year: "2019-2021",
       show: true
     },
@@ -305,7 +319,7 @@ const experiencesData = {
       companyLogoY: 50,
       companyUrl: "https://www.barilla.com/it-it",
       role: "Digital Signature & DevOps Consultant",
-      story: "Consultancy offered via InfoCert on digital signature products for the Sales deparment of Barilla. I was responsible for remote test and production critical deployments on VMWare provided - Foreman provisioned Linux VMs puppet-configured, integration with their Salesforce systems, and customer support.",
+      story: "Consultancy offered via InfoCert on digital signature products for the Sales deparment of Barilla. I was responsible for remote test and production critical deployments on VMWare provided - Foreman provisioned puppet-configured Linux VMs, integration with their Salesforce systems and customer support.",
       year: "2019-2021",
       show: true
     },
@@ -331,7 +345,7 @@ const experiencesData = {
       companyLogoY: 75,
       companyUrl: "https://www.unicredit.it/it.html",
       role: "Digital Signature & DevOps Consultant",
-      story: "Consultancy offered via InfoCert on digital signature products for the Serbian branch of Unicredit Group. I was responsible for remote test and production critical deployments on their on-premise Linux infrastructure and customer support.",
+      story: "Consultancy offered via InfoCert on digital signature products for the Serbian branch of Unicredit Group. I was responsible for remote test and production critical deployments on their on-premise secured Linux infrastructure.",
       year: "2019-2021",
       show: true
     },
@@ -344,7 +358,7 @@ const experiencesData = {
       companyLogoY: 94,
       companyUrl: "https://www.reply.com/it/it/",
       role: "Digital Signature & DevOps Consultant",
-      story: "Consultancy offered via InfoCert on digital signature products for Reply. I was responsible for the critical on-site deployments on their on-premise Windows environment and customer support.",
+      story: "Consultancy offered via InfoCert on digital signature products for Reply. I was responsible for the critical on-site deployments on their on-premise Windows environment serving over 10k users and technical support.",
       year: "2019-2021",
       show: true
     },
@@ -357,7 +371,7 @@ const experiencesData = {
       companyLogoY: 81,
       companyUrl: "https://eco-mind.eu/",
       role: "Senior Software Engineer",
-      story: "Improved my Spring and Java skills by working side by side with valuable professionals both internal and external to the company. Here I learnt the true meaning of the word 'teamwork' and how to work in a team with a diverse set of skills.",
+      story: "Maximized my Spring and Java skills by working side by side with valuable professionals both internal and external to the company. Here I learnt the true meaning of the word 'teamwork' and how to work in a team with a diverse set of skills.",
       year: "2018-2021",
       show: true
     },
@@ -370,7 +384,7 @@ const experiencesData = {
       companyLogoY: 40,
       companyUrl: "https://www.reply.com/it/content/smart-seller",
       role: "Fullstack Software Developer",
-      story: "Got in touch with modern frontend and backend frameworks (Spring and Angular) for the first time. I was able to learn how to use them and how to build reusable components. This was also the first time i got in touch with DevOps culture and started my journey torwards my objective to become a DevOps engineer.",
+      story: "Got in touch with Typescript and Java frameworks (Spring and Angular) for the first time. I was able to learn how to use them and how to build reusable components. This was also the first time i got in touch with DevOps culture and tools like Jenkins. This propelled my journey torwards my objective to become a DevOps engineer.",
       year: "2018",
       show: true
     },
@@ -383,7 +397,7 @@ const experiencesData = {
       companyLogoY: 150,
       companyUrl: "https://www.vodafone.com/",
       role: "Fullstack Software Developer",
-      story: "I worked on a product that was used by the financial group of Vodafone. Here I learnt the importance of refactoring, optimization and keeping up to date with techs. I also learnt how to work in a team and how to work in a fast-paced environment and how to manage a complex IT infrastructure.",
+      story: "I worked on a product that was used by the financial group of Vodafone. Here I learnt the importance of refactoring, optimization and keeping up to date with techs by migrating Oracle DBs to newer versions and Java from 5 to 8. I also learnt how to work in a team and how to work in a fast-paced environment and how to manage a complex VMWare based IT infrastructure.",
       year: "2017-2018",
       show: true
     },
@@ -396,7 +410,7 @@ const experiencesData = {
       companyLogoY: 36,
       companyUrl: "https://www.tenutabene.it/",
       role: "Fullstack Software Developer",
-      story: "I learnt how a startup works and scales up and started my journey in the web development world.",
+      story: "I learnt how a startup works and scales up and started my journey in the web development world. Contributed to an AI and (authorized) scraping-powered price estimation engine for used cars and a web app for the management of the company's car fleet written in Laravel (PHP).",
       year: "2017",
       show: true
     },
@@ -409,7 +423,7 @@ const experiencesData = {
       companyLogoY: 200,
       companyUrl: "https://itisravenna.edu.it/",
       role: "Intern and junior developer",
-      story: "Some jobs as intern and junior developer while I was attending high school. I learnt how to work autonomously in chaotic environments, with little or no guidance.",
+      story: "Some jobs as intern and junior developer while I was attending high school. I learnt how to work autonomously in chaotic environments, with little or no guidance. I started using C#, .NET and learnt how to take advantage of the MVC pattern.",
       year: "2015-2017",
       show: true     
     },
