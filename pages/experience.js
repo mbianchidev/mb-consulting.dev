@@ -4,7 +4,7 @@ import Experience from "../components/Experience";
 
 export default function experience() {
   return (
-    <ContainerBlock title="Experience - MB-Consulting">
+    <ContainerBlock title="Experience" description="A CV, but better">
       <Experience/>
     </ContainerBlock>
   );

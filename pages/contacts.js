@@ -5,7 +5,7 @@ import { Alert } from "@custom/Alert/Alert";
 
 export default function contacts() {
   return (
-    <ContainerBlock title="Contacts - MB-Consulting">
+    <ContainerBlock title="Contacts" description="Just a contact form">
       <Alert/>
       <Contacts/>
     </ContainerBlock>

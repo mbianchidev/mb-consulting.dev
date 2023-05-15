@@ -4,7 +4,7 @@ import Clients from "@components/Clients";
 
 export default function clients() {
   return (
-    <ContainerBlock title="Clients - MB-Consulting">
+    <ContainerBlock title="Clients" description="My former, current and future clients"> 
       <Clients/>
     </ContainerBlock>
   );

@@ -63,12 +63,9 @@ export default function Hero() {
         </RoughNotationGroup>
 
         {/* Responsive Mobile image */}   
-
-        <Link href="/about" passHref>
-          <div className="relative w-full h-56 md:h-[500px] hero__mobile-image" style={{position: "relative" }}>
-            <Image src={userData.mobileAvatarUrl} sizes="100vw" alt="propic" fill/>
-          </div>
-        </Link>
+        <div className="relative w-full h-56 md:h-[500px] hero__mobile-image" style={{position: "relative" }}>
+          <Image src={userData.mobileAvatarUrl} sizes="100vw" alt="propic" fill/>
+        </div>
   
         {/*CTA - Call to action*/}
         <br></br>
@@ -83,9 +80,7 @@ export default function Hero() {
         <div className="w-3/4 ">
 
           {/* Desktop Image + Link */}
-          <Link href="/about" passHref>
-            <Image src={userData.avatarUrl} alt="propic" width={954} height={1430} className="shadow hero__desktop-image" priority />
-          </Link>
+          <Image src={userData.avatarUrl} alt="propic" width={954} height={1430} className="shadow hero__desktop-image" priority />
 
           {/* Funny sentence */}
           <div className="flex flex-row justify-between mt-4">
