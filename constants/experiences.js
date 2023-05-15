@@ -107,20 +107,6 @@ const experiencesData = {
       show: true
     },
     {
-      code: "CYBADV",
-      companyName: "[Redacted]",
-      companyType: "Law Enforcement Agency and Military Cybersecurity partner",
-      companySector: "Intelligence & Defense",
-      companyLogo: "/images/clients/redacted.webp",
-      companyLogoX: 187,
-      companyLogoY: 62,
-      companyUrl: "https://www.urbandictionary.com/define.php?term=%5BRedacted%5D/",
-      role: "IT Advisor",
-      story: "[Redacted]",
-      year: "2023-now",
-      show: false
-    },
-    {
       code: "KBLAB",
       companyName: "KubeLab",
       companyType: "Startup",
