@@ -7,8 +7,8 @@ const userData = {
   avatarUrl: "/images/propic.webp",
   mobileAvatarUrl: "/images/propic-mobile.webp",
   address: "Full remote",
-  it_vat: "IT11846470968",
-  it_sdi: "M5UXCR1",
+  it_vat: "IT11846470968", //DEPRECATED
+  it_sdi: "M5UXCR1", //DEPRECATED
   domain: "mb-consulting.dev",
   cookieUrl: "https://www.allaboutcookies.org/",
   // see next.config.js

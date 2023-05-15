@@ -109,7 +109,7 @@ const experiencesData = {
     {
       code: "CYBADV",
       companyName: "[Redacted]",
-      companyType: "Law Enforcement Agency and Military IT partner",
+      companyType: "Law Enforcement Agency and Military Cybersecurity partner",
       companySector: "Intelligence & Defense",
       companyLogo: "/images/clients/redacted.webp",
       companyLogoX: 187,

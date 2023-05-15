@@ -5,7 +5,7 @@ import Head  from "next/head";
 import * as ga from "@lib/ga";
 import GoogleScript from "@custom/Cookies/GoogleScript";
 import GoogleTag from "@custom/Cookies/GoogleTag";
-import CookieConsent, { Cookies, getCookieConsentValue } from "react-cookie-consent";
+import { getCookieConsentValue } from "react-cookie-consent";
 
 export function reportWebVitals(metric) {
   switch (metric.name) {
@@ -42,14 +42,14 @@ export function reportWebVitals(metric) {
   }
 }
 
-export default function ContainerBlock({ children, ...customMeta }) {
+export default function ContainerBlock({ children, description, ...customMeta }) {
   const router = useRouter();
 
   const consentValue = getCookieConsentValue("mb-consulting-dev");
 
   const meta = {
-    title: "MBit Consulting - DevOps | SRE | Coach | SWE",
-    description: `Learn more about me and our services.`,
+    title: "Matteo Bianchi - CTO | DevOps | SRE | Coach | Software Engineer",
+    description: `${description ? description : "Learn more about me and our services."}`,
     image: "/images/propic.webp",
     type: "website",
     ...customMeta,

@@ -39,7 +39,8 @@ export default function ContactForm() {
   }, [selectedService, query.serviceName]);
 
   function onChange (event) {
-    const href = `/contacts?serviceName=${event.target.value}`;
+    const serviceName = encodeURIComponent(event.target.value);
+    const href = `/contacts?serviceName=${serviceName}`;
     setParent(event.target.value);
     // update the url based on selected service
     router.push(href, href, { shallow: true })

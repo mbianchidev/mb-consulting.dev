@@ -22,8 +22,6 @@ export default function Home({repositories}) {
   );
 }
 
-// Temporary disabled because my github is too poor 
-
 export const getServerSideProps = async () => {
   let token = process.env.GITHUB_AUTH_TOKEN;
   const repositories = await getLatestRepos(userData, token);
