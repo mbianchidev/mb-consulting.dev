@@ -55,8 +55,19 @@ module.exports = {
         permanent: false,
       },
       {
+        source: '/resume',
+        destination: '/static/Matteo_Bianchi_CV_smart.pdf',
+        permanent: false,
+      },
+      {
         source: '/twitter',
         destination: 'https://twitter.com/mbianchidev',
+        permanent: false,
+        basePath: false
+      },
+      {
+        source: '/cncf',
+        destination: 'https://community.cncf.io/u/m9crwf/#/about',
         permanent: false,
         basePath: false
       },
