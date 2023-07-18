@@ -32,19 +32,19 @@ module.exports = {
       },
       // Existing links/projects
       {
-        source: '/telegram',
+        source: '/tg',
         destination: 'https://t.me/mbianchidev_bot',
         permanent: false,
         basePath: false
       },
       {
-        source: '/linkedin',
+        source: '/li',
         destination: 'https://www.linkedin.com/in/mbianchidev/',
         permanent: false,
         basePath: false
       },
       {
-        source: '/github',
+        source: '/gh',
         destination: 'https://github.com/mbianchidev',
         permanent: false,
         basePath: false
@@ -55,8 +55,19 @@ module.exports = {
         permanent: false,
       },
       {
-        source: '/twitter',
+        source: '/resume',
+        destination: '/static/Matteo_Bianchi_CV_smart.pdf',
+        permanent: false,
+      },
+      {
+        source: '/tw',
         destination: 'https://twitter.com/mbianchidev',
+        permanent: false,
+        basePath: false
+      },
+      {
+        source: '/cncf',
+        destination: 'https://community.cncf.io/u/m9crwf/#/about',
         permanent: false,
         basePath: false
       },
@@ -67,7 +78,7 @@ module.exports = {
         basePath: false
       },
       {
-        source: '/stackoverflow',
+        source: '/so',
         destination: 'https://stackoverflow.com/users/7410528/mbianchidev',
         permanent: false,
         basePath: false
@@ -79,14 +90,15 @@ module.exports = {
         basePath: false
       },
       {
-        source: '/newsletter',
+        //deprecated
+        source: '/nl',
         destination: 'https://funews.substack.com/',
         permanent: false,
         basePath: false
       },
       // Future links for future projects
       {
-        source: '/streaming',
+        source: '/twitch',
         destination: 'https://www.twitch.tv/mbianchidev',
         permanent: false,
         basePath: false
@@ -108,17 +120,17 @@ module.exports = {
         permanent: false,
       },
       {
-        source: '/youtube',
+        source: '/yt',
         destination: '/work-in-progress',
         permanent: false,
       },
       {
-        source: '/instagram',
+        source: '/insta',
         destination: '/work-in-progress',
         permanent: false,
       },
       {
-        source: '/facebook',
+        source: '/fb',
         destination: '/work-in-progress',
         permanent: false,
       },

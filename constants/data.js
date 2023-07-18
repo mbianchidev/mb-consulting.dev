@@ -14,10 +14,10 @@ const userData = {
   // see next.config.js
   techStack: "/stack",
   socialLinks: {
-    twitter: "/twitter",
-    telegram: "/telegram",
-    linkedin: "/linkedin",
-    github: "/github",
+    twitter: "/tw",
+    telegram: "/tg",
+    linkedin: "/li",
+    github: "/gh",
     medium: "/blog",
     linktree: "/all-links",
   },
