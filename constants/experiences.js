@@ -102,7 +102,7 @@ const experiencesData = {
       companyLogoY: 62,
       companyUrl: "https://www.kubelab.cloud/",
       role: "Chief Technology Officer",
-      story: "Managing clients' projects and explore new opportunities, facilitating agile workflows, upskilling the full remote engineering team (10+ people), setting up a career framework, finding new talents, keeping a tech radar to enable safe adoption of new tools (by building MVPs and demos), designing cloud infrastructures, taking key decisions steering the company long-term tech strategy. All of this while building a cloud native product, in stealth mode.",
+      story: "Managing a highly distributed engineering team (up to 10+ people) applying a mix of Scrum and Kanban, hiring, setting up a career framework, keeping a tech radar to enable safe adoption of new tools, taking key decisions steering the company long-term strategy, while designing, implementing and pitching to fund the KubeLab Platform. Making Kubernetes easy, one feature at a time.",
       year: "2023-now",
       show: true
     },
