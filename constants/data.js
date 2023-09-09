@@ -3,7 +3,7 @@
 const userData = {
   githubUsername: "mbianchidev",
   name: "Matteo Bianchi",
-  role: "Chief Technology Officer",
+  role: "Code | Product | Finance | Tech",
   avatarUrl: "/images/propic.webp",
   mobileAvatarUrl: "/images/propic-mobile.webp",
   address: "Full remote",
