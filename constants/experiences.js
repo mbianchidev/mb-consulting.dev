@@ -102,22 +102,8 @@ const experiencesData = {
       companyLogoY: 62,
       companyUrl: "https://www.kubelab.cloud/",
       role: "Chief Technology Officer",
-      story: "Managing a highly distributed engineering team (up to 10+ people) applying a mix of Scrum and Kanban, hiring, setting up a career framework, keeping a tech radar to enable safe adoption of new tools, taking key decisions steering the company long-term strategy, while designing, implementing and pitching to fund the KubeLab Platform. Making Kubernetes easy, one feature at a time.",
-      year: "2023-now",
-      show: true
-    },
-    {
-      code: "KBLAB",
-      companyName: "KubeLab",
-      companyType: "Startup",
-      companySector: "Cloud Native & DevOps",
-      companyLogo: "/images/clients/kubelab.webp",
-      companyLogoX: 187,
-      companyLogoY: 62,
-      companyUrl: "https://www.kubelab.cloud/",
-      role: "Freelance Fractional CTO",
-      story: "I partnered with KubeLab to help them shape their company policies, training and cloud native services offering.",
-      year: "2022",
+      story: "Started as fractional CTO then first key employee, I managed a highly distributed engineering team (up to 10+ people) applying a mix of Scrum and Kanban, hiring, set up a career framework, built a tech radar to enable adoption of tools, took care of DevEx and took key decisions steering the company strategy. I was also involved in fundraising activities, design and implementation of a Kubernetes management SaaS platform based on kubelab-cli OSS project. We failed to find the PMF and had to step back with lots of lessons learned.",
+      year: "2023",
       show: true
     },
     {
