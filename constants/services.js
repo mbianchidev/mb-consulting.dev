@@ -120,7 +120,6 @@ const servicesData = {
         `- AWS`,
         `- Azure`,
         `- Google Cloud`,
-        `This service is offered in partnership with KubeLab, a company specialized in Amazon Web Services, Kubernetes and Cloud Native technologies`,
       ],
       callout: 'Are you ready to scale up your business?',
       CTA: 'Schedule a meeting!',
