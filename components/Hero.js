@@ -64,7 +64,7 @@ export default function Hero() {
 
         {/* Responsive Mobile image */}   
         <div className="relative w-full h-56 md:h-[500px] hero__mobile-image" style={{position: "relative" }}>
-          <Image src={userData.mobileAvatarUrl} sizes="100vw" alt="propic" fill/>
+          <Image src={userData.mobileAvatarUrl} sizes="100vw" alt="mobile-propic" fill/>
         </div>
   
         {/*CTA - Call to action*/}
