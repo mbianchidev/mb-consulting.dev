@@ -50,7 +50,7 @@ const techsData = {
       x: 80,
       y: 80,
       level: "70",
-      show: true,
+      show: false,
     },
     {
       name: "Amazon Web Services",
@@ -113,7 +113,7 @@ const techsData = {
       show: true,
     },
     {
-      name: "Terraform",
+      name: "Terraform", // FIXME remove terraform in favor of open-tf
       description: "My favorite IaC tool. It's kinda easy to use and it's very flexible.",
       image: "/images/techs/terraform.webp",
       url: "https://www.terraform.io",
@@ -130,7 +130,7 @@ const techsData = {
       x: 80,
       y: 80,
       level: "80",
-      show: true,
+      show: false,
     },
     {
       name: "Ansible",
@@ -240,7 +240,7 @@ const techsData = {
       x: 80,
       y: 80,
       level: "70",
-      show: true,
+      show: false,
     },
     {
       name: "AWS CodePipeline",
@@ -250,7 +250,7 @@ const techsData = {
       x: 80,
       y: 80,
       level: "65",
-      show: true,
+      show: false,
     },
     {
       name: "Apache Tomcat",
@@ -260,7 +260,7 @@ const techsData = {
       x: 80,
       y: 80,
       level: "75",
-      show: true,
+      show: false,
     },
     {
       name: "JBoss",
@@ -270,7 +270,7 @@ const techsData = {
       x: 80,
       y: 80,
       level: "75",
-      show: true,
+      show: false,
     },
     {
       name: "NGINX",
@@ -320,7 +320,7 @@ const techsData = {
       x: 80,
       y: 80,
       level: "80",
-      show: true,
+      show: false,
     },
     {
       name: "PostgreSQL",
@@ -340,8 +340,9 @@ const techsData = {
       x: 80,
       y: 80,
       level: "75",
-      show: true,
+      show: false,
     },
+    // TODO add Golang
     {
       name: "Java",
       description: "My first programming language, I still love it. It's a fantastic choice for enterprise applications and with new developments like Quarkus it's even better.",
@@ -364,7 +365,7 @@ const techsData = {
     },
     {
       name: "Python",
-      description: "No I don't use it for machine learning (not a data master), I use it for automation and APIs.",
+      description: "No I don't use it for machine learning (I'm not a data scientist either), I use it for automation and APIs.",
       image: "/images/techs/python.webp",
       url: "https://www.python.org",
       x: 80,

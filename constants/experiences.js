@@ -107,16 +107,16 @@ const experiencesData = {
       show: true
     },
     {
-      code: "RDHT",
-      companyName: "RedHat",
-      companyType: "Subsidiary",
+      code: "EXT_RDHT",
+      companyName: "Extraordy",
+      companyType: "RedHat Partner company",
       companySector: "Training",
       companyLogo: "/images/employers/RedHat.webp",
       companyLogoX: 187,
       companyLogoY: 48,
       companyUrl: "https://www.redhat.com/en",
       role: "RedHat Trainer",
-      story: "I had to held courses to Extraordy's customers on RedHat technologies (Ansible and Linux SysAdmin).",
+      story: "I was to have taught courses to Extraordy's customers on RedHat technologies (Ansible and Linux SysAdmin).",
       year: "2022",
       show: true
     },
