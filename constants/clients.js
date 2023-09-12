@@ -28,8 +28,8 @@ const clientsData = {
       companyLogoY: 48,
       companyUrl: "https://www.extraordy.com/",
       role: "RedHat Certified Trainer",
-      story: "I teach courses to Extraordy's customers on RedHat technologies.",
-      year: "2022-2025",
+      story: "I was to have taught courses to Extraordy's customers on RedHat technologies.",
+      year: "2023",
       show: false
     },
     {
