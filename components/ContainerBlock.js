@@ -42,15 +42,15 @@ export function reportWebVitals(metric) {
   }
 }
 
-export default function ContainerBlock({ children, description, ...customMeta }) {
+export default function ContainerBlock({ children, description, image, ...customMeta }) {
   const router = useRouter();
 
   const consentValue = getCookieConsentValue("mb-consulting-dev");
 
   const meta = {
-    title: "Matteo Bianchi - CTO | DevOps | SRE | Coach | Software Engineer",
-    description: `${description ? description : "Learn more about me and our services."}`,
-    image: "/images/propic.webp",
+    title: "Matteo Bianchi - Software | DevOps | SRE | Coaching",
+    description: `${description ? description : "Learn more about me and my services."}`,
+    image: `${image ? image : "/images/propic.webp"}`,
     type: "website",
     ...customMeta,
   };

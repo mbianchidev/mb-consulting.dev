@@ -23,8 +23,9 @@ export async function getStaticProps(context) {
 
 export default function service({service}) {
   const title = "Service - " + service.name + " - MB-Consulting";
+  const image = service.images[0];
   return (
-    <ContainerBlock title={title}>
+    <ContainerBlock title={title} image={image.url}>
       <Service service={service}/>
     </ContainerBlock>
   );

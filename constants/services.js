@@ -244,7 +244,7 @@ const servicesData = {
         `- Agile Methodologies`,
         `I'm willing to take it to the next level and become your fractional CTO. I will take care of the following tasks:`,
         `- Product Roadmap`,
-        `- Tech stack selection`,
+        `- Software and Cloud Architecture`,
         `- Technical Interviews`,
         `- Team Management`,
         `- Documentation`,
