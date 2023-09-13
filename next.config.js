@@ -60,7 +60,7 @@ module.exports = {
         permanent: false,
       },
       {
-        source: '/tw',
+        source: '/x',
         destination: 'https://twitter.com/mbianchidev',
         permanent: false,
         basePath: false
@@ -90,7 +90,6 @@ module.exports = {
         basePath: false
       },
       {
-        //deprecated
         source: '/nl',
         destination: 'https://funews.substack.com/',
         permanent: false,
@@ -98,7 +97,7 @@ module.exports = {
       },
       // Future links for future projects
       {
-        source: '/twitch',
+        source: '/tw',
         destination: 'https://www.twitch.tv/mbianchidev',
         permanent: false,
         basePath: false
@@ -126,11 +125,6 @@ module.exports = {
       },
       {
         source: '/insta',
-        destination: '/work-in-progress',
-        permanent: false,
-      },
-      {
-        source: '/fb',
         destination: '/work-in-progress',
         permanent: false,
       },
