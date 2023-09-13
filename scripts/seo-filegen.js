@@ -24,23 +24,23 @@ let lastYearDate = new Date(date.setFullYear(date.getFullYear() - 1)).toISOStrin
 const services = [
   {
     slug: "devops-adoption-path",
-    active: false,    
+    active: true,    
   },
   {
     slug: "cloud-migration-and-management",
-    active: false,    
+    active: true,    
   },
   {
     slug: "sre-devsecops",
-    active: false,    
+    active: true,    
   },
   {
     slug: "cto-as-a-service",
-    active: false,    
+    active: true,    
   },
   {
     slug: "dev-as-a-service",
-    active: false,
+    active: true,
   },
   {
     slug: "other-services",
