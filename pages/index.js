@@ -11,7 +11,7 @@ import LatestCode from "@custom/CodeShowcase/LatestCode";
 export default function Home({repositories}) {
   // pass the argument { repositories } to Home() function to use it below: Home({ repositories })
   return (
-    <ContainerBlock title="Matteo Bianchi - CTO"
+    <ContainerBlock title="Matteo Bianchi"
       description="Discover my projects, my code and my thoughts."
     >
       <Hero/>

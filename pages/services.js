@@ -4,7 +4,7 @@ import Services from "@components/Services";
 
 export default function services() {
     return (
-      <ContainerBlock title="Services - MB-Consulting">
+      <ContainerBlock title="Services - MB-Consulting" description="Discover my services">
         <Services/>
       </ContainerBlock>
     );
