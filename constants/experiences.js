@@ -93,6 +93,20 @@ Tools & tech stack: PHP 7.x, Laravel 5.4, Composer, Apache, Nginx, HTML5, Blade,
 const experiencesData = {
   experiences: [
     {
+      code: "MNTCRS",
+      companyName: "MentorCruise",
+      companyType: "Corporate",
+      companySector: "Education Services",
+      companyLogo: "/images/clients/mentor-cruise.webp",
+      companyLogoX: 187,
+      companyLogoY: 62,
+      companyUrl: "https://mb-consulting.dev/mentor",
+      role: "Software Engineering & Career Mentor",
+      story: "I started mentoring on MentorCruise in 2023 and I can't wait to help more people to achieve their goals.",
+      year: "2023",
+      show: false
+    },
+    {
       code: "KBLAB",
       companyName: "KubeLab",
       companyType: "Startup",

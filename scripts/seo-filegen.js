@@ -43,7 +43,7 @@ const services = [
     active: true,
   },
   {
-    slug: "other-services",
+    slug: "mentoring-services",
     active: true,
   },
 ];
