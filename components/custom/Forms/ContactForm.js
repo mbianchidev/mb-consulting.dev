@@ -21,7 +21,7 @@ export default function ContactForm() {
 
   let selectedService = query.serviceName;
   if (!selectedService){
-    selectedService = "other-services";
+    selectedService = "mentoring-services";
   }
 
   const [parent, setParent] = useState(selectedService);

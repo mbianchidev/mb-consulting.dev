@@ -95,6 +95,12 @@ module.exports = {
         permanent: false,
         basePath: false
       },
+      {
+        source: '/mentor',
+        destination: 'https://mentors.to/mbianchidev',
+        permanent: false,
+        basePath: false
+      },
       // Future links for future projects
       {
         source: '/tw',
