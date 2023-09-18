@@ -116,7 +116,7 @@ const experiencesData = {
       companyLogoY: 62,
       companyUrl: "https://www.kubelab.cloud/",
       role: "Chief Technology Officer",
-      story: "Started as fractional CTO then first key employee, I managed a highly distributed engineering team (up to 10+ people) applying a mix of Scrum and Kanban, hiring, set up a career framework, built a tech radar to enable adoption of tools, took care of DevEx and took key decisions steering the company strategy. I was also involved in fundraising activities, design and implementation of a Kubernetes management SaaS platform based on kubelab-cli OSS project. We failed to find the PMF and had to step back with lots of lessons learned.",
+      story: "Started as fractional CTO then first key employee, I managed a highly distributed engineering team (up to 7 people) applying a mix of Scrum and Kanban, hiring, set up a career framework, built a tech radar to enable adoption of tools, took care of DevEx and took key decisions steering the company strategy. I was also involved in fundraising activities, design and implementation of a Kubernetes management SaaS platform based on kubelab-cli OSS project. We failed to find the PMF and had to step back with lots of lessons learned.",
       year: "2023",
       show: true
     },
