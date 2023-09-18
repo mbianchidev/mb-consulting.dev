@@ -101,6 +101,31 @@ module.exports = {
         permanent: false,
         basePath: false
       },
+      {
+        source: '/cal',
+        destination: 'https://calendly.com/mbianchidev/book-a-session',
+        permanent: false,
+        basePath: false
+      },
+      // Referral links
+      {
+        source: '/ib',
+        destination: 'https://ibkr.com/referral/matteo953',
+        permanent: false,
+        basePath: false
+      },
+      {
+        source: '/revolut',
+        destination: 'https://www.revolut.com/referral/?referral-code=matteonojl!SEP1-23-AR-L1',
+        permanent: false,
+        basePath: false
+      },
+      {
+        source: '/mentorcruise',
+        destination: 'http://mentorcruise.com/referrals/ELUv37rO1sSaC861SLnRDxwewvJxzpiR0Buq0S0M',
+        permanent: false,
+        basePath: false
+      },
       // Future links for future projects
       {
         source: '/tw',
