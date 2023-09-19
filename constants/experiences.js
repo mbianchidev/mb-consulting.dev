@@ -97,14 +97,14 @@ const experiencesData = {
       companyName: "MentorCruise",
       companyType: "Corporate",
       companySector: "Education Services",
-      companyLogo: "/images/clients/mentor-cruise.webp",
-      companyLogoX: 187,
-      companyLogoY: 62,
+      companyLogo: "/images/employers/mentor-cruise.webp",
+      companyLogoX: 200,
+      companyLogoY: 1000,
       companyUrl: "https://mb-consulting.dev/mentor",
       role: "Software Engineering & Career Mentor",
       story: "I started mentoring on MentorCruise in 2023 and I can't wait to help more people to achieve their goals.",
       year: "2023-now",
-      show: false
+      show: true
     },
     {
       code: "FREE",
@@ -118,7 +118,7 @@ const experiencesData = {
       role: "Freelance DevOps Engineer | Site Reliability Engineer | Software Engineer | Coach",
       story: "Offering services and advisory to various companies, ranging from startups to large enterprires, mostly on the DevOps and Cloud Infrastructure side.",
       year: "2021-now",
-      show: false
+      show: true
     },
     {
       code: "KBLAB",
