@@ -232,7 +232,7 @@ const servicesData = {
       type: '6+ months of support (remote only).',
       active: true,
       offer: "20% discount off the 1st month of support, FREE consulting call included.",
-      rate: 0,
+      rate: 'starting from 200/h',
     },
     {
       category: "Cloud",
