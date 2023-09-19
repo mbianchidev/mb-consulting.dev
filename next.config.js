@@ -32,7 +32,7 @@ module.exports = {
       },
       {
         source: '/service/devops-adoption-path',
-        destination: '/service/devops-adoption',
+        destination: '/service/modern-devops-adoption',
         permanent: false,
       },
       {
