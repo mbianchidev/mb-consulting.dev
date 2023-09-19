@@ -30,6 +30,16 @@ module.exports = {
         destination: '/services',
         permanent: false,
       },
+      {
+        source: '/service/devops-adoption-path',
+        destination: '/service/devops-adoption',
+        permanent: false,
+      },
+      {
+        source: '/service/dev-as-a-service',
+        destination: '/service/devex-as-a-service',
+        permanent: false,
+      },
       // Existing links/projects
       {
         source: '/tg',
@@ -51,12 +61,12 @@ module.exports = {
       },
       {
         source: '/cv',
-        destination: '/static/Matteo_Bianchi_CV_smart.pdf',
+        destination: '/static/Matteo_Bianchi_CV.pdf',
         permanent: false,
       },
       {
         source: '/resume',
-        destination: '/static/Matteo_Bianchi_CV_smart.pdf',
+        destination: '/static/Matteo_Bianchi_CV.pdf',
         permanent: false,
       },
       {

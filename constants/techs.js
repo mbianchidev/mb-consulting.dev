@@ -94,7 +94,7 @@ const techsData = {
     },
     {
       name: "Kubernetes",
-      description: "K8s is love and hate. I love it for its flexibility and hate it for its complexity.",
+      description: "K8s is love and hate. I love it for its flexibility and hate it for the same reason.",
       image: "/images/techs/kubernetes.webp",
       url: "https://kubernetes.io",
       x: 80,
