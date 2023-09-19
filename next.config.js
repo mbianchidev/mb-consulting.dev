@@ -31,13 +31,13 @@ module.exports = {
         permanent: false,
       },
       {
-        source: '/services/devops-adoption-path',
-        destination: '/services/devops-adoption',
+        source: '/service/devops-adoption-path',
+        destination: '/service/devops-adoption',
         permanent: false,
       },
       {
-        source: '/services/dev-as-a-service',
-        destination: '/services/devex-as-a-service',
+        source: '/service/dev-as-a-service',
+        destination: '/service/devex-as-a-service',
         permanent: false,
       },
       // Existing links/projects
