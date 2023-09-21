@@ -121,6 +121,20 @@ const experiencesData = {
       show: true
     },
     {
+      code: "NKI",
+      companyName: "Nederlandse Kanker Instituut (NKI) - Antoni van Leeuwenhoek",
+      companyType: "Research center - Hospital",
+      companySector: "Healthcare",
+      companyLogo: "/images/clients/NKI.webp",
+      companyLogoX: 187,
+      companyLogoY: 62,
+      companyUrl: "https://www.nki.nl/",
+      role: "Cloud Consultant | Data manager",
+      story: "Building the necessary Cloud Infra to support Computational Pathology processes and ML/AI Workloads.",
+      year: "2022-2023",
+      show: true
+    },
+    {
       code: "KBLAB",
       companyName: "KubeLab",
       companyType: "Startup",
@@ -131,7 +145,7 @@ const experiencesData = {
       companyUrl: "https://www.kubelab.cloud/",
       role: "Chief Technology Officer",
       story: "Started as fractional CTO then first key employee, I managed a highly distributed engineering team (up to 7 people) applying a mix of Scrum and Kanban, hiring, set up a career framework, built a tech radar to enable adoption of tools, took care of DevEx and took key decisions steering the company strategy. I was also involved in fundraising activities, design and implementation of a Kubernetes management SaaS platform based on kubelab-cli OSS project. We failed to find the PMF and had to step back with lots of lessons learned.",
-      year: "2023",
+      year: "2022-2023",
       show: true
     },
     {
