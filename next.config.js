@@ -40,6 +40,11 @@ module.exports = {
         destination: '/service/devex-as-a-service',
         permanent: false,
       },
+      {
+        source: '/service/other-services',
+        destination: '/service/mentoring-services',
+        permanent: false,
+      },
       // Existing links/projects
       {
         source: '/tg',
