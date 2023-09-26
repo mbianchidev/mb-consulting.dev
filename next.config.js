@@ -51,12 +51,12 @@ module.exports = {
       },
       {
         source: '/cv',
-        destination: '/static/Matteo_Bianchi_CV_smart.pdf',
+        destination: '/static/Matteo_Bianchi_CV.pdf',
         permanent: false,
       },
       {
         source: '/resume',
-        destination: '/static/Matteo_Bianchi_CV_smart.pdf',
+        destination: '/static/Matteo_Bianchi_CV.pdf',
         permanent: false,
       },
       {
