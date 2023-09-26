@@ -23,7 +23,7 @@ let lastYearDate = new Date(date.setFullYear(date.getFullYear() - 1)).toISOStrin
 
 const services = [
   {
-    slug: "devops-adoption-path",
+    slug: "modern-devops-adoption",
     active: true,    
   },
   {
@@ -39,7 +39,7 @@ const services = [
     active: true,    
   },
   {
-    slug: "dev-as-a-service",
+    slug: "devex-as-a-service",
     active: true,
   },
   {

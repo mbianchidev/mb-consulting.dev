@@ -97,14 +97,42 @@ const experiencesData = {
       companyName: "MentorCruise",
       companyType: "Corporate",
       companySector: "Education Services",
-      companyLogo: "/images/clients/mentor-cruise.webp",
-      companyLogoX: 187,
-      companyLogoY: 62,
+      companyLogo: "/images/employers/mentor-cruise.webp",
+      companyLogoX: 200,
+      companyLogoY: 1000,
       companyUrl: "https://mb-consulting.dev/mentor",
       role: "Software Engineering & Career Mentor",
       story: "I started mentoring on MentorCruise in 2023 and I can't wait to help more people to achieve their goals.",
-      year: "2023",
-      show: false
+      year: "2023-now",
+      show: true
+    },
+    {
+      code: "FREE",
+      companyName: "Self-Employed",
+      companyType: "Freelancing",
+      companySector: "Engineering Services",
+      companyLogo: "/images/logo.webp",
+      companyLogoX: 187,
+      companyLogoY: 62,
+      companyUrl: "https://mb-consulting.dev",
+      role: "Freelance DevOps Engineer | Site Reliability Engineer | Software Engineer | Coach",
+      story: "Offering services and advisory to various companies, ranging from startups to large enterprires, mostly on the DevOps and Cloud Infrastructure side.",
+      year: "2021-now",
+      show: true
+    },
+    {
+      code: "NKI",
+      companyName: "Nederlandse Kanker Instituut (NKI) - Antoni van Leeuwenhoek",
+      companyType: "Research center - Hospital",
+      companySector: "Healthcare",
+      companyLogo: "/images/clients/NKI.webp",
+      companyLogoX: 187,
+      companyLogoY: 62,
+      companyUrl: "https://www.nki.nl/",
+      role: "Cloud Consultant | Data manager",
+      story: "Building the necessary Cloud Infra to support Computational Pathology processes and ML/AI Workloads.",
+      year: "2022-2023",
+      show: true
     },
     {
       code: "KBLAB",
@@ -117,7 +145,7 @@ const experiencesData = {
       companyUrl: "https://www.kubelab.cloud/",
       role: "Chief Technology Officer",
       story: "Started as fractional CTO then first key employee, I managed a highly distributed engineering team (up to 7 people) applying a mix of Scrum and Kanban, hiring, set up a career framework, built a tech radar to enable adoption of tools, took care of DevEx and took key decisions steering the company strategy. I was also involved in fundraising activities, design and implementation of a Kubernetes management SaaS platform based on kubelab-cli OSS project. We failed to find the PMF and had to step back with lots of lessons learned.",
-      year: "2023",
+      year: "2022-2023",
       show: true
     },
     {
