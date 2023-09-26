@@ -1,4 +1,5 @@
 const aboutData = {
+  resumeUrl: "/static/Matteo_Bianchi_CV.pdf",
   about: {
     title: "A long time ago in a galaxy far, far away... I fell in ❤️ with Coding and DevOps culture then I became passionate about clouds 🌩️ and obsessed with security 🔐",
     clickText: "Get to know me better 👇",
