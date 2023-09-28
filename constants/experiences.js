@@ -13,85 +13,24 @@
     show: true|false
 },
 
-// Freelancing
-I offered multiple services to many different clients, mainly focused on DevOps culture, Site Reliability Engineering and Cloud Architecture but also Software Engineering when needed.
-All of this while starting my journey as hybrid digital nomad traveling around Europe.
-
-Empowering those clients to build, scale, secure and innovate their products allowed me to grow immensely as professional.
-Handled collateral activities myself including: marketing, sales, customer care, finance, project management.
-I learnt to delegate other domains: frontend development, graphic design, UX/UI, legal and accounting.
-I've created a huge network of freelance professionals with whom kept collaborating after my freelancing journey came to an end in late 2022.
-
-In the most advanced stage of my brief freelancer career I've started coaching companies on how to embrace and implement DevOps culture to maximize their output in each of their digital product, counting multiple cases of great success.
-
-I may start selling an online version of that course in the future.
-
-// InfoCert - Software Dev
-As part of the Eco-Mind Software development team (factory) I was responsible for the backend development of a wide range of features of GoSign - a digital signature software -, one of the flagship products of InfoCert. 
-
-This has allowed me to learn a lot about the Java world and Spring in particular, always keeping an eye on the cloud.
-I dealt with various aspects of software development: from writing technical requirements starting from functional ones, to code review processes as a reviewer up to cross-functional analysis with colleagues from other departments to ensure scalability, reliability and security of the developed solutions.
-
-Tools and technology stack: Java 8 - Java 11, Maven, Docker, Kubernetes, MySql, Oracle, Spring (Integration, Batch, Security, WebServices), OpenApi, Jira, Confluence.
-
-Usage of agile software development methods (Scrum, Kanban)
-
-// InfoCert - DevOps
-As InfoCert consultant hired by Eco-Mind Software I handled a wide range of tasks related to business critical products: configuration, monitoring, test automation, CD/CI processes implementation and cloud orchestration/management. All of this with sysadmin level privileges and responsibilities. 
-I've learnt to build infrastructures as code through Puppet and automate compilation, build and deployment through Jenkins, while making sure the infrastructure was resilient and fault-tolerant.
-
-As part of AWS cloud management team my duty was to monitor, deploy onto and scale the cloud infrastructure built over EKS (Elastic Kubernetes Service), running InfoCert's business critical products. We operated using a NoOps pipeline built over BlueOcean, Helm and Flux and also applied SOPS principles.
-
-I also used to operate as SRE on both on-call service that ensures 24/7 availability of services and daily duties. My goal was to guarantee SLOs: security, reliability, availability in respect of SLA agreements. To reach this goal we operated using NewRelic and OpsGenie to monitor SLIs, detect, mitigate and solve production incidents. I also performed postmortem analysis and designed new solutions to avoid (or at least reducing the impact of) future incidents while keeping an eye on service improvement.
-
-Tools and technology stack: Linux bash, Artifactory, Puppet, Jenkins, Amazon Web Services, Kubernetes, Docker, Helm, Flux, BlueOcean, GitLab, NewRelic, SumoLogic, Aurora MySql, Oracle, JBoss
-
-// InfoCert - Delivery
-As part of InfoCert GoSign delivery team, hired by Eco-Mind Software, I was responsible for managing REST/SOAP product integrations between InfoCert and customers systems in a secure environment, as well as following the customer through all phases of integration, from start-up to production go-live and post-production support. 
-I was also responsible for drafting integration documentation, distributing and breaking it down to customers' IT teams.
-
-I had the opportunity to integrate: SAP, Sharepoint, SalesForce & many more integration systems while addressing and solving critical issues.
-
-I've managed several on-premise software installations but also InfoCert's multiple SAAS platforms.
-
-Supporting planning and analysis activities was also part of my job, which included periodically participating in meetings with customers both italian and international to better understand their needs and, last but not least, ensure that those needs were met.
-
-// InfoCert - Backend dev
-
-Development of business critical product as consultant hired by Techson s.r.l. in Eco-Mind Software s.r.l. for InfoCert S.p.A., implementation, maintenance and support to the management of integration with external systems in a secure environment.
-
-Tools & tech stack: Java 8, Maven, MySql, Oracle, MyBatis, Spring (Integration, Batch, Security, WebServices), OpenApi, Javascript, JSP, GIT.
-Agile development software principles (Scrum, Kanban)
-
-// Olivetti
-
-Fullstack development both corrective and evolutive of business management software property of Olivetti S.p.A. (Telecom Group) as consultant hired by Techson S.r.l. in Eco-Mind Ingegneria Informatica s.r.l.
-
-Tools & tech stack:  Java 8, Maven, Postgres, Spring (Integration, Batch, Security, MVC, Webflow), Javascript, JQuery, Bootstrap, JSP, JSTL, GIT
-
-// Reply
-B2B software development as consultant hired by Techson S.r.l. in Reply Power
-Supported creation of responsive frontend pages. Built backend services implementing REST protocol. Built automatic test suite while ensuring continous delivery/integration.
-
-Tools & tech stack: Java 8, Angular 4.x, TypeScript, Spring JPA, Test Driven Development - JUnit, JHipster, Liquibase, CD/CI - Jenkins, source code control - GIT.
-
-// Vodafone
-Managed the development lifecycle of IRS - Invoice Reconciliation System - owned by Vodafone IT as a consultant hired by Uniteam S.p.A., implemented stored and batch procedures using PL/SQL for external system integration. I've got the opportunity to manage the whole monolitical system deployed to a virtual application server running on Ubuntu as OS but I've also managed Oracle database (DBA level) and provided assistance to the end customer.
-In charge of requirements analysis and drafting of functional analysis documentation.
-
-Tools & tech stack: Java, Javascript, JSP, EJB, PL/SQL, Tomcat, Oracle.
-
-// Cambiomarcia
-
-I've been part of the development team as fullstack developer.
-
-Using Laravel framework development and its ORM (Eloquent) along with some of the Laravel's built in utilities like Blade Templates for creating both reliable backend services and eye-catching, responsive frontend layer. Partially refactored data models. Developed AI-like based market research and price evaluation algorithm using authorized web scraping to collect data.
-
-Tools & tech stack: PHP 7.x, Laravel 5.4, Composer, Apache, Nginx, HTML5, Blade, Javascript, Elixir, SQL, Eloquent ORM, Wordpress
 */
 
 const experiencesData = {
   experiences: [
+    {
+      code: "CNCF",
+      companyName: "CNCF",
+      companyType: "Foundation",
+      companySector: "Cloud Native",
+      companyLogo: "/images/projects/kcd-utrecht.webp",
+      companyLogoX: 200,
+      companyLogoY: 1000,
+      companyUrl: "https://community.cncf.io/events/details/cncf-kcd-netherlands-presents-kcd-utrecht-2023",
+      role: "Co-organizer KCD Utrecht",
+      story: "I have been part of the organization of KCD Utrecht",
+      year: "2023",
+      show: false      
+    },
     {
       code: "MNTCRS",
       companyName: "MentorCruise",

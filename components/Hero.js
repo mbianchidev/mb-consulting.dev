@@ -16,13 +16,22 @@ export default function Hero() {
   const [funnySentence, setFunnySentence] = useState(" ");
 
   useEffect(() => {
-    const randomFunnySentence = shuffle(heroData.hero.funnySentences)[randomNum(heroData.hero.funnySentences.length)];
+    const updateRandomFunnySentence = () => {
+      const randomFunnySentence =
+        shuffle(heroData.hero.funnySentences)[
+          randomNum(heroData.hero.funnySentences.length)
+        ];
+      setFunnySentence(randomFunnySentence);
+    };
     const randomCTA = shuffle(heroData.hero.CTAs)[randomNum(heroData.hero.CTAs.length)];
     const randomColor = shuffle(heroData.hero.colors);
-    setFunnySentence(randomFunnySentence);
+    const intervalId = setInterval(updateRandomFunnySentence, 5000);
+    updateRandomFunnySentence();
     setCTA(randomCTA);
     setColors(randomColor);
-  }, []);
+    // Clean up the interval when the component unmounts
+    return () => clearInterval(intervalId);
+  }, [heroData]);
 
   const catchyPhraseFontSize = "1.5em";
 
