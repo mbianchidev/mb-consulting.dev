@@ -75,6 +75,21 @@ module.exports = {
         permanent: false,
       },
       {
+        source: '/cv-swe',
+        destination: '/static/Matteo_Bianchi_CV_swe.pdf',
+        permanent: false,
+      },
+      {
+        source: '/cv-ops',
+        destination: '/static/Matteo_Bianchi_CV_devops.pdf',
+        permanent: false,
+      },
+      {
+        source: '/cv-man',
+        destination: '/static/Matteo_Bianchi_CV_eng_man.pdf',
+        permanent: false,
+      },
+      {
         source: '/x',
         destination: 'https://twitter.com/mbianchidev',
         permanent: false,
@@ -119,6 +134,30 @@ module.exports = {
       {
         source: '/cal',
         destination: 'https://calendly.com/mbianchidev/book-a-session',
+        permanent: false,
+        basePath: false
+      },
+      {
+        source: '/bookings',
+        destination: 'https://cal.com/mbianchidev',
+        permanent: false,
+        basePath: false
+      },
+      {
+        source: '/book15',
+        destination: 'https://cal.com/mbianchidev/intro',
+        permanent: false,
+        basePath: false
+      },
+      {
+        source: '/book30',
+        destination: 'https://cal.com/mbianchidev/quick-chat',
+        permanent: false,
+        basePath: false
+      },
+      {
+        source: '/book60',
+        destination: 'https://cal.com/mbianchidev/1-1-session',
         permanent: false,
         basePath: false
       },
