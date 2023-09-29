@@ -1,6 +1,6 @@
 {
   "name": "mb-consulting-dev-site",
-  "version": "1.8.6",
+  "version": "1.8.7",
   "private": true,
   "scripts": {
     "dev": "next dev --port 3001",
