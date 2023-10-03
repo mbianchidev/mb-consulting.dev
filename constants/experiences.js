@@ -27,9 +27,9 @@ const experiencesData = {
       companyLogoY: 1000,
       companyUrl: "https://community.cncf.io/events/details/cncf-kcd-netherlands-presents-kcd-utrecht-2023",
       role: "Co-organizer KCD Utrecht",
-      story: "I have been part of the organization of KCD Utrecht",
+      story: "I am co-organizer of the KCD Netherlands (Utrecht 2023)",
       year: "2023",
-      show: false      
+      show: true      
     },
     {
       code: "MNTCRS",
@@ -69,7 +69,7 @@ const experiencesData = {
       companyLogoY: 62,
       companyUrl: "https://www.nki.nl/",
       role: "Cloud Consultant | Data manager",
-      story: "Building the necessary Cloud Infra to support Computational Pathology processes and ML/AI Workloads.",
+      story: "Building the necessary Cloud Infra to support Computational Pathology processes and ML/AI workloads.",
       year: "2022-2023",
       show: true
     },
@@ -180,7 +180,7 @@ const experiencesData = {
       companyLogoX: 190,
       companyLogoY: 48,
       companyUrl: "https://www.dshare.com/",
-      role: "Freelance DevOps Engineer | Site Reliability Engineer",
+      role: "Freelance DevOps Engineer | SRE",
       story: "Managed Azure and AWS infrastructures and deployments for their news and media platforms. Solved a critical situation where a DDoS attack coming from Chinese and Russian IPs caused a 100% downtime on one of their managed institutional websites.",
       year: "2021-2022",
       show: true
@@ -193,7 +193,7 @@ const experiencesData = {
       companyLogoX: 169,
       companyLogoY: 75,
       companyUrl: "https://gosignweb.infocert.it",
-      role: "Senior Software Engineer | DevOps Engineer | Site Reliability Engineer",
+      role: "Senior Software Engineer | Lead DevOps Engineer | SRE",
       story: "I brought DevOps and Site Reliability practices in a digital signature product used by millions of people and thousands of companies all over Europe: GoSign. I managed to improve the reliability and security of the product by developing document management and signature processes in Java. Automated infrastructure provisioning, deployment, delivery and incident management processes while working closely and educating cross-functional teams. I spent 2 years leading the GoSign on-call service with 24/7 availability and solved over 200 critical production incidents saving hundred thousands of euros for the company. Deleted over 50k lines of code, refactored more than 100k, contributed to 50+ internal repositories, built a lot of 0 to 1 libraries, my code still servers 8+ million daily users.",
       year: "2019-2021",
       show: true
@@ -323,7 +323,7 @@ const experiencesData = {
       companyLogoX: 250,
       companyLogoY: 81,
       companyUrl: "https://eco-mind.eu/",
-      role: "Senior Software Engineer",
+      role: "Senior Fullstack Engineer",
       story: "Maximized my Spring and Java skills by working side by side with valuable professionals both internal and external to the company. Here I learnt the true meaning of the word 'teamwork' and how to work in a team with a diverse set of skills.",
       year: "2018-2021",
       show: true
@@ -375,8 +375,8 @@ const experiencesData = {
       companyLogoX: 200,
       companyLogoY: 200,
       companyUrl: "https://itisravenna.edu.it/",
-      role: "Intern and junior developer",
-      story: "Some jobs as intern and junior developer while I was attending high school. I learnt how to work autonomously in chaotic environments, with little or no guidance. I started using C#, .NET and learnt how to take advantage of the MVC pattern.",
+      role: "Web Developer",
+      story: "Some jobs as intern and web developer while I was attending high school. I learnt how to work autonomously in chaotic environments, with little or no guidance. I started using C++, C#, .NET and learnt how to take advantage of the MVC pattern.",
       year: "2015-2017",
       show: true     
     },
@@ -391,7 +391,7 @@ const experiencesData = {
       role: "Student",
       story: "High school diploma in Computer Science. I studied IT (UML, Data Structures, Algorithms, Computer Networks, Operating Systems, Databases, Computer Architecture) and programming languages (Java 5, C++, HTML, CSS, Javascript, PHP, Delphi, MySQL) as well as Economics (macro, micro, project management), English (technical), Italian, History and Geography.",
       year: "2013-2017",
-      show: true
+      show: false
     }
   ],
 };
