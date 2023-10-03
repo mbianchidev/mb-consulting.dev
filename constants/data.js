@@ -6,9 +6,11 @@ const userData = {
   role: "Code | Product | Finance | Tech",
   avatarUrl: "/images/propic.webp",
   mobileAvatarUrl: "/images/propic-mobile.webp",
-  address: "Full remote",
+  address: "Earth",
   it_vat: "IT11846470968", //DEPRECATED
   it_sdi: "M5UXCR1", //DEPRECATED
+  nl_vat: "",
+  nl_kvk: "",
   domain: "mb-consulting.dev",
   cookieUrl: "https://www.allaboutcookies.org/",
   // see next.config.js
