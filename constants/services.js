@@ -70,13 +70,13 @@ const servicesData = {
         `Modern DevOps Adoption is offered in different packages with different levels of training and support.`,
         `Basic - For small companies or individuals who want to learn about DevOps. Includes: 3-days core course and essential support package.`,
         `Intermediate - For small to medium companies and startups that want to go in depth with DevOps. Includes: 5-days core course and premium support package.`,
-        `Advanced - For companies that want to start or consolidate their adoption process and reach a high level of maturity. Includes: 5-days core course, 2-days extra course and enterprise support package.`,
+        `Advanced - For companies that want to start or consolidate their adoption process and reach a high level of maturity. Includes: 5-days core course, 2-days focused course and enterprise support package.`,
       ],
       callout: 'Are you ready to become the next DevOps star to be?',
       CTA: 'Sign up!',
       type: 'Training (available on-site) and support (remote only)',
       active: true,
-      offer: '25% discount off the Enterprise package for the first 3 companies, 100% FREE pitch call to discuss the details.',
+      offer: null,
       rate: 'See carousel.',
     },
     {
@@ -111,7 +111,7 @@ const servicesData = {
       link: '/book30',
       type: '6+ months of support (remote only).',
       active: true,
-      offer: null,
+      offer: '25% discount for elegible startups',
       rate: 'starting from 150/h',
     },
     {
@@ -212,7 +212,7 @@ const servicesData = {
       CTA: 'Let\'s connect!',
       type: '6+ months of support (remote only).',
       active: true,
-      offer: "20% discount off the 1st month of support, FREE consulting call included.",
+      offer: "25% discount off the 1st month of support, FREE consulting call included.",
       rate: 'starting from 200/h',
     },
     {
