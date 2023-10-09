@@ -59,12 +59,12 @@ const heroData = {
     firstPrinciple: "Software",
     firstLink: "/service/cto-as-a-service",
     secondPrinciple: "DevOps",
-    secondLink: "/service/modern-devops-adoption",
+    secondLink: "/service/cloud-k8s-and-devops",
     thirdPrinciple: "SRE",
     thirdLink: "/service/sre-devsecops",
     fourthPrinciple: "Platform",
     fourthLink: "/service/devex-as-a-service",
-    CTAs: ["Let's talk!", "Work with me", "Need a DevOps?", "Go cloud!", "Don't click here!", "Grab your free call!"],
+    CTAs: ["Let's talk!", "Work with me", "Need a DevOps?", "Go cloud!", "Don't click here!", "Free call!"],
   },
 };
 
