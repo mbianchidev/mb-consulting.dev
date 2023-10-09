@@ -45,6 +45,11 @@ module.exports = {
         destination: '/service/mentoring-services',
         permanent: false,
       },
+      {
+        source: '/service/cloud-migration-and-management',
+        destination: '/service/cloud-k8s-and-devops',
+        permanent: false,
+      },
       // Existing links/projects
       {
         source: '/tg',

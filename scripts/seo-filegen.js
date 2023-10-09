@@ -27,8 +27,8 @@ const services = [
     active: true,    
   },
   {
-    slug: "cloud-migration-and-management",
-    active: true,    
+    slug: "cloud-k8s-and-devops",
+    active: true,
   },
   {
     slug: "sre-devsecops",
