@@ -363,7 +363,7 @@ const experiencesData = {
       companyLogoY: 36,
       companyUrl: "https://www.tenutabene.it/",
       role: "Fullstack Software Developer",
-      story: "I learnt how a startup works and scales up and started my journey in the web development world. Contributed to an AI and (authorized) scraping-powered price estimation engine for used cars and a web app for the management of the company's car fleet written in Laravel (PHP).",
+      story: "I learnt how a startup works and scales up and started my journey in the web development world. Contributed to an (authorized) scraping-powered price estimation engine for second hand cars and a web app for the management of the company's car fleet written in Laravel (PHP).",
       year: "2017",
       show: true
     },
