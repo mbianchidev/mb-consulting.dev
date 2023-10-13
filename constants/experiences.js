@@ -18,6 +18,20 @@
 const experiencesData = {
   experiences: [
     {
+      code: "ABL",
+      companyName: "Abila",
+      companyType: "Enterprise",
+      companySector: "IT Services",
+      companyLogo: "/images/clients/abila.webp",
+      companyLogoX: 200,
+      companyLogoY: 500,
+      companyUrl: "https://abila.it/",
+      role: "Lead Cloud Native Consultant",
+      story: "I am currently working as a Lead Cloud Native Consultant for Abila, helping them to build a new Cloud Native practice and to deliver Cloud Native projects to their customers.",
+      year: "2023",
+      show: false 
+    },
+    {
       code: "CNCF",
       companyName: "CNCF",
       companyType: "Foundation",
@@ -68,8 +82,8 @@ const experiencesData = {
       companyLogoX: 187,
       companyLogoY: 62,
       companyUrl: "https://www.nki.nl/",
-      role: "Cloud Consultant | Data manager",
-      story: "Building the necessary Cloud Infra to support Computational Pathology processes and ML/AI workloads.",
+      role: "Lead Cloud Consultant | Data manager",
+      story: "Designing and building Azure Cloud Infra to support Computational Pathology processes and ML/AI Workloads for image pattern recognition based on bio-data. Objective of the project is to increase the efficiency of diagnosis in breast cancer.",
       year: "2022-2023",
       show: true
     },

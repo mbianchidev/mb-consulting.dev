@@ -19,6 +19,20 @@
 const clientsData = {
   clients: [
     {
+      code: "ABL",
+      companyName: "Abila",
+      companyType: "Enterprise",
+      companySector: "IT Services",
+      companyLogo: "/images/clients/abila.webp",
+      companyLogoX: 200,
+      companyLogoY: 500,
+      companyUrl: "https://abila.it/",
+      role: "Lead Cloud Native Consultant",
+      story: "I am currently working as a Lead Cloud Native Consultant for Abila, helping them to build a new Cloud Native practice and to deliver Cloud Native projects to their customers.",
+      year: "2023",
+      show: false 
+    },
+    {
       code: "EXOR",
       companyName: "Extraordy",
       companyType: "Subsidiary",
