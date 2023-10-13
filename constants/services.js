@@ -111,7 +111,7 @@ const servicesData = {
       link: '/book30',
       type: '6+ months of support (remote only).',
       active: true,
-      offer: '25% discount for elegible startups',
+      offer: '25% discount for elegible startups.',
       rate: 'starting from 150/h',
     },
     {

@@ -1,5 +1,6 @@
 import React from "react";
 import getConfig from 'next/config';
+import userData from "@constants/data";
 import SocialElement from "@custom/Social/SocialElement";
 import Link from "next/link";
 
@@ -12,8 +13,9 @@ export default function Footer() {
         <div className="h-0.5 w-full bg-white dark:bg-gray-700"></div>
         <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between md:items-center mt-8">
           <div>
-            <p>&copy; 2021-{new Date().getFullYear()} Matteo Bianchi - All Rights Reserved. </p>
+            <p>&copy; 2021-{new Date().getFullYear()} Matteo Bianchi (SyncTune) - All Rights Reserved. </p>
             <p className="text-sm">site version - {publicRuntimeConfig?.version}</p>
+            <p className="text-sm">KVK - {userData.nl_kvk} | VAT - {userData.nl_vat}</p>
           </div>
           <div className="flex flex-col md:flex-row">
             <Link href="/privacy-policy">Privacy Policy </Link>
