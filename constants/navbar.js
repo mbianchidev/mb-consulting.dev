@@ -11,9 +11,10 @@ const navbarData = {
     {
       link: "/experience",
       name: "Experience",
+      hideOnMobile: true,
     },
     {
-      link: "https://medium.com/@mbianchidev",
+      link: "/blog",
       name: "Blog",
       isExternal: true,
     }
