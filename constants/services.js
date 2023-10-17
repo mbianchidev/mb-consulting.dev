@@ -112,7 +112,7 @@ const servicesData = {
       type: '6+ months of support (remote only).',
       active: true,
       offer: '25% discount for elegible startups.',
-      rate: 'starting from 150/h',
+      rate: 'starting from 125/h',
     },
     {
       category: "Cloud",
@@ -183,7 +183,7 @@ const servicesData = {
       type: 'on call support or 3+ months of support (remote only).',
       active: true,
       offer: null,
-      rate: 'starting from 150/h',
+      rate: 'starting from 125/h',
     },
     {
       category: "Management",
@@ -213,7 +213,7 @@ const servicesData = {
       type: '6+ months of support (remote only).',
       active: true,
       offer: "25% discount off the 1st month of support, FREE consulting call included.",
-      rate: 'starting from 200/h',
+      rate: 'starting from 150/h',
     },
     {
       category: "Cloud",
@@ -243,7 +243,7 @@ const servicesData = {
       CTA: 'Get in touch!',
       active: true,
       offer: null,
-      rate: 'Starting from 150/h',
+      rate: 'Starting from 125/h',
     },
     {
       category: "Coaching",
