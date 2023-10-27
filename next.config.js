@@ -95,6 +95,11 @@ module.exports = {
         permanent: false,
       },
       {
+        source: '/cv-devrel',
+        destination: '/static/Matteo_Bianchi_CV_devrel.pdf',
+        permanent: false,
+      },
+      {
         source: '/x',
         destination: 'https://twitter.com/mbianchidev',
         permanent: false,

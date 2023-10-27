@@ -1,6 +1,20 @@
 const advisoryData = {
   advisedCompanies: [
     {
+      code: "WAY",
+      companyName: "Wayy",
+      companyType: "🇺🇸 Startup",
+      companySector: "DevTools",
+      companyLogo: "/images/clients/wayy.webp",
+      companyLogoX: 200,
+      companyLogoY: 500,
+      companyUrl: "https://wayy.co/",
+      role: "Strategic Advisor",
+      story: "Product strategy, testing, feature requests for the new employee development co-pilot.",
+      year: "2023",
+      show: false
+    },
+    {
       code: "ANK",
       companyName: "Ankra.io",
       companyType: "🇸🇪 Startup",
@@ -10,7 +24,7 @@ const advisoryData = {
       companyLogoY: 500,
       companyUrl: "https://www.ankra.io",
       role: "Strategic Advisor",
-      story: "Product strategy, testing, feature requests.",
+      story: "Product strategy, testing, feature requests for the Kubernetes automation platform.",
       year: "2023",
       show: false 
     },     
@@ -24,7 +38,7 @@ const advisoryData = {
       companyLogoY: 500,
       companyUrl: "https://www.cloudme.dev",
       role: "Strategic Advisor",
-      story: "Product strategy, testing, feature requests.",
+      story: "Product strategy, testing, feature requests for the unopinionated platform to build and deploy cloud native applications.",
       year: "2023",
       show: false 
     }, 
@@ -38,7 +52,7 @@ const advisoryData = {
       companyLogoY: 500,
       companyUrl: "https://www.joggr.io",
       role: "Strategic Advisor",
-      story: "Product strategy, testing, feature requests.",
+      story: "Product strategy, testing, feature requests for the first docOps AI powered platform.",
       year: "2023",
       show: false 
     },
@@ -52,7 +66,7 @@ const advisoryData = {
       companyLogoY: 500,
       companyUrl: "https://zefi.ai",
       role: "Strategic Advisor",
-      story: "Infrastructure avisory, product testing, support for their AI platform.",
+      story: "Infrastructure avisory, product testing, support for their AI platform helping Product Managers to make data-driven decisions.",
       year: "2023",
       show: false 
     },
@@ -66,7 +80,7 @@ const advisoryData = {
       companyLogoY: 500,
       companyUrl: "https://zwap.in",
       role: "Strategic Advisor",
-      story: "Infrastructure avisory and operations on AWS EKS, product testing, feature requests.",
+      story: "Infrastructure avisory and operations on AWS EKS, product testing, feature requests for their freelance social network.",
       year: "2022",
       show: false 
     },
@@ -80,7 +94,7 @@ const advisoryData = {
       companyLogoY: 500,
       companyUrl: "https://app.spation.co",
       role: "Strategic Advisor",
-      story: "Testing, feature requests.",
+      story: "Testing, feature requests for their coworking management platform.",
       year: "2021",
       show: false 
     },
@@ -94,7 +108,7 @@ const advisoryData = {
       companyLogoY: 80,
       companyUrl: "https://www.crunchbase.com/organization/wardrobe-green-armadio-verde",
       role: "Strategic Advisor",
-      story: "Infrastructure avisory and operations on AWS.",
+      story: "Infrastructure avisory and operations on AWS for their sustainable fashion platform.",
       year: "2021",
       show: false
     },       
