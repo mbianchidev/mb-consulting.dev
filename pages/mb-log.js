@@ -56,7 +56,7 @@ export default function Component() {
           <ul className="space-y-2">
             <li>
               <a className="text-blue-500 hover:underline" href="#">
-                Hyper Popular Article 1
+                Popular Article 1
               </a>
             </li>
             <li>
