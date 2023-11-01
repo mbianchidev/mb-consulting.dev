@@ -10,7 +10,7 @@ export default function Component() {
         <article className="border-b border-gray-200 pb-4 mb-4">
           <h2 className="text-2xl font-bold">Article Title</h2>
           <p className="text-gray-500">Posted on October 31, 2023</p>
-          <p className="text-gray-700">This is a brief excerpt from the article...</p>
+          <p className="text-gray-700">This is a brief paragraph from the article...</p>
           <a className="text-blue-500 hover:underline" href="#">
             Read more
           </a>
@@ -18,7 +18,7 @@ export default function Component() {
         <article className="border-b border-gray-200 pb-4 mb-4">
           <h2 className="text-2xl font-bold">Article Title</h2>
           <p className="text-gray-500">Posted on October 30, 2023</p>
-          <p className="text-gray-700">This is a brief excerpt from the article...</p>
+          <p className="text-gray-700">This is a brief paragraph from the article...</p>
           <a className="text-blue-500 hover:underline" href="#">
             Read more
           </a>
