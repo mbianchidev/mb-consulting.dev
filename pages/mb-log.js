@@ -2,6 +2,7 @@
  * v0 by Vercel.
  * @see https://v0.dev/t/9eFEoSh8kym
  */
+
 export default function Component() {
   return (
     <div className="grid grid-cols-12 gap-4">
@@ -55,7 +56,7 @@ export default function Component() {
           <ul className="space-y-2">
             <li>
               <a className="text-blue-500 hover:underline" href="#">
-                Popular Article 1
+                Hyper Popular Article 1
               </a>
             </li>
             <li>
