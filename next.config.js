@@ -171,6 +171,12 @@ module.exports = {
         permanent: false,
         basePath: false
       },
+      {
+        source: '/secret',
+        destination: 'https://cal.com/mbianchidev/secret',
+        permanent: false,
+        basePath: false
+      },
       // Referral links
       {
         source: '/ib',

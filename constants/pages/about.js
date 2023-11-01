@@ -8,7 +8,7 @@ const aboutData = {
       description: [
         `My story is filled with monstrous bugs 🐞, amazing features ✨, large scale products ⛰️, many programming languages and frameworks 📚, huge infrastructures 🗼 and amazing colleagues 👨‍💻.`,
         `As employee I started as Software Engineer and then joined the Dark Side of DevOps and Site Reliability taking the best from both worlds (I've never stopped to use the --force).`,
-        `The reason I decided to start my journey in 2021 as a freelance professional was to help both individuals and companies to learn from their mistakes and drawing insights from them.`,
+        `The reason I decided to start my journey in 2021 as a freelance professional was to scale up my impact on the industry and to help more people to achieve their goals.`,
         `As a freelancer I coached and mentored my padawans (ehm I mean, my students) about DevOps principles and practices. I also helped companies to improve their DevEx and DevOps approach.`,
         `In the time I've been in the IT industry, up and down since 2015, I've learned a lot from hands on experience and had the opportunity to interact with truly amzing people.`,
         `In 2023 I took the next step and I've been the CTO of a startup for one year, where I enjoyed the challenge of building a new company culture, services and products from scratch and of course taking care of my team.`,
