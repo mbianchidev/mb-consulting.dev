@@ -13,6 +13,8 @@ const aboutData = {
         `In the time I've been in the IT industry, up and down since 2015, I've learned a lot from hands on experience and had the opportunity to interact with truly amzing people.`,
         `In 2023 I took the next step and I've been the CTO of a startup for one year, where I enjoyed the challenge of building a new company culture, services and products from scratch and of course taking care of my team.`,
         `In the end we could not find the Product-Market Fit and had to step back, but quoting Yoda: "The greatest teacher, failure is."`,
+        `I advocate for Cloud Native technologies, I'm a k8s lover and part of the CNCF community.`,
+        `My hottest take of 2023: Platform Engineering is "just" DevOps on steroids.`,
         `In 2024 I'll try to move, possibly away from Europe and hopefully starting a new exciting adventure in the software industry!`,
         `A few other facts about me: I've been a remote worker 🏝️ and a Hybrid Digital Nomad™ for quite a while ✈️🏡️ I enjoyed living and working in different timezones but now I'm looking for a place to finally call home.`,
         `I'm a combat sport amateur (boxe, K1, muay thai, bjj, MMA) 🥊 a musician/metal singer 🎹 and a passionate gamer 🕹️.`,

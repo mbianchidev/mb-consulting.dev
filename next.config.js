@@ -71,32 +71,32 @@ module.exports = {
       },
       {
         source: '/cv',
-        destination: '/static/Matteo_Bianchi_CV.pdf',
+        destination: '/static/Matteo_Bianchi.pdf',
         permanent: false,
       },
       {
         source: '/resume',
-        destination: '/static/Matteo_Bianchi_CV.pdf',
+        destination: '/static/Matteo_Bianchi.pdf',
         permanent: false,
       },
       {
-        source: '/cv-swe',
-        destination: '/static/Matteo_Bianchi_CV_swe.pdf',
+        source: '/resume/swe',
+        destination: '/static/Matteo_Bianchi_swe.pdf',
         permanent: false,
       },
       {
-        source: '/cv-ops',
-        destination: '/static/Matteo_Bianchi_CV_devops.pdf',
+        source: '/resume/ops',
+        destination: '/static/Matteo_Bianchi_devops.pdf',
         permanent: false,
       },
       {
-        source: '/cv-man',
-        destination: '/static/Matteo_Bianchi_CV_eng_man.pdf',
+        source: '/resume/man',
+        destination: '/static/Matteo_Bianchi_eng_man.pdf',
         permanent: false,
       },
       {
-        source: '/cv-devrel',
-        destination: '/static/Matteo_Bianchi_CV_devrel.pdf',
+        source: '/resume/devrel',
+        destination: '/static/Matteo_Bianchi_devrel.pdf',
         permanent: false,
       },
       {

@@ -12,7 +12,6 @@
     year: "years of employment",
     show: true|false
 },
-
 */
 
 const experiencesData = {
@@ -82,7 +81,7 @@ const experiencesData = {
       companyLogoX: 187,
       companyLogoY: 62,
       companyUrl: "https://www.nki.nl/",
-      role: "Lead Cloud Consultant | Data manager",
+      role: "Lead Cloud Native Consultant | Data Manager",
       story: "Designing and building Azure Cloud Infra to support Computational Pathology processes and ML/AI Workloads for image pattern recognition based on bio-data. Objective of the project is to increase the efficiency of diagnosis in breast cancer.",
       year: "2022-2023",
       show: true
@@ -124,7 +123,7 @@ const experiencesData = {
       companyLogoX: 187,
       companyLogoY: 48,
       companyUrl: "https://roarinc.com/",
-      role: "Freelance DevOps Engineer | Site Reliability Engineer",
+      role: "Cloud Native Consultant",
       story: "Collaborated with Roar to enable DevOps culture in all aspects of the company, starting with CI/CD processes on Azure DevOps and evolving their infrastructure. Automated deployment processes on K8S clusters by creating a proper CI/CD process (standardized for the whole company) increasing deployment speed by over 100%.",
       year: "2022",
       show: true
@@ -138,7 +137,7 @@ const experiencesData = {
       companyLogoX: 187,
       companyLogoY: 75,
       companyUrl: "https://coopolis.it/",
-      role: "Freelance Coach (DevOps)",
+      role: "Cloud Native Trainer",
       story: "Enabled the company Devs and Managers to understand DevOps culture by teaching classes with in-depth focuses on Gitlab and CI/CD processes. They were able to automate and increment deployment speed by a x4 factor after the course.",
       year: "2022",
       show: true
@@ -152,8 +151,8 @@ const experiencesData = {
       companyLogoX: 80,
       companyLogoY: 80,
       companyUrl: "https://greenchic.it/",
-      role: "Freelance DevOps Engineer | Site Reliability Engineer",
-      story: "Built part of a new cloud infrastructure on AWS for their sustainable fashion e-commerce and hardened their security policies partnering with a 3rd party security company, solved a critical security bug sparing over 100k in potential losses due to sensitive data exposure.",
+      role: "Fractional CTO",
+      story: "Handling suppliers and the whole IT side of the company, including but not limited to infrastructure and operations. Built from ground up a new cloud infrastructure on AWS for their sustainable fashion e-commerce migration while hardening policies and solving critical security issues on their AWS Lambda deployed APIs.",
       year: "2021-2022",
       show: true
     },
@@ -166,8 +165,8 @@ const experiencesData = {
       companyLogoX: 125,
       companyLogoY: 75,
       companyUrl: "https://www.gdf.gov.it/",
-      role: "Freelance Coach (DevOps)",
-      story: "Helped their IT sector to improve DevOps practices by delivering a DevOps course and in-depth technical knowledge on Azure. They started to use Azure DevOps and Azure Kubernetes Service (AKS) to deploy their applications right after the course, greatly improving their deployment speed.",
+      role: "Cloud Native Trainer",
+      story: "Helped their IT joint command to improve DevOps practices by delivering a DevOps course and an in-depth technical workshop on Azure cloud and Azure DevOps.",
       year: "2021",
       show: true
     },
@@ -180,7 +179,7 @@ const experiencesData = {
       companyLogoX: 190,
       companyLogoY: 49,
       companyUrl: "https://www.mvc-technology.eu/",
-      role: "Freelance Coach (DevOps)",
+      role: "Cloud Native Trainer",
       story: "Delivered DevOps courses to their clients helping them to understand how to implement DevOps culture.",
       year: "2021",
       show: true
@@ -194,7 +193,7 @@ const experiencesData = {
       companyLogoX: 190,
       companyLogoY: 48,
       companyUrl: "https://www.dshare.com/",
-      role: "Freelance DevOps Engineer | SRE",
+      role: "Cloud Native Consultant",
       story: "Managed Azure and AWS infrastructures and deployments for their news and media platforms. Solved a critical situation where a DDoS attack coming from Chinese and Russian IPs caused a 100% downtime on one of their managed institutional websites.",
       year: "2021-2022",
       show: true
