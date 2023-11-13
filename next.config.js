@@ -2,9 +2,9 @@
 const { version } = require('./package.json');
 
 module.exports = {
-  experimental: {
-    appDir: false //future use
-  },
+  // experimental: {
+  //   appDir: false //future use
+  // },
   swcMinify: true,
   publicRuntimeConfig: {
     version,
