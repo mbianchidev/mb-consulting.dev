@@ -80,8 +80,18 @@ module.exports = {
         permanent: false,
       },
       {
+        source: '/cv-swe',
+        destination: '/static/Matteo_Bianchi_swe.pdf',
+        permanent: false,
+      },
+      {
         source: '/resume/swe',
         destination: '/static/Matteo_Bianchi_swe.pdf',
+        permanent: false,
+      },
+      {
+        source: '/cv-ops',
+        destination: '/static/Matteo_Bianchi_devops.pdf',
         permanent: false,
       },
       {
@@ -90,8 +100,18 @@ module.exports = {
         permanent: false,
       },
       {
+        source: '/cv-man',
+        destination: '/static/Matteo_Bianchi_eng_man.pdf',
+        permanent: false,
+      },
+      {
         source: '/resume/man',
         destination: '/static/Matteo_Bianchi_eng_man.pdf',
+        permanent: false,
+      },
+      {
+        source: '/cv-devrel',
+        destination: '/static/Matteo_Bianchi_devrel.pdf',
         permanent: false,
       },
       {
