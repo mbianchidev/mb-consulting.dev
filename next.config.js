@@ -162,6 +162,12 @@ module.exports = {
         basePath: false
       },
       {
+        source: '/speaker',
+        destination: 'https://sessionize.com/mbianchidev/',
+        permanent: false,
+        basePath: false
+      },
+      {
         source: '/cal',
         destination: 'https://calendly.com/mbianchidev/book-a-session',
         permanent: false,
