@@ -30,26 +30,6 @@ module.exports = {
         destination: '/services',
         permanent: false,
       },
-      {
-        source: '/service/devops-adoption-path',
-        destination: '/service/modern-devops-adoption',
-        permanent: false,
-      },
-      {
-        source: '/service/dev-as-a-service',
-        destination: '/service/devex-as-a-service',
-        permanent: false,
-      },
-      {
-        source: '/service/other-services',
-        destination: '/service/mentoring-services',
-        permanent: false,
-      },
-      {
-        source: '/service/cloud-migration-and-management',
-        destination: '/service/cloud-k8s-and-devops',
-        permanent: false,
-      },
       // Existing links/projects
       {
         source: '/tg',
@@ -133,7 +113,18 @@ module.exports = {
       },
       {
         source: '/blog',
+        destination: '/medium',
+        permanent: false,
+      },
+      {
+        source: '/medium',
         destination: 'https://medium.com/@mbianchidev',
+        permanent: false,
+        basePath: false
+      },
+      {
+        source: '/devto',
+        destination: 'https://dev.to/mbianchidev',
         permanent: false,
         basePath: false
       },
@@ -144,7 +135,7 @@ module.exports = {
         basePath: false
       },
       {
-        source: '/stack',
+        source: '/stack', //deprecated
         destination: 'https://stackshare.io/mbianchidev/known-techs',
         permanent: false,
         basePath: false
@@ -230,8 +221,14 @@ module.exports = {
         basePath: false
       },
       {
+        source: '/yt',
+        destination: 'https://youtube.com/mbianchidev',
+        permanent: false,
+        basePath: false
+      },
+      {
         source: '/podcast',
-        destination: '/work-in-progress', //'https://open.spotify.com/show/wip',
+        destination: 'https://cloudpirates.fm/',
         permanent: false,
         basePath: false
       },
@@ -239,26 +236,13 @@ module.exports = {
         source: '/discord',
         destination: '/work-in-progress', //'https://discord.gg/mbianchidev',
         permanent: false,
-      },
-      {
-        source: '/tech-articles',
-        destination: '/work-in-progress', //'https://dev.to/mbianchidev',
-        permanent: false,
-      },
-      {
-        source: '/yt',
-        destination: '/work-in-progress',
-        permanent: false,
+        basePath: false
       },
       {
         source: '/insta',
-        destination: '/work-in-progress',
+        destination: 'https://www.instagram.com/b143ck_',
         permanent: false,
-      },
-      {
-        source: '/tiktok',
-        destination: '/work-in-progress',
-        permanent: false,
+        basePath: false
       },
       // Every link
       {
