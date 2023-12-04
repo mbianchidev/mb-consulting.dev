@@ -12,24 +12,23 @@
     year: "years of employment",
     show: true|false
 },
-
 */
 
 const experiencesData = {
   experiences: [
     {
-      code: "ABL",
-      companyName: "Abila",
-      companyType: "Enterprise",
-      companySector: "IT Services",
-      companyLogo: "/images/clients/abila.webp",
+      code: "OMN",
+      companyName: "Omnistrate",
+      companyType: "Startup",
+      companySector: "DevTools",
+      companyLogo: "/images/employers/omnistrate.webp",
       companyLogoX: 200,
       companyLogoY: 500,
-      companyUrl: "https://abila.it/",
-      role: "Lead Cloud Native Consultant",
-      story: "I am currently working as a Lead Cloud Native Consultant for Abila, helping them to build a new Cloud Native practice and to deliver Cloud Native projects to their customers.",
-      year: "2023",
-      show: false 
+      companyUrl: "https://omnistrate.com/",
+      role: "Developer Relations",
+      story: "Developer advocacy, enabling open-source projects to become SaaS products in minutes, with Omnistrate.",
+      year: "2023-now",
+      show: true 
     },
     {
       code: "CNCF",
@@ -42,7 +41,7 @@ const experiencesData = {
       companyUrl: "https://community.cncf.io/events/details/cncf-kcd-netherlands-presents-kcd-utrecht-2023",
       role: "Co-organizer KCD Utrecht",
       story: "I am co-organizer of the KCD Netherlands (Utrecht 2023)",
-      year: "2023",
+      year: "2023-now",
       show: true      
     },
     {
@@ -74,6 +73,20 @@ const experiencesData = {
       show: true
     },
     {
+      code: "ABL",
+      companyName: "Abila",
+      companyType: "Enterprise",
+      companySector: "IT Services",
+      companyLogo: "/images/clients/abila.webp",
+      companyLogoX: 200,
+      companyLogoY: 500,
+      companyUrl: "https://abila.it/",
+      role: "Lead Cloud Native Consultant",
+      story: "I am currently working as a Lead Cloud Native Consultant for Abila, helping them to build a new Cloud Native practice and to deliver Cloud Native projects to their customers.",
+      year: "2023",
+      show: false 
+    },
+    {
       code: "NKI",
       companyName: "Nederlandse Kanker Instituut (NKI) - Antoni van Leeuwenhoek",
       companyType: "Research center - Hospital",
@@ -82,7 +95,7 @@ const experiencesData = {
       companyLogoX: 187,
       companyLogoY: 62,
       companyUrl: "https://www.nki.nl/",
-      role: "Lead Cloud Consultant | Data manager",
+      role: "Lead Cloud Native Consultant | Data Manager",
       story: "Designing and building Azure Cloud Infra to support Computational Pathology processes and ML/AI Workloads for image pattern recognition based on bio-data. Objective of the project is to increase the efficiency of diagnosis in breast cancer.",
       year: "2022-2023",
       show: true
@@ -91,7 +104,7 @@ const experiencesData = {
       code: "KBLAB",
       companyName: "KubeLab",
       companyType: "Startup",
-      companySector: "Cloud Native & DevOps",
+      companySector: "DevTools",
       companyLogo: "/images/clients/kubelab.webp",
       companyLogoX: 187,
       companyLogoY: 62,
@@ -124,7 +137,7 @@ const experiencesData = {
       companyLogoX: 187,
       companyLogoY: 48,
       companyUrl: "https://roarinc.com/",
-      role: "Freelance DevOps Engineer | Site Reliability Engineer",
+      role: "Cloud Native Consultant",
       story: "Collaborated with Roar to enable DevOps culture in all aspects of the company, starting with CI/CD processes on Azure DevOps and evolving their infrastructure. Automated deployment processes on K8S clusters by creating a proper CI/CD process (standardized for the whole company) increasing deployment speed by over 100%.",
       year: "2022",
       show: true
@@ -138,7 +151,7 @@ const experiencesData = {
       companyLogoX: 187,
       companyLogoY: 75,
       companyUrl: "https://coopolis.it/",
-      role: "Freelance Coach (DevOps)",
+      role: "Cloud Native Trainer",
       story: "Enabled the company Devs and Managers to understand DevOps culture by teaching classes with in-depth focuses on Gitlab and CI/CD processes. They were able to automate and increment deployment speed by a x4 factor after the course.",
       year: "2022",
       show: true
@@ -152,8 +165,8 @@ const experiencesData = {
       companyLogoX: 80,
       companyLogoY: 80,
       companyUrl: "https://greenchic.it/",
-      role: "Freelance DevOps Engineer | Site Reliability Engineer",
-      story: "Built part of a new cloud infrastructure on AWS for their sustainable fashion e-commerce and hardened their security policies partnering with a 3rd party security company, solved a critical security bug sparing over 100k in potential losses due to sensitive data exposure.",
+      role: "Fractional CTO",
+      story: "Handling suppliers and the whole IT side of the company, including but not limited to infrastructure and operations. Built from ground up a new cloud infrastructure on AWS for their sustainable fashion e-commerce migration while hardening policies and solving critical security issues on their AWS Lambda deployed APIs.",
       year: "2021-2022",
       show: true
     },
@@ -166,8 +179,8 @@ const experiencesData = {
       companyLogoX: 125,
       companyLogoY: 75,
       companyUrl: "https://www.gdf.gov.it/",
-      role: "Freelance Coach (DevOps)",
-      story: "Helped their IT sector to improve DevOps practices by delivering a DevOps course and in-depth technical knowledge on Azure. They started to use Azure DevOps and Azure Kubernetes Service (AKS) to deploy their applications right after the course, greatly improving their deployment speed.",
+      role: "Cloud Native Trainer",
+      story: "Helped their IT joint command to improve DevOps practices by delivering a DevOps course and an in-depth technical workshop on Azure cloud and Azure DevOps.",
       year: "2021",
       show: true
     },
@@ -180,7 +193,7 @@ const experiencesData = {
       companyLogoX: 190,
       companyLogoY: 49,
       companyUrl: "https://www.mvc-technology.eu/",
-      role: "Freelance Coach (DevOps)",
+      role: "Cloud Native Trainer",
       story: "Delivered DevOps courses to their clients helping them to understand how to implement DevOps culture.",
       year: "2021",
       show: true
@@ -194,7 +207,7 @@ const experiencesData = {
       companyLogoX: 190,
       companyLogoY: 48,
       companyUrl: "https://www.dshare.com/",
-      role: "Freelance DevOps Engineer | SRE",
+      role: "Cloud Native Consultant",
       story: "Managed Azure and AWS infrastructures and deployments for their news and media platforms. Solved a critical situation where a DDoS attack coming from Chinese and Russian IPs caused a 100% downtime on one of their managed institutional websites.",
       year: "2021-2022",
       show: true

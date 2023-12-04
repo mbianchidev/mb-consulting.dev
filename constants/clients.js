@@ -97,8 +97,8 @@ const clientsData = {
       companyLogoX: 80,
       companyLogoY: 80,
       companyUrl: "https://greenchic.it/",
-      role: "Freelance DevOps Engineer | Site Reliability Engineer",
-      story: "Built part of a new cloud infrastructure for their sustainable fashion e-commerce and hardened their security policies. I was also responsible for the health and security of the whole AWS infrastructure.",
+      role: "Fractional CTO",
+      story: "Handling suppliers and the whole IT side of the company, including but not limited to infrastructure and operations. Built from ground up a new cloud infrastructure on AWS for their sustainable fashion e-commerce migration while hardening policies and solving critical security issues on their AWS Lambda deployed APIs.",
       year: "2021-2022",
       show: true
     },
@@ -111,8 +111,8 @@ const clientsData = {
       companyLogoX: 125,
       companyLogoY: 75,
       companyUrl: "https://www.gdf.gov.it/",
-      role: "Freelance Coach (DevOps)",
-      story: "Helped their IT sector to improve DevOps practices by delivering a DevOps course and in-depth technical knowledge on Azure.",
+      role: "Cloud Native Trainer",
+      story: "Helped their IT joint command to improve DevOps practices by delivering a DevOps course and an in-depth technical workshop on Azure cloud and Azure DevOps.",
       year: "2021",
       show: true
     },
@@ -125,7 +125,7 @@ const clientsData = {
       companyLogoX: 190,
       companyLogoY: 49,
       companyUrl: "https://www.mvc-technology.eu/",
-      role: "Freelance Coach (DevOps)",
+      role: "Cloud Native Trainer",
       story: "Delivered DevOps course to one of their clients helping them to better understand the DevOps culture.",
       year: "2021",
       show: true
@@ -139,7 +139,7 @@ const clientsData = {
       companyLogoX: 190,
       companyLogoY: 48,
       companyUrl: "https://www.dshare.com/",
-      role: "Freelance DevOps Engineer | Site Reliability Engineer",
+      role: "Cloud Native Consultant",
       story: "Managed Azure and AWS infrastructures for their news and media platform and digital products. I was responsible for the infrastructure, deployments, security and everything about the cloud.",
       year: "2021-2022",
       show: true

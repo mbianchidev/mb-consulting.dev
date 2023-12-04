@@ -1,6 +1,20 @@
 const advisoryData = {
   advisedCompanies: [
     {
+      code: "KSP",
+      companyName: "Kubespaces.io",
+      companyType: "🇳🇱 Startup",
+      companySector: "DevTools",
+      companyLogo: "/images/clients/kubespaces.webp",
+      companyLogoX: 200,
+      companyLogoY: 500,
+      companyUrl: "https://kubespaces.io",
+      role: "Trainer",
+      story: "Kubernetes and GitOps training",
+      year: "2023-now",
+      show: false 
+    },
+    {
       code: "WAY",
       companyName: "Wayy",
       companyType: "🇺🇸 Startup",
@@ -65,14 +79,14 @@ const advisoryData = {
       companyLogoX: 200,
       companyLogoY: 500,
       companyUrl: "https://zefi.ai",
-      role: "Strategic Advisor",
-      story: "Infrastructure avisory, product testing, support for their AI platform helping Product Managers to make data-driven decisions.",
-      year: "2023",
-      show: false 
+      role: "Strategic Advisor | Technical Advisor",
+      story: "Infrastructure advisory, product testing, support for their AI platform helping Product Managers to make data-driven decisions.",
+      year: "2023-now",
+      show: true 
     },
     {
       code: "ZWA",
-      companyName: "Zwap",
+      companyName: "Zwap now Klaaryo",
       companyType: "🇮🇹 Startup",
       companySector: "Social Network",
       companyLogo: "/images/clients/zwap.webp",
@@ -80,7 +94,7 @@ const advisoryData = {
       companyLogoY: 500,
       companyUrl: "https://zwap.in",
       role: "Strategic Advisor",
-      story: "Infrastructure avisory and operations on AWS EKS, product testing, feature requests for their freelance social network.",
+      story: "Infrastructure advisory and operations on AWS EKS, product testing, feature requests for their freelance social network.",
       year: "2022",
       show: false 
     },
@@ -108,8 +122,8 @@ const advisoryData = {
       companyLogoY: 80,
       companyUrl: "https://www.crunchbase.com/organization/wardrobe-green-armadio-verde",
       role: "Strategic Advisor",
-      story: "Infrastructure avisory and operations on AWS for their sustainable fashion platform.",
-      year: "2021",
+      story: "Infrastructure advisory and operations on AWS for their sustainable fashion platform.",
+      year: "2021-2022",
       show: false
     },       
   ]
