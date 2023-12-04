@@ -80,7 +80,7 @@ const advisoryData = {
       companyLogoY: 500,
       companyUrl: "https://zefi.ai",
       role: "Strategic Advisor | Technical Advisor",
-      story: "Infrastructure advisory, product testing, support for their AI platform helping Product Managers to make data-driven decisions.",
+      story: "Infrastructure advisory, product testing, support for their AI platform helping Product Managers to take data-driven decisions.",
       year: "2023-now",
       show: true 
     },
