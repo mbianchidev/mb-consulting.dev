@@ -17,18 +17,18 @@
 const experiencesData = {
   experiences: [
     {
-      code: "ABL",
-      companyName: "Abila",
-      companyType: "Enterprise",
-      companySector: "IT Services",
-      companyLogo: "/images/clients/abila.webp",
+      code: "OMN",
+      companyName: "Omnistrate",
+      companyType: "Startup",
+      companySector: "DevTools",
+      companyLogo: "/images/employers/omnistrate.webp",
       companyLogoX: 200,
       companyLogoY: 500,
-      companyUrl: "https://abila.it/",
-      role: "Lead Cloud Native Consultant",
-      story: "I am currently working as a Lead Cloud Native Consultant for Abila, helping them to build a new Cloud Native practice and to deliver Cloud Native projects to their customers.",
-      year: "2023",
-      show: false 
+      companyUrl: "https://omnistrate.com/",
+      role: "Developer Relations",
+      story: "Developer advocacy, enabling open-source projects to become SaaS products in minutes, with Omnistrate.",
+      year: "2023-now",
+      show: true 
     },
     {
       code: "CNCF",
@@ -41,7 +41,7 @@ const experiencesData = {
       companyUrl: "https://community.cncf.io/events/details/cncf-kcd-netherlands-presents-kcd-utrecht-2023",
       role: "Co-organizer KCD Utrecht",
       story: "I am co-organizer of the KCD Netherlands (Utrecht 2023)",
-      year: "2023",
+      year: "2023-now",
       show: true      
     },
     {
@@ -73,6 +73,20 @@ const experiencesData = {
       show: true
     },
     {
+      code: "ABL",
+      companyName: "Abila",
+      companyType: "Enterprise",
+      companySector: "IT Services",
+      companyLogo: "/images/clients/abila.webp",
+      companyLogoX: 200,
+      companyLogoY: 500,
+      companyUrl: "https://abila.it/",
+      role: "Lead Cloud Native Consultant",
+      story: "I am currently working as a Lead Cloud Native Consultant for Abila, helping them to build a new Cloud Native practice and to deliver Cloud Native projects to their customers.",
+      year: "2023",
+      show: false 
+    },
+    {
       code: "NKI",
       companyName: "Nederlandse Kanker Instituut (NKI) - Antoni van Leeuwenhoek",
       companyType: "Research center - Hospital",
@@ -90,7 +104,7 @@ const experiencesData = {
       code: "KBLAB",
       companyName: "KubeLab",
       companyType: "Startup",
-      companySector: "Cloud Native & DevOps",
+      companySector: "DevTools",
       companyLogo: "/images/clients/kubelab.webp",
       companyLogoX: 187,
       companyLogoY: 62,
