@@ -28,9 +28,9 @@ const clientsData = {
       companyLogoY: 500,
       companyUrl: "https://abila.it/",
       role: "Lead Cloud Native Consultant",
-      story: "I am currently working as a Lead Cloud Native Consultant for Abila, helping them to build a new Cloud Native practice and to deliver Cloud Native projects to their customers.",
-      year: "2023",
-      show: false 
+      story: "As a Lead Cloud Native Consultant for Abila, I helped them to build a new Cloud Native practice and to deliver Cloud Native projects to their customers.",
+      year: "2023-now",
+      show: true 
     },
     {
       code: "EXOR",

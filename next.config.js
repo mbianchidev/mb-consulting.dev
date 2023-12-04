@@ -159,6 +159,12 @@ module.exports = {
         basePath: false
       },
       {
+        source: '/badges',
+        destination: 'https://www.credly.com/users/mbianchidev/badges',
+        permanent: false,
+        basePath: false
+      },
+      {
         source: '/cal',
         destination: 'https://calendly.com/mbianchidev/book-a-session',
         permanent: false,
