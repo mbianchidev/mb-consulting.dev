@@ -7,8 +7,8 @@ const userData = {
   avatarUrl: "/images/propic.webp",
   mobileAvatarUrl: "/images/propic-mobile.webp",
   address: "Earth",
-  it_vat: "IT11846470968", //DEPRECATED
-  it_sdi: "M5UXCR1", //DEPRECATED
+  it_vat: "", //DEPRECATED
+  it_sdi: "", //DEPRECATED
   nl_vat: "NL004901960B70",
   nl_kvk: "91602289",
   domain: "mb-consulting.dev",

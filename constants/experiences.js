@@ -19,21 +19,21 @@ const experiencesData = {
     {
       code: "OMN",
       companyName: "Omnistrate",
-      companyType: "Startup",
+      companyType: "🇺🇸 Startup",
       companySector: "DevTools",
       companyLogo: "/images/employers/omnistrate.webp",
       companyLogoX: 200,
       companyLogoY: 500,
       companyUrl: "https://omnistrate.com/",
       role: "Developer Relations",
-      story: "Developer advocacy, enabling open-source projects to become SaaS products in minutes, with Omnistrate.",
+      story: "Developer advocacy, enabling open-source projects and products to go SaaS in minutes, with Omnistrate.",
       year: "2023-now",
       show: true 
     },
     {
       code: "CNCF",
       companyName: "CNCF",
-      companyType: "Foundation",
+      companyType: "🇺🇸 Foundation",
       companySector: "Cloud Native",
       companyLogo: "/images/projects/kcd-utrecht.webp",
       companyLogoX: 200,
@@ -47,7 +47,7 @@ const experiencesData = {
     {
       code: "MNTCRS",
       companyName: "MentorCruise",
-      companyType: "Corporate",
+      companyType: "🇺🇸 Corporate",
       companySector: "Education Services",
       companyLogo: "/images/employers/mentor-cruise.webp",
       companyLogoX: 200,
@@ -55,7 +55,7 @@ const experiencesData = {
       companyUrl: "https://mb-consulting.dev/mentor",
       role: "Software Engineering & Career Mentor",
       story: "I started mentoring on MentorCruise in 2023 and I can't wait to help more people to achieve their goals.",
-      year: "2023-now",
+      year: "2023-2024",
       show: true
     },
     {
@@ -89,7 +89,7 @@ const experiencesData = {
     {
       code: "ABL",
       companyName: "Abila",
-      companyType: "Enterprise",
+      companyType: "🇮🇹 Enterprise",
       companySector: "IT Services",
       companyLogo: "/images/clients/abila.webp",
       companyLogoX: 200,
@@ -97,13 +97,13 @@ const experiencesData = {
       companyUrl: "https://abila.it/",
       role: "Lead Cloud Native Consultant",
       story: "As a Lead Cloud Native Consultant for Abila, I helped them to build a new Cloud Native practice and to deliver Cloud Native projects to their customers.",
-      year: "2023-now",
+      year: "2023-2024",
       show: true 
     },
     {
       code: "NKI",
       companyName: "Nederlandse Kanker Instituut (NKI) - Antoni van Leeuwenhoek",
-      companyType: "Research center - Hospital",
+      companyType: "🇳🇱 Research center - Hospital",
       companySector: "Healthcare",
       companyLogo: "/images/clients/NKI.webp",
       companyLogoX: 187,
@@ -117,7 +117,7 @@ const experiencesData = {
     {
       code: "KBLAB",
       companyName: "KubeLab",
-      companyType: "Startup",
+      companyType: "🇳🇱 Startup",
       companySector: "DevTools",
       companyLogo: "/images/clients/kubelab.webp",
       companyLogoX: 187,
@@ -131,7 +131,7 @@ const experiencesData = {
     {
       code: "EXT_RDHT",
       companyName: "Extraordy",
-      companyType: "RedHat Partner company",
+      companyType: "🇮🇹 RedHat Partner company",
       companySector: "Training",
       companyLogo: "/images/employers/RedHat.webp",
       companyLogoX: 187,
@@ -228,7 +228,7 @@ const experiencesData = {
     },
     {
       companyName: "Infocert",
-      companyType: "🇮🇹 / 🇪🇸 Corporate",
+      companyType: "🇮🇹 Corporate",
       companySector: "Digital Trust Services",
       companyLogo: "/images/employers/infocert.webp",
       companyLogoX: 169,
