@@ -60,7 +60,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <loc>${baseUrl}/contacts</loc>
     <lastmod>${lastYearDate}</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
+    <priority>0.1</priority>
   </url>
   <url>
     <loc>${baseUrl}/about</loc>
@@ -78,7 +78,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <loc>${baseUrl}/services</loc>
     <lastmod>${lastYearDate}</lastmod>
     <changefreq>yearly</changefreq> 
-    <priority>0.9</priority>
+    <priority>1</priority>
   </url>
   ${services.filter(service => service.active === true)?.map((service) => (`
   <url>
