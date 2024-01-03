@@ -72,8 +72,8 @@ export default function About() {
               </h1>
               <br></br>
               <span className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                Interested in a collaboration? Got any question? Fill the {" "}
-                <Link href="/contacts" className={linkTextStyle}> contact form </Link>{" "} and I'll get back as soon as I can.
+                Interested in a collaboration? Got any question? Book {" "}
+                <Link href="/book30" className={linkTextStyle}> a meeting </Link>{" "} today!
               </span>
             </div>
             <div className="mt-8">

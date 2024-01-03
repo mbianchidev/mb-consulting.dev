@@ -11,7 +11,7 @@ const advisoryData = {
       companyUrl: "https://kubespaces.io",
       role: "Trainer",
       story: "Kubernetes and GitOps training",
-      year: "2023-now",
+      year: "2023-2024",
       show: false 
     },
     {
