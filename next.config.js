@@ -113,7 +113,7 @@ module.exports = {
       },
       {
         source: '/blog',
-        destination: 'blog.mb-consulting.dev',
+        destination: 'https://blog.mb-consulting.dev',
         permanent: false,
         basePath: false
       },
