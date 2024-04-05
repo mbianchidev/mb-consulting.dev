@@ -56,7 +56,7 @@ module.exports = {
       },
       {
         source: '/resume',
-        destination: '/static/Matteo_Bianchi.pdf',
+        destination: '/static/Matteo_Bianchi_resume.pdf',
         permanent: false,
       },
       {
