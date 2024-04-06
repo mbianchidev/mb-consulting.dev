@@ -35,7 +35,7 @@ const experiencesData = {
       companyName: "CNCF",
       companyType: "🇺🇸 Foundation",
       companySector: "Cloud Native",
-      companyLogo: "/images/projects/kcd-utrecht.webp",
+      companyLogo: "/images/projects/CNCF.png",
       companyLogoX: 200,
       companyLogoY: 1000,
       companyUrl: "https://community.cncf.io/events/details/cncf-kcd-netherlands-presents-kcd-utrecht-2023",
