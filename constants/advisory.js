@@ -10,7 +10,7 @@ const advisoryData = {
       companyLogoY: 500,
       companyUrl: "https://kubespaces.io",
       role: "Trainer",
-      story: "Kubernetes and GitOps training",
+      story: "Layed off the backend foundational microservices for the namespace as a service platform.",
       year: "2023-2024",
       show: false 
     },
@@ -96,7 +96,7 @@ const advisoryData = {
       role: "Strategic Advisor",
       story: "Infrastructure advisory and operations on AWS EKS, product testing, feature requests for their freelance social network.",
       year: "2022",
-      show: false 
+      show: true 
     },
     {
       code: "SPA",
@@ -110,7 +110,7 @@ const advisoryData = {
       role: "Strategic Advisor",
       story: "Testing, feature requests for their coworking management platform.",
       year: "2021",
-      show: false 
+      show: true 
     },
     {
       code: "GRNC",
@@ -124,7 +124,7 @@ const advisoryData = {
       role: "Strategic Advisor",
       story: "Infrastructure advisory and operations on AWS for their sustainable fashion platform.",
       year: "2021-2022",
-      show: false
+      show: true
     },       
   ]
 }

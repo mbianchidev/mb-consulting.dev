@@ -26,7 +26,7 @@ const experiencesData = {
       companyLogoY: 500,
       companyUrl: "https://omnistrate.com/",
       role: "Developer Relations",
-      story: "Developer advocacy, enabling open-source projects and products to go SaaS in minutes, with Omnistrate.",
+      story: "Building the DevRel program from ground up, advocating for cloud native SaaS, producing written and video content, documenting features, showcasing the platform capabilities through demos, contributing to GTM strategy, product growth, DevEx and more.",
       year: "2023-now",
       show: true 
     },
@@ -40,7 +40,7 @@ const experiencesData = {
       companyLogoY: 1000,
       companyUrl: "https://community.cncf.io/events/details/cncf-kcd-netherlands-presents-kcd-utrecht-2023",
       role: "Co-organizer KCD Utrecht",
-      story: "I am co-organizer of the KCD Netherlands (Utrecht 2023)",
+      story: "I am co-organizer of the KCD Utrecht 2023, KCD Italy 2024, KubeTrain EU, KCD Netherlands 2024 and continously contributing to Cloud Native events",
       year: "2023-now",
       show: true      
     },
@@ -67,8 +67,8 @@ const experiencesData = {
       companyLogoX: 187,
       companyLogoY: 62,
       companyUrl: "https://mb-consulting.dev",
-      role: "Freelance DevOps Engineer | Site Reliability Engineer | Software Engineer | Coach",
-      story: "Offering services and advisory to various companies, ranging from startups to large enterprires, mostly on the DevOps and Cloud Infrastructure side.",
+      role: "Cloud Native Consultant",
+      story: "Offering services and advisory to various companies, ranging from startups to large enterprires, mostly on the DevOps and Cloud Infrastructure side, with a strong focus on Cloud Native tech.",
       year: "2021-now",
       show: true
     },
@@ -110,7 +110,7 @@ const experiencesData = {
       companyLogoY: 62,
       companyUrl: "https://www.nki.nl/",
       role: "Lead Cloud Native Consultant | Data Manager",
-      story: "Designing and building Azure Cloud Infra to support Computational Pathology processes and ML/AI Workloads for image pattern recognition based on bio-data. Objective of the project is to increase the efficiency of diagnosis in breast cancer.",
+      story: "Designing and building Azure Cloud Infra for a gamified annotation tool. Support Computational Pathology and ML/AI Workloads to train an image pattern recognition algorithm on biopsy data. Objective of the project is to increase the efficiency of diagnosis in breast cancer.",
       year: "2022-2023",
       show: true
     },
