@@ -39,8 +39,8 @@ const experiencesData = {
       companyLogoX: 200,
       companyLogoY: 1000,
       companyUrl: "https://community.cncf.io/events/details/cncf-kcd-netherlands-presents-kcd-utrecht-2023",
-      role: "Co-organizer KCD Utrecht",
-      story: "I am co-organizer of the KCD Utrecht 2023, KCD Italy 2024, KubeTrain EU, KCD Netherlands 2024 and continously contributing to Cloud Native events",
+      role: "Organizer | Program Committee | Speaker",
+      story: "I am co-organizer of the KCD Utrecht 2023, KCD Italy 2024, KubeTrain EU, KCD Netherlands 2024 and continously contributing to Cloud Native events, supported by the CNCF, the KCD, CNCG and open-source communities. I also speak about Cloud Native tech at conferences and meetups around the world.",
       year: "2023-now",
       show: true      
     },
