@@ -24,31 +24,47 @@ module.exports = {
   },
   async redirects() {
     return [
-      // Internal
+      // -- Internal stuff --
+
       {
         source: '/service',
         destination: '/services',
         permanent: false,
       },
-      // Existing links/projects
-      {
-        source: '/tg',
-        destination: 'https://t.me/mbianchidev_bot',
-        permanent: false,
-        basePath: false
-      },
-      {
-        source: '/li',
-        destination: 'https://www.linkedin.com/in/mbianchidev/',
-        permanent: false,
-        basePath: false
-      },
+      // -- External stuff --
+
+      // Dev community profiles
       {
         source: '/gh',
         destination: 'https://github.com/mbianchidev',
         permanent: false,
         basePath: false
       },
+      {
+        source: '/github',
+        destination: 'https://github.com/mbianchidev',
+        permanent: false,
+        basePath: false
+      },
+      {
+        source: '/so',
+        destination: 'https://stackoverflow.com/users/7410528/mbianchidev',
+        permanent: false,
+        basePath: false
+      },
+      {
+        source: '/stack', //deprecated
+        destination: 'https://stackshare.io/mbianchidev/known-techs',
+        permanent: false,
+        basePath: false
+      },
+      {
+        source: '/cncf',
+        destination: 'https://community.cncf.io/u/m9crwf/#/about',
+        permanent: false,
+        basePath: false
+      },
+      // Resumes and CVs
       {
         source: '/cv',
         destination: '/static/Matteo_Bianchi.pdf',
@@ -99,18 +115,38 @@ module.exports = {
         destination: '/static/Matteo_Bianchi_devrel.pdf',
         permanent: false,
       },
+      // Social media
+      {
+        source: '/tg',
+        destination: 'https://t.me/mbianchidev_bot',
+        permanent: false,
+        basePath: false
+      },
+      {
+        source: '/telegram',
+        destination: 'https://t.me/mbianchidev_bot',
+        permanent: false,
+        basePath: false
+      },
+      {
+        source: '/li',
+        destination: 'https://www.linkedin.com/in/mbianchidev/',
+        permanent: false,
+        basePath: false
+      },
+      {
+        source: '/linkedin',
+        destination: 'https://www.linkedin.com/in/mbianchidev/',
+        permanent: false,
+        basePath: false
+      },
       {
         source: '/x',
         destination: 'https://twitter.com/mbianchidev',
         permanent: false,
         basePath: false
       },
-      {
-        source: '/cncf',
-        destination: 'https://community.cncf.io/u/m9crwf/#/about',
-        permanent: false,
-        basePath: false
-      },
+      // Blogs and articles
       {
         source: '/blog',
         destination: 'https://blog.mb-consulting.dev',
@@ -130,23 +166,18 @@ module.exports = {
         basePath: false
       },
       {
-        source: '/so',
-        destination: 'https://stackoverflow.com/users/7410528/mbianchidev',
-        permanent: false,
-        basePath: false
-      },
-      {
-        source: '/stack', //deprecated
-        destination: 'https://stackshare.io/mbianchidev/known-techs',
-        permanent: false,
-        basePath: false
-      },
-      {
         source: '/nl',
         destination: 'https://funews.substack.com/',
         permanent: false,
         basePath: false
       },
+      {
+        source: '/newsletter',
+        destination: 'https://funews.substack.com/',
+        permanent: false,
+        basePath: false
+      },
+      // Mentoring
       {
         source: '/mentor',
         destination: 'https://mentors.to/mbianchidev',
@@ -154,17 +185,38 @@ module.exports = {
         basePath: false
       },
       {
-        source: '/speaker',
+        source: '/mentorship',
+        destination: 'https://mentors.to/mbianchidev',
+        permanent: false,
+        basePath: false
+      },
+      // Public speaking
+      {
+        source: '/sessionize',
         destination: 'https://sessionize.com/mbianchidev/',
         permanent: false,
         basePath: false
       },
+      {
+        source: '/speakerdeck',
+        destination: 'https://speakerdeck.com/mbianchidev',
+        permanent: false,
+        basePath: false        
+      },
+      // Achievements and certifications
       {
         source: '/badges',
         destination: 'https://www.credly.com/users/mbianchidev/badges',
         permanent: false,
         basePath: false
       },
+      {
+        source: '/credly',
+        destination: 'https://www.credly.com/users/mbianchidev/badges',
+        permanent: false,
+        basePath: false
+      },
+      // Bookings
       {
         source: '/cal',
         destination: 'https://calendly.com/mbianchidev/book-a-session',
@@ -235,7 +287,7 @@ module.exports = {
       },
       {
         source: '/podcast',
-        destination: 'https://cloudpirates.fm/',
+        destination: 'TODO',
         permanent: false,
         basePath: false
       },
@@ -246,12 +298,12 @@ module.exports = {
         basePath: false
       },
       {
-        source: '/insta',
+        source: '/instagram',
         destination: 'https://www.instagram.com/b143ck_',
         permanent: false,
         basePath: false
       },
-      // Every link
+      // Every other link
       {
         source: '/all-links',
         destination: 'https://linktr.ee/mbianchidev',
