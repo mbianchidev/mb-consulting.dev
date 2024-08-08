@@ -31,20 +31,6 @@ const experiencesData = {
       show: true 
     },
     {
-      code: "CNCF",
-      companyName: "CNCF",
-      companyType: "🇺🇸 Foundation",
-      companySector: "Cloud Native",
-      companyLogo: "/images/projects/CNCF.png",
-      companyLogoX: 200,
-      companyLogoY: 1000,
-      companyUrl: "https://community.cncf.io/events/details/cncf-kcd-netherlands-presents-kcd-utrecht-2023",
-      role: "Organizer | Program Committee | Speaker",
-      story: "I am co-organizer of the KCD Utrecht 2023, KCD Italy 2024, KubeTrain EU, KCD Netherlands 2024 and continously contributing to Cloud Native events, supported by the CNCF, the KCD, CNCG and open-source communities. I also speak about Cloud Native tech at conferences and meetups around the world.",
-      year: "2023-now",
-      show: true      
-    },
-    {
       code: "MNTCRS",
       companyName: "MentorCruise",
       companyType: "🇺🇸 Corporate",
@@ -56,19 +42,19 @@ const experiencesData = {
       role: "Software Engineering & Career Mentor",
       story: "I started mentoring on MentorCruise in 2023 and I can't wait to help more people to achieve their goals.",
       year: "2023-2024",
-      show: true
+      show: false
     },
     {
       code: "FREE",
-      companyName: "Self-Employed",
-      companyType: "Freelancing",
+      companyName: "SyncTune",
+      companyType: "Self-Employed",
       companySector: "Engineering Services",
       companyLogo: "/images/logo.webp",
       companyLogoX: 187,
       companyLogoY: 62,
       companyUrl: "https://mb-consulting.dev",
-      role: "Cloud Native Consultant",
-      story: "Offering services and advisory to various companies, ranging from startups to large enterprires, mostly on the DevOps and Cloud Infrastructure side, with a strong focus on Cloud Native tech.",
+      role: "Founder & Cloud Native Officer",
+      story: "Leading companies towards Cloud Native, providing a range of specialized services, ranging from Engineering to DevOps coaching, Kubernetes training, fractional CTOing and so on. Offering advisory to startups (pre-seed, seed, series A) operating in the DevTools, AI, Healthcare and Fashion verticals. Making their infrastructure journey as easy as possible. Volunteering to organize events in the Cloud Native space, contributing to Kubernetes, speaking at international conferences, educating and creating content about Cloud Native.",
       year: "2021-now",
       show: true
     },
@@ -84,7 +70,7 @@ const experiencesData = {
       role: "Strategic Advisor | Technical Advisor",
       story: "Infrastructure advisory, product testing, support for their AI platform helping Product Managers to take data-driven decisions.",
       year: "2023-now",
-      show: true 
+      show: false 
     },
     {
       code: "ABL",
@@ -96,7 +82,7 @@ const experiencesData = {
       companyLogoY: 500,
       companyUrl: "https://abila.it/",
       role: "Lead Cloud Native Consultant",
-      story: "As a Lead Cloud Native Consultant for Abila, I helped them to build a new Cloud Native practice and to deliver Cloud Native projects to their customers.",
+      story: "As a Lead Cloud Native Consultant for Abila, I helped them to build a new Cloud Native practice and to deliver Cloud Native to their customers.",
       year: "2023-2024",
       show: true 
     },
@@ -110,7 +96,7 @@ const experiencesData = {
       companyLogoY: 62,
       companyUrl: "https://www.nki.nl/",
       role: "Lead Cloud Native Consultant | Data Manager",
-      story: "Designing and building Azure Cloud Infra for a gamified annotation tool. Support Computational Pathology and ML/AI Workloads to train an image pattern recognition algorithm on biopsy data. Objective of the project is to increase the efficiency of diagnosis in breast cancer.",
+      story: "Supporting computational pathology and ML/AI workloads to train image pattern recognition models on biopsy data, plus annotate and label such data. I was responsible for the whole Azure infrastructure.Objective of the project is to increase the efficiency of diagnosis in breast cancer.",
       year: "2022-2023",
       show: true
     },
@@ -124,7 +110,7 @@ const experiencesData = {
       companyLogoY: 62,
       companyUrl: "https://www.kubelab.cloud/",
       role: "Chief Technology Officer",
-      story: "Started as fractional CTO then first key employee, I managed a highly distributed engineering team (up to 7 people) applying a mix of Scrum and Kanban, hiring, set up a career framework, built a tech radar to enable adoption of tools, took care of DevEx and took key decisions steering the company strategy. I was also involved in fundraising activities, design and implementation of a Kubernetes management SaaS platform based on kubelab-cli OSS project. We failed to find the PMF and had to step back with lots of lessons learned.",
+      story: "Started as fractional CTO then first key employee, I managed a highly distributed engineering team (7 people peak) applying a mix of Scrum and Kanban, hiring, set up a career framework, built a tech radar to enable adoption of tools, took care of DevEx and took key decisions steering the company strategy. I was also involved in fundraising activities (200k pre-seed). I designed and built a SaaS platform with the aim of simplyfing Kubernetes management across clouds and tenants. We released our klab-cli OSS project as part of our open-core strategy. In the end we failed to find the PMF before running out of cash and so we had to step back with lots of lessons learned.",
       year: "2022-2023",
       show: true
     },
@@ -152,7 +138,7 @@ const experiencesData = {
       companyLogoY: 48,
       companyUrl: "https://roarinc.com/",
       role: "Cloud Native Consultant",
-      story: "Collaborated with Roar to enable DevOps culture in all aspects of the company, starting with CI/CD processes on Azure DevOps and evolving their infrastructure. Automated deployment processes on K8S clusters by creating a proper CI/CD process (standardized for the whole company) increasing deployment speed by over 100%.",
+      story: "I collaborated with Roar to enable DevOps culture in all aspects of the company, starting with CI/CD processes on Azure DevOps and evolving their infrastructure. Automated deployment processes on K8S clusters by creating a GitOps workflow (standardized and later adopted by the whole company) increasing deployment speed by over 100%.",
       year: "2022",
       show: true
     },
@@ -166,7 +152,7 @@ const experiencesData = {
       companyLogoY: 75,
       companyUrl: "https://coopolis.it/",
       role: "Cloud Native Trainer",
-      story: "Enabled the company Devs and Managers to understand DevOps culture by teaching classes with in-depth focuses on Gitlab and CI/CD processes. They were able to automate and increment deployment speed by a x4 factor after the course.",
+      story: "Enabled the company Engineers and Managers to understand DevOps culture by teaching classes with in-depth focuses on Gitlab and CI/CD processes. They were able to automate and increment deployment speed by a x4 factor after the course.",
       year: "2022",
       show: true
     },
@@ -180,13 +166,13 @@ const experiencesData = {
       companyLogoY: 80,
       companyUrl: "https://greenchic.it/",
       role: "Fractional CTO",
-      story: "Handling suppliers and the whole IT side of the company, including but not limited to infrastructure and operations. Built from ground up a new cloud infrastructure on AWS for their sustainable fashion e-commerce migration while hardening policies and solving critical security issues on their AWS Lambda deployed APIs.",
+      story: "Handling multiple suppliers and steering the whole IT strategy of the company, including but not limited to infrastructure and operations. Built a new AWS cloud infrastructure from ground up for their sustainable fashion e-commerce. I migrated their solution to a performant cloud architecture while hardening policies and solving critical security issues on their AWS Lambda APIs.",
       year: "2021-2022",
       show: true
     },
     {
       code: "GDF",
-      companyName: "Italian Financial Police",
+      companyName: "Italian Ministery of Economics and Finance",
       companyType: "🇮🇹 Public Administration",
       companySector: "Security and finance",
       companyLogo: "/images/clients/gdf.webp",
@@ -194,7 +180,7 @@ const experiencesData = {
       companyLogoY: 75,
       companyUrl: "https://www.gdf.gov.it/",
       role: "Cloud Native Trainer",
-      story: "Helped their IT joint command to improve DevOps practices by delivering a DevOps course and an in-depth technical workshop on Azure cloud and Azure DevOps.",
+      story: "Helped their IT joint command in Rome to improve DevOps practices by delivering a tailored DevOps course and an in-depth technical workshop on Azure cloud and Azure DevOps.",
       year: "2021",
       show: true
     },
@@ -208,7 +194,7 @@ const experiencesData = {
       companyLogoY: 49,
       companyUrl: "https://www.mvc-technology.eu/",
       role: "Cloud Native Trainer",
-      story: "Delivered DevOps courses to their clients helping them to understand how to implement DevOps culture.",
+      story: "Delivered tailored DevOps courses to MVC customers, helping them to understand how to implement DevOps culture.",
       year: "2021",
       show: true
     },
@@ -222,7 +208,7 @@ const experiencesData = {
       companyLogoY: 48,
       companyUrl: "https://www.dshare.com/",
       role: "Cloud Native Consultant",
-      story: "Managed Azure and AWS infrastructures and deployments for their news and media platforms. Solved a critical situation where a DDoS attack coming from Chinese and Russian IPs caused a 100% downtime on one of their managed institutional websites.",
+      story: "Managed Azure and AWS infrastructures and deployments for D-Share's news and media SaaS solution. Solved a critical incident where a DDoS attack coming from Chinese and Russian IPs caused a 100% downtime on one of their managed institutional applications.",
       year: "2021-2022",
       show: true
     },
@@ -234,8 +220,8 @@ const experiencesData = {
       companyLogoX: 169,
       companyLogoY: 75,
       companyUrl: "https://gosignweb.infocert.it",
-      role: "Senior Software Engineer | Lead DevOps Engineer | SRE",
-      story: "I brought DevOps and Site Reliability practices in a digital signature product used by millions of people and thousands of companies all over Europe: GoSign. I managed to improve the reliability and security of the product by developing document management and signature processes in Java. Automated infrastructure provisioning, deployment, delivery and incident management processes while working closely and educating cross-functional teams. I spent 2 years leading the GoSign on-call service with 24/7 availability and solved over 200 critical production incidents saving hundred thousands of euros for the company. Deleted over 50k lines of code, refactored more than 100k, contributed to 50+ internal repositories, built a lot of 0 to 1 libraries, my code still servers 8+ million daily users.",
+      role: "Senior Software Engineer | Staff DevOps Engineer & SRE",
+      story: "I brought DevOps and Site Reliability practices in a digital signature product used by millions of people and thousands of companies all over Europe: GoSign. I improved the reliability and security of the product by developing document management and signature processes in modern Java 11. Created a fully automated process for infrastructure provisioning via Terraform, automated deployment via Jenkins, ArgoCD, Flux and Spinnaker. I've designed delivery and incident management processes while working closely with cross functional teams spanning from sales to legal. I held internal courses to educate engineering teams on DevOps culture and processes. I spent 2 years leading the GoSign on-call service with 24/7 availability and solved over 200 critical production incidents (severity 1), saving millions of euros for the company. Deleted over 150k lines of code, refactored more than 400k, contributed to 50+ internal repositories, built a lot of 0 to 1 libraries, my code still servers 10+ million daily users.",
       year: "2019-2021",
       show: true
     },
@@ -248,7 +234,7 @@ const experiencesData = {
       companyLogoY: 100,
       companyUrl: "https://www.generali.it/",
       role: "Digital Signature & DevOps Consultant",
-      story: "Consultancy offered via InfoCert on digital signature products for the Italian insurance branch of Generali. I was responsible for the migration of their solution from on-premise monolith to a Docker containerized and Kubernetes-based one. All deployed on an AWS EKS cluster, conducted test and production critical deployments on AWS (off-peak hours, night and weekend included), automated the monitoring of their cloud infra exposing data dashboards, managed day to day operations and high end tech support.",
+      story: "Consultancy offered via InfoCert on digital signature products for the Italian insurance branch of Generali. I was responsible for the migration of their digital signature solution from an on-premise monolith to a container-based one, deployed on Kubernetes (AWS EKS). I was responsible for conducting load tests and production critical deployments on AWS (off-peak hours, during the night or weekends). I automated the observability stack of their cloud infra and exposed Grafana dashboards to monitor DORA metrics, managed day-2 operations on Kubernetes and responsible for L3 customer support.",
       year: "2019-2021",
       show: true
     },
@@ -261,7 +247,7 @@ const experiencesData = {
       companyLogoY: 50,
       companyUrl: "https://www.enel.it/",
       role: "Digital Signature & DevOps Consultant",
-      story: "Consultancy offered via InfoCert on digital signature products for Enel. I was responsible for remote test and production critical deployments on VMWare provided - Foreman provisioned puppet-configured Linux VMs, integration with multiple custom systems including even-driven dispatcher systems, notification queues, massive bulk signature processes, new features development, and high-end tech support to C-level management.",
+      story: "Consultancy offered via InfoCert on digital signature products for Enel. I was responsible for remote test and production critical deployments on VMWare provided - Foreman provisioned puppet-configured Linux VMs, integration with multiple custom systems including even-driven dispatcher systems, notification queues (RabbitMQ, Kafka), massive bulk signature processes, new features development, and executive L3 support.",
       year: "2019-2021",
       show: true
     },
@@ -274,7 +260,7 @@ const experiencesData = {
       companyLogoY: 50,
       companyUrl: "https://www.allianz.it/",
       role: "Digital Signature & DevOps Consultant",
-      story: "Consultancy offered via InfoCert on digital signature products for the Italian and French insurance branch of Allianz. I was responsible for the migration of their old digital signature system, orchestration of multiple 3rd party consultants, remote test and production critical deployments on VMWare provided, Foreman provisioned and puppet-configured Linux VMs, new features development and tech support.",
+      story: "Consultancy offered via InfoCert on digital signature products for the Italian and French insurance branch of Allianz. I was responsible for the migration of their legacy digital signature system, coordinator of multiple 3rd party consultants (Accenture, Deloitte), remote test and production critical deployments on VMWare provided, Foreman provisioned and puppet-configured Linux VMs. I was in charge of new features development and L3 customer support.",
       year: "2019-2021",
       show: true
     },
@@ -286,8 +272,8 @@ const experiencesData = {
       companyLogoX: 350,
       companyLogoY: 50,
       companyUrl: "https://www.leonardocompany.com/it/it/",
-      role: "Digital Signature & IT Security Consultant",
-      story: "Consultancy offered via InfoCert on digital signature products for the Finance deparment of Leonardo. I was responsible for remote test and production critical deployments on their on-premise Windows server environment, integration with their SAP multiple systems, IT security advisory and customer tech support.",
+      role: "Digital Signature & Solution Architect, Security",
+      story: "Consultancy offered via InfoCert on digital signature products for the Finance deparment of Leonardo. I was responsible for remote test and production critical deployments on their on-premise Windows server environment, integration with their SAP multiple systems, IT security advisory and solution architecture.",
       year: "2019-2021",
       show: true
     },
@@ -299,8 +285,8 @@ const experiencesData = {
       companyLogoX: 350,
       companyLogoY: 50,
       companyUrl: "https://frontex.europa.eu/",
-      role: "Digital Signature & IT Security Consultant",
-      story: "Consultancy offered via InfoCert on digital signature products for the IT deparment of Frontex. I was responsible for test and production critical deployments on their on-premise Linux infra in compliance with EU regulations, integration with their Salesforce systems including custom plugins development, technical support and IT security advisory.",
+      role: "Digital Signature & Solution Architect, Security",
+      story: "Consultancy offered via InfoCert on digital signature products for the IT deparment of Frontex. I was responsible for test and production critical deployments on their on-premise Linux infra in compliance with EU regulations, integration with their Salesforce systems including custom plugins development, solution architecture and IT security advisory.",
       year: "2019-2021",
       show: true
     },
@@ -313,7 +299,7 @@ const experiencesData = {
       companyLogoY: 50,
       companyUrl: "https://www.barilla.com/it-it",
       role: "Digital Signature & DevOps Consultant",
-      story: "Consultancy offered via InfoCert on digital signature products for the Sales deparment of Barilla. I was responsible for remote test and production critical deployments on VMWare provided - Foreman provisioned puppet-configured Linux VMs, integration with their Salesforce systems and customer support.",
+      story: "Consultancy offered via InfoCert on digital signature products for the Sales deparment of Barilla. I was responsible for remote test and production critical deployments on VMWare provided - Foreman provisioned, puppet-configured Linux VMs, integration with their Salesforce systems and L3 customer support.",
       year: "2019-2021",
       show: true
     },
@@ -326,7 +312,7 @@ const experiencesData = {
       companyLogoY: 100,
       companyUrl: "https://www.bmw.it/it/index.html",
       role: "Digital Signature & DevOps Consultant",
-      story: "Consultancy offered via InfoCert on digital signature products for the IT deparment of BMW. I was responsible for remote test and production critical deployments on their on-premise Linux and customer support.",
+      story: "Consultancy offered via InfoCert on digital signature products for the IT deparment of BMW. I was responsible for remote test and production critical deployments on their on-premise Linux infrastructure and L3 customer support.",
       year: "2019-2021",
       show: true
     },
@@ -339,7 +325,7 @@ const experiencesData = {
       companyLogoY: 75,
       companyUrl: "https://www.unicredit.it/it.html",
       role: "Digital Signature & DevOps Consultant",
-      story: "Consultancy offered via InfoCert on digital signature products for the Serbian branch of Unicredit Group. I was responsible for remote test and production critical deployments on their on-premise secured Linux infrastructure.",
+      story: "Consultancy offered via InfoCert on digital signature products for the Serbian branch of Unicredit Group. I was responsible for remote test and production critical deployments on their on-premise Linux infrastructure.",
       year: "2019-2021",
       show: true
     },
@@ -365,7 +351,7 @@ const experiencesData = {
       companyLogoY: 81,
       companyUrl: "https://eco-mind.eu/",
       role: "Senior Fullstack Engineer",
-      story: "Maximized my Spring and Java skills by working side by side with valuable professionals both internal and external to the company. Here I learnt the true meaning of the word 'teamwork' and how to work in a team with a diverse set of skills.",
+      story: "Maximized my Spring, Quarkus and Java skills by working side by side with valuable professionals both internal and external to the company. Here I learnt the true meaning of the word 'teamwork' and how to work in a highly distributed team in a hybrid setting.",
       year: "2018-2021",
       show: true
     },
@@ -378,7 +364,7 @@ const experiencesData = {
       companyLogoY: 40,
       companyUrl: "https://www.reply.com/it/content/smart-seller",
       role: "Fullstack Software Developer",
-      story: "Got in touch with Typescript and Java frameworks (Spring and Angular) for the first time. I was able to learn how to use them and how to build reusable components. This was also the first time i got in touch with DevOps culture and tools like Jenkins. This propelled my journey torwards my objective to become a DevOps engineer.",
+      story: "This job got me in touch with Typescript (Angular) and Java (Spring). I've touched frameworks for the first time. I was able to leverage them to build reusable components both for APIs and frontend. This was also the very first time I heard about DevOps culture and CI/CD tools like Jenkins. This role propelled my journey torwards my objective to become a DevOps engineer.",
       year: "2018",
       show: true
     },
@@ -391,7 +377,7 @@ const experiencesData = {
       companyLogoY: 150,
       companyUrl: "https://www.vodafone.com/",
       role: "Fullstack Software Developer",
-      story: "I worked on a product that was used by the financial group of Vodafone. Here I learnt the importance of refactoring, optimization and keeping up to date with techs by migrating Oracle DBs to newer versions and Java from 5 to 8. I also learnt how to work in a team and how to work in a fast-paced environment and how to manage a complex VMWare based IT infrastructure.",
+      story: "I was responsible of a legacy Java product that was used by the financial group of Vodafone Italy. Here I learnt the importance of refactoring, optimization and keeping up to date with techs by migrating Oracle DBs to newer versions and Java from 5 to 8. I started working with cross-functional teams in a fast-paced environment and learnt how to manage a complex VM infrastructure based on VMWare technology",
       year: "2017-2018",
       show: true
     },
@@ -404,7 +390,7 @@ const experiencesData = {
       companyLogoY: 36,
       companyUrl: "https://www.tenutabene.it/",
       role: "Fullstack Software Developer",
-      story: "I learnt how a startup works and scales up and started my journey in the web development world. Contributed to an (authorized) scraping-powered price estimation engine for second hand cars and a web app for the management of the company's car fleet written in Laravel (PHP).",
+      story: "I learnt how a startup works and scales up. This experience was the best part in my journey in the web development world. Contributed to an (authorized) scraping-powered price estimation engine for second hand cars and a backoffice ERP web app for the management of the company's car fleet written in Laravel (PHP).",
       year: "2017",
       show: true
     },
@@ -416,8 +402,8 @@ const experiencesData = {
       companyLogoX: 200,
       companyLogoY: 200,
       companyUrl: "https://itisravenna.edu.it/",
-      role: "Web Developer",
-      story: "Some jobs as intern and web developer while I was attending high school. I learnt how to work autonomously in chaotic environments, with little or no guidance. I started using C++, C#, .NET and learnt how to take advantage of the MVC pattern.",
+      role: "Junior Software Developer | Linux SysAdmin",
+      story: "I learnt how to work autonomously as a fullstack software developer (Linux administration tasks included) in chaotic environments, with little or no guidance. I started with languages such as: C++, C#, .NET and lots of bash scripting. I've thought myself how to take advantage of software architecture patterns.",
       year: "2015-2017",
       show: true     
     },
