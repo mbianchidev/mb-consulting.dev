@@ -237,7 +237,7 @@ module.exports = {
       },
       {
         source: '/book30',
-        destination: 'https://cal.com/mbianchidev/quick-chat',
+        destination: 'https://cal.com/mbianchidev/chat',
         permanent: false,
         basePath: false
       },
