@@ -146,6 +146,18 @@ module.exports = {
         permanent: false,
         basePath: false
       },
+      {
+        source: '/bsky',
+        destination: 'https://mbianchidev.bsky.social',
+        permanent: false,
+        basePath: false
+      },
+      {
+        source: '/mastodon',
+        destination: 'https://hachyderm.io/@mbianchidev',
+        permanent: false,
+        basePath: false
+      },
       // Blogs and articles
       {
         source: '/blog',

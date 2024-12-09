@@ -17,6 +17,20 @@
 const experiencesData = {
   experiences: [
     {
+      code: "GHB",
+      companyName: "GitHub",
+      companyType: "🇺🇸 Corporate",
+      companySector: "DevTools",
+      companyLogo: "/images/employers/github.webp",
+      companyLogoX: 200,
+      companyLogoY: 500,
+      companyUrl: "https://github.com/",
+      role: "Solutions Engineer (Corporate)",
+      story: "Finding solutions to engineering problems for GitHub's corporate customers.",
+      year: "2024-now",
+      show: true 
+    },
+    {
       code: "OMN",
       companyName: "Omnistrate",
       companyType: "🇺🇸 Startup",
@@ -27,8 +41,8 @@ const experiencesData = {
       companyUrl: "https://omnistrate.com/",
       role: "DevRel & Solution Architect",
       story: "Building the DevRel program from ground up, responsible for the overall marketing strategy ‑ close collaboration with Sales and Product. Producing blogs, demo videos, how‑tos ‑ growing the awareness metrics 10x across different media. Contributing to GTM strategy, product growth, and DevEx ‑ drafting and executing strategies reporting directly to the CEO. Supporting Omnistrate customers, translating business requirements into robust architectural designs and successful implementation.",
-      year: "2023-now",
-      show: true 
+      year: "2023-2024",
+      show: false 
     },
     {
       code: "MNTCRS",
