@@ -40,7 +40,7 @@ const experiencesData = {
       companyLogoY: 500,
       companyUrl: "https://omnistrate.com/",
       role: "DevRel & Solution Architect",
-      story: "Building the DevRel program from ground up, responsible for the overall marketing strategy ‑ close collaboration with Sales and Product. Producing blogs, demo videos, how‑tos ‑ growing the awareness metrics 10x across different media. Contributing to GTM strategy, product growth, and DevEx ‑ drafting and executing strategies reporting directly to the CEO. Supporting Omnistrate customers, translating business requirements into robust architectural designs and successful implementation.",
+      story: "Building the function from ground up as a solo DevRel, advocating for cloud native SaaS, producing written and video content, documenting features, showcasing the platform capabilities through demos, contributing to GTM strategy, product growth, DevEx and more. // Supporting Omnistrate customers and prospects - ranging from startups to large enterprises - who are building their Control Plane and SaaS offering via the Omnistrate Platform. Introducing the overall technical vision, collaborating with cross-functional teams to translate business requirements into robust architectural designs, building PoC/PoV and finally, leading successful implementations and growing the account.",
       year: "2023-2024",
       show: false 
     },
