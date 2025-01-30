@@ -1,4 +1,4 @@
-## Portfolio Website for MB-Consulting
+## Portfolio Website for MB-Consulting / SyncTune
 
 My portfolio is a website to showcase my services, clients, experiences and values.
 
@@ -25,13 +25,13 @@ Here's a list of the tech stack:
 - [React Hook Form](https://react-hook-form.com) for Contact Form.
 - [Sendgrid](https://sendgrid.com/solutions/email-api/) as a mail service.
 - [Vercel](https://vercel.com) for deployments and CI/CD.
-- [GitHub's Dependabot](https://docs.github.com/en/code-security/dependabot) for code security.
+- [GitHub's Dependabot](https://docs.github.com/en/code-security/dependabot) for dependency updates, including security related ones.
 - [StackOverflow](https://stackoverflow.com/questions/tagged/nextjs) because I'm not a frontend developer (as you can clearly see from my code).
 
 # License
 
 This project is under no license, do whatever, I don't mind :)
-No guarantees, no warranties, no nothing.
+No guarantees, no warranties, no nothing tho!
 
 # Deployment
 
