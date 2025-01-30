@@ -1,6 +1,6 @@
 {
   "name": "mb-consulting-dev-site",
-  "version": "1.8.9",
+  "version": "1.9.0",
   "private": true,
   "scripts": {
     "dev": "next dev --port 3001",
@@ -13,6 +13,7 @@
   "dependencies": {
     "@jsdevtools/version-bump-prompt": "^6.1.0",
     "@sendgrid/mail": "^8.1.0",
+    "@tailwindcss/postcss": "^4.0.1",
     "@vercel/analytics": "^1.4.0",
     "@vercel/speed-insights": "^1.1.0",
     "axios": "^1.7.4",
