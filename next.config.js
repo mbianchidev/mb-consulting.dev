@@ -5,7 +5,6 @@ module.exports = {
   // experimental: {
   //   appDir: false //future use
   // },
-  swcMinify: true,
   publicRuntimeConfig: {
     version,
   },
@@ -371,4 +370,4 @@ const securityHeaders = [
     key: 'X-Download-Options',
     value: 'noopen'
   },
-]
+];
