@@ -15,7 +15,7 @@
     "@sendgrid/mail": "^8.1.0",
     "@tailwindcss/postcss": "^4.0.1",
     "@vercel/analytics": "^1.5.0",
-    "@vercel/speed-insights": "^1.1.0",
+    "@vercel/speed-insights": "^1.2.0",
     "axios": "^1.8.1",
     "eslint-config-next": "^15.1.0",
     "mini-css-extract-plugin": "^2.9.0",
