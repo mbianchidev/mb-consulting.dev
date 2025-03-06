@@ -1,22 +1,19 @@
-import styles from "./SocialElement.module.css";
-import userData from "@constants/data";
-import React from "react";
-import DarkModeToggle from "../Toggles/DarkModeToggle";
-import Link from "next/link";
+import Link from 'next/link';
+import userData from '../../../constants/data';
+import DarkModeToggle from '../Toggles/DarkModeToggle';
 
 export default function SocialElement({ twitter, linkedin, github, telegram, linkStyle, iconStyle, themeToggle }) {
-
-  if (!linkStyle) {
-      linkStyle = styles.socialElementLink +"text-gray-600 dark:text-gray-300";
-  }
-  if (!iconStyle) {
-      iconStyle = styles.socialElementIcon;
-  }
-  const twitterIconStyle = `bi bi-twitter ${iconStyle}`;
-  const linkedinIconStyle = `bi bi-linkedin ${iconStyle}`;
-  const githubIconStyle = `bi bi-github ${iconStyle}`;
-  const telegramIconStyle = `bi bi-telegram ${iconStyle}`;
-  const divStyle = "space-x-4 flex flex-row items-center";
+  // Define default styles with Tailwind
+  const divStyle = "flex flex-row items-center space-x-4";
+  const defaultLinkStyle = "text-gray-600 dark:text-gray-300 hover:opacity-70 transition-opacity duration-300";
+  const defaultIconStyle = "h-5 w-5 hover:text-blue-500";
+  
+  // Use provided styles or defaults
+  const githubIconStyle = iconStyle || defaultIconStyle;
+  const twitterIconStyle = iconStyle || defaultIconStyle;
+  const linkedinIconStyle = iconStyle || defaultIconStyle;
+  const telegramIconStyle = iconStyle || defaultIconStyle;
+  const finalLinkStyle = linkStyle || defaultLinkStyle;
 
   return (
     <div className={divStyle}>
@@ -26,7 +23,7 @@ export default function SocialElement({ twitter, linkedin, github, telegram, lin
         title="GitHub profile"
         href={userData.socialLinks.github}
         target="_blank" rel="noopener noreferrer"
-        className="text-gray-600 dark:text-gray-300 socialElementLink"
+        className={finalLinkStyle}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +42,7 @@ export default function SocialElement({ twitter, linkedin, github, telegram, lin
           title="Twitter profile"
           href={userData.socialLinks.twitter}
           target="_blank" rel="noopener noreferrer"
-          className={linkStyle}
+          className={finalLinkStyle}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +60,7 @@ export default function SocialElement({ twitter, linkedin, github, telegram, lin
           title="LinkedIn profile"
           href={userData.socialLinks.linkedin}
           target="_blank" rel="noopener noreferrer"
-          className="text-gray-600 dark:text-gray-300 socialElementLink"
+          className={finalLinkStyle}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +78,7 @@ export default function SocialElement({ twitter, linkedin, github, telegram, lin
           title="Telegram profile"
           href={userData.socialLinks.telegram}
           target="_blank" rel="noopener noreferrer"
-          className="text-gray-600 dark:text-gray-300 socialElementLink"
+          className={finalLinkStyle}
         >
           <svg 
             xmlns="http://www.w3.org/2000/svg"
