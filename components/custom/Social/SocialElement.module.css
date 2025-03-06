@@ -1,10 +1,1 @@
-.socialElementLink {
-    font-size: 1rem;
-    line-height: 1.5rem; 
-    font-weight: 400; 
-}
-
-.socialElementIcon {
-    width: 1.25rem; 
-    height: 1.25rem; 
-}
+/* This file can be empty since we're using Tailwind classes directly in the component */
