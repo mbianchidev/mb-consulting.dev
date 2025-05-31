@@ -18,6 +18,13 @@ module.exports = {
           mb_tertiary: "#00B2CA",
           mb_quaternary: "#33A1FD",
       },
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+        '2xl': '1536px',
+      },
     },
   },
   variants: {
@@ -26,6 +33,6 @@ module.exports = {
   },
 
   plugins: [
-    'tailwindcss/nesting',
+    '@tailwindcss/postcss/nesting',
   ],
 };
