@@ -1,8 +1,6 @@
 const colors = require("tailwindcss/colors");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  mode: "jit",
   content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: "class", // or 'media' or 'class'
   theme: {
@@ -32,7 +30,5 @@ module.exports = {
     display: ["responsive", "group-hover", "group-focus"],
   },
 
-  plugins: [
-    '@tailwindcss/postcss/nesting',
-  ],
+  plugins: [],
 };
