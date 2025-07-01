@@ -194,7 +194,7 @@ export default function ContactForm() {
           I have read and agree to the{" "}
           <Link
             href="/privacy-policy" rel="noopener noreferrer" target="_blank"
-            className="text-gray-800 border-b-2 border-gray-800 font-bold"
+            className="text-white border-b-2 border-gray-800 font-bold"
           >privacy policy</Link>{" "} of this site.
         </label>
       </div>

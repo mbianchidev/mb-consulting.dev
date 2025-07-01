@@ -4,8 +4,8 @@ import Link from "next/link";
 export default function NavBarLink({ link, name, router }) {
 
   const navbarFontSize = '20px';
-  const selectedTextStyle = "text-gray-800 font-bold dark:text-gray-400";
-  const unselectedTextStyle = "text-gray-600 font-normal dark:text-gray-300";
+  const selectedTextStyle = "text-black font-bold dark:text-white";
+  const unselectedTextStyle = "text-black font-normal dark:text-white";
 
   return (
     <Link href={link} passHref
