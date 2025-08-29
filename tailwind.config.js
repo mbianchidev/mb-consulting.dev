@@ -10,12 +10,6 @@ module.exports = {
         2000: "2000ms",
         4000: "4000ms",
       },
-      colors: {
-          mb_primary: "#02058F",
-          mb_secondary: "#2376C7",
-          mb_tertiary: "#00B2CA",
-          mb_quaternary: "#33A1FD",
-      },
       screens: {
         sm: '640px',
         md: '768px',

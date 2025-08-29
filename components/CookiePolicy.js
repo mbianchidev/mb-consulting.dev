@@ -24,7 +24,7 @@ export default function CookiePolicy() {
           <div>
             <p className="text-xl text-gray-700 dark:text-gray-300">You can reset consent by clicking on this button.</p>
             <br></br>
-            <button className="dark:bg-mb_tertiary bg-mb_quaternary rounded-md mx-2 mt-8 py-2 px-2 text-gray-200 dark:text-gray-200 text-xl font-bold" onClick={() => {
+            <button className="bg-mb-quaternary dark:bg-mb-tertiary rounded-md mx-2 mt-8 py-2 px-2 text-gray-200 dark:text-gray-200 text-xl font-bold" onClick={() => {
               resetCookieConsentValue("mb-consulting-dev");
               Cookies.remove("_ga");
               Cookies.remove("_gat");
