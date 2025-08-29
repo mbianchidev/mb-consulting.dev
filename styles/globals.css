@@ -1,8 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 @import './fonts.css';
+
+@theme {
+  --color-mb-primary: #02058F;
+  --color-mb-secondary: #2376C7;
+  --color-mb-tertiary: #00B2CA;
+  --color-mb-quaternary: #33A1FD;
+}
 
 html,
 body {

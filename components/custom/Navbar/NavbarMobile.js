@@ -3,7 +3,7 @@ import Link from "next/link";
 import navbarData from "@constants/navbar";
 
 export default function NavbarMobile() {
-  const mobileTextStyle = "text-gray-600 font-normal dark:text-gray-300 text-base";
+  const mobileTextStyle = "text-gray-600 font-normal dark:text-white text-base";
 
   return (
     <div className="space-x-8 block md:hidden mt-4">

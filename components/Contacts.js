@@ -16,10 +16,10 @@ export default function Contacts() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="md:ml-4">
             <header className="">
-              <h1 className="dark:text-gray-50 font-semibold text-2xl">
+              <h1 className="dark:text-white font-semibold text-2xl">
                 One step closer to your problem solved!
               </h1>
-              <p className="font-light text-base dark:text-gray-200 mt-2"> Fill in the details and I'll get back to you in no time. </p>
+              <p className="font-light text-base dark:text-white mt-2"> Fill in the details and I'll get back to you in no time. </p>
             </header>
             {/* Email/Address */}
             <ContactExtraInfo pin="true" mail="true"/>

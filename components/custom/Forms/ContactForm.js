@@ -194,14 +194,14 @@ export default function ContactForm() {
           I have read and agree to the{" "}
           <Link
             href="/privacy-policy" rel="noopener noreferrer" target="_blank"
-            className="text-gray-800 border-b-2 border-gray-800 font-bold"
+            className="text-white border-b-2 border-gray-800 font-bold"
           >privacy policy</Link>{" "} of this site.
         </label>
       </div>
       {/* Submit Button */}
       <button
         type="submit"
-        className="dark:bg-mb_tertiary bg-mb_quaternary rounded-md w-1/2 mx-4 mt-8 py-2 text-gray-50 text-xs font-bold"
+        className="bg-mb-quaternary dark:bg-mb-tertiary rounded-md w-1/2 mx-4 mt-8 py-2 text-gray-50 text-xs font-bold"
       >
         Send
       </button>
