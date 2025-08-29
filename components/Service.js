@@ -60,7 +60,7 @@ export default function Service({ service }) {
             </div>
           </div>
           {/* Right Column */}
-          <div className="col-span 1 md:col-span-1 lg:col-span-3">
+          <div className="col-span-1 md:col-span-1 lg:col-span-3">
             <p className={largeTextStyle}>{service.callout}</p>
             {/*Service CTA*/}
             <Link href={ service.link ? service.link : { pathname: "/book30", query: { serviceName: service.slug} }} passHref>
