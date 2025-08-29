@@ -37,5 +37,8 @@ yarn-error.log*
 # bash utils
 .sh
 
+# next.js telemetry cache
+/cache/
+
 /public/robots.txt
 /public/sitemap.xml
