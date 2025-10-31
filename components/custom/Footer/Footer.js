@@ -1,12 +1,9 @@
 import React from "react";
-import getConfig from 'next/config';
 import userData from "@constants/data";
 import SocialElement from "@custom/Social/SocialElement";
 import Link from "next/link";
 
 export default function Footer() {
-  
-  const { publicRuntimeConfig } = getConfig();
   return (
     <div className="bg-[#F1F1F1] dark:bg-gray-900">
       <div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">
@@ -14,7 +11,7 @@ export default function Footer() {
         <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between md:items-center mt-8">
           <div>
             <p>&copy; 2021-{new Date().getFullYear()} Matteo Bianchi (SyncTune) - All Rights Reserved. </p>
-            <p className="text-sm">site version - {publicRuntimeConfig?.version}</p>
+            <p className="text-sm">site version - {process.env.NEXT_PUBLIC_VERSION}</p>
             <p className="text-sm">KVK - {userData.nl_kvk} | VAT - {userData.nl_vat}</p>
           </div>
           <div className="flex flex-col md:flex-row">
