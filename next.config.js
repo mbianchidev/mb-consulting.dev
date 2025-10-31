@@ -5,8 +5,8 @@ module.exports = {
   // experimental: {
   //   appDir: false //future use
   // },
-  publicRuntimeConfig: {
-    version,
+  env: {
+    NEXT_PUBLIC_VERSION: version,
   },
   async headers() {
     return [
