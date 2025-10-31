@@ -1,9 +1,13 @@
 // next.config.js
+const { version } = require('./package.json');
 
 module.exports = {
   // experimental: {
   //   appDir: false //future use
   // },
+  env: {
+    NEXT_PUBLIC_VERSION: version,
+  },
   async headers() {
     return [
       {
