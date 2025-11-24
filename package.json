@@ -34,7 +34,7 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.17",
     "@tailwindcss/nesting": "0.0.0-insiders.565cd3e",
-    "@types/react": "^19.2.6",
+    "@types/react": "^19.2.7",
     "autoprefixer": "^10.4.22",
     "postcss": "^8.4.24",
     "tailwindcss": "^4.1.17"
