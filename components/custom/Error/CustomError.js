@@ -15,7 +15,9 @@ class CustomError extends React.Component {
     }
     componentDidCatch(error, errorInfo) {
       // You can use your own error logging service here
-      console.log({ error, errorInfo })
+      if (process.env.NODE_ENV === 'development') {
+        console.error('Error caught by CustomError:', { error, errorInfo });
+      }
     }
     render() {
       // Check if the error is thrown

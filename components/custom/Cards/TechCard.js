@@ -21,7 +21,14 @@ export default function TechCard ({techId, techName, techDescription, techLogo, 
   return (
     <div id={techId} className="h-20 w-20 mx-4 my-4">
       <Link href={techUrl} target="_blank" rel="noopener noreferrer" onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
-        <Image src={techLogo} alt={techName} className="fill" width={techLogoX} height={techLogoY} />
+        <Image 
+          src={techLogo} 
+          alt={techName} 
+          className="fill" 
+          width={techLogoX} 
+          height={techLogoY}
+          loading="lazy"
+        />
           <div 
             className={"tooltip-div rounded bg-gray-800 w-40" }
             style={{display: hover ? "block" : "none"}}

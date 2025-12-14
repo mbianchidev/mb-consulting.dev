@@ -23,7 +23,15 @@ export default function ServiceCard ({ serviceId, category, name, slug, image, i
           </span>
           <div id={serviceId} className="relative overflow-hidden" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
             <div className="h-72 object-cover">
-              <Image src={image} alt={altText} width={imageX} height={imageY} className="fill transform hover:scale-125 transition duration-2000 ease-out object-cover h-full w-full" />
+              <Image 
+                src={image} 
+                alt={altText} 
+                width={imageX} 
+                height={imageY} 
+                className="fill transform hover:scale-125 transition duration-2000 ease-out object-cover h-full w-full"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw"
+                loading="lazy"
+              />
             </div>
             <h1 className="absolute bottom-10 left-5 text-gray-50 font-bold text-xl dark:bg-blue-500 bg-mb_secondary rounded-md px-2">
               {name}

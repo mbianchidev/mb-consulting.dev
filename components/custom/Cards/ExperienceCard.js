@@ -6,7 +6,13 @@ export default function ExperienceCard({ code, companyName, companyType, company
   return (
     <div id={code} className="relative experience-card border p-4 rounded-md shadow-xl bg-white dark:bg-gray-800 z-10 mx-4">
       <Link href={companyUrl} target="_blank" rel="noopener noreferrer">
-        <Image src={companyLogo} alt={companyName} width={companyLogoX} height={companyLogoY} />
+        <Image 
+          src={companyLogo} 
+          alt={companyName} 
+          width={companyLogoX} 
+          height={companyLogoY}
+          loading="lazy"
+        />
       </Link>
       <h1 className="absolute -top-10 md:-left-10 md:-top-10 text-4xl text-gray-500 font-bold dark:text-gray-500">
       {year}

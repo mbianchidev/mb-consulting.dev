@@ -46,9 +46,41 @@ img {
   display: block;
 }
 
-/* Fix for Next.js image components */
+/* Fix for Next.js image components - prevent CLS */
 span[style*="box-sizing: border-box"] > img {
   position: relative !important;
+}
+
+/* Optimize rough-notation animations for compositing */
+svg.rough-notation path {
+  will-change: stroke-dashoffset;
+  transform: translateZ(0);
+}
+
+/* Prevent CLS from rough-notation animations */
+.rough-notation {
+  contain: layout style paint;
+}
+
+/* Touch target sizing for accessibility */
+.touch-target,
+button,
+a {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Ensure links are easily tappable */
+a[href] {
+  display: inline-block;
+  min-height: 44px;
+}
+
+/* Ensure sufficient contrast for interactive elements */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #33A1FD;
+  outline-offset: 2px;
 }
 
 @media (max-width: 768px) {
