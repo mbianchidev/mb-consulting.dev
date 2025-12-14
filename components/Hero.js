@@ -65,6 +65,7 @@ export default function Hero() {
               </h1>
             </Link>
           </RainbowHighlight>
+          <br />
           <RainbowHighlight color={color[2]}>
             <Link href={heroData.hero.thirdLink} passHref className="inline-block min-h-[44px]">
               <h1 className={titleStyle}>

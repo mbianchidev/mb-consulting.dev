@@ -4,7 +4,7 @@ import DarkModeToggle from '../Toggles/DarkModeToggle';
 
 export default function SocialElement({ twitter, linkedin, github, telegram, linkStyle, iconStyle, themeToggle }) {
   // Define default styles with Tailwind
-  const divStyle = "flex flex-row items-center space-x-4";
+  const divStyle = "flex flex-row items-center space-x-2";
   const defaultLinkStyle = "text-gray-600 dark:text-gray-300 hover:opacity-70 transition-opacity duration-300";
   const defaultIconStyle = "h-5 w-5 hover:text-blue-500";
   
