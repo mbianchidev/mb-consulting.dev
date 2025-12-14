@@ -13,7 +13,7 @@ export default function DarkModeToggle() {
     <button
       aria-label="Toggle Dark Mode"
       type="button"
-      className="w-5 h-5 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded"
+      className="p-3 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded"
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
     >
       {mounted ? (
@@ -22,7 +22,7 @@ export default function DarkModeToggle() {
           viewBox="0 0 24 24"
           fill="currentColor"
           stroke="currentColor"
-          className="w-5 h-5 text-yellow-500 dark:text-yellow-500"
+          className="w-5 h-5 text-yellow-500"
         >
           {theme === "dark" ? (
             <path
