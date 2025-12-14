@@ -8,7 +8,7 @@ export default function ServiceCarousel ({ images }) {
   return (
     <Carousel autoPlay={true} infiniteLoop={true} useKeyboardArrows={true} dynamicHeight={true} interval={4000} showStatus={false} >
       {images?.map((image, index) => (
-        <div key={index}>
+        <div key={image.url || index}>
           <Image 
             src={image.url} 
             alt={image.altText} 

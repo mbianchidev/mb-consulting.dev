@@ -51,11 +51,6 @@ span[style*="box-sizing: border-box"] > img {
   position: relative !important;
 }
 
-/* Prevent layout shift for images */
-img[loading="lazy"] {
-  aspect-ratio: attr(width) / attr(height);
-}
-
 @media (max-width: 768px) {
   .grid, .flex {
     display: flex;
