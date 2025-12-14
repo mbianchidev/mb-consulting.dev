@@ -51,6 +51,17 @@ span[style*="box-sizing: border-box"] > img {
   position: relative !important;
 }
 
+/* Optimize rough-notation animations for compositing */
+svg.rough-notation path {
+  will-change: stroke-dashoffset;
+  transform: translateZ(0);
+}
+
+/* Prevent CLS from rough-notation animations */
+.rough-notation {
+  contain: layout style paint;
+}
+
 @media (max-width: 768px) {
   .grid, .flex {
     display: flex;

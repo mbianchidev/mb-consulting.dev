@@ -13,6 +13,8 @@ export const RainbowHighlight = ({ color, children }) => {
       iterations={1}
       animationDuration={animationDuration}
       color={color}
+      strokeWidth={2}
+      animate={true}
     >
       {children}
     </RoughNotation>

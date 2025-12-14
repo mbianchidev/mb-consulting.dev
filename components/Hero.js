@@ -14,6 +14,7 @@ export default function Hero() {
   const [CTA, setCTA] = useState(" ");
   const [color, setColors] = useState(" ");
   const [funnySentence, setFunnySentence] = useState(" ");
+  const [showAnnotations, setShowAnnotations] = useState(false);
 
   useEffect(() => {
     const updateRandomFunnySentence = () => {
@@ -29,8 +30,17 @@ export default function Hero() {
     updateRandomFunnySentence();
     setCTA(randomCTA);
     setColors(randomColor);
+    
+    // Delay showing annotations to prevent CLS
+    const timer = setTimeout(() => {
+      setShowAnnotations(true);
+    }, 100);
+    
     // Clean up the interval when the component unmounts
-    return () => clearInterval(intervalId);
+    return () => {
+      clearInterval(intervalId);
+      clearTimeout(timer);
+    };
   }, [heroData]);
 
   const catchyPhraseFontSize = "1.5em";
@@ -40,7 +50,7 @@ export default function Hero() {
 
       <div className="w-full md:w-1/2 mx-auto text-center md:text-left lg:p-20">
         {/* Fancy writings */}
-        <RoughNotationGroup show={true}>
+        <RoughNotationGroup show={showAnnotations}>
           <RainbowHighlight color={color[0]}>
             <Link href={heroData.hero.firstLink} passHref>
               <h1 className={titleStyle}>
@@ -103,7 +113,8 @@ export default function Hero() {
             height={1430}
             sizes="(max-width: 1024px) 0vw, 50vw"
             className="shadow hero__desktop-image" 
-            priority 
+            priority
+            fetchPriority="high"
           />
 
           {/* Funny sentence */}
