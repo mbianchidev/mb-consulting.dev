@@ -73,7 +73,14 @@ export default function Hero() {
 
         {/* Responsive Mobile image */}   
         <div className="relative w-full h-56 md:h-[500px] hero__mobile-image" style={{position: "relative" }}>
-          <Image src={userData.mobileAvatarUrl} sizes="100vw" alt="mobile-propic" fill/>
+          <Image 
+            src={userData.mobileAvatarUrl} 
+            sizes="(max-width: 768px) 100vw, 50vw" 
+            alt="mobile-propic" 
+            fill
+            style={{objectFit: 'contain'}}
+            priority
+          />
         </div>
   
         {/*CTA - Call to action*/}
@@ -89,7 +96,15 @@ export default function Hero() {
         <div className="w-3/4 ">
 
           {/* Desktop Image + Link */}
-          <Image src={userData.avatarUrl} alt="propic" width={954} height={1430} className="shadow hero__desktop-image" priority />
+          <Image 
+            src={userData.avatarUrl} 
+            alt="propic" 
+            width={954} 
+            height={1430}
+            sizes="(max-width: 1024px) 0vw, 50vw"
+            className="shadow hero__desktop-image" 
+            priority 
+          />
 
           {/* Funny sentence */}
           <div className="flex flex-row justify-between mt-4">

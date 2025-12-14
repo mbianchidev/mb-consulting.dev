@@ -18,6 +18,7 @@ export async function getStaticProps(context) {
   return {
     // Passed to the page component as props
     props: { service },
+    revalidate: 86400, // Revalidate once per day (24 hours)
   }
 }
 
