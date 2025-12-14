@@ -46,9 +46,14 @@ img {
   display: block;
 }
 
-/* Fix for Next.js image components */
+/* Fix for Next.js image components - prevent CLS */
 span[style*="box-sizing: border-box"] > img {
   position: relative !important;
+}
+
+/* Prevent layout shift for images */
+img[loading="lazy"] {
+  aspect-ratio: attr(width) / attr(height);
 }
 
 @media (max-width: 768px) {
