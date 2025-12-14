@@ -46,7 +46,9 @@ export default function Navbar() {
         </div>
 
         {/*Social Links and change theme*/}
-        <SocialElement github="true" linkedin="true" themeToggle="true" hideIfMobile="true"/> 
+        <div className="hidden md:flex">
+          <SocialElement github="true" linkedin="true" themeToggle="true"/> 
+        </div> 
       </div>
 
       {/*Mobile Navbar Element*/}
