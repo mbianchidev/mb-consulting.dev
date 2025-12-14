@@ -70,6 +70,12 @@ a {
   min-width: 44px;
 }
 
+/* Ensure links are easily tappable */
+a[href] {
+  display: inline-block;
+  min-height: 44px;
+}
+
 /* Ensure sufficient contrast for interactive elements */
 button:focus-visible,
 a:focus-visible {
