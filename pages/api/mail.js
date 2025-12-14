@@ -16,7 +16,9 @@ export default async function(req, res) {
     const researchString = "site_form_message_request"; // this is an util string to identify the email in gmail search
     const body = req.body;
     if (!body || (!body.email || !body.message)){
-      console.warn("Error, no data found in form");
+      if (process.env.NODE_ENV === 'development') {
+        console.error("Error, no data found in form");
+      }
       res.status(400).json({ error: 'No body' });
       reject({ error: 'No body' });
       return;
@@ -118,7 +120,11 @@ export default async function(req, res) {
       });
 
     }  catch (error) {
-      console.warn("SendGrid Mail Error", error);
+      if (process.env.NODE_ENV === 'development') {
+        console.error("SendGrid Mail Error", error);
+      }
+      res.status(500).json({ error: 'Failed to send email' });
+      reject(error);
     }
   });
 }

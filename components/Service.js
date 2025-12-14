@@ -11,16 +11,6 @@ export default function Service({ service }) {
     setMounted(true);
   }, []);
 
-  const backup = console.warn;
-
-  console.warn = function filterWarnings(msg) {
-    const supressedWarnings = ['If you use CSS to change the size of your image, also include the styles'];
-  
-    if (!supressedWarnings.some(entry => msg.includes(entry))) {
-      backup.apply(console, arguments);
-    }
-  };
-
   const smallTextStyle = "text-sm text-gray-700 mb-4 dark:text-gray-300";
   const largeTextStyle = "text-xl text-gray-700 mb-4 dark:text-gray-300";
 

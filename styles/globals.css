@@ -62,6 +62,21 @@ svg.rough-notation path {
   contain: layout style paint;
 }
 
+/* Touch target sizing for accessibility */
+.touch-target,
+button,
+a {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Ensure sufficient contrast for interactive elements */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #33A1FD;
+  outline-offset: 2px;
+}
+
 @media (max-width: 768px) {
   .grid, .flex {
     display: flex;

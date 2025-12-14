@@ -11,16 +11,6 @@ export default function Services() {
     setMounted(true);
   }, []);
 
-  const backup = console.warn;
-
-  console.warn = function filterWarnings(msg) {
-    const supressedWarnings = ['If you use CSS to change the size of your image, also include the styles'];
-  
-    if (!supressedWarnings.some(entry => msg.includes(entry))) {
-      backup.apply(console, arguments);
-    }
-  };
-
   return (
     // we are avoiding any hydration warning: https://github.com/vercel/next.js/discussions/17443#discussioncomment-637879
     mounted ? (

@@ -28,16 +28,6 @@ export default function About() {
     setShowGoals(false);
   }
 
-  const backup = console.warn;
-
-  console.warn = function filterWarnings(msg) {
-    const supressedWarnings = ['If you use CSS to change the size of your image, also include the styles'];
-  
-    if (!supressedWarnings.some(entry => msg.includes(entry))) {
-      backup.apply(console, arguments);
-    }
-  };
-
   const linkTextStyle = "text-[#3B82F6] font-bold hover-underline-animation";
   const standardAboutText = "text-xl text-gray-700 mb-4 dark:text-gray-300";
 

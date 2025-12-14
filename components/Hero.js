@@ -82,13 +82,13 @@ export default function Hero() {
         </RoughNotationGroup>
 
         {/* Responsive Mobile image */}   
-        <div className="relative w-full h-56 md:h-[500px] hero__mobile-image" style={{position: "relative" }}>
+        <div className="relative w-full aspect-square max-w-md mx-auto hero__mobile-image" style={{position: "relative" }}>
           <Image 
             src={userData.mobileAvatarUrl} 
             sizes="(max-width: 768px) 100vw, 50vw" 
             alt="mobile-propic" 
             fill
-            style={{objectFit: 'contain'}}
+            style={{objectFit: 'cover'}}
             priority
           />
         </div>
@@ -97,7 +97,7 @@ export default function Hero() {
         <br></br>
         <p className="font-mono dark:text-gray-100" style={{fontSize: catchyPhraseFontSize}}>{heroData.hero.catchyPhrase}</p>
         <Link href="/book30" passHref>
-          <button className="bg-mb-quaternary dark:bg-mb-tertiary rounded-md w-1/2 mx-2 mt-8 py-2 text-gray-200 dark:text-gray-200 text-xl font-bold">{CTA}</button>
+          <button className="bg-mb-quaternary dark:bg-mb-tertiary rounded-md w-full sm:w-auto min-w-[200px] mx-2 mt-8 px-6 py-4 text-white dark:text-white text-xl font-bold hover:opacity-90 transition-opacity touch-target">{CTA}</button>
         </Link>
         
       </div>
