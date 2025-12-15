@@ -46,7 +46,7 @@ export default function Hero() {
   const catchyPhraseFontSize = "1.5em";
 
   return (
-    <div className="flex flex-row justify-center items-start overflow-hidden">
+    <div className="flex flex-row justify-center items-start overflow-hidden bg-white dark:bg-gray-800">
 
       <div className="w-full md:w-1/2 mx-auto text-center md:text-left lg:p-20">
         {/* Fancy writings */}
