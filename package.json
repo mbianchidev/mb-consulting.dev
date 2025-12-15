@@ -35,7 +35,7 @@
     "@tailwindcss/postcss": "^4.1.18",
     "@tailwindcss/nesting": "0.0.0-insiders.565cd3e",
     "@types/react": "^19.2.7",
-    "autoprefixer": "^10.4.22",
+    "autoprefixer": "^10.4.23",
     "postcss": "^8.4.24",
     "tailwindcss": "^4.1.17"
   },
