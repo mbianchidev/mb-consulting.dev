@@ -13,7 +13,7 @@ export default function DarkModeToggle() {
     <button
       aria-label="Toggle Dark Mode"
       type="button"
-      className="p-3 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded"
+      className="flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded"
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
     >
       {mounted ? (

@@ -9,7 +9,7 @@ import { shuffle, randomNum } from "@lib/utils";
 import Link from "next/link";
 
 export default function Hero() {
-  const titleStyle = "text-4xl md:text-8xl font-bold dark:text-gray-100 my-2";
+  const titleStyle = "text-4xl md:text-8xl font-bold text-gray-900 dark:text-gray-100 my-2";
 
   const [CTA, setCTA] = useState(" ");
   const [color, setColors] = useState(" ");
