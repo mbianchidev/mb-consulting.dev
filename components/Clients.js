@@ -14,7 +14,7 @@ export default function Clients() {
       
       <Breadcrumb/>
 
-      <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
+      <div className="bg-white -mt-10 dark:bg-gray-900">
         <div className="grid grid-cols-1 dark:bg-gray-900 max-w-xl mx-auto pt-20">
           {/*Fixes warning each child in a list should have a unique "key" prop. */}
           {React.Children.toArray(clientsData.clients.filter(client => client.show === true)?.map((client, clientId) => (

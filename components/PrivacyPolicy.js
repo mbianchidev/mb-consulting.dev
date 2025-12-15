@@ -21,7 +21,7 @@ export default function PrivacyPolicy() {
 
       <Breadcrumb/>
 
-      <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
+      <div className="bg-white -mt-10 dark:bg-gray-900">
         <div className="text-container mx-auto pt-20" style={{marginLeft : "10px"}}>
 
           <h1 className={h1TextStyle} style={{textAlign : "center"}}>Introduction</h1>

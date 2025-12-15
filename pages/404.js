@@ -17,7 +17,7 @@ export default function Custom404() {
           Error 404
         </h1>
       </div>
-      <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
+      <div className="bg-white -mt-10 dark:bg-gray-900">
         <div className="text-container max-w-6xl mx-auto pt-20">
           <span
             className="leading-loose text-2xl md:text-4xl font-semibold"

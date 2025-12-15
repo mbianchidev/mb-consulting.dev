@@ -16,7 +16,7 @@ export default function ErrorFallback() {
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
         <h1 className="text-5xl md:text-9xl font-bold py-20 text-center md:text-left">Error</h1>
       </div>
-      <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
+      <div className="bg-white -mt-10 dark:bg-gray-900">
         <div className="text-container mx-auto pt-20">
           <Image src="/images/gifs/hello-it.gif" alt="'Hello IT, have you tried turning in on and off again?' GIF from the IT Crowd series" width="480" height="270" />
           <Link href="/" passHref>

@@ -41,7 +41,7 @@ export default function About() {
       
       <Breadcrumb/>
 
-      <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
+      <div className="bg-white -mt-10 dark:bg-gray-900">
         <div className="text-container max-w-6xl mx-auto pt-20">
           <span
             className="leading-loose text-2xl md:text-4xl font-semibold"
@@ -51,7 +51,7 @@ export default function About() {
           </span>
         </div>
       </div>
-      <div className="bg-[#F1F1F1] dark:bg-gray-900 px-4">
+      <div className="bg-white dark:bg-gray-900 px-4">
         <div className="pt-20 grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-y-20 gap-x-20">
 
           {/* Social Buttons */}
@@ -144,7 +144,7 @@ export default function About() {
                 </span>
               ))}
               {/*Tech stack images*/}
-              <div className="bg-[#F1F1F1] flex flex-row flex-wrap mt-8">
+              <div className="bg-white flex flex-row flex-wrap mt-8">
                 {React.Children.toArray(techsData.techs.filter(tech => tech.show === true)?.map((tech, techId) => (
                   <TechCard
                     techId={techId}

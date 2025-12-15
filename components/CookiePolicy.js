@@ -16,7 +16,7 @@ export default function CookiePolicy() {
 
       <Breadcrumb/>
 
-      <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
+      <div className="bg-white -mt-10 dark:bg-gray-900">
         <div className="text-container mx-auto pt-20" style={{marginLeft : "10px"}}>
           
           <h1 className="font-bold text-xl" style={{textAlign : "center"}}>Reset cookie consent</h1>
