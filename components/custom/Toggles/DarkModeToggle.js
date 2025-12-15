@@ -42,7 +42,7 @@ export default function DarkModeToggle() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
-        fill="none"
+        fill="currentColor"
         stroke="currentColor"
         className="w-5 h-5 text-yellow-500"
         strokeWidth={2}
@@ -52,7 +52,7 @@ export default function DarkModeToggle() {
         {isDark ? (
           // Sun icon for dark mode (clicking will switch to light)
           <>
-            <circle cx="12" cy="12" r="4" fill="currentColor" />
+            <circle cx="12" cy="12" r="4" />
             <path d="M12 2v2" />
             <path d="M12 20v2" />
             <path d="m4.93 4.93 1.41 1.41" />
@@ -64,10 +64,7 @@ export default function DarkModeToggle() {
           </>
         ) : (
           // Moon icon for light mode (clicking will switch to dark)
-          <path
-            d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
-            fill="currentColor"
-          />
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
         )}
       </svg>
     </button>
