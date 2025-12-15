@@ -12,7 +12,12 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <ThemeProvider defaultTheme="dark" attribute="class">
+      <ThemeProvider 
+        attribute="class"
+        defaultTheme="system"
+        enableSystem={true}
+        disableTransitionOnChange={false}
+      >
         <main className="bg-white dark:bg-gray-800 w-full">
           <Navbar/>
           <CustomError>
