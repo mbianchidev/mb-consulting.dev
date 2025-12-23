@@ -64,16 +64,17 @@ svg.rough-notation path {
 
 /* Touch target sizing for accessibility */
 .touch-target,
-button,
-a {
+button {
   min-height: 44px;
   min-width: 44px;
 }
 
-/* Ensure links are easily tappable */
-a[href] {
-  display: inline-block;
+/* Ensure links in navigation are easily tappable */
+nav a,
+.navbar-mb a {
   min-height: 44px;
+  display: inline-flex;
+  align-items: center;
 }
 
 /* Ensure sufficient contrast for interactive elements */
@@ -276,6 +277,7 @@ a.close.disabled {
 	display: inline-block;
 	position: relative;
 	color: #3B82F6;
+	line-height: 1.5;
 }
   
 .hover-underline-animation:after {
@@ -284,7 +286,7 @@ a.close.disabled {
 	width: 100%;
 	transform: scaleX(0);
 	height: 2px;
-	bottom: 0;
+	bottom: 0.1em;
 	left: 0;
 	background-color: #3B82F6;
 	transform-origin: bottom right;
