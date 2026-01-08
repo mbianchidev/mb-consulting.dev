@@ -33,7 +33,7 @@ export default function ServiceCard ({ serviceId, category, name, slug, image, i
                 loading="lazy"
               />
             </div>
-            <h1 className="absolute bottom-10 left-5 text-gray-50 font-bold text-xl dark:bg-blue-500 bg-mb_secondary rounded-md px-2">
+            <h1 className="absolute bottom-10 left-5 text-gray-50 font-bold text-xl dark:bg-blue-500 bg-mb_secondary rounded-md px-4 py-1">
               {name}
             </h1>
             <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl">
