@@ -12,8 +12,14 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <ThemeProvider defaultTheme="dark" attribute="class">
-        <main className="bg-white dark:bg-gray-800 w-full">
+      <ThemeProvider 
+        attribute="class" 
+        defaultTheme="dark" 
+        enableSystem={false}
+        storageKey="theme"
+        disableTransitionOnChange={false}
+      >
+        <main className="bg-white dark:bg-gray-800 w-full min-h-screen transition-colors duration-300">
           <Navbar/>
           <CustomError>
             <Component {...pageProps} />
