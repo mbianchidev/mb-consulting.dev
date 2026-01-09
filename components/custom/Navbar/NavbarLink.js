@@ -3,15 +3,15 @@ import Link from "next/link";
 
 export default function NavBarLink({ link, name, router }) {
 
-  const navbarFontSize = '20px';
-  const selectedTextStyle = "text-black font-bold dark:text-white";
-  const unselectedTextStyle = "text-black font-normal dark:text-white";
+  const navbarFontSize = '18px';
+  const selectedTextStyle = "text-slate-900 dark:text-white font-semibold relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[3px] after:bg-gradient-to-r after:from-primary-600 after:to-secondary-600 after:rounded-full";
+  const unselectedTextStyle = "text-slate-700 dark:text-slate-300 font-medium hover:text-primary-600 dark:hover:text-primary-400 relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[3px] after:bg-gradient-to-r after:from-primary-600 after:to-secondary-600 after:rounded-full after:transition-all after:duration-300 hover:after:w-full";
 
   return (
     <Link href={link} passHref
-      className={`text-base ${
+      className={`text-base transition-all duration-300 ${
       router.asPath.includes(link) ? selectedTextStyle : unselectedTextStyle }`}
-      style={{fontSize: navbarFontSize}}
+      style={{fontSize: navbarFontSize, fontFamily: 'var(--font-heading)'}}
     >
       {name}{" "}
       {(router.asPath.includes(link)) ? ( 
@@ -20,7 +20,7 @@ export default function NavBarLink({ link, name, router }) {
           width="16"
           height="16"
           fill="currentColor"
-          className="bi bi-arrow-down inline-block h-3 w-3"
+          className="bi bi-arrow-down inline-block h-3 w-3 animate-bounce"
           viewBox="0 0 16 16"
         >
           <path

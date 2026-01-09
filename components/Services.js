@@ -14,9 +14,9 @@ export default function Services() {
   return (
     // we are avoiding any hydration warning: https://github.com/vercel/next.js/discussions/17443#discussioncomment-637879
     mounted ? (
-    <section className="bg-white dark:bg-gray-800">
-      <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
-        <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
+    <section className="bg-slate-50 dark:bg-slate-950">
+      <div className="max-w-7xl mx-auto px-6 pt-24 pb-12 bg-gradient-to-b from-white to-slate-50 dark:from-slate-900 dark:to-slate-950">
+        <h1 className="text-5xl md:text-8xl font-bold text-slate-900 dark:text-white" style={{fontFamily: 'var(--font-heading)'}}>
           Services
         </h1>
       </div>
@@ -24,8 +24,8 @@ export default function Services() {
       <Breadcrumb/>
 
       {/* Grid starts here */}
-      <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
+      <div className="bg-slate-100 dark:bg-slate-900 py-16 pb-24">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-6">
           {React.Children.toArray(servicesData.services.filter(service => service.active === true)?.map((service, serviceId) => (
             <ServiceCard
               id={serviceId}

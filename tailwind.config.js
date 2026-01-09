@@ -17,6 +17,14 @@ module.exports = {
         xl: '1280px',
         '2xl': '1536px',
       },
+      fontFamily: {
+        'heading': ['Poppins', 'Inter', 'sans-serif'],
+        'body': ['Inter', 'sans-serif'],
+        'mono': ['Ubuntu Mono', 'Roboto Mono', 'Monaco', 'Courier New', 'monospace'],
+      },
+      animation: {
+        'pulse-custom': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+      },
     },
   },
   variants: {

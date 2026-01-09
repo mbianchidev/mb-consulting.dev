@@ -5,25 +5,66 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="bg-[#F1F1F1] dark:bg-gray-900">
-      <div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">
-        <div className="h-0.5 w-full bg-white dark:bg-gray-700"></div>
-        <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between md:items-center mt-8">
-          <div>
-            <p>&copy; 2021-{new Date().getFullYear()} Matteo Bianchi (SyncTune) - All Rights Reserved. </p>
-            <p className="text-sm">site version - {process.env.NEXT_PUBLIC_VERSION}</p>
-            <p className="text-sm">KVK - {userData.nl_kvk} | VAT - {userData.nl_vat}</p>
+    <footer className="bg-slate-100 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 transition-colors">
+      <div className="max-w-7xl mx-auto px-6 py-12 md:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          {/* Company Info */}
+          <div className="space-y-3">
+            <h3 className="text-lg font-bold text-slate-900 dark:text-white" style={{fontFamily: 'var(--font-heading)'}}>
+              Matteo Bianchi
+            </h3>
+            <p className="text-sm text-slate-600 dark:text-slate-400">
+              DevOps & SRE Consultant
+            </p>
+            <p className="text-sm text-slate-600 dark:text-slate-400">
+              &copy; 2021-{new Date().getFullYear()} All Rights Reserved
+            </p>
+            <p className="text-xs text-slate-500 dark:text-slate-500">
+              Version {process.env.NEXT_PUBLIC_VERSION}
+            </p>
           </div>
-          <div className="flex flex-col md:flex-row">
-            <Link href="/privacy-policy">Privacy Policy </Link>
+
+          {/* Legal & Business Info */}
+          <div className="space-y-3">
+            <h3 className="text-lg font-bold text-slate-900 dark:text-white" style={{fontFamily: 'var(--font-heading)'}}>
+              Legal
+            </h3>
+            <div className="flex flex-col space-y-2">
+              <Link href="/privacy-policy" className="text-sm text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                Privacy Policy
+              </Link>
+              <Link href="/cookie-policy" className="text-sm text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                Cookie Policy
+              </Link>
+            </div>
+            <div className="pt-2 space-y-1">
+              <p className="text-xs text-slate-500 dark:text-slate-500" style={{fontFamily: 'var(--font-mono)'}}>
+                KVK: {userData.nl_kvk}
+              </p>
+              <p className="text-xs text-slate-500 dark:text-slate-500" style={{fontFamily: 'var(--font-mono)'}}>
+                VAT: {userData.nl_vat}
+              </p>
+            </div>
           </div>
-          <div className="flex flex-col md:flex-row">
-          <Link href="/cookie-policy">Cookie Policy</Link>
+
+          {/* Social Links */}
+          <div className="space-y-3">
+            <h3 className="text-lg font-bold text-slate-900 dark:text-white" style={{fontFamily: 'var(--font-heading)'}}>
+              Connect
+            </h3>
+            <SocialElement github="true" linkedin="true" />
           </div>
-          {/*Social Element*/}
-          <SocialElement github="true" linkedin="true" />
+        </div>
+
+        {/* Bottom bar */}
+        <div className="pt-8 border-t border-slate-200 dark:border-slate-800">
+          <p className="text-center text-sm text-slate-600 dark:text-slate-400">
+            Built with{" "}
+            <span className="text-red-500 animate-pulse">❤️</span>
+            {" "}using Next.js & Tailwind CSS
+          </p>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
