@@ -1,20 +1,14 @@
 import React from "react";
 import userData from "@constants/data";
 import heroData from "@constants/pages/hero";
-import { RoughNotationGroup } from "react-rough-notation";
-import { RainbowHighlight } from "@custom/Highlight/RainbowHighlight";
 import Image from 'next/image';
 import { useState, useEffect } from "react";
 import { shuffle, randomNum } from "@lib/utils";
 import Link from "next/link";
 
 export default function Hero() {
-  const titleStyle = "text-4xl md:text-7xl lg:text-8xl font-bold text-slate-900 dark:text-white my-2 leading-tight";
-
-  const [CTA, setCTA] = useState(" ");
-  const [color, setColors] = useState(" ");
+  const [CTA, setCTA] = useState("Book a Call");
   const [funnySentence, setFunnySentence] = useState(" ");
-  const [showAnnotations, setShowAnnotations] = useState(false);
 
   useEffect(() => {
     const updateRandomFunnySentence = () => {
@@ -25,128 +19,138 @@ export default function Hero() {
       setFunnySentence(randomFunnySentence);
     };
     const randomCTA = shuffle(heroData.hero.CTAs)[randomNum(heroData.hero.CTAs.length)];
-    const randomColor = shuffle(heroData.hero.colors);
     const intervalId = setInterval(updateRandomFunnySentence, 5000);
     updateRandomFunnySentence();
     setCTA(randomCTA);
-    setColors(randomColor);
     
-    // Delay showing annotations to prevent CLS
-    const timer = setTimeout(() => {
-      setShowAnnotations(true);
-    }, 100);
-    
-    // Clean up the interval when the component unmounts
     return () => {
       clearInterval(intervalId);
-      clearTimeout(timer);
     };
   }, [heroData]);
 
-  const catchyPhraseFontSize = "1.5em";
-
   return (
-    <div className="flex flex-row justify-center items-start overflow-hidden gradient-mesh relative">
-      {/* Background decorative elements */}
-      <div className="absolute inset-0 bg-dots-pattern opacity-40 pointer-events-none"></div>
-      
-      <div className="w-full md:w-1/2 mx-auto text-center md:text-left lg:px-20 lg:py-24 px-6 py-16 relative z-10">
-        {/* Fancy writings */}
-        <RoughNotationGroup show={showAnnotations}>
-          <RainbowHighlight color={color[0]}>
-            <Link href={heroData.hero.firstLink} passHref className="inline-block min-h-[44px]">
-              <h1 className={titleStyle}>
-               {heroData.hero.firstPrinciple}
-              </h1>
-            </Link>
-          </RainbowHighlight>
-          <RainbowHighlight color={color[1]}>
-            <Link href={heroData.hero.secondLink} passHref className="inline-block min-h-[44px]">
-              <h1 className={titleStyle}>
-                {heroData.hero.secondPrinciple}
-              </h1>
-            </Link>
-          </RainbowHighlight>
-          <RainbowHighlight color={color[2]}>
-            <Link href={heroData.hero.thirdLink} passHref className="inline-block min-h-[44px]">
-              <h1 className={titleStyle}>
-                {heroData.hero.thirdPrinciple}
-              </h1>
-            </Link>
-          </RainbowHighlight>
-          <RainbowHighlight color={color[3]}>
-            <Link href={heroData.hero.fourthLink} passHref className="inline-block min-h-[44px]">
-              <h1 className={titleStyle}>
-                {heroData.hero.fourthPrinciple}
-              </h1>
-            </Link>
-          </RainbowHighlight>
-        </RoughNotationGroup>
-
-        {/* Responsive Mobile image */}   
-        <div className="relative w-full aspect-square max-w-md mx-auto hero__mobile-image mt-8 rounded-3xl overflow-hidden shadow-2xl ring-4 ring-primary-500/20" style={{position: "relative" }}>
-          <Image 
-            src={userData.mobileAvatarUrl} 
-            sizes="(max-width: 768px) 100vw, 50vw" 
-            alt="mobile-propic" 
-            fill
-            style={{objectFit: 'cover'}}
-            priority
-          />
-        </div>
-  
-        {/*CTA - Call to action*/}
-        <div className="mt-12 space-y-6">
-          <p className="font-medium text-slate-700 dark:text-slate-300 text-xl md:text-2xl leading-relaxed" style={{fontFamily: 'var(--font-mono)'}}>{heroData.hero.catchyPhrase}</p>
-          <Link href="/book30" passHref>
-            <button className="group relative bg-gradient-to-r from-primary-600 to-secondary-600 hover:from-primary-700 hover:to-secondary-700 rounded-xl w-full sm:w-auto min-w-[240px] mx-auto md:mx-0 mt-8 px-8 py-4 text-white text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 touch-target overflow-hidden">
-              <span className="relative z-10">{CTA}</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-primary-500 to-secondary-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </button>
-          </Link>
-        </div>
+    <div className="relative min-h-[85vh] flex items-center overflow-hidden bg-gradient-to-br from-slate-50 via-white to-primary-50 dark:from-slate-950 dark:via-slate-900 dark:to-primary-950">
+      {/* Animated background elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-primary-400/20 to-secondary-400/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-secondary-400/20 to-accent-400/20 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-br from-primary-500/5 to-transparent rounded-full blur-3xl"></div>
       </div>
+      
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          
+          {/* Left content */}
+          <div className="text-center lg:text-left space-y-8">
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-100 dark:bg-primary-900/40 border border-primary-200 dark:border-primary-800">
+              <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+              <span className="text-sm font-medium text-primary-700 dark:text-primary-300">Available for consulting</span>
+            </div>
 
-      <div className="hidden lg:block relative w-full md:w-1/2 -mr-40 mt-20">
-        <div className="w-3/4 relative" style={{aspectRatio: '954/1430'}}>
+            {/* Main heading */}
+            <div className="space-y-4">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight">
+                <span className="text-slate-900 dark:text-white">I help companies </span>
+                <span className="bg-gradient-to-r from-primary-600 via-secondary-500 to-primary-600 bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient">
+                  ship better software
+                </span>
+              </h1>
+              <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-400 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                {heroData.hero.catchyPhrase}
+              </p>
+            </div>
 
-          {/* Desktop Image + Link */}
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-primary-500/20 hover:ring-primary-500/40 transition-all duration-300">
-            <Image 
-              src={userData.avatarUrl} 
-              alt="propic" 
-              width={954} 
-              height={1430}
-              sizes="(max-width: 1024px) 0vw, 50vw"
-              className="hero__desktop-image" 
-              priority
-              fetchPriority="high"
-              style={{width: '100%', height: 'auto'}}
-            />
+            {/* Service pills */}
+            <div className="flex flex-wrap justify-center lg:justify-start gap-3">
+              {[
+                { name: heroData.hero.firstPrinciple, link: heroData.hero.firstLink, color: 'from-orange-500 to-red-500' },
+                { name: heroData.hero.secondPrinciple, link: heroData.hero.secondLink, color: 'from-cyan-500 to-blue-500' },
+                { name: heroData.hero.thirdPrinciple, link: heroData.hero.thirdLink, color: 'from-green-500 to-emerald-500' },
+                { name: heroData.hero.fourthPrinciple, link: heroData.hero.fourthLink, color: 'from-purple-500 to-pink-500' },
+              ].map((service, index) => (
+                <Link key={index} href={service.link} className="group">
+                  <span className={`inline-flex items-center px-4 py-2 rounded-xl bg-gradient-to-r ${service.color} text-white text-sm font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-0.5`}>
+                    {service.name}
+                    <svg className="w-4 h-4 ml-1 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </span>
+                </Link>
+              ))}
+            </div>
+
+            {/* CTA buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+              <Link href="/book30" className="group">
+                <button className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-primary-600 to-secondary-600 hover:from-primary-700 hover:to-secondary-700 text-white font-bold rounded-2xl shadow-xl shadow-primary-500/25 hover:shadow-2xl hover:shadow-primary-500/30 transition-all duration-300 hover:-translate-y-1 flex items-center justify-center gap-2">
+                  <span>{CTA}</span>
+                  <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </button>
+              </Link>
+              <Link href="/about" className="group">
+                <button className="w-full sm:w-auto px-8 py-4 bg-white dark:bg-slate-800 text-slate-900 dark:text-white font-bold rounded-2xl border-2 border-slate-200 dark:border-slate-700 hover:border-primary-300 dark:hover:border-primary-600 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center justify-center gap-2">
+                  <span>Learn More</span>
+                  <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </button>
+              </Link>
+            </div>
           </div>
 
-          {/* Funny sentence */}
-          <div className="flex flex-row justify-between mt-6 bg-white dark:bg-slate-800 rounded-2xl p-4 shadow-lg">
-            <div className="flex flex-row space-x-4 items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                fill="currentColor"
-                className="bi bi-arrow-90deg-up text-secondary-500"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M4.854 1.146a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L4 2.707V12.5A2.5 2.5 0 0 0 6.5 15h8a.5.5 0 0 0 0-1h-8A1.5 1.5 0 0 1 5 12.5V2.707l3.146 3.147a.5.5 0 1 0 .708-.708l-4-4z"
+          {/* Right content - Profile */}
+          <div className="relative flex justify-center lg:justify-end">
+            <div className="relative">
+              {/* Decorative ring */}
+              <div className="absolute -inset-4 bg-gradient-to-r from-primary-500 via-secondary-500 to-primary-500 rounded-[2rem] blur-xl opacity-30 animate-pulse"></div>
+              
+              {/* Profile image container */}
+              <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-[2rem] overflow-hidden shadow-2xl ring-4 ring-white/50 dark:ring-slate-800/50">
+                <Image 
+                  src={userData.avatarUrl} 
+                  alt="Profile picture" 
+                  fill
+                  className="object-cover object-top"
+                  priority
+                  sizes="(max-width: 768px) 288px, (max-width: 1024px) 320px, 384px"
                 />
-              </svg>
-              <p className="font-medium text-slate-700 dark:text-slate-300" style={{fontFamily: 'var(--font-mono)'}}>{funnySentence}</p>
+                {/* Overlay gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 via-transparent to-transparent"></div>
+              </div>
+
+              {/* Floating card */}
+              <div className="absolute -bottom-6 -left-6 sm:-left-12 bg-white dark:bg-slate-800 rounded-2xl p-4 shadow-xl border border-slate-200/50 dark:border-slate-700/50 max-w-[200px] sm:max-w-[240px]">
+                <div className="flex items-start gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-secondary-400 to-secondary-600 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                    </svg>
+                  </div>
+                  <div className="min-w-0">
+                    <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-snug truncate" style={{fontFamily: 'var(--font-mono)'}}>
+                      {funnySentence}
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Stats badge */}
+              <div className="absolute -top-4 -right-4 sm:-right-8 bg-white dark:bg-slate-800 rounded-xl px-4 py-2 shadow-xl border border-slate-200/50 dark:border-slate-700/50">
+                <div className="flex items-center gap-2">
+                  <span className="text-2xl">🚀</span>
+                  <div>
+                    <p className="text-xs text-slate-500 dark:text-slate-400">Experience</p>
+                    <p className="text-sm font-bold text-slate-900 dark:text-white">10+ Years</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
     </div>
   );
 }

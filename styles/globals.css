@@ -570,6 +570,16 @@ a.close.disabled {
 	transition: width 0.5s, height 0.5s, opacity 0.4s 0.4s;
 }
 
+/* Animated gradient text */
+@keyframes gradient {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.animate-gradient {
+  animation: gradient 3s ease infinite;
+}
+
 /* Tooltip */
 .tooltip-div {
 	position: absolute;
