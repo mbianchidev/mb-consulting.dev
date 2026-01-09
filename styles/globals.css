@@ -273,7 +273,7 @@ a.close.disabled {
 
 /* Underline animation */
 .hover-underline-animation {
-	display: inline-block;
+	display: inline;
 	position: relative;
 	color: #3B82F6;
 }
@@ -284,7 +284,7 @@ a.close.disabled {
 	width: 100%;
 	transform: scaleX(0);
 	height: 2px;
-	bottom: 0;
+	bottom: 0.1em;
 	left: 0;
 	background-color: #3B82F6;
 	transform-origin: bottom right;
