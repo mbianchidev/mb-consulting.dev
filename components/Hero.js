@@ -57,7 +57,7 @@ export default function Hero() {
                 </span>
               </h1>
               <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-400 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-                {heroData.hero.catchyPhrase}
+                DevOps &amp; SRE consulting to help you build, deploy, and scale with confidence.
               </p>
             </div>
 
