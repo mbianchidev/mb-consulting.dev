@@ -10,11 +10,11 @@ export default function MBCookies() {
         <CookieConsent
           location="bottom"
           visible="byCookieValue"
-          buttonText="Yes! Now just give me that cookie, pls."
+          buttonText="Accept"
           ariaAcceptLabel="Yes, I accept the use of cookies"
           enableDeclineButton={true}
           setDeclineCookie={true}
-          declineButtonText="No. I don't like cookies."
+          declineButtonText="Decline"
           ariaDeclineLabel="No, I do not accept the use of cookies"
           onDecline={() => {
             Cookies.remove("_ga");
@@ -31,13 +31,37 @@ export default function MBCookies() {
           cookieName="mb-consulting-dev"
           sameSite="strict"
           overlay={true}
-          style={{ background: "#2B373B" }}
-          buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+          containerClasses="!bg-slate-900/95 !backdrop-blur-xl !border-t !border-slate-700 !p-6 !shadow-2xl"
+          contentClasses="!text-slate-300 !text-sm !leading-relaxed !max-w-3xl"
+          style={{ 
+            background: "transparent",
+            fontFamily: "var(--font-body)",
+          }}
+          buttonStyle={{ 
+            background: "linear-gradient(135deg, #6366f1 0%, #06b6d4 100%)",
+            color: "#ffffff", 
+            fontSize: "14px",
+            fontWeight: "600",
+            padding: "10px 24px",
+            borderRadius: "12px",
+            fontFamily: "var(--font-body)",
+          }}
+          declineButtonStyle={{
+            background: "transparent",
+            border: "1px solid #475569",
+            color: "#94a3b8",
+            fontSize: "14px",
+            fontWeight: "500",
+            padding: "10px 24px",
+            borderRadius: "12px",
+            fontFamily: "var(--font-body)",
+          }}
           expires={365}
         >
-        This website uses the smallest amount of cookies possible to enhance the user experience and allows me to perform some traffic/performance analysis.
-        For more info checkout <u><Link target="_blank" rel="noopener noreferrer" href="/cookie-policy">my cookies policy</Link></u>.
-        What's a cookie? Checkout this <u><Link target="_blank" rel="noopener noreferrer" href={userData.cookieUrl}>informative article about cookies</Link></u> to learn more!
+        <span style={{fontFamily: "var(--font-body)"}}>
+          🍪 This site uses minimal cookies for analytics. 
+          <Link href="/cookie-policy" className="text-primary-400 hover:text-primary-300 underline ml-1">Learn more</Link>
+        </span>
         </CookieConsent>
     );
 }

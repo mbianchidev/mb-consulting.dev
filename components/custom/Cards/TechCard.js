@@ -10,33 +10,27 @@ export default function TechCard ({techId, techName, techDescription, techLogo, 
     setHover(!hover);
   }
 
-  // const onHover = () => {
-  //   setHover(true);
-  // };
-  // 
-  // const onLeave = () => {
-  //   setHover(false);
-  // };
-
   return (
-    <div id={techId} className="h-20 w-20 mx-4 my-4">
+    <div id={techId} className="h-16 w-16 mx-2 my-2 relative group">
       <Link href={techUrl} target="_blank" rel="noopener noreferrer" onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
-        <Image 
-          src={techLogo} 
-          alt={techName} 
-          className="fill" 
-          width={techLogoX} 
-          height={techLogoY}
-          loading="lazy"
-        />
-          <div 
-            className={"tooltip-div rounded bg-gray-800 w-40" }
-            style={{display: hover ? "block" : "none"}}
-          >
-            <h1 className="tooltiptitle m-1 text-sm text-gray-300 font-bold">{techName}</h1>
-            <hr/>
-            <p className="tooltiptext m-1 text-sm text-gray-300 font-normal">{techDescription}</p>
-          </div>
+        <div className="transform hover:scale-110 transition-all duration-300">
+          <Image 
+            src={techLogo} 
+            alt={techName} 
+            className="fill opacity-80 hover:opacity-100 transition-opacity" 
+            width={techLogoX} 
+            height={techLogoY}
+            loading="lazy"
+          />
+        </div>
+        <div 
+          className="tooltip-div rounded-lg bg-slate-800 w-40 p-2 shadow-xl border border-slate-700"
+          style={{display: hover ? "block" : "none"}}
+        >
+          <h1 className="text-xs text-white font-semibold mb-1">{techName}</h1>
+          <div className="w-full h-px bg-slate-600 mb-1"></div>
+          <p className="text-[10px] text-slate-300 leading-relaxed">{techDescription}</p>
+        </div>
       </Link>
     </div>
   );

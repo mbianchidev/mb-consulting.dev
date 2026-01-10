@@ -6,8 +6,6 @@ import dynamic from "next/dynamic";
 
 // Lazy load below-the-fold components
 const FavouriteProjects = dynamic(() => import("@custom/ProjectShowcase/FavouriteProjects"));
-const LatestCode = dynamic(() => import("@custom/CodeShowcase/LatestCode"));
-const Badges = dynamic(() => import("@custom/Badges/Badges"));
 
 export default function Home({repositories}) {
   // pass the argument { repositories } to Home() function to use it below: Home({ repositories })
@@ -17,8 +15,6 @@ export default function Home({repositories}) {
     >
       <Hero/>
       <FavouriteProjects/>
-      <LatestCode repositories={repositories}/>
-      <Badges/>
     </ContainerBlock>
   );
 }

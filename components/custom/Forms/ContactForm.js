@@ -12,8 +12,8 @@ export default function ContactForm() {
   const regexPhoneValidationPattern = "^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$";
   const regexNameValidationPattern = "^.{3,}$";
   const regexCaptchaValidationPattern = "^(42|420|69|143)$"
-  const formPlaceHolderTextStyle = "text-sm text-gray-600 font-semibold mx-4 mt-4";
-  const borderedTextStyle = "font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500";
+  const formPlaceHolderTextStyle = "text-sm text-slate-700 dark:text-slate-300 font-semibold mx-4 mt-4";
+  const borderedTextStyle = "font-light rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white focus:outline-none py-3 mt-2 px-4 mx-4 focus:ring-2 focus:border-transparent ring-primary-500 transition-all duration-200";
 
   // State variables -> used mainly for select and alert
   const {query} = useRouter();
@@ -93,7 +93,7 @@ export default function ContactForm() {
   }
 
   return (
-    <form className="form rounded-lg bg-white p-4 flex flex-col" method="post" onSubmit={sendEmail}>
+    <form className="form rounded-2xl bg-white dark:bg-slate-800 p-6 flex flex-col shadow-lg" method="post" onSubmit={sendEmail}>
       {/* Name */}
       <label htmlFor="name" className={formPlaceHolderTextStyle}>
         {" "}
@@ -194,16 +194,16 @@ export default function ContactForm() {
           I have read and agree to the{" "}
           <Link
             href="/privacy-policy" rel="noopener noreferrer" target="_blank"
-            className="text-white border-b-2 border-gray-800 font-bold"
+            className="text-primary-600 dark:text-primary-400 font-bold hover:underline"
           >privacy policy</Link>{" "} of this site.
         </label>
       </div>
       {/* Submit Button */}
       <button
         type="submit"
-        className="bg-mb-quaternary dark:bg-mb-tertiary rounded-md w-1/2 mx-4 mt-8 py-2 text-gray-50 text-xs font-bold"
+        className="bg-gradient-to-r from-primary-600 to-secondary-600 hover:from-primary-700 hover:to-secondary-700 rounded-xl w-full sm:w-1/2 mx-4 mt-8 py-3 text-white text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
       >
-        Send
+        Send Message
       </button>
     </form>
   );

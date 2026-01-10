@@ -6,92 +6,101 @@ import Link from "next/link";
 
 export default function CookiePolicy() {
   const mailTo = "mailto:"+mailData.privacyMail;
+  const sectionTitleStyle = "text-2xl font-bold text-slate-900 dark:text-white text-center mb-6";
+  const textStyle = "text-lg text-slate-700 dark:text-slate-300 leading-relaxed";
+  const linkStyle = "text-primary-600 dark:text-primary-400 hover:underline";
+  
   return (
-    <section id="cookie-policy-container" className="bg-white dark:bg-gray-800">
-      <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
-        <h1 className="text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
+    <section id="cookie-policy-container" className="bg-slate-50 dark:bg-slate-950 min-h-screen">
+      <div className="max-w-7xl mx-auto px-6 pt-12 pb-8 bg-slate-50 dark:bg-slate-950">
+        <h1 className="text-5xl md:text-8xl font-bold text-slate-900 dark:text-white text-center md:text-left" style={{fontFamily: 'var(--font-heading)'}}>
           Cookie Policy
         </h1>
       </div>
 
       <Breadcrumb/>
 
-      <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
-        <div className="text-container mx-auto pt-20" style={{marginLeft : "10px"}}>
+      <div className="bg-slate-100 dark:bg-slate-900 py-16">
+        <div className="max-w-4xl mx-auto px-6 space-y-16">
           
-          <h1 className="font-bold text-xl" style={{textAlign : "center"}}>Reset cookie consent</h1>
-          <br></br>
-          <div>
-            <p className="text-xl text-gray-700 dark:text-gray-300">You can reset consent by clicking on this button.</p>
-            <br></br>
-            <button className="bg-mb-quaternary dark:bg-mb-tertiary rounded-md mx-2 mt-8 py-2 px-2 text-gray-200 dark:text-gray-200 text-xl font-bold" onClick={() => {
-              resetCookieConsentValue("mb-consulting-dev");
-              Cookies.remove("_ga");
-              Cookies.remove("_gat");
-              Cookies.remove("_gid")
-              Cookies.remove("_ga_B11MCGL84K");             
-              window.location.reload();
-            }}>
-              Reset consent
-            </button>
-            <br></br>
-            <p className="text-sm">You can also reset your consent at any time by deleting the cookies stored in your browser. You can find out how to do this in the help function of your browser.</p>
-          </div>
-          <br></br>
-
-          <h1 className="font-bold text-xl" style={{textAlign : "center"}}>Tracking Cookies Data</h1>
-          <br></br>
-          <div className="text-xl text-gray-700 mb-4 dark:text-gray-300">
-            First of all, in case you don't accept cookies you will still be able to use this site without limitations.
-            <br></br>
-            However, only if you'll allow it, this site uses cookies and similar tracking technologies (e.g. <u><Link target="_blank" rel="noopener noreferrer" href="https://support.google.com/tagmanager/answer/6102821?hl=en ">Google Tag Manager</Link></u>) to track the activity on the site.<br></br>
-            Cookies are files with a small amount of data which may include an anonymous unique identifier.<br></br>
-            Cookies are sent to your browser from a website and stored on your device.<br></br>
-            You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.<br></br><br></br>
-            Here are some pages you might find useful for disabling cookies:<br></br>
-            <ul>
-              <li> <u><Link target="_blank" rel="noopener noreferrer" href="https://support.microsoft.com/en-us/search?query=disable%20cookies%20in%20microsoft%20edge"> Edge </Link></u> </li>
-              <li> <u><Link target="_blank" rel="noopener noreferrer" href="https://support.google.com/accounts/answer/61416?hl=en&co=GENIE.Platform%3DDesktop"> Chrome </Link></u> </li> 
-              <li> <u><Link target="_blank" rel="noopener noreferrer" href="https://support.mozilla.org/en-US/kb/block-websites-storing-cookies-site-data-firefox"> Firefox </Link></u> </li>
-              <li> <u><Link target="_blank" rel="noopener noreferrer" href="http://docs.info.apple.com/article.html?path=Safari/5.0/en/9277.html"> Safari </Link></u> </li>
-            </ul>
-            <br></br>
-            If you use other browsers like <u><Link target="_blank" rel="noopener noreferrer" href="https://brave.com/"> Brave</Link></u> or search engines like <u><Link target="_blank" rel="noopener noreferrer" href="https://duckduckgo.com/ ">DuckDuckGo</Link></u>, please consult their websites for more information.
-            <br></br>
-            You can disable Google Analytics too, you can find the instructions to do so in this <u><Link href="https://tools.google.com/dlpage/gaoptout/">GA optout guide by Google</Link></u> .
+          {/* Reset Cookie Section */}
+          <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg">
+            <h2 className={sectionTitleStyle}>Reset Cookie Consent</h2>
+            <p className={textStyle}>You can reset your cookie consent preferences by clicking the button below.</p>
+            <div className="mt-6 text-center">
+              <button className="bg-gradient-to-r from-primary-600 to-secondary-600 hover:from-primary-700 hover:to-secondary-700 rounded-xl px-8 py-3 text-white text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1" onClick={() => {
+                resetCookieConsentValue("mb-consulting-dev");
+                Cookies.remove("_ga");
+                Cookies.remove("_gat");
+                Cookies.remove("_gid")
+                Cookies.remove("_ga_B11MCGL84K");             
+                window.location.reload();
+              }}>
+                Reset Consent
+              </button>
+            </div>
+            <p className="text-sm text-slate-500 dark:text-slate-400 mt-4 text-center">You can also reset your consent at any time by deleting the cookies stored in your browser.</p>
           </div>
 
-          <h1 className="font-bold text-xl" style={{textAlign : "center"}}>Cookies used</h1>
-          <br></br>
-          <div className="text-xl text-gray-700 mb-4 dark:text-gray-300">
-            <ul>
-              <li>Session Cookies: Session Cookies are used to operate this Service.</li>
-              <li>Preference Cookies: Preference Cookies are used to remember your preferences and various settings.</li>
-              <li>Security Cookies: Security Cookies are used for security purposes.</li>
-              <li>Analysis Cookies: Analysis Cookies are used to better understand user traffic flows and improve this Service accordingly.</li>
-            </ul>
-            <br></br>
-            I don't use advertising cookies and there is no advertisement on this site.
+          {/* Tracking Cookies Section */}
+          <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg">
+            <h2 className={sectionTitleStyle}>Tracking Cookies Data</h2>
+            <div className={`${textStyle} space-y-4`}>
+              <p><strong className="text-slate-900 dark:text-white">Important:</strong> If you don't accept cookies, you can still use this site without any limitations.</p>
+              <p>However, only if you allow it, this site uses cookies and similar tracking technologies (e.g. <Link target="_blank" rel="noopener noreferrer" href="https://support.google.com/tagmanager/answer/6102821?hl=en" className={linkStyle}>Google Tag Manager</Link>) to track site activity.</p>
+              <p>Cookies are files with a small amount of data which may include an anonymous unique identifier. They are sent to your browser from a website and stored on your device.</p>
+              
+              <div className="mt-6">
+                <p className="font-semibold text-slate-900 dark:text-white mb-3">How to disable cookies in popular browsers:</p>
+                <ul className="space-y-2 ml-4">
+                  <li>• <Link target="_blank" rel="noopener noreferrer" href="https://support.microsoft.com/en-us/search?query=disable%20cookies%20in%20microsoft%20edge" className={linkStyle}>Microsoft Edge</Link></li>
+                  <li>• <Link target="_blank" rel="noopener noreferrer" href="https://support.google.com/accounts/answer/61416?hl=en&co=GENIE.Platform%3DDesktop" className={linkStyle}>Google Chrome</Link></li>
+                  <li>• <Link target="_blank" rel="noopener noreferrer" href="https://support.mozilla.org/en-US/kb/block-websites-storing-cookies-site-data-firefox" className={linkStyle}>Mozilla Firefox</Link></li>
+                  <li>• <Link target="_blank" rel="noopener noreferrer" href="http://docs.info.apple.com/article.html?path=Safari/5.0/en/9277.html" className={linkStyle}>Apple Safari</Link></li>
+                </ul>
+              </div>
+              
+              <p className="mt-4">For privacy-focused browsers like <Link target="_blank" rel="noopener noreferrer" href="https://brave.com/" className={linkStyle}>Brave</Link> or search engines like <Link target="_blank" rel="noopener noreferrer" href="https://duckduckgo.com/" className={linkStyle}>DuckDuckGo</Link>, please consult their websites.</p>
+              <p>You can also <Link href="https://tools.google.com/dlpage/gaoptout/" className={linkStyle}>disable Google Analytics</Link>.</p>
+            </div>
           </div>
 
-          <h1 className="font-bold text-xl" style={{textAlign : "center"}}>Cookies details</h1>
-          <br></br>
-          <div className="text-xl text-gray-700 mb-4 dark:text-gray-300">
-            <ul>
-              <li>mb-consulting-dev: functional first party cookie, used to operate the service and to store your preferences (1 year)</li>
-              <li>_ga: analytics third party cookie (Google.com), used to analyze this site traffic and performance (2 years)</li>
-              <li>_ga_*: technical third party cookie, identifies our Google Analytics account (2 years)</li>
-            </ul>
-            <br></br>
-            This Cookie Policy may be updated from time to time. Any change will be posted on this page.<br></br>
-            Changes to this Cookie Policy are effective when they are posted on this page.<br></br>
-            For every other concern about your privacy please visit the <u><Link target="_blank" rel="noopener noreferrer" href="/privacy-policy">privacy policy page</Link></u>.<br></br>
-          </div>  
+          {/* Cookies Used Section */}
+          <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg">
+            <h2 className={sectionTitleStyle}>Cookies Used</h2>
+            <div className={textStyle}>
+              <ul className="space-y-3">
+                <li><strong className="text-slate-900 dark:text-white">Session Cookies:</strong> Used to operate this Service</li>
+                <li><strong className="text-slate-900 dark:text-white">Preference Cookies:</strong> Used to remember your preferences and settings</li>
+                <li><strong className="text-slate-900 dark:text-white">Security Cookies:</strong> Used for security purposes</li>
+                <li><strong className="text-slate-900 dark:text-white">Analysis Cookies:</strong> Used to understand traffic flows and improve the Service</li>
+              </ul>
+              <p className="mt-6 p-4 bg-slate-100 dark:bg-slate-700 rounded-xl text-center font-medium">
+                ✨ This site does not use advertising cookies and contains no advertisements.
+              </p>
+            </div>
+          </div>
 
-          <h1 className="font-bold text-xl" style={{textAlign : "center"}}>Contact me</h1>
-          <br></br>
-          <div className="text-xl text-gray-700 mb-4 dark:text-gray-300">
-            If you have any questions about this Cookie Policy, please contact me at <Link href={mailTo}><u>{mailData.privacyMail}</u></Link>.
+          {/* Cookie Details Section */}
+          <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg">
+            <h2 className={sectionTitleStyle}>Cookie Details</h2>
+            <div className={textStyle}>
+              <ul className="space-y-3">
+                <li><code className="bg-slate-100 dark:bg-slate-700 px-2 py-1 rounded text-sm">mb-consulting-dev</code>: Functional first-party cookie for site operation and preferences (1 year)</li>
+                <li><code className="bg-slate-100 dark:bg-slate-700 px-2 py-1 rounded text-sm">_ga</code>: Analytics third-party cookie (Google) for traffic analysis (2 years)</li>
+                <li><code className="bg-slate-100 dark:bg-slate-700 px-2 py-1 rounded text-sm">_ga_*</code>: Technical third-party cookie identifying our Google Analytics account (2 years)</li>
+              </ul>
+              <p className="mt-6">This Cookie Policy may be updated from time to time. Any changes will be posted on this page.</p>
+              <p className="mt-4">For other privacy concerns, please visit the <Link target="_blank" rel="noopener noreferrer" href="/privacy-policy" className={linkStyle}>privacy policy page</Link>.</p>
+            </div>
+          </div>
+
+          {/* Contact Section */}
+          <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg">
+            <h2 className={sectionTitleStyle}>Contact Me</h2>
+            <p className={`${textStyle} text-center`}>
+              If you have any questions about this Cookie Policy, please contact me at <Link href={mailTo} className={linkStyle}>{mailData.privacyMail}</Link>.
+            </p>
           </div>
 
         </div>
