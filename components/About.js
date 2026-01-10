@@ -28,48 +28,48 @@ export default function About() {
     setShowGoals(false);
   }
 
-  const linkTextStyle = "text-secondary-600 dark:text-secondary-400 font-bold hover-underline-animation";
-  const standardAboutText = "text-lg text-slate-700 mb-4 dark:text-slate-300 leading-relaxed";
+  const linkTextStyle = "text-secondary-400 font-bold hover-underline-animation";
+  const standardAboutText = "text-lg text-slate-300 mb-4 leading-relaxed";
 
   return (
-    <section className="bg-slate-50 dark:bg-slate-950">
-      <div className="max-w-7xl mx-auto px-6 pt-24 pb-12 bg-gradient-to-b from-white to-slate-50 dark:from-slate-900 dark:to-slate-950">
-        <h1 className="text-5xl md:text-8xl font-bold text-slate-900 dark:text-white" style={{fontFamily: 'var(--font-heading)'}}>
+    <section className="bg-slate-950">
+      <div className="max-w-7xl mx-auto px-6 pt-24 pb-12 bg-gradient-to-b from-slate-900 to-slate-950">
+        <h1 className="text-5xl md:text-8xl font-bold text-white" style={{fontFamily: 'var(--font-heading)'}}>
           My journey
         </h1>
       </div>
       
       <Breadcrumb/>
 
-      <div className="bg-slate-100 dark:bg-slate-900 py-16">
+      <div className="bg-slate-900 py-16">
         <div className="text-container max-w-7xl mx-auto px-6">
           <span
-            className="leading-loose text-2xl md:text-4xl font-semibold text-slate-800 dark:text-slate-200"
+            className="leading-loose text-2xl md:text-4xl font-semibold text-slate-200"
             style={{ lineHeight: "3rem", fontFamily: 'var(--font-heading)' }}
           >
             {aboutData.about.title}. 
           </span>
         </div>
       </div>
-      <div className="bg-slate-100 dark:bg-slate-900 px-6 pb-20">
+      <div className="bg-slate-900 px-6 pb-20">
         <div className="pt-12 grid grid-cols-1 md:grid-cols-3 max-w-7xl mx-auto gap-y-12 gap-x-12">
 
           {/* Social Buttons */}
           <div className="inline-flex flex-col space-y-8">
-            <div className="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-lg border border-slate-200 dark:border-slate-700">
-              <h1 className="text-xl font-bold text-slate-900 dark:text-white mb-4" style={{fontFamily: 'var(--font-heading)'}}>
+            <div className="bg-slate-800 p-6 rounded-2xl shadow-lg border border-slate-700">
+              <h1 className="text-xl font-bold text-white mb-4" style={{fontFamily: 'var(--font-heading)'}}>
                 Contacts
               </h1>
-              <span className="text-base text-slate-600 dark:text-slate-300">
+              <span className="text-base text-slate-300">
                 Interested in a collaboration? Got any question? Book {" "}
                 <Link href="/book30" className={linkTextStyle}> a meeting </Link>{" "} today!
               </span>
             </div>
-            <div className="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-lg border border-slate-200 dark:border-slate-700">
-              <h1 className="text-xl font-bold text-slate-900 dark:text-white mb-4" style={{fontFamily: 'var(--font-heading)'}}>
+            <div className="bg-slate-800 p-6 rounded-2xl shadow-lg border border-slate-700">
+              <h1 className="text-lg font-bold text-white mb-4" style={{fontFamily: 'var(--font-heading)'}}>
                 Experience
               </h1>
-              <span className="text-base text-slate-600 dark:text-slate-300">
+              <span className="text-base text-slate-300">
                 <p>
                   Have a look at my {" "} <Link href="/clients" rel="noopener noreferrer" className={linkTextStyle}> clients </Link>{" "} and {" "}
                   <Link href="/experience" passHref rel="noopener noreferrer" className={linkTextStyle}> 
@@ -80,8 +80,8 @@ export default function About() {
             </div>
 
             {/* Social Links */}
-            <div className="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-lg border border-slate-200 dark:border-slate-700">
-              <h1 className="text-xl font-bold text-slate-900 dark:text-white mb-4" style={{fontFamily: 'var(--font-heading)'}}>
+            <div className="bg-slate-800 p-6 rounded-2xl shadow-lg border border-slate-700">
+              <h1 className="text-xl font-bold text-white mb-4" style={{fontFamily: 'var(--font-heading)'}}>
                 Links
               </h1>
               <LinkList linktree="true"/>
@@ -91,7 +91,7 @@ export default function About() {
           {/* Text area */}
           <div className="col-span-1 md:col-span-2">
 
-            <h1 className="text-xl font-semibold text-slate-700 dark:text-slate-300 mb-8">
+            <h1 className="text-xl font-semibold text-slate-300 mb-8">
               {aboutData.about.clickText}
             </h1>
 
@@ -99,7 +99,7 @@ export default function About() {
             <div className="mb-6">
               <button 
                 onClick={toggleStory}
-                className="group bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-3xl rounded-2xl px-6 py-3 font-bold text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                className="group bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-2xl md:text-3xl rounded-2xl px-6 py-3 font-bold text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
                 style={{fontFamily: 'var(--font-heading)'}}
               >
                 {aboutData.about.story.shortTitle}
@@ -109,7 +109,7 @@ export default function About() {
               </button>
             </div>
             <div className={`transition-all duration-500 overflow-hidden ${showStory ? "max-h-[2000px] opacity-100 mb-8" : "max-h-0 opacity-0"}`}>
-              <div className="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-lg border border-slate-200 dark:border-slate-700">
+              <div className="bg-slate-800 p-8 rounded-2xl shadow-lg border border-slate-700">
                 {aboutData.about.story.description?.map((desc, aboutMeId) => (
                   <span key={aboutMeId}>
                     <p className={standardAboutText}>{desc}</p>
@@ -122,7 +122,7 @@ export default function About() {
             <div className="mb-6">
               <button 
                 onClick={toggleGoals}
-                className="group bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-3xl rounded-2xl px-6 py-3 font-bold text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                className="group bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-2xl md:text-3xl rounded-2xl px-6 py-3 font-bold text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
                 style={{fontFamily: 'var(--font-heading)'}}
               >
                 {aboutData.about.goals.shortTitle}
@@ -132,7 +132,7 @@ export default function About() {
               </button>
             </div>
             <div className={`transition-all duration-500 overflow-hidden ${showGoals ? "max-h-[2000px] opacity-100 mb-8" : "max-h-0 opacity-0"}`}>
-              <div className="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-lg border border-slate-200 dark:border-slate-700">
+              <div className="bg-slate-800 p-8 rounded-2xl shadow-lg border border-slate-700">
                 {aboutData.about.goals.description?.map((desc, aboutMeId) => (
                   <span key={aboutMeId}>
                     <p className={standardAboutText}>{desc}</p>
@@ -145,7 +145,7 @@ export default function About() {
             <div className="mb-6">
               <button 
                 onClick={toggleTechs}
-                className="group bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-3xl rounded-2xl px-6 py-3 font-bold text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                className="group bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-2xl md:text-3xl rounded-2xl px-6 py-3 font-bold text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
                 style={{fontFamily: 'var(--font-heading)'}}
               >
                 {aboutData.about.techs.shortTitle}
@@ -155,7 +155,7 @@ export default function About() {
               </button>
             </div>
             <div className={`transition-all duration-500 overflow-hidden ${showTechs ? "max-h-[4000px] opacity-100" : "max-h-0 opacity-0"}`}>
-              <div className="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-lg border border-slate-200 dark:border-slate-700">
+              <div className="bg-slate-800 p-8 rounded-2xl shadow-lg border border-slate-700">
                 {aboutData.about.techs.description?.map((desc, aboutMeId) => (
                   <span key={aboutMeId}>
                     <p className={standardAboutText}>{desc}</p>
@@ -175,7 +175,7 @@ export default function About() {
                     />
                   )))}
                 </div>
-                <span className="text-sm font-normal text-slate-600 dark:text-slate-400 block mt-6">
+                <span className="text-sm font-normal text-slate-400 block mt-6">
                   {aboutData.about.techs.warning}
                 </span>
               </div>

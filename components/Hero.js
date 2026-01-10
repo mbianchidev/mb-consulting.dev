@@ -29,7 +29,7 @@ export default function Hero() {
   }, [heroData]);
 
   return (
-    <div className="relative min-h-[85vh] flex items-center overflow-hidden bg-gradient-to-br from-slate-50 via-white to-primary-50 dark:from-slate-950 dark:via-slate-900 dark:to-primary-950">
+    <div className="relative min-h-[85vh] flex items-center overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-primary-950">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-primary-400/20 to-secondary-400/20 rounded-full blur-3xl animate-pulse"></div>
@@ -43,20 +43,20 @@ export default function Hero() {
           {/* Left content */}
           <div className="text-center lg:text-left space-y-8">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-100 dark:bg-primary-900/40 border border-primary-200 dark:border-primary-800">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-900/40 border border-primary-800">
               <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-              <span className="text-sm font-medium text-primary-700 dark:text-primary-300">Available for consulting</span>
+              <span className="text-sm font-medium text-primary-300">Available for consulting</span>
             </div>
 
             {/* Main heading */}
             <div className="space-y-4">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight">
-                <span className="text-slate-900 dark:text-white">I help companies </span>
+                <span className="text-white">I help companies </span>
                 <span className="bg-gradient-to-r from-primary-600 via-secondary-500 to-primary-600 bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient">
                   ship better software
                 </span>
               </h1>
-              <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-400 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+              <p className="text-lg sm:text-xl text-slate-400 max-w-xl mx-auto lg:mx-0 leading-relaxed">
                 DevOps &amp; SRE consulting to help you build, deploy, and scale with confidence.
               </p>
             </div>
@@ -91,7 +91,7 @@ export default function Hero() {
                 </button>
               </Link>
               <Link href="/about" className="group">
-                <button className="w-full sm:w-auto px-8 py-4 bg-white dark:bg-slate-800 text-slate-900 dark:text-white font-bold rounded-2xl border-2 border-slate-200 dark:border-slate-700 hover:border-primary-300 dark:hover:border-primary-600 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center justify-center gap-2">
+                <button className="w-full sm:w-auto px-8 py-4 bg-slate-800 text-white font-bold rounded-2xl border-2 border-slate-700 hover:border-primary-600 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center justify-center gap-2">
                   <span>Learn More</span>
                   <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -108,7 +108,7 @@ export default function Hero() {
               <div className="absolute -inset-4 bg-gradient-to-r from-primary-500 via-secondary-500 to-primary-500 rounded-[2rem] blur-xl opacity-30 animate-pulse"></div>
               
               {/* Profile image container */}
-              <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-[2rem] overflow-hidden shadow-2xl ring-4 ring-white/50 dark:ring-slate-800/50">
+              <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-[2rem] overflow-hidden shadow-2xl ring-4 ring-slate-800/50">
                 <Image 
                   src={userData.avatarUrl} 
                   alt="Profile picture" 
@@ -121,16 +121,16 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 via-transparent to-transparent"></div>
               </div>
 
-              {/* Floating card */}
-              <div className="absolute -bottom-6 -left-6 sm:-left-12 bg-white dark:bg-slate-800 rounded-2xl p-4 shadow-xl border border-slate-200/50 dark:border-slate-700/50 max-w-[200px] sm:max-w-[240px]">
+              {/* Floating quote card - BIGGER */}
+              <div className="absolute -bottom-8 -left-4 sm:-left-8 bg-slate-800 rounded-2xl p-5 shadow-xl border border-slate-700/50 w-[280px] sm:w-[320px]">
                 <div className="flex items-start gap-3">
                   <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-secondary-400 to-secondary-600 flex items-center justify-center flex-shrink-0">
                     <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                     </svg>
                   </div>
-                  <div className="min-w-0">
-                    <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-snug truncate" style={{fontFamily: 'var(--font-mono)'}}>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-sm text-slate-300 leading-relaxed" style={{fontFamily: 'var(--font-mono)'}}>
                       {funnySentence}
                     </p>
                   </div>
@@ -138,12 +138,12 @@ export default function Hero() {
               </div>
 
               {/* Stats badge */}
-              <div className="absolute -top-4 -right-4 sm:-right-8 bg-white dark:bg-slate-800 rounded-xl px-4 py-2 shadow-xl border border-slate-200/50 dark:border-slate-700/50">
+              <div className="absolute -top-4 -right-4 sm:-right-8 bg-slate-800 rounded-xl px-4 py-2 shadow-xl border border-slate-700/50">
                 <div className="flex items-center gap-2">
                   <span className="text-2xl">🚀</span>
                   <div>
-                    <p className="text-xs text-slate-500 dark:text-slate-400">Experience</p>
-                    <p className="text-sm font-bold text-slate-900 dark:text-white">10+ Years</p>
+                    <p className="text-xs text-slate-400">Experience</p>
+                    <p className="text-sm font-bold text-white">10+ Years</p>
                   </div>
                 </div>
               </div>

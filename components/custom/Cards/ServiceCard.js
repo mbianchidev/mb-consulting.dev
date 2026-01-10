@@ -19,7 +19,7 @@ export default function ServiceCard ({ serviceId, category, name, slug, image, i
     return (
       <Link href={url} passHref className="w-full block group">
           <div className="mb-3 px-4">
-            <span className={`text-sm text-slate-600 dark:text-slate-400 transition-all duration-300 ${visible ? "opacity-100" : "opacity-0"}`}>
+            <span className={`text-sm text-slate-400 transition-all duration-300 ${visible ? "opacity-100" : "opacity-0"}`}>
               {description}
             </span>
           </div>
@@ -34,22 +34,22 @@ export default function ServiceCard ({ serviceId, category, name, slug, image, i
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw"
                 loading="lazy"
               />
-              {/* Gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-primary-900/80 via-primary-900/40 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-500"></div>
+              {/* Gradient overlay - more subtle */}
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-slate-900/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500"></div>
             </div>
             
             {/* Price badge */}
             {startingFromRate != "0" && (
-              <div className="absolute top-5 right-5 bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm px-4 py-2 rounded-xl shadow-lg">
-                <p className="text-sm font-bold text-primary-600 dark:text-primary-400" style={{fontFamily: 'var(--font-mono)'}}>
+              <div className="absolute top-5 right-5 bg-slate-900/95 backdrop-blur-sm px-4 py-2 rounded-xl shadow-lg">
+                <p className="text-sm font-bold text-primary-400" style={{fontFamily: 'var(--font-mono)'}}>
                   {startingFromRate}
                 </p>
               </div>
             )}
             
-            {/* Service name */}
-            <div className="absolute bottom-0 left-0 right-0 p-6">
-              <h1 className="text-white font-bold text-xl md:text-2xl mb-2 bg-gradient-to-r from-primary-600 to-secondary-600 px-5 py-2 rounded-xl inline-block shadow-lg transform group-hover:scale-105 transition-transform duration-300" style={{fontFamily: 'var(--font-heading)'}}>
+            {/* Service name - smaller and more subtle */}
+            <div className="absolute bottom-0 left-0 right-0 p-5">
+              <h1 className="text-white font-bold text-base md:text-lg bg-gradient-to-r from-primary-600/90 to-secondary-600/90 backdrop-blur-sm px-4 py-2 rounded-lg inline-block shadow-lg" style={{fontFamily: 'var(--font-heading)'}}>
                 {name}
               </h1>
             </div>

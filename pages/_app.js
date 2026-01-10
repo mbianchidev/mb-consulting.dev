@@ -12,8 +12,8 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <ThemeProvider defaultTheme="dark" attribute="class">
-        <main className="dark:bg-slate-950 bg-slate-50 w-full min-h-screen transition-colors duration-300">
+      <ThemeProvider defaultTheme="dark" forcedTheme="dark" attribute="class">
+        <main className="bg-slate-950 w-full min-h-screen transition-colors duration-300">
           <Navbar/>
           <CustomError>
             <Component {...pageProps} />
