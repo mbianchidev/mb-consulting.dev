@@ -6,23 +6,23 @@ import Link from "next/link";
 
 export default function PrivacyPolicy() {
   const mailTo = "mailto:"+mailData.privacyMail;
-  const h1TextStyle = "text-2xl font-bold text-slate-900 dark:text-white text-center mb-6";
-  const h2TextStyle = "text-xl font-semibold text-slate-800 dark:text-slate-200 mb-4";
-  const h3TextStyle = "text-lg font-medium text-slate-700 dark:text-slate-300 mb-3";
-  const normalTextStyle = "text-lg text-slate-700 mb-4 dark:text-slate-300 leading-relaxed";
-  const linkStyle = "text-primary-600 dark:text-primary-400 hover:underline";
+  const h1TextStyle = "text-xl font-bold text-white text-center mb-6";
+  const h2TextStyle = "text-lg font-semibold text-slate-200 mb-4";
+  const h3TextStyle = "text-base font-medium text-slate-300 mb-3";
+  const normalTextStyle = "text-sm text-slate-300 mb-4 leading-relaxed";
+  const linkStyle = "text-primary-400 hover:underline";
 
   return (
-    <section id="privacy-policy-container" className="bg-slate-50 dark:bg-slate-950 min-h-screen">
-      <div className="max-w-7xl mx-auto px-6 pt-12 pb-8 bg-slate-50 dark:bg-slate-950">
-        <h1 className="text-5xl md:text-8xl font-bold text-slate-900 dark:text-white text-center md:text-left" style={{fontFamily: 'var(--font-heading)'}}>
+    <section id="privacy-policy-container" className="bg-slate-950 min-h-screen" style={{fontFamily: 'var(--font-body)'}}>
+      <div className="max-w-7xl mx-auto px-6 pt-12 pb-8 bg-slate-950">
+        <h1 className="text-4xl md:text-6xl font-bold text-white text-center md:text-left" style={{fontFamily: 'var(--font-heading)'}}>
           Privacy Policy
         </h1>
       </div>
 
       <Breadcrumb/>
 
-      <div className="bg-slate-100 dark:bg-slate-900 py-16">
+      <div className="bg-slate-900 py-16">
         <div className="max-w-4xl mx-auto px-6">
 
           <h1 className={h1TextStyle}>Introduction</h1>
@@ -342,8 +342,8 @@ export default function PrivacyPolicy() {
             If you have any questions about this Privacy Policy, please contact me at <Link href={mailTo} className={linkStyle}>privacy@mb-consulting.dev</Link>.
           </div>
 
-        </div>
       </div>
+    </div>
     </section>
   );
 }

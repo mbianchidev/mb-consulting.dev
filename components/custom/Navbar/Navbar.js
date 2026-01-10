@@ -41,17 +41,17 @@ export default function Navbar() {
                 <Image 
                   src={logo} 
                   alt="mb-consulting logo an infinite symbol turned into a cloud" 
-                  width={36} 
-                  height={24} 
+                  width={32} 
+                  height={20} 
                   priority 
-                  className="w-9 h-6 md:w-10 md:h-7"
+                  className="w-8 h-5 md:w-9 md:h-6"
                 />
               </div>
               <div className="hidden sm:flex flex-col navbar__logo-name-role">
-                <h1 className="font-semibold text-sm text-white transition-colors leading-tight">
+                <h1 className="font-semibold text-xs text-white transition-colors leading-tight">
                   {userData.name}
                 </h1>
-                <p className="text-xs font-medium text-slate-400 transition-colors">
+                <p className="text-[10px] font-medium text-slate-400 transition-colors">
                   {userData.role}
                 </p>
               </div>

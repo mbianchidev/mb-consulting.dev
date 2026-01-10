@@ -57,7 +57,7 @@ export default function Hero() {
                 </span>
               </h1>
               <p className="text-lg sm:text-xl text-slate-400 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-                DevOps &amp; SRE consulting to help you build, deploy, and scale with confidence.
+                Cloud Native & Platform consulting to help you build, deploy and grow your business with confidence.
               </p>
             </div>
 
@@ -83,17 +83,17 @@ export default function Hero() {
             {/* CTA buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
               <Link href="/book30" className="group">
-                <button className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-primary-600 to-secondary-600 hover:from-primary-700 hover:to-secondary-700 text-white font-bold rounded-2xl shadow-xl shadow-primary-500/25 hover:shadow-2xl hover:shadow-primary-500/30 transition-all duration-300 hover:-translate-y-1 flex items-center justify-center gap-2">
+                <button className="w-full sm:w-auto px-6 py-3 bg-gradient-to-r from-primary-600 to-secondary-600 hover:from-primary-700 hover:to-secondary-700 text-white text-sm font-semibold rounded-xl shadow-xl shadow-primary-500/25 hover:shadow-2xl hover:shadow-primary-500/30 transition-all duration-300 hover:-translate-y-1 flex items-center justify-center gap-2 whitespace-nowrap">
                   <span>{CTA}</span>
-                  <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </button>
               </Link>
               <Link href="/about" className="group">
-                <button className="w-full sm:w-auto px-8 py-4 bg-slate-800 text-white font-bold rounded-2xl border-2 border-slate-700 hover:border-primary-600 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center justify-center gap-2">
+                <button className="w-full sm:w-auto px-6 py-3 bg-slate-800 text-white text-sm font-semibold rounded-xl border border-slate-700 hover:border-primary-600 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center justify-center gap-2 whitespace-nowrap">
                   <span>Learn More</span>
-                  <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </button>

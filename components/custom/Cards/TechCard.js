@@ -11,7 +11,7 @@ export default function TechCard ({techId, techName, techDescription, techLogo, 
   }
 
   return (
-    <div id={techId} className="h-20 w-20 mx-4 my-4 relative group">
+    <div id={techId} className="h-16 w-16 mx-2 my-2 relative group">
       <Link href={techUrl} target="_blank" rel="noopener noreferrer" onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
         <div className="transform hover:scale-110 transition-all duration-300">
           <Image 
@@ -24,12 +24,12 @@ export default function TechCard ({techId, techName, techDescription, techLogo, 
           />
         </div>
         <div 
-          className="tooltip-div rounded-xl bg-slate-800 dark:bg-slate-700 w-48 p-3 shadow-xl border border-slate-700"
+          className="tooltip-div rounded-lg bg-slate-800 w-40 p-2 shadow-xl border border-slate-700"
           style={{display: hover ? "block" : "none"}}
         >
-          <h1 className="text-sm text-white font-bold mb-1">{techName}</h1>
-          <div className="w-full h-px bg-slate-600 mb-2"></div>
-          <p className="text-xs text-slate-300 leading-relaxed">{techDescription}</p>
+          <h1 className="text-xs text-white font-semibold mb-1">{techName}</h1>
+          <div className="w-full h-px bg-slate-600 mb-1"></div>
+          <p className="text-[10px] text-slate-300 leading-relaxed">{techDescription}</p>
         </div>
       </Link>
     </div>
