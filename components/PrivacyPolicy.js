@@ -342,8 +342,8 @@ export default function PrivacyPolicy() {
             If you have any questions about this Privacy Policy, please contact me at <Link href={mailTo} className={linkStyle}>privacy@mb-consulting.dev</Link>.
           </div>
 
+        </div>
       </div>
-    </div>
     </section>
   );
 }
