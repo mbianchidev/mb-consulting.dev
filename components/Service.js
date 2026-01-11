@@ -55,7 +55,7 @@ export default function Service({ service }) {
               <p className={`${largeTextStyle} font-medium`}>{service.callout}</p>
               {/*Service CTA*/}
               <Link href={ service.link ? service.link : { pathname: "/book30", query: { serviceName: service.slug} }} passHref>
-                <button className="w-full bg-gradient-to-r from-primary-600 to-secondary-600 hover:from-primary-700 hover:to-secondary-700 rounded-xl mt-6 py-3 text-white text-sm font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">{service.CTA}</button>
+                <button className="w-full bg-gradient-to-r from-primary-600 to-secondary-600 hover:from-primary-700 hover:to-secondary-700 rounded-xl mt-6 px-6 py-4 text-white text-sm font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 whitespace-normal leading-snug">{service.CTA}</button>
               </Link>
               
               {/* Service Rate */}

@@ -47,11 +47,11 @@ export default function Navbar() {
                   className="w-8 h-5 md:w-9 md:h-6"
                 />
               </div>
-              <div className="hidden sm:flex flex-col navbar__logo-name-role">
-                <h1 className="font-semibold text-xs text-white transition-colors leading-tight">
+              <div className="hidden sm:flex flex-col navbar__logo-name-role pt-1">
+                <h1 className="font-semibold text-[11px] text-white transition-colors leading-tight">
                   {userData.name}
                 </h1>
-                <p className="text-[10px] font-medium text-slate-400 transition-colors">
+                <p className="text-[9px] font-medium text-slate-400 transition-colors">
                   {userData.role}
                 </p>
               </div>

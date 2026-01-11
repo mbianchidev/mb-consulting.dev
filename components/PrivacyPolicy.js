@@ -13,7 +13,7 @@ export default function PrivacyPolicy() {
   const linkStyle = "text-primary-400 hover:underline";
 
   return (
-    <section id="privacy-policy-container" className="bg-slate-950 min-h-screen" style={{fontFamily: 'var(--font-body)'}}>
+    <section id="privacy-policy-container" className="bg-slate-950 min-h-screen" style={{fontFamily: 'var(--font-family)'}}>
       <div className="max-w-7xl mx-auto px-6 pt-12 pb-8 bg-slate-950">
         <h1 className="text-4xl md:text-6xl font-bold text-white text-center md:text-left" style={{fontFamily: 'var(--font-heading)'}}>
           Privacy Policy

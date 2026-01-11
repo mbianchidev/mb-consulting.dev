@@ -57,19 +57,19 @@ export default function About() {
           {/* Social Buttons */}
           <div className="inline-flex flex-col space-y-8">
             <div className="bg-slate-800 p-6 rounded-2xl shadow-lg border border-slate-700">
-              <h1 className="text-xl font-bold text-white mb-4" style={{fontFamily: 'var(--font-heading)'}}>
+              <h1 className="text-sm font-bold text-white mb-4" style={{fontFamily: 'var(--font-heading)'}}>
                 Contacts
               </h1>
-              <span className="text-base text-slate-300">
+              <span className="text-sm text-slate-300">
                 Interested in a collaboration? Got any question? Book {" "}
                 <Link href="/book30" className={linkTextStyle}> a meeting </Link>{" "} today!
               </span>
             </div>
             <div className="bg-slate-800 p-6 rounded-2xl shadow-lg border border-slate-700">
-              <h1 className="text-base font-bold text-white mb-4" style={{fontFamily: 'var(--font-heading)'}}>
+              <h1 className="text-sm font-bold text-white mb-4" style={{fontFamily: 'var(--font-heading)'}}>
                 Experience
               </h1>
-              <span className="text-sm text-slate-300">
+              <span className="text-xs text-slate-300">
                 <p>
                   Have a look at my {" "} <Link href="/clients" rel="noopener noreferrer" className={linkTextStyle}> clients </Link>{" "} and {" "}
                   <Link href="/experience" passHref rel="noopener noreferrer" className={linkTextStyle}> 
@@ -81,7 +81,7 @@ export default function About() {
 
             {/* Social Links */}
             <div className="bg-slate-800 p-6 rounded-2xl shadow-lg border border-slate-700">
-              <h1 className="text-xl font-bold text-white mb-4" style={{fontFamily: 'var(--font-heading)'}}>
+              <h1 className="text-sm font-bold text-white mb-4" style={{fontFamily: 'var(--font-heading)'}}>
                 Links
               </h1>
               <LinkList linktree="true"/>
