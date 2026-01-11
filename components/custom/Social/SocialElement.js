@@ -4,9 +4,9 @@ import DarkModeToggle from '../Toggles/DarkModeToggle';
 
 export default function SocialElement({ twitter, linkedin, github, telegram, linkStyle, iconStyle, themeToggle }) {
   // Define default styles with Tailwind
-  const divStyle = "flex flex-row items-center space-x-4";
-  const defaultLinkStyle = "text-gray-600 dark:text-gray-300 hover:opacity-70 transition-opacity duration-300";
-  const defaultIconStyle = "h-5 w-5 hover:text-blue-500";
+  const divStyle = "flex items-center gap-2";
+  const defaultLinkStyle = "w-10 h-10 flex items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 hover:text-primary-600 dark:hover:text-primary-400 transition-all duration-300 hover:scale-110";
+  const defaultIconStyle = "w-5 h-5";
   
   // Use provided styles or defaults
   const githubIconStyle = iconStyle || defaultIconStyle;
@@ -27,8 +27,8 @@ export default function SocialElement({ twitter, linkedin, github, telegram, lin
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
+          width="20"
+          height="20"
           fill="currentColor"
           className={githubIconStyle}
           viewBox="0 0 24 24"
@@ -46,8 +46,8 @@ export default function SocialElement({ twitter, linkedin, github, telegram, lin
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
+            width="20"
+            height="20"
             fill="currentColor"
             className={twitterIconStyle}
             viewBox="0 0 24 24"
@@ -64,8 +64,8 @@ export default function SocialElement({ twitter, linkedin, github, telegram, lin
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
+            width="20"
+            height="20"
             fill="currentColor"
             className={linkedinIconStyle}
             viewBox="0 0 24 24"
@@ -82,8 +82,8 @@ export default function SocialElement({ twitter, linkedin, github, telegram, lin
         >
           <svg 
             xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
+            width="20"
+            height="20"
             fill="currentColor"
             className={telegramIconStyle}
             viewBox="0 0 24 24"  

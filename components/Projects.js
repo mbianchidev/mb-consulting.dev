@@ -4,17 +4,18 @@ import ProjectCard from "@custom/Cards/ProjectCard";
 
 export default function Projects() {
   return (
-    <section className="bg-white dark:bg-gray-800">
-      <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
-        <h1 className="text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
+    <section className="bg-slate-50 dark:bg-slate-950 min-h-screen">
+      <div className="max-w-7xl mx-auto px-6 pt-12 pb-8 bg-slate-50 dark:bg-slate-950">
+        <h1 className="text-5xl md:text-8xl font-bold text-slate-900 dark:text-white text-center md:text-left" style={{fontFamily: 'var(--font-heading)'}}>
           Projects
         </h1>
       </div>
       {/* Grid starts here */}
-      <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
+      <div className="bg-slate-100 dark:bg-slate-900 py-20">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
           {projectsData.projects?.map((proj, projId) => (
             <ProjectCard
+              key={projId}
               title={proj.title}
               link={proj.link}
               imgUrl={proj.imgUrl}

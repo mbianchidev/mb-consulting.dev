@@ -6,26 +6,26 @@ import Link from "next/link";
 
 export default function PrivacyPolicy() {
   const mailTo = "mailto:"+mailData.privacyMail;
-  const h1TextStyle = "font-bold text-xl";
-  const h2TextStyle = "font-semibold text-xl";
-  const h3TextStyle = "font-light text-xl";
-  const normalTextStyle = "text-xl text-gray-700 mb-4 dark:text-gray-300";
+  const h1TextStyle = "text-xl font-bold text-white text-center mb-6";
+  const h2TextStyle = "text-lg font-semibold text-slate-200 mb-4";
+  const h3TextStyle = "text-base font-medium text-slate-300 mb-3";
+  const normalTextStyle = "text-sm text-slate-300 mb-4 leading-relaxed";
+  const linkStyle = "text-primary-400 hover:underline";
 
   return (
-    <section id="privacy-policy-container" className="bg-white dark:bg-gray-800">
-      <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
-        <h1 className="text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
+    <section id="privacy-policy-container" className="bg-slate-950 min-h-screen" style={{fontFamily: 'var(--font-family)'}}>
+      <div className="max-w-7xl mx-auto px-6 pt-12 pb-8 bg-slate-950">
+        <h1 className="text-4xl md:text-6xl font-bold text-white text-center md:text-left" style={{fontFamily: 'var(--font-heading)'}}>
           Privacy Policy
         </h1>
       </div>
 
       <Breadcrumb/>
 
-      <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
-        <div className="text-container mx-auto pt-20" style={{marginLeft : "10px"}}>
+      <div className="bg-slate-900 py-16">
+        <div className="max-w-4xl mx-auto px-6">
 
-          <h1 className={h1TextStyle} style={{textAlign : "center"}}>Introduction</h1>
-          <br></br>
+          <h1 className={h1TextStyle}>Introduction</h1>
           <div className={normalTextStyle}>
             Welcome to my website. 
             <br></br>
@@ -49,7 +49,7 @@ export default function PrivacyPolicy() {
             <b>THE USER</b> is the individual using this Service. The User corresponds to the Data Subject, who is the subject of Personal Data.<br></br> 
           </div>
 
-          <h1 className={h1TextStyle} style={{textAlign : "center"}}>Information Collection and Use</h1>
+          <h1 className={h1TextStyle}>Information Collection and Use</h1>
           <br></br>
           <div className={normalTextStyle}>
             Different types of information are collected for analyzing the use of the Service. The information that is collected is:<br></br>
@@ -156,7 +156,7 @@ export default function PrivacyPolicy() {
             In case of data breaches or hacks, I will notify you as soon as possible while taking appropriate actions to protect your data and legally prosecute the entity responsible for the attack.<br></br>
           </div>
           
-          <h1 className={h1TextStyle} style={{textAlign : "center"}}>Your Data Protection Rights Under General Data Protection Regulation (GDPR)</h1>
+          <h1 className={h1TextStyle}>Your Data Protection Rights Under General Data Protection Regulation (GDPR)</h1>
           <br></br>
           <div className={normalTextStyle}>
             If you are a resident of the European Union (EU) and European Economic Area (EEA), you have certain data protection rights, covered by GDPR.<br></br> 
@@ -179,7 +179,7 @@ export default function PrivacyPolicy() {
             For more information, please contact your local data protection authority in the European Economic Area (EEA).<br></br> 
           </div>
 
-          <h1 className={h1TextStyle} style={{textAlign : "center"}}>Your Data Protection Rights under the California Privacy Protection Act (CalOPPA)</h1>
+          <h1 className={h1TextStyle}>Your Data Protection Rights under the California Privacy Protection Act (CalOPPA)</h1>
           <br></br>
           <div className={normalTextStyle}>
             CalOPPA is the first state law in the nation to require commercial websites and online services to post a privacy policy.<br></br>
@@ -206,7 +206,7 @@ export default function PrivacyPolicy() {
             You can enable or disable Do Not Track by visiting the Preferences or Settings page of your web browser.<br></br>
           </div>
 
-          <h1 className={h1TextStyle} style={{textAlign : "center"}}>Your Data Protection Rights under the California Consumer Privacy Act (CCPA)</h1>
+          <h1 className={h1TextStyle}>Your Data Protection Rights under the California Consumer Privacy Act (CCPA)</h1>
           <br></br>
           <div className={normalTextStyle}>
             If you are a California resident, you are entitled to learn what data is being collected about you, ask to delete your data and not to sell (or share) it.<br></br> 
@@ -248,14 +248,14 @@ export default function PrivacyPolicy() {
             To find out more, visit the official <u><Link target="_blank" rel="noopener noreferrer" href="https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=3.&part=4.&lawCode=CIV&title=1.81.5">California Legislative Information website</Link></u>. The CCPA took effect on 01/01/2020.<br></br> 
           </div>  
 
-          <h1 className={h1TextStyle} style={{textAlign : "center"}}>Service Providers</h1>
+          <h1 className={h1TextStyle}>Service Providers</h1>
           <br></br>
           <div className={normalTextStyle}>
             I may employ third party companies and individuals to facilitate this Service (<b>"Service Providers"</b>), provide Service on my behalf, perform Service-related services or assist me in analysing how this Service is used.<br></br>
             These third parties have access to your Personal Data only to perform these tasks on my behalf and are obligated not to disclose or use it for any other purpose.<br></br>
           </div>
 
-          <h1 className={h1TextStyle} style={{textAlign : "center"}}>Analytics</h1>
+          <h1 className={h1TextStyle}>Analytics</h1>
           <br></br>
           <div className={normalTextStyle}>
             Third-party Service Providers are used to monitor and analyze the use of this Service.<br></br>  
@@ -274,7 +274,7 @@ export default function PrivacyPolicy() {
             I also encourage you to review the <u><Link target="_blank" rel="noopener noreferrer" href="https://support.google.com/analytics/answer/6004245">Google's policy for safeguarding your data</Link></u>.<br></br>
           </div>
 
-          <h1 className={h1TextStyle} style={{textAlign : "center"}}>CI/CD tools</h1>
+          <h1 className={h1TextStyle}>CI/CD tools</h1>
           <br></br>
           <div className={normalTextStyle}>
             I may use third-party Service Providers to automate some processes of this Service.<br></br>
@@ -296,7 +296,7 @@ export default function PrivacyPolicy() {
             For more information on what data Vercel collects for what purpose and how the protection of the data is ensured, please visit <u><Link target="_blank" rel="noopener noreferrer" href="https://vercel.com/legal/privacy-policy">Vercel Privacy Policy page</Link></u>.<br></br>
           </div>
 
-          <h1 className={h1TextStyle} style={{textAlign : "center"}}>Behavioral Remarketing</h1>
+          <h1 className={h1TextStyle}>Behavioral Remarketing</h1>
           <br></br>
           <div className={normalTextStyle}>
             I don't use remarketing services to advertise on third party websites to you after you visited this Service.<br></br>
@@ -312,7 +312,7 @@ export default function PrivacyPolicy() {
             For more information on the privacy practices of Google, please visit the <u><Link target="_blank" rel="noopener noreferrer" href="https://policies.google.com/privacy?hl=en">Google Privacy Terms page</Link></u><br></br>
           </div>
 
-          <h1 className={h1TextStyle} style={{textAlign : "center"}}>Links to Other Sites</h1>
+          <h1 className={h1TextStyle}>Links to Other Sites</h1>
           <br></br>
           <div className={normalTextStyle}>
             This site may contain links to other sites that are not operated by me. If you click a third party link, you will be directed to that third party's site.<br></br>
@@ -320,7 +320,7 @@ export default function PrivacyPolicy() {
             I have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.<br></br>
           </div>
 
-          <h1 className={h1TextStyle} style={{textAlign : "center"}}>Children's Privacy</h1>
+          <h1 className={h1TextStyle}>Children's Privacy</h1>
           <br></br>
           <div className={normalTextStyle}>
             My Services are not intended for use by children under the age of 13 (<b>"Children"</b>).<br></br>
@@ -329,7 +329,7 @@ export default function PrivacyPolicy() {
             If I become aware that Personal Data from Children has been collected, I take steps to remove that information.<br></br>
           </div>
 
-          <h1 className={h1TextStyle} style={{textAlign : "center"}}>Changes to This Privacy Policy</h1>
+          <h1 className={h1TextStyle}>Changes to This Privacy Policy</h1>
           <br></br>
           <div className={normalTextStyle}>
             I may update this Privacy Policy from time to time. I will notify you of any changes by posting the new Privacy Policy on this page.<br></br>
@@ -337,10 +337,9 @@ export default function PrivacyPolicy() {
             You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.<br></br>
           </div>
 
-          <h1 className={h1TextStyle} style={{textAlign : "center"}}>Contact me</h1>
-          <br></br>
+          <h1 className={h1TextStyle}>Contact me</h1>
           <div className={normalTextStyle}>
-            If you have any questions about this Privacy Policy, please contact me at <Link href={mailTo}><u>privacy@mb-consulting.dev</u></Link>.
+            If you have any questions about this Privacy Policy, please contact me at <Link href={mailTo} className={linkStyle}>privacy@mb-consulting.dev</Link>.
           </div>
 
         </div>
