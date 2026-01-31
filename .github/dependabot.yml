@@ -5,11 +5,15 @@
 
 version: 2
 updates:
-  # Configuration for npm
-  - package-ecosystem: "npm"
-    directory: "/"
+  - package-ecosystem: "npm" # See documentation for possible values
+    directory: "/" # Location of package manifests
     schedule:
-      interval: "daily"
+      interval: "weekly"
+    groups:
+      all-dependencies:
+        applies-to: version-updates
+        patterns:
+          - "*"
     ignore:
       # Ignore updates to packages that start with 'xxx'
       # Wildcards match zero or more arbitrary characters
