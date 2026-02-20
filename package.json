@@ -32,7 +32,7 @@
     "rxjs": "^7.8.0"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.18",
+    "@tailwindcss/postcss": "^4.2.0",
     "@tailwindcss/nesting": "0.0.0-insiders.565cd3e",
     "@types/react": "^19.2.14",
     "autoprefixer": "^10.4.24",
