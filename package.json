@@ -39,5 +39,7 @@
     "postcss": "^8.5.14",
     "tailwindcss": "^4.1.17"
   },
-  "overrides": {}
+  "overrides": {
+    "postcss": "^8.5.14"
+  }
 }
