@@ -7,6 +7,11 @@ export default function ServiceCard ({ id, category, name, slug, image, imageX, 
 
     const url = `${servicesData.basePath}/${slug}`;
     const altText = `${category} ${name} service`;
+    // Only show the rate when it is a meaningful, non-zero value.
+    const showRate = startingFromRate !== undefined
+      && startingFromRate !== null
+      && startingFromRate !== 0
+      && startingFromRate !== "0";
     return (
       <Link href={url} passHref className="w-full block group">
           <article
@@ -26,15 +31,6 @@ export default function ServiceCard ({ id, category, name, slug, image, imageX, 
               {/* Gradient overlay for legible text */}
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
 
-              {/* Price badge */}
-              {startingFromRate != "0" && (
-                <div className="absolute top-3 right-3 bg-slate-900/80 backdrop-blur-sm px-2.5 py-1 rounded-full shadow-md">
-                  <p className="text-xs font-medium text-primary-300" style={{fontFamily: 'var(--font-mono)'}}>
-                    {startingFromRate}
-                  </p>
-                </div>
-              )}
-
               {/* Category + Service name */}
               <div className="absolute bottom-0 left-0 right-0 p-4">
                 <span className="block text-xs font-medium uppercase tracking-wide text-secondary-300" style={{fontFamily: 'var(--font-mono)'}}>
@@ -51,6 +47,11 @@ export default function ServiceCard ({ id, category, name, slug, image, imageX, 
               <p className="text-sm text-slate-600 dark:text-slate-300" style={{fontFamily: 'var(--font-family)'}}>
                 {description}
               </p>
+              {showRate && (
+                <p className="mt-3 text-xs font-medium text-slate-500 dark:text-slate-400" style={{fontFamily: 'var(--font-mono)'}}>
+                  {startingFromRate}
+                </p>
+              )}
               <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary-600 dark:text-primary-400 transition-transform duration-300 group-hover:gap-2">
                 Learn more
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
