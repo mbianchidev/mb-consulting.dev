@@ -2,6 +2,13 @@
 
 @import './fonts.css';
 
+/* Enable class-based dark mode.
+   Tailwind v4 ignores the `darkMode: "class"` option in tailwind.config.js and
+   defaults the `dark:` variant to prefers-color-scheme. The app forces the dark
+   theme via next-themes (adds a `.dark` class on <html>), so we register the
+   variant explicitly to make every `dark:` utility respond to that class. */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   /* Primary - Deep Indigo/Slate */
   --color-primary-50: #f0f4ff;
@@ -109,33 +116,38 @@ body.dark {
   background: #0f172a;
 }
 
-/* Typography Scale */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', 'Inter', sans-serif;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 1.2;
-}
+/* Typography Scale
+   Defined inside @layer base so Tailwind utility classes (e.g. text-sm,
+   text-[11px]) can still override these element defaults. Unlayered rules
+   would otherwise win over Tailwind v4 utilities. */
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', 'Inter', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
 
-h1 {
-  font-size: clamp(2.5rem, 5vw, 5rem);
-}
+  h1 {
+    font-size: clamp(2.5rem, 5vw, 5rem);
+  }
 
-h2 {
-  font-size: clamp(2rem, 4vw, 3.5rem);
-}
+  h2 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+  }
 
-h3 {
-  font-size: clamp(1.5rem, 3vw, 2.5rem);
-}
+  h3 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+  }
 
-h4 {
-  font-size: clamp(1.25rem, 2.5vw, 2rem);
-}
+  h4 {
+    font-size: clamp(1.25rem, 2.5vw, 2rem);
+  }
 
-p {
-  line-height: 1.7;
-  font-size: 1.0625rem;
+  p {
+    line-height: 1.7;
+    font-size: 1.0625rem;
+  }
 }
 
 /* Modern scrollbar */
@@ -170,12 +182,17 @@ a {
   box-sizing: border-box;
 }
 
-/* Fix for stacking images issue */
-img {
-  position: relative !important;
-  max-width: 100%;
-  height: auto;
-  display: block;
+/* Fix for stacking images issue.
+   Declared in @layer base so the default height:auto keeps responsive images
+   in aspect ratio, while utility classes such as h-full / object-cover (used by
+   the service cards) can still override it. */
+@layer base {
+  img {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
 }
 
 /* Override any component that might be causing image stacking */
@@ -205,18 +222,15 @@ svg.rough-notation path {
   contain: layout style paint;
 }
 
-/* Touch target sizing for accessibility */
-.touch-target,
-button,
-a {
+/* Touch target sizing for accessibility.
+   Opt-in via the .touch-target class instead of forcing every <a>/<button> to
+   44px. Applying it to all links/buttons broke inline elements such as the
+   breadcrumb separators and the footer social icons (they were stretched to
+   44px tall and knocked out of alignment). Interactive components set their own
+   adequate padding/size. */
+.touch-target {
   min-height: 44px;
   min-width: 44px;
-}
-
-/* Ensure links are easily tappable */
-a[href] {
-  display: inline-block;
-  min-height: 44px;
 }
 
 /* Ensure sufficient contrast for interactive elements */

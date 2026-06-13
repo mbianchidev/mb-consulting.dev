@@ -36,7 +36,7 @@ export default function Services() {
               imageX={500}
               imageY={400}
               description={service.shortDescription}
-              startingFromRate={service.startingFromRate}
+              startingFromRate={service.rate}
             />
           )))}
         </div>
