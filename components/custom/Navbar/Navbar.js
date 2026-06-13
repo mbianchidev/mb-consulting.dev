@@ -36,7 +36,7 @@ export default function Navbar() {
 
           {/* Logo + Name */}
           <Link href="/" passHref className="flex-shrink-0">
-            <div className="flex items-center group cursor-pointer gap-2">
+            <div className="flex items-center group cursor-pointer gap-2.5">
               <div className="transform transition-transform duration-300 group-hover:scale-105 group-hover:rotate-3">
                 <Image 
                   src={logo} 
@@ -44,14 +44,14 @@ export default function Navbar() {
                   width={32} 
                   height={20} 
                   priority 
-                  className="w-8 h-5 md:w-9 md:h-6"
+                  className="w-10 h-auto md:w-12"
                 />
               </div>
-              <div className="hidden sm:flex flex-col navbar__logo-name-role pt-1">
-                <h1 className="font-semibold text-[11px] text-white transition-colors leading-tight">
+              <div className="hidden sm:flex flex-col navbar__logo-name-role leading-tight">
+                <h1 className="font-bold text-sm text-white transition-colors leading-tight">
                   {userData.name}
                 </h1>
-                <p className="text-[9px] font-medium text-slate-400 transition-colors">
+                <p className="text-[11px] font-medium text-slate-400 transition-colors leading-tight">
                   {userData.role}
                 </p>
               </div>
